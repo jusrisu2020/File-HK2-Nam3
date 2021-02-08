@@ -1,0 +1,21 @@
+table{
+	border: 5px groove #6633FF;
+	padding: 1px;
+	text-align: center;
+}
+th,td{
+	border: thin solid #FFFFFF;
+	padding: 5px;
+}
+thead{
+	color: #FFFFFF;
+	font-weight: bold;
+	text-align: center;
+	background-color: #6633FF;
+}
+.c1{
+	background-color: #FFEEFF;
+}
+.c2{
+	background-color: #CCCCFF; 
+}

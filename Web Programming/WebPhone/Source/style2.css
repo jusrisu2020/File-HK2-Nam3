@@ -1,0 +1,121 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: #e74c3c;
+	color: #ECF0F1;
+	font-family: Segoe UI;
+}
+#logo{
+	width: 266.04px;
+	height: 200px;
+	position: absolute;
+	left: 20px;
+}
+#namestore{
+	font-size: 20px;
+	padding-left: 55px;
+	position: absolute;
+	top: 20%;
+	left: 30px;
+}
+.heading ul li{
+	/*căng ngang*/
+	display: inline-block;
+	list-style: none;
+	margin: 30px;
+
+}
+.heading ul li a{
+	text-decoration: none;
+	color: #ECF0F1;
+}
+.heading #taikhoan{
+	position: absolute;
+	left: 25%;
+	top: 5%;
+}
+.heading #menu{
+	position: absolute;
+	left: 57%;
+	top: 5%;
+}
+.content{
+	position: absolute;
+	left: 15%;
+	top: 30%;
+	font-size: 30px;
+	text-align: center;
+}
+
+.btn #btnLearnMore{
+	width: 166px;
+	height: 65px;
+	background-color: #ECF0F1;
+	font-size: 15px;
+	position: absolute;
+	left: 27%;
+	top: 60%;
+	border: none;
+}
+.btn #btnBuy{
+	width: 166px;
+	height: 65px;
+	background-color: #ECF0F1;
+	font-size: 15px;
+	position: absolute;
+	left: 75%;
+	top: 60%;
+	border: none;
+}
+#sp1{
+	height: 350px;
+	position: absolute;
+	left: 65%;
+	top: 15%;
+}
+.footer{
+	height: 180px;
+	width: 100%;
+	background: #ECF0F1;
+	position: absolute;
+	top: 80%;
+}
+.footer #phonear{
+	position: absolute;
+	top: 20%;
+	left: 3%;
+}
+.footer #ggar{
+	position: absolute;
+	top: 20%;
+	left: 23%;
+}
+.footer p{
+	display: inline-block;
+	margin-left: 13%;
+	margin-top: 5.5%;
+}
+.footer #facear{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+}
+.footer p{
+	color: black;
+	top: 50%;
+}
+.gach{
+	width: 2px;
+	height: 180px;
+	background-color: black;
+	position: absolute;
+	left: 75%;
+	top: 80%;
+}
+#footerR{
+	color: black;
+	position: absolute;
+	top: 83%;
+	left: 80%;
+	font-size: 20px;
+}

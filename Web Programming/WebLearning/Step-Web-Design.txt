@@ -1,0 +1,7 @@
+1. Xây dựng giao diện Website
+2. Phân tích giao diện Website
+3. Đặt tên class theo chuẩn BEM
+4. Xây dựng layout với Flexbox
+5. Làm hiệu ứng Animition
+6. Xây dựng giao diện Responsive
+7. Nâng cao
