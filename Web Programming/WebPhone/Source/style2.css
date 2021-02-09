@@ -5,6 +5,7 @@ body{
 	color: #ECF0F1;
 	font-family: Segoe UI;
 }
+
 #logo{
 	width: 266.04px;
 	height: 200px;
@@ -15,7 +16,7 @@ body{
 	font-size: 20px;
 	padding-left: 55px;
 	position: absolute;
-	top: 20%;
+	top: 17%;
 	left: 30px;
 }
 .heading ul li{
@@ -23,49 +24,37 @@ body{
 	display: inline-block;
 	list-style: none;
 	margin: 30px;
-
 }
 .heading ul li a{
 	text-decoration: none;
 	color: #ECF0F1;
 }
-.heading #taikhoan{
-	position: absolute;
-	left: 25%;
-	top: 5%;
-}
-.heading #menu{
-	position: absolute;
-	left: 57%;
-	top: 5%;
+.heading ul{
+	float: right;
 }
 .content{
 	position: absolute;
-	left: 15%;
-	top: 30%;
+	left: 20%;
+	top: 25%;
 	font-size: 30px;
 	text-align: center;
 }
-
-.btn #btnLearnMore{
-	width: 166px;
-	height: 65px;
-	background-color: #ECF0F1;
-	font-size: 15px;
+.btn{
 	position: absolute;
-	left: 27%;
 	top: 60%;
-	border: none;
+	left: 30%;
+}
+.btn #btnLearnMore,#btnBuy{
+	width: 180px;
+	height: 65px;
+	color: #ECF0F1;
+	font-size: 20px;
+	border-radius: 30%;
+	background: #535c68;
 }
 .btn #btnBuy{
-	width: 166px;
-	height: 65px;
-	background-color: #ECF0F1;
-	font-size: 15px;
-	position: absolute;
-	left: 75%;
-	top: 60%;
-	border: none;
+	position: relative;
+	left: 630px;
 }
 #sp1{
 	height: 350px;
