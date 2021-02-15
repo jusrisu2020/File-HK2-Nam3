@@ -1,0 +1,60 @@
+﻿	<html>
+	<head>
+	<title>Kiểm tra form</title>	
+	
+	</head>
+
+	<body>
+	<form name="f">
+		<table border="0" cellpadding="5" cellspacing="0" width="498">
+			<tr>
+				<td colspan="2" align="center">THÔNG TIN ỨNG VIÊN </td>
+			</tr>
+			<tr>
+				<td>Họ tên</td>
+				<td><input type="text" size="28" name="txtHoTen"/></td>
+			</tr>
+			<tr>
+				<td>Năm sinh</td>
+				<td>
+				<select name="optNamSinh">
+					<script language="Javascript">
+					var d = new Date();
+					for (i=d.getFullYear(); i>=1950; i--){
+						document.write('<option value="' + i + '">' + i + '</option>');
+					}
+					</script>
+				</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Giới tính</td>
+				<td>
+					<input type="radio" name="radGioiTinh" value="Nam" checked="true"/>Nam 
+					<input type="radio" name="radGioiTinh" value="Nữ"/>Nữ
+				</td>
+			</tr>
+			<tr>
+				<td>Mức lương đề nghị</td>
+				<td><input type="text" name="txtMucLuong" onchange="kiemtraluong();"/></td>
+			</tr>
+			<tr>
+				<td>Hình thức làm việc</td>
+				<td>
+					<input type="checkbox" name="chkHinhThucToanTG" value="Toàn thời gian"/>Toàn thời gian 
+					<input type="checkbox" name="chkHinhThucBanTG" value="Bán thời gian"/>Bán thời gian
+				</td>
+			</tr>
+			<tr>
+				<td>Thông tin khác</td>
+				<td><textarea rows="4" cols="25" name="txtThongTin"></textarea></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="button" value="Gửi" onclick="kiemtraform();"/> 
+					<input type="reset" value="Xóa"/>
+				</td>
+			</tr>	
+		</table>
+		</form>
+		</html>

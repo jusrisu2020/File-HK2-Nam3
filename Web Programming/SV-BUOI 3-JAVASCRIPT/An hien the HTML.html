@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tìm kiếm - freetuts.net</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script language="JavaScript">
+			function show_search_advance()
+			{
+				// Lấy thẻ a và category
+				var a = document.getElementById('show_search_advance');
+				var category = document.getElementById('search_advance');
+			 
+				// Lấy nội dung của thẻ a
+				var text = a.innerHTML;
+			 
+				// Kiểm tra xử lý hiển thị và ẩn + đổi nội dung thẻ a
+				if (text == 'Tìm kiếm nâng cao'){
+					category.style.display = "table-row";
+					a.innerHTML = "Bỏ tìm kiếm nâng cao";
+				}
+				else{
+					category.style.display = "none";
+					a.innerHTML = "Tìm kiếm nâng cao";
+				}
+			 
+				// Return false để khi click vào thẻ a sẽ không bị chuyển trang
+				return false;
+			}
+	
+		</script>
+		
+		
+        <style>
+            #search_advance{
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+       <h1>Tìm kiếm dữ liệu</h1>
+        <table border="1" cellspacing="0" cellpadding="5">
+            <tr>
+                <td>Nhập tiêu đề</td>
+                <td>
+                    <input type="text" id="title" value=""/> <br/>
+                    <a href="#" onclick="return show_search_advance()" id="show_search_advance">Tìm kiếm nâng cao</a>
+                </td>
+            </tr>
+            <tr id="search_advance">
+                <td>Chọn chuyên mục</td>
+                <td>
+                    <select id="category">
+                        <option value="1">PHP</option>
+                        <option value="2">Javascript</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="button" id="btn_search" value="Tìm kiếm"/>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

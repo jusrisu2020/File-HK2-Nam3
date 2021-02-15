@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>xóa thẻ html - freetuts.net</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script language="javascript">
+            window.onload = function(){
+                // Lấy danh sách button
+                var button = document.getElementsByTagName('input');
+
+                // Lặp qua từng button
+                for (var i = 0; i < button.length; i++){
+
+                    // gán sự kiện click
+                    button[i].addEventListener("click", function(){
+                        // Lấy thẻ tr
+                        var parent = this.parentElement.parentElement;
+                        // và thực hiện xóa
+                        parent.remove();
+                    });
+                }
+            };
+        </script>
+    </head>
+    <body>
+       <h1>Xóa thẻ HTML</h1>
+        <table border="1" cellspacing="0" cellpadding="5">
+            <tr>
+                <td>1</td>
+                <td>Tiêu đề thứ nhất</td>
+                <td>
+                    <input type="button" value="Delete"/>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Tiêu đề thứ hai</td>
+                <td>
+                    <input type="button" value="Delete"/>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Tiêu đề thứ ba</td>
+                <td>
+                    <input type="button" value="Delete"/>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Tiêu đề thứ tư</td>
+                <td>
+                    <input type="button" value="Delete"/>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
