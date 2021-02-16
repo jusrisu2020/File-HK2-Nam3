@@ -1,10 +1,16 @@
-/* Create Object */
-var myInfo = {
-	id:"DTH185413",
-	age:12,
-	address:"Long Xuyên",
-	getName: function() {
-		return this.age;
+function User(firstName, lastName, avatar) {
+	this.firstName = firstName;
+	this.lastName = lastName;
+	this.avatar = avatar;
+	this.getName = function() {
+		return `${firstName} ${lastName}`
 	}
-};
-console.log(myInfo.getName());
+}
+var author = new User("Trí","Trần","autAvatar");
+var customer = new User("Vũ","Trần","cusAvatar");
+author.title = "Hello";
+customer.comment = "Hey!";
+
+console.log(author);
+console.log(author.getName());
+console.log(customer);
