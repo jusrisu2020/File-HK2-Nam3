@@ -1,8 +1,10 @@
-function a() {
-	var myString = "";
-	for(var param of arguments){
-		myString += `${param} - `
+/* Create Object */
+var myInfo = {
+	id:"DTH185413",
+	age:12,
+	address:"Long Xuyên",
+	getName: function() {
+		return this.age;
 	}
-	console.log(myString);
-}
-a('ds1','ds2',"ds3");
+};
+console.log(myInfo.getName());
