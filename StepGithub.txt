@@ -1,12 +1,11 @@
-B1: Kiểm tra trạng thái và lưu
-$ git status
-$ git add . :add tất cả file
-$ git commit -a -m "(tiêu đề)"
+$ git status: kiểm tra trạng thái dữ liệu
+$ git add . :lưu tất cả file
+$ git commit -m "(tiêu đề)": commit file
+$ git remote add (tên file) (Địa chỉ repository.git): remote file lên repository
+$ git push (tên file): push file
+$ git push --set-upstream (tên file) master: upload dữ liệu lên github
+$ git log: xem thời gian và (ID)
 
-B2: Push lên Github
-$ git remote add (tên file) (Địa chỉ repository.git)
-$ git push (tên file)
-$ git push --set-upstream (tên file) master
+$ git clone (Địa chỉ repository.git): lấy 1 file dữ liệu về máy tính
+$ git pull: upload dữ liệu trên Github về PC
 
-B3: Clone file Github về. 
-$ git clone (Địa chỉ repository.git)
