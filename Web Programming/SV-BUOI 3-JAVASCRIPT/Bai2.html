@@ -6,16 +6,22 @@
 	<title>Bài 2</title>
 </head>
 <body>
-	<form name="f">Hãy chọn màu nền: 
-		<select name="bgc" onclick="document.bgColor = f.bgc.value">
-			<script language="Javascript" src="Bai2.js"></script>
-		</select>
-	</form>
+	<form id="f">Hãy chọn màu nền
 
-	<form name="f2">Hãy chọn màu nền: 
-		<select name="bgc2" onclick="document.bgColor = f2.bgc2.value">
-			<script language="Javascript" src="test.js"></script>
+		<select id="bgc" onclick="document.bgColor = f.bgc.value">
+
+			<script language="Javascript">
+
+				var color = ["White","Gray","Red","Green","Blue","Magenta","Yellow","Cyan"];
+
+				for(var i in color) {
+					document.write('<option value="'+color[i]+'">'+color[i]+'</option>');
+				}
+
+			</script>
+
 		</select>
+
 	</form>
 </body>
 </html>

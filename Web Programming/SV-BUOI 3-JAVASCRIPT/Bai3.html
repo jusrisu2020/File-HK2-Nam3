@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bài 3</title>
+</head>
+<body>
+	<div class="my">
+		Chọn tháng và năm
+		<select id="monthName">
+			<option value="0">Month</option>
+			<script language="Javascript">
+				for(var m=1;m<=12;m++){
+					document.write('<option value="'+m+'">'+m+'</option>');
+				}
+			</script>
+		</select>
+
+		
+		<select id="yearName">
+			<option value="0">Year</option>
+			<script language="Javascript">
+				var today = new Date();
+				var year = today.getFullYear();
+				for(var y=1970;y<=year;y++){
+					document.write('<option value="'+y+'">'+y+'</option>')
+				}
+			</script>
+		</select>
+	</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bài 5</title>
+	<script type="text/javascript">
+		function time() {
+	var vTime = new Date();
+	var vHours = vTime.getHours();
+	var vMinutes = vTime.getMinutes();
+	var vSeconds = vTime.getSeconds();
+
+	var s = (vHours>12) ? (vHours-12) : vHours;
+	s += ((vMinutes<10) ? ':0' : ':') + vMinutes;
+	s += ((vSeconds<10) ? ':0' : ':') + vSeconds;
+	s += (vHours>12) ? ' Chieu' : ' Sang';
+
+	document.getElementById('dongho').innerHTML = s;
+
+	var to = setTimeout('time()',1000);
+}
+
+	</script>
+</head>
+<body onload="time()">
+	<div id="dongho"></div>
+</body>
+</html>
