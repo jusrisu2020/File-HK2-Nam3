@@ -9,3 +9,5 @@ $ git log: xem thời gian và (ID)
 $ git clone (Địa chỉ repository.git): lấy 1 file dữ liệu về máy tính
 $ git pull: upload dữ liệu trên Github về PC
 
+
+ID: git@github.com:jusrisu2020/File-HK2-Nam3.git
