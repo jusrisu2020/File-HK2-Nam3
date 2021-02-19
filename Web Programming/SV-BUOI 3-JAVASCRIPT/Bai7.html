@@ -1,7 +1,7 @@
-﻿	<html>
+	<html>
 	<head>
-	<title>Kiểm tra form</title>	
-	
+	<title>(Bài 7)Kiểm tra form</title>	
+	<script language="Javascript" type="text/javascript" src="Bai7.js"></script>
 	</head>
 
 	<body>
@@ -17,13 +17,8 @@
 			<tr>
 				<td>Năm sinh</td>
 				<td>
-				<select name="optNamSinh">
-					<script language="Javascript">
-					var d = new Date();
-					for (i=d.getFullYear(); i>=1950; i--){
-						document.write('<option value="' + i + '">' + i + '</option>');
-					}
-					</script>
+				<select name="optNamSinh" >
+					<script language="Javascript">namSinh();</script>
 				</select>
 				</td>
 			</tr>
@@ -51,7 +46,7 @@
 			</tr>
 			<tr>
 				<td colspan="2" align="center">
-					<input type="button" value="Gửi" onclick="kiemtraform();"/> 
+					<input type="button" value="Gửi" onclick="return Notification();"/> 
 					<input type="reset" value="Xóa"/>
 				</td>
 			</tr>	
