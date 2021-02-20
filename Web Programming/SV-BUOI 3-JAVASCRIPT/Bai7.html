@@ -1,7 +1,12 @@
 	<html>
 	<head>
 	<title>(Bài 7)Kiểm tra form</title>	
-	<script language="Javascript" type="text/javascript" src="Bai7.js"></script>
+	<script language="Javascript" type="text/javascript" src="Bai7.js">
+		function showInfo() {
+		var csm = window.open('');
+		csm.document.write('dsd '+HT+'');
+	}
+	</script>
 	</head>
 
 	<body>
@@ -17,27 +22,27 @@
 			<tr>
 				<td>Năm sinh</td>
 				<td>
-				<select name="optNamSinh" >
-					<script language="Javascript">namSinh();</script>
+				<select name="optNamSinh">
+					<script language="Javascript"> sNS();</script>
 				</select>
 				</td>
 			</tr>
 			<tr>
 				<td>Giới tính</td>
 				<td>
-					<input type="radio" name="radGioiTinh" value="Nam" checked="true"/>Nam 
+					<input type="radio" name="radGioiTinh" value="Nam" checked="true" />Nam 
 					<input type="radio" name="radGioiTinh" value="Nữ"/>Nữ
 				</td>
 			</tr>
 			<tr>
 				<td>Mức lương đề nghị</td>
-				<td><input type="text" name="txtMucLuong" onchange="kiemtraluong();"/></td>
+				<td><input type="text" name="txtMucLuong"/></td>
 			</tr>
 			<tr>
 				<td>Hình thức làm việc</td>
 				<td>
-					<input type="checkbox" name="chkHinhThucToanTG" value="Toàn thời gian"/>Toàn thời gian 
-					<input type="checkbox" name="chkHinhThucBanTG" value="Bán thời gian"/>Bán thời gian
+					<input type="checkbox" id="chkHinhThucToanTG" value="Toàn thời gian"/>Toàn thời gian 
+					<input type="checkbox" id="chkHinhThucBanTG" value="Bán thời gian"/>Bán thời gian
 				</td>
 			</tr>
 			<tr>
@@ -52,4 +57,5 @@
 			</tr>	
 		</table>
 		</form>
+
 		</html>
