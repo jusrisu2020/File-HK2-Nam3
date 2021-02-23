@@ -1,16 +1,11 @@
 	<html>
 	<head>
 	<title>(Bài 7)Kiểm tra form</title>	
-	<script language="Javascript" type="text/javascript" src="Bai7.js">
-		function showInfo() {
-		var csm = window.open('');
-		csm.document.write('dsd '+HT+'');
-	}
-	</script>
+	<script language="Javascript" type="text/javascript" src="Bai7.js"></script>
 	</head>
 
 	<body>
-	<form name="f">
+	<form name="frm">
 		<table border="0" cellpadding="5" cellspacing="0" width="498">
 			<tr>
 				<td colspan="2" align="center">THÔNG TIN ỨNG VIÊN </td>
@@ -22,8 +17,8 @@
 			<tr>
 				<td>Năm sinh</td>
 				<td>
-				<select name="optNamSinh">
-					<script language="Javascript"> sNS();</script>
+				<select name="optNamSinh" ><script>sNS();</script>
+					 
 				</select>
 				</td>
 			</tr>
@@ -51,11 +46,10 @@
 			</tr>
 			<tr>
 				<td colspan="2" align="center">
-					<input type="button" value="Gửi" onclick="return Notification();"/> 
+					<input type="button" value="Gửi" onclick="return Notification();" /> 
 					<input type="reset" value="Xóa"/>
 				</td>
 			</tr>	
 		</table>
 		</form>
-
 		</html>
