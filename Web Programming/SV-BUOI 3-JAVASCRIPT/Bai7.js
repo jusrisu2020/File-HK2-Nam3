@@ -23,12 +23,12 @@ function Notification() {
 		alert("Hãy nhập đầy đủ họ và tên");
 		return false;
 	}
-
+	
 	if(YH - NS < 16){
 		alert("Chưa đủ 16 tuổi");
 		return false
 	}
-
+	
 	if(mucLuong != Number(mucLuong)){
 		alert("Hãy nhập giá trị bằng số!");
 		return false
@@ -38,33 +38,29 @@ function Notification() {
 		alert("Hãy chọn thời gian làm việc");
 		return false;
 	}
-	if(toanTG == true && banTG == true){
-		alert("Hãy chọn 1 trong 2 hình thức làm việc");
-		return false;
-	}
-	
 	showInfo();
 	return true;
 }
-function showInfo() {
 
-		var csm = window.open('');
-		csm.document.write('Cám ơn! Bên dưới là thông tin đăng kí của bạn:');
-		csm.document.write('<br/>Họ tên: '+frm.txtHoTen.value);
-		csm.document.write('<br/>Năm Sinh: '+frm.optNamSinh.value);
-		if(frm.radGioiTinh[0].checked == true){
-			csm.document.write('<br/>Giới Tính: '+frm.radGioiTinh[0].value);
-		}
-		else{
-			csm.document.write('<br/>Giới Tính: '+frm.radGioiTinh[1].value);
-		}
-		csm.document.write('<br/>Mức Lương: '+frm.txtMucLuong.value);
-		if(frm.chkHinhThucToanTG.checked == true){
-			csm.document.write('<br/>Hình thức làm việc:'+frm.chkHinhThucToanTG.value);
-		}
-		else{
-			csm.document.write('<br/>Hình thức làm việc:'+frm.chkHinhThucBanTG.value);
-		}
-		csm.document.write('<br/>Thông tin bổ sung:'+frm.txtThongTin.value);
+function showInfo() {
+	var csm = window.open('');
+	csm.document.write('Cám ơn! bên dưới là thông tin đăng kí của bạn');
+	csm.document.write('<br/>Họ tên: '+frm.txtHoTen.value);
+	csm.document.write('<br/>Năm sinh: '+frm.optNamSinh.value);
+	if(frm.radGioiTinh[0].checked == true){
+		csm.document.write('<br/>Giới Tính: '+frm.radGioiTinh[0].value);
 	}
+	else{
+		csm.document.write('<br/>Giới Tính: '+frm.radGioiTinh[1].value);
+	}
+	csm.document.write('<br/>Mức lương đề nghị: '+frm.txtMucLuong.value);
+	if(frm.chkHinhThucToanTG.checked == true){
+		csm.document.write('<br/> Hình thức làm việc'+frm.chkHinhThucToanTG.value);
+	}
+	else{
+		csm.document.write('<br/> Hình thức làm việc'+frm.chkHinhThucBanTG.value);
+	}
+	csm.document.write('<br/>Thông tin bổ sung: '+frm.txtThongTin.value);
+}
+
 

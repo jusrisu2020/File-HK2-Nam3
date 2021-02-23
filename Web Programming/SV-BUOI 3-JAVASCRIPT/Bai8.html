@@ -1,37 +1,59 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Bài 1</title>
-		<meta charset="utf-8" />
-		<style>
-			table{
-				border:1px solid blue; 
-				box-shadow:5px 5px 5px grey; 
-				border-radius:8px;
-				padding: 10px; 
-				margin: auto;
-			}		
-		</style>
-		
-	</head>
-	<body>
-		<form action="#" method="post" name="f" >
-			<table>
-				<tr>
-					<td>Số a:</td>
-					<td><input type="text" name="so_a" /></td>
-				</tr>
-				<tr>
-					<td>Số b:</td>
-					<td><input type="text" name="so_b" /></td>
-				</tr>
-				<tr>
-					<td><input type="button" value="  Giải " onClick="giai_pt_bac_nhat()">
-					</td>
-					<td ><input type "text" value="" name="kq" size="40"></td>
-				</tr>
-				
-			</table>
-		</form>
-	</body>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bài 8</title>
+	<style>
+		body{
+			font-family: "Times New Roman", Times, serif;
+		}
+
+		form{
+			width: 300px;
+			height: 150px;
+			background: pink;
+			position: absolute;
+			left: 40%;
+			top: 30%;
+			border-radius: 2px #3498db;
+			text-align: center;
+
+		}
+		table{
+			padding: 5px;
+		}
+		th{
+			background: white;
+			font-size: 18px;
+			
+
+		}
+		td{
+			
+		}
+		#SLN{
+			background: blue;
+		}
+	</style>
+</head>
+<body>
+	<form action="Bai8_submit" method="get" accept-charset="utf-8" name="f">
+		<table>
+			<th>ĐĂNG KÍ PHÒNG</th>
+			<tr id="SLN">
+				<td>Số lượng (Người) </td>
+				<td> <input type="text" name="txtSLN" /></td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="chkMayLanh"/></td>
+				<td>Máy lạnh</td>
+			</tr>
+			<tr>
+				<td><input type="button" value="Tính tiền" name="btnTinhTien" onclick="TinhTien()" /></td>
+				<td>	<input type="text" name="txtTinhTien"/></td>
+			</tr>
+		</table>
+	</form>
+</body>
 </html>
