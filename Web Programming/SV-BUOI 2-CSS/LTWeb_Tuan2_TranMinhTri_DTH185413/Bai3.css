@@ -1,0 +1,27 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+a{
+	text-decoration: none;
+	margin:5px;
+	display: block;
+	text-align: center;
+	width: 150px;
+}
+a:link{
+	color: #ffffff;
+	background-color: #4169e1;
+}
+a:visited{
+	color:#ffff00;
+	background-color: #4169e1;
+}
+a:hover{
+	color: #ffffff;
+	background-color: #87ceeb;
+}
+a:active{
+	color: #ffffff;
+	background-color: #8a2ee2;
+}

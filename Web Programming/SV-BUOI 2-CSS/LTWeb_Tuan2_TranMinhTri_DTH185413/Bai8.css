@@ -1,0 +1,75 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.f{
+	margin: auto;
+	width: 1000px;
+	height: 900px;
+}
+.banner{
+	width: 998px;
+	height: 200px;
+	background: url('banner-hoa.jpg');
+	background-position: left center;
+}
+.menu{
+	width: 998px;
+	height: 30px;
+	background-color: #2ecc71;
+	font-size: 16px; 
+}
+
+.menu ul a{
+	width: 65px;
+	list-style: none;
+	float:left;
+	margin-left: 15px;
+	margin-top:7px; 
+	background-color: pink;
+}
+#chaychu{
+	margin-top: 7px;
+}
+.left{
+	width: 200px;
+	height: 600px;
+	float:left;
+	padding: 10px;
+	background-color: pink;
+}
+.left .f1,.f2,.f3{
+	background-color: #e0f2f1;
+	border-radius: 8px;
+	padding: 15px;
+}
+.left .f2, .f3{
+	margin-top: 10px;
+}
+
+.left ul li{
+	list-style-image:url('bullet_green.png');
+	margin-left:20px;
+} 
+
+.center{
+	height: 200px;
+	width: 550px;
+	margin: auto;
+	background:url('hoa9.jpg');
+
+}
+
+.right{
+	width: 230px;
+	height: 400px;
+	background:url('hoa8.jpg'); 
+	float: right;
+}
+
+.footer{
+	width: 998px;
+	height: 50px;
+	float: right;
+	margin-top: 8px;
+}
