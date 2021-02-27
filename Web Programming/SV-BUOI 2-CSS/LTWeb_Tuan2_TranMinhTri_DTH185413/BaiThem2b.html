@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bài tập thêm 2b</title>
+	<style rel="stylesheet">
+		.menu{
+			background: pink;
+		}
+		ul li a{
+			text-decoration: none;
+			list-style: none;
+			background: #95a5a6;
+		}
+		#d1,#d2{
+			list-style: none;
+		}
+		.menu #d2{
+			position: absolute;
+			top: 35px;
+			left: 100px;
+		}
+		.menu #d1 li:active ul li a{
+			background: yellow;
+		}
+		.menu #d1 li a:hover ul li a{
+			background: blue;
+			transition: 0.25s;
+		}
+
+		
+		
+	</style>
+</head>
+<body>
+	<div class="menu">
+		<ul id="d1">
+			<li><a href="">Trang chủ</a></li>
+			<li><a href="">Tin tức</a>
+				<ul id="d2">
+					<li><a href="">WordPress</a></li>
+					<li><a href="">SEO</a></li>
+					<li><a href="">Hosting</a></li>
+				</ul>
+			</li>
+			<li><a href="">Sản phẩm</a></li>
+			<li><a href="">Liên hệ</a></li>
+		</ul>
+	</div>
+</body>
+</html>
