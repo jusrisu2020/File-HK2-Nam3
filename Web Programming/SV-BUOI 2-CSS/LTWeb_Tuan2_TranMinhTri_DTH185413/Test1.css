@@ -1,0 +1,85 @@
+/*reset*/
+html,body{
+	height: 100%;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*Set background Menu*/
+
+ul{
+	list-style: none;
+}
+
+body{
+	font-size: 1rem;
+	line-height: 1.6;
+	background-color: #ecf0f1;
+	color: #666;
+}
+
+header{
+	background:#3498db;
+	padding: 1rem 0;
+}
+
+/*Sắp xếp nội dung*/
+nav{
+	max-width: 1100px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu > li, .menu >a{
+	display: inline-block;
+}
+
+.menu li{
+	position: relative;
+}
+
+.menu a{
+	text-decoration: none; 
+	color: #fff;
+	display: block;
+	padding: 10px 1.5rem; 
+	transition: background-color .22s ease, color .22s ease;
+}
+
+.menu a:hover{
+	background: #e67e22;
+	transition: 0.25s;
+}
+
+.submenu{
+	position: absolute;
+	width: 140px;
+	background: #3498db;
+	left: 0;
+	display: none; /*ẩn menu*/
+}
+
+.menu li:hover > .submenu{
+	display: block; 
+	animation: slideleft .3s ease;
+}
+
+.submenu2{
+	position: absolute;
+	left: 100%;
+	top: 0;
+	background: #2c3e50;
+	display: none;
+}
+
+
+
+.menu li:hover > .submenu2{
+	display: block; 
+}
