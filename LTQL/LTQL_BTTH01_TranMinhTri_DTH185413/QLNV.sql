@@ -94,7 +94,7 @@ select*from nhanvien,quatrinhluong where nhanvien.manv=quatrinhluong.manv and qu
 select*from nhanvien nv, quatrinhluong qtl where nv.manv=qtl.manv and qtl.ghichu=0;
 
 --cau j---- cho biết các nhân viên được nâng lương trong các năm 2009 , 2010 thông tin gồm: Họ tên, Hệ số lương , tháng-năm nâng lực
-select nhanvien.holot+' '+nhanvien.tennv as hoten, sau.hsluong, sau.ngaybd
+select nhanvien.holot+' ' + nhanvien.tennv as hoten, sau.hsluong, sau.ngaybd
 from nhanvien, quatrinhluong as trc, quatrinhluong as sau 
 where nhanvien.manv = sau.manv and sau.ngaybd > trc.ngaybd and sau.manv = trc.manv and sau.hsluong > trc.hsluong and
 (YEAR (sau.ngaybd) = 2009 or YEAR (sau.ngaybd) = 2010)
@@ -104,7 +104,7 @@ group by nhanvien.holot +' '+nhanvien.tennv, sau.hsluong, sau.ngaybd
 select nhanvien.holot+' '+nhanvien.tennv as hoten, nhanvien.phai, hsluong*1150000 as tienluong,
  hsphucap*hsluong*1150000 as phucap, hsluong*1150000 + hsphucap*hsluong*1150000 as thuclinh
 from nhanvien, chucvu, quatrinhluong
-where nhanvien.macv =chucvu.macv and nhanvien.manv = quatrinhluong.manv and
+where nhanvien.macv = chucvu.macv and nhanvien.manv = quatrinhluong.manv and
 quatrinhluong.ngaybd in (select MAX(ngaybd) from quatrinhluong group by manv)
 
 --- cau l---Tính tổng số nhân viên theo từng chức vụ.  
@@ -122,7 +122,7 @@ where DATEDIFF(YEAR, nhanvien.ngaysinh,GETDATE()) < (select AVG(DATEDIFF(year, n
 select nhanvien.phai, COUNT(nhanvien.manv) as tongnu from nhanvien, quatrinhluong
 where nhanvien.manv = quatrinhluong.manv and quatrinhluong.ghichu= 1 group by nhanvien.phai;
 --câu o nhanvien được nâng lương trên 3 lần--
---select nhanvien from nhanvien nv, quatrinhluong l where nv.manv=l.manv and 
+select * from nhanvien nv, quatrinhluong l where nv.manv=l.manv and l.hsluong>3.00;
 --câu p--
 update chucvu set tencv=N'Nhân viên chuyên trách' where macv='CV';
 --câu q--
@@ -130,3 +130,4 @@ update chucvu set tencv=N'Nhân viên chuyên trách' where macv='CV';
 ----------------------------
 select *from chucvu
 select *from nhanvien
+select *from quatrinhluong
