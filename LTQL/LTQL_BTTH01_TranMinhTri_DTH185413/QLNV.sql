@@ -122,7 +122,7 @@ where DATEDIFF(YEAR, nhanvien.ngaysinh,GETDATE()) < (select AVG(DATEDIFF(year, n
 select nhanvien.phai, COUNT(nhanvien.manv) as tongnu from nhanvien, quatrinhluong
 where nhanvien.manv = quatrinhluong.manv and quatrinhluong.ghichu= 1 group by nhanvien.phai;
 --câu o nhanvien được nâng lương trên 3 lần--
-select * from nhanvien nv, quatrinhluong l where nv.manv=l.manv and l.hsluong>3.00;
+select * from nhanvien where manv in (	select manv from quatrinhluong group by manv having COUNT(manv)>4);
 --câu p--
 update chucvu set tencv=N'Nhân viên chuyên trách' where macv='CV';
 --câu q--
