@@ -1,5 +1,5 @@
 /* Reset */
-.html,body{
+html,body{
 	height: 100%;
 }
 
@@ -9,5 +9,59 @@
 }
 
 /* Setting */
+body{
+	background: #ecf0f1;
+	color: white;
+}
+
+nav{
+	max-width: 1100px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+ul{
+	list-style: none;
+}
+
+ul > li a{
+ 	text-decoration: none;
+ 	color: black;
+}
+
+ul li{
+	height: 15px;
+	width: 120px;
+	margin: 8px;
+	background: #2ecc71;
+	padding: 10px;
+}
+
+/*Setting menu1*/
+#menu1 li{
+	position: relative;
+	margin-top: -8px;
+}
+
+#menu1 li:hover{
+	background: #bdc3c7;
+	transition: 0.25s;
+}
+
+/*Setting menu2*/
+
+#menu2{
+	position: absolute;
+	left: 135px;
+	top: 8px;
+	display: none;
+}
+
+#menu1 li:hover > #menu2{
+	display: block; 
+	animation: slideleft .3s ease;
+}
 
 
