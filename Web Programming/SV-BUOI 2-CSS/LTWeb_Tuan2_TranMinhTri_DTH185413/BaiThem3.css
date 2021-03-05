@@ -1,0 +1,28 @@
+/* Reset */
+
+html,body{
+	height: 100%;
+	width: 100%;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/* Setting */
+table{
+	margin: auto;
+	text-align: center;
+	font-size: 30px;
+	border-spacing: 0px; 
+}
+
+#header{
+	background: #EDBBEC;
+	font-weight: bold;
+}
+td{
+	padding: 10px;
+	border: 1px solid black;
+}

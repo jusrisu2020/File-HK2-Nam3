@@ -1,0 +1,44 @@
+
+/* Reset */
+
+html,body{
+	height: 100%;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.bg{
+	background: #ecf0f1;
+}
+/* Setting Background */
+.menu{
+	background: pink;
+	width: 200px;
+	margin: auto;
+}
+
+/* Disable list */
+
+ul{
+	list-style-image: url('play_24px.png');
+
+}
+/* Setting  */	
+
+.menu a{
+	display: block;
+	height: 50px;
+	text-decoration: none;
+	color: white;
+	background-color: #3498db;
+	padding-top: 10px;
+	padding-left: 10px;
+
+}
+
+.menu a:hover{
+	background: #7f8c8d;
+}

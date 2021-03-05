@@ -7,3 +7,4 @@ Attributes CSS
 	display: <value>
 	box-sizing: <value>
 	line-height: <value>
+	Background: no-repeat
