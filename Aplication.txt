@@ -1,9 +1,0 @@
-1. Dev C
-2. Photoshop
-3. XD
-4. Office
-5. Pichon
-6. Sql
-7. Sublime text
-8. Visual Studio
-9. Github

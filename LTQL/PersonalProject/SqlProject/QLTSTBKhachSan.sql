@@ -5,7 +5,7 @@ use TSTBKhachSan
 go
 
 create table ThietBi(
-	MaTB nvarchar (10),
+	MaTB nvarchar (10) PRIMARY KEY,
 	TenTB nvarchar (255),
 	DonVi nvarchar (30),
 	SoLuong int,
@@ -20,4 +20,7 @@ create table ThietBi(
 	NgayMuaTB date
 )
 go
+
+
+SELECT * FROM ThietBi
 
