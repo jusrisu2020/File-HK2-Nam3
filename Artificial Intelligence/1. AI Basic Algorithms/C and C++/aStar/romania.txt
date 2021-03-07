@@ -1,0 +1,27 @@
+21
+Arad Sibiu 140
+Arad Timisoara 118
+Arad Zerind 75
+Bucharest Fagaras 211
+Bucharest Giurgiu 90
+Bucharest Pitesti 100
+Bucharest Urziceni 85
+Craiovia Dobreta 120
+Craiovia Pitesti 146
+Craiovia RVilcea  146
+Dobreta Mehadia  75 
+Eforie Hirsova 86
+Fagaras Sibiu 99
+Hirsova Urziceni 98
+Hirsova Vaslui 142
+Iasi Neamt 87
+Iasi Vaslui 92
+Lugoj Mehadia  70
+Lugoj Timisoara 111
+Oradea Zerind 71
+Oradea Sibiu 151
+Pitesti RVilcea  97
+RVilcea  Sibiu 80
+TP Sibiu 100
+TP Pitesti 75
+

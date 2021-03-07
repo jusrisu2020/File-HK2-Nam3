@@ -1,0 +1,7 @@
+Option đơn vi kích thước = cm
+Kiểu trang: A4
+Margins: "Tiêu chuẩn vàng" 2-2-3-2 (T-B-L-R)
+Kiểu chữ: Time new roman 13,14
+Line Spacing: 1.5cm 
+Canh đều 2 bên
+
