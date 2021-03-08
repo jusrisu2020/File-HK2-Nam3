@@ -1,2 +1,0 @@
-Đồ án riêng
-Dùng mô hình MVC 3 Layer

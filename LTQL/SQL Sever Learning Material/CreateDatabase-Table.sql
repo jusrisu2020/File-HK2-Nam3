@@ -1,3 +1,4 @@
+﻿/* Tạo database và bảng
 CREATE DATABASE <Tên database>
 
 CREATE TABLE <TÊN table>(<Tên các dữ liệu>)
@@ -9,4 +10,4 @@ ALTER TABLE <TÊN TABLE> NOCHECK CONSTRAINT ALL; : vô hiệu hóa các khóa r�
 DROP TABLE <TÊN TABLE>
 
 Điều kiện Like: %, _, [^]
-
+*/
