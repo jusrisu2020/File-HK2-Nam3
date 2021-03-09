@@ -1,0 +1,11 @@
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\LTQL\PersonalProject\Winform\ProjectTest\bin\Debug\ProjectTest.exe.config
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\LTQL\PersonalProject\Winform\ProjectTest\bin\Debug\ProjectTest.exe
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\LTQL\PersonalProject\Winform\ProjectTest\bin\Debug\ProjectTest.pdb
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\LTQL\PersonalProject\Winform\ProjectTest\obj\Debug\ProjectTest.csprojAssemblyReference.cache
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\LTQL\PersonalProject\Winform\ProjectTest\obj\Debug\ProjectTest.Properties.Resources.resources
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\LTQL\PersonalProject\Winform\ProjectTest\obj\Debug\ProjectTest.csproj.GenerateResource.cache
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\LTQL\PersonalProject\Winform\ProjectTest\obj\Debug\ProjectTest.csproj.CoreCompileInputs.cache
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\LTQL\PersonalProject\Winform\ProjectTest\obj\Debug\ProjectTest.exe
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\LTQL\PersonalProject\Winform\ProjectTest\obj\Debug\ProjectTest.pdb
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\LTQL\PersonalProject\Winform\ProjectTest\obj\Debug\ProjectTest.FrmDangNhap.resources
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\LTQL\PersonalProject\Winform\ProjectTest\obj\Debug\ProjectTest.FrmMain.resources
