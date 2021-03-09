@@ -1,0 +1,10 @@
+D:\LTQL-Buoi2\Buoi2-LTQL\BuoiTH2\bin\Debug\BuoiTH2.exe.config
+D:\LTQL-Buoi2\Buoi2-LTQL\BuoiTH2\bin\Debug\BuoiTH2.exe
+D:\LTQL-Buoi2\Buoi2-LTQL\BuoiTH2\bin\Debug\BuoiTH2.pdb
+D:\LTQL-Buoi2\Buoi2-LTQL\BuoiTH2\obj\Debug\BuoiTH2.csprojAssemblyReference.cache
+D:\LTQL-Buoi2\Buoi2-LTQL\BuoiTH2\obj\Debug\BuoiTH2.FrmNhanVien.resources
+D:\LTQL-Buoi2\Buoi2-LTQL\BuoiTH2\obj\Debug\BuoiTH2.Properties.Resources.resources
+D:\LTQL-Buoi2\Buoi2-LTQL\BuoiTH2\obj\Debug\BuoiTH2.csproj.GenerateResource.cache
+D:\LTQL-Buoi2\Buoi2-LTQL\BuoiTH2\obj\Debug\BuoiTH2.csproj.CoreCompileInputs.cache
+D:\LTQL-Buoi2\Buoi2-LTQL\BuoiTH2\obj\Debug\BuoiTH2.exe
+D:\LTQL-Buoi2\Buoi2-LTQL\BuoiTH2\obj\Debug\BuoiTH2.pdb
