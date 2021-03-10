@@ -24,5 +24,13 @@ namespace QLCF
                 Application.Exit();
             }
         }
+
+        private void btnDangNhap_Click(object sender, EventArgs e)
+        {
+            FMain fm = new FMain();
+           
+            fm.Show();
+            this.Hide();
+        }
     }
 }
