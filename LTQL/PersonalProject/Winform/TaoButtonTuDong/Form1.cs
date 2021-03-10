@@ -16,24 +16,29 @@ namespace TaoButtonTuDong
         {
             InitializeComponent();
         }
-
+        
 
         private void btnTaoButton_Click(object sender, EventArgs e)
         {
-            int n=10;
-
             Button bt = new Button();
-            for(int i = 0; i < n; i++)
-            {
-                bt.DialogResult.ToString();
-            }
-          
+            bt.DialogResult = DialogResult.OK;
+            bt.Location = new System.Drawing.Point(13,81);
+            bt.Name = "button3";
+            bt.Text = "New Button";
+            Controls.Add(bt);
+
+
         }
+        
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Button bt = new Button();
-            
+          
+        }
+
+        private void btnTaoButton_MouseClick(object sender, MouseEventArgs e)
+        {
+           
         }
     }
 }

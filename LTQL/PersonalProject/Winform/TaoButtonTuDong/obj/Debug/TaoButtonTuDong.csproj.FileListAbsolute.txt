@@ -8,3 +8,13 @@ D:\File-HK2-Nam3\LTQL\PersonalProject\Winform\TaoButtonTuDong\obj\Debug\TaoButto
 D:\File-HK2-Nam3\LTQL\PersonalProject\Winform\TaoButtonTuDong\obj\Debug\TaoButtonTuDong.csproj.CoreCompileInputs.cache
 D:\File-HK2-Nam3\LTQL\PersonalProject\Winform\TaoButtonTuDong\obj\Debug\TaoButtonTuDong.exe
 D:\File-HK2-Nam3\LTQL\PersonalProject\Winform\TaoButtonTuDong\obj\Debug\TaoButtonTuDong.pdb
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\LTQL\PersonalProject\Winform\TaoButtonTuDong\bin\Debug\TaoButtonTuDong.exe.config
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\LTQL\PersonalProject\Winform\TaoButtonTuDong\bin\Debug\TaoButtonTuDong.exe
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\LTQL\PersonalProject\Winform\TaoButtonTuDong\bin\Debug\TaoButtonTuDong.pdb
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\LTQL\PersonalProject\Winform\TaoButtonTuDong\obj\Debug\TaoButtonTuDong.csprojAssemblyReference.cache
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\LTQL\PersonalProject\Winform\TaoButtonTuDong\obj\Debug\TaoButtonTuDong.Form1.resources
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\LTQL\PersonalProject\Winform\TaoButtonTuDong\obj\Debug\TaoButtonTuDong.Properties.Resources.resources
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\LTQL\PersonalProject\Winform\TaoButtonTuDong\obj\Debug\TaoButtonTuDong.csproj.GenerateResource.cache
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\LTQL\PersonalProject\Winform\TaoButtonTuDong\obj\Debug\TaoButtonTuDong.csproj.CoreCompileInputs.cache
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\LTQL\PersonalProject\Winform\TaoButtonTuDong\obj\Debug\TaoButtonTuDong.exe
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\LTQL\PersonalProject\Winform\TaoButtonTuDong\obj\Debug\TaoButtonTuDong.pdb
