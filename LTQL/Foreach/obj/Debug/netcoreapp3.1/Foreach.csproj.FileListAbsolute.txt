@@ -1,0 +1,13 @@
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\LTQL\Foreach\bin\Debug\netcoreapp3.1\Foreach.exe
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\LTQL\Foreach\bin\Debug\netcoreapp3.1\Foreach.deps.json
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\LTQL\Foreach\bin\Debug\netcoreapp3.1\Foreach.runtimeconfig.json
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\LTQL\Foreach\bin\Debug\netcoreapp3.1\Foreach.runtimeconfig.dev.json
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\LTQL\Foreach\bin\Debug\netcoreapp3.1\Foreach.dll
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\LTQL\Foreach\bin\Debug\netcoreapp3.1\Foreach.pdb
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\LTQL\Foreach\obj\Debug\netcoreapp3.1\Foreach.csprojAssemblyReference.cache
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\LTQL\Foreach\obj\Debug\netcoreapp3.1\Foreach.AssemblyInfoInputs.cache
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\LTQL\Foreach\obj\Debug\netcoreapp3.1\Foreach.AssemblyInfo.cs
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\LTQL\Foreach\obj\Debug\netcoreapp3.1\Foreach.csproj.CoreCompileInputs.cache
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\LTQL\Foreach\obj\Debug\netcoreapp3.1\Foreach.dll
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\LTQL\Foreach\obj\Debug\netcoreapp3.1\Foreach.pdb
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\LTQL\Foreach\obj\Debug\netcoreapp3.1\Foreach.genruntimeconfig.cache

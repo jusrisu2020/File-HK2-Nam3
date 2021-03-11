@@ -30,7 +30,7 @@ function Notification() {
 	}
 	
 	if(mucLuong != Number(mucLuong)){
-		alert("Hãy nhập giá trị bằng số!");
+		alert("Hãy nhập mức lương với giá trị bằng số!");
 		return false
 	}
 

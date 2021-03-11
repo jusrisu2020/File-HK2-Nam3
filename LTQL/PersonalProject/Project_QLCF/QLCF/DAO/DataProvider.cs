@@ -9,7 +9,7 @@ namespace QLCF.DAO
 {
     public class DataProvider
     {
-        private string ConnectionStr = @"Data Source=DESKTOP-VG1T5FL\SQLEXPRESS;Initial Catalog=QLCF;Integrated Security=True";
+        private string ConnectionStr = @"Data Source=DESKTOP-J6DGHEU\SQLEXPRESS;Initial Catalog=QLCF;Integrated Security=True";
         
         public DataTable ExecuteQuery(string AccountQuery)
         {

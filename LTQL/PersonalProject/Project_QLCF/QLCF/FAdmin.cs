@@ -21,7 +21,7 @@ namespace QLCF
 
        void LoadAccountList()
         {
-            string AccountQuery = "exec USPGetAccountByUserName @username = N'DS'";
+            string AccountQuery = "exec USPGetAccountByUserName @userName = N'Admin0'";
             DataProvider provider =  new DataProvider();
             dtgvTaiKhoan.DataSource = provider.ExecuteQuery(AccountQuery);
         }

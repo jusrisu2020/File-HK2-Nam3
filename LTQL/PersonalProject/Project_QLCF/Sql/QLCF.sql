@@ -80,16 +80,18 @@ Values
 	N'123',
 	1
 )
+go
 
 create proc USPGetAccountByUserName
-@username nvarchar(100)
+@userName nvarchar(100)
 as
 begin
-	select *from Account where UserName = @username
+	select * from Account where @userName = UserName;
 end
 go
 
-exec USPGetAccountByUserName @username = N'DS'
+exec USPGetAccountByUserName @userName = N'Admin0'
+
 
 select * from TableFood;
 select * from Account;
