@@ -66,6 +66,30 @@ CREATE TABLE BillInfo
 )
 go
 
+insert into Account 
+(
+	UserName,
+	DisplayName,
+	PassWord,
+	Type
+)
+Values
+(
+	N'Admin0',
+	N'Trí',
+	N'123',
+	1
+)
+
+create proc USPGetAccountByUserName
+@username nvarchar(100)
+as
+begin
+	select *from Account where UserName = @username
+end
+go
+
+exec USPGetAccountByUserName @username = N'DS'
 
 select * from TableFood;
 select * from Account;

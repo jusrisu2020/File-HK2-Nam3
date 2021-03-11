@@ -24,7 +24,21 @@ namespace QLCF
 
         private void adminToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FAccount fa = new FAccount();
+            FAdmin fa = new FAdmin();
+            this.Hide();
+            fa.ShowDialog();
+        }
+
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FDangNhap fdn = new FDangNhap();
+            this.Hide();
+            fdn.ShowDialog();
+        }
+
+        private void thôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FUserInfo fa = new FUserInfo();
             this.Hide();
             fa.ShowDialog();
         }

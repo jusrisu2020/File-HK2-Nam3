@@ -10,3 +10,16 @@ C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\LTQL\PersonalProject\Project_QLCF\QL
 C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\LTQL\PersonalProject\Project_QLCF\QLCF\obj\Debug\QLCF.pdb
 C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\LTQL\PersonalProject\Project_QLCF\QLCF\obj\Debug\QLCF.FMain.resources
 C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\LTQL\PersonalProject\Project_QLCF\QLCF\obj\Debug\QLCF.FAccount.resources
+D:\File-HK2-Nam3\LTQL\PersonalProject\Project_QLCF\QLCF\bin\Debug\QLCF.exe.config
+D:\File-HK2-Nam3\LTQL\PersonalProject\Project_QLCF\QLCF\bin\Debug\QLCF.exe
+D:\File-HK2-Nam3\LTQL\PersonalProject\Project_QLCF\QLCF\bin\Debug\QLCF.pdb
+D:\File-HK2-Nam3\LTQL\PersonalProject\Project_QLCF\QLCF\obj\Debug\QLCF.csprojAssemblyReference.cache
+D:\File-HK2-Nam3\LTQL\PersonalProject\Project_QLCF\QLCF\obj\Debug\QLCF.FDangNhap.resources
+D:\File-HK2-Nam3\LTQL\PersonalProject\Project_QLCF\QLCF\obj\Debug\QLCF.FMain.resources
+D:\File-HK2-Nam3\LTQL\PersonalProject\Project_QLCF\QLCF\obj\Debug\QLCF.Properties.Resources.resources
+D:\File-HK2-Nam3\LTQL\PersonalProject\Project_QLCF\QLCF\obj\Debug\QLCF.csproj.GenerateResource.cache
+D:\File-HK2-Nam3\LTQL\PersonalProject\Project_QLCF\QLCF\obj\Debug\QLCF.csproj.CoreCompileInputs.cache
+D:\File-HK2-Nam3\LTQL\PersonalProject\Project_QLCF\QLCF\obj\Debug\QLCF.exe
+D:\File-HK2-Nam3\LTQL\PersonalProject\Project_QLCF\QLCF\obj\Debug\QLCF.pdb
+D:\File-HK2-Nam3\LTQL\PersonalProject\Project_QLCF\QLCF\obj\Debug\QLCF.FUserInfo.resources
+D:\File-HK2-Nam3\LTQL\PersonalProject\Project_QLCF\QLCF\obj\Debug\QLCF.FAdmin.resources

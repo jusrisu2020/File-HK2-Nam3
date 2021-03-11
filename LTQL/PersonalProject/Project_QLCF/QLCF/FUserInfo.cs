@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QLCF
 {
-    public partial class FAccount : Form
+    public partial class FUserInfo : Form
     {
-        public FAccount()
+        public FUserInfo()
         {
             InitializeComponent();
         }
@@ -25,6 +25,16 @@ namespace QLCF
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Exit?", "Notification", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                FMain fm = new FMain();
+                this.Hide();
+                fm.ShowDialog();
+            }
         }
     }
 }
