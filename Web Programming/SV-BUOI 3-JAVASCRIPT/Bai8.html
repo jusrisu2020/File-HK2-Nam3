@@ -5,10 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bài 8</title>
 	<style>
-		body{
+		html,body{
+			height: 100%;
+		}
+		*{
 			font-family: "Times New Roman", Times, serif;
 		}
-
 		form{
 			width: 300px;
 			height: 150px;
@@ -16,43 +18,41 @@
 			position: absolute;
 			left: 40%;
 			top: 30%;
-			border-radius: 2px #3498db;
+			border-radius: 10px;
+			border: 2px solid #3498db;
 			text-align: center;
-
+			box-shadow: 5px 5px 5px;			
 		}
 		table{
 			padding: 5px;
-		}
-		th{
-			background: white;
-			font-size: 18px;
-			
+			margin-top: 18px; 
 
 		}
-		td{
-			
-		}
-		#SLN{
-			background: blue;
+		th{
+			font-size: 18px;
 		}
 	</style>
+	<script type="text/javascript" src="Bai8.js"></script>
 </head>
 <body>
 	<form action="Bai8_submit" method="get" accept-charset="utf-8" name="f">
 		<table>
-			<th>ĐĂNG KÍ PHÒNG</th>
-			<tr id="SLN">
+			<th colspan="2">ĐĂNG KÍ PHÒNG</th>
+
+			<tr>
 				<td>Số lượng (Người) </td>
-				<td> <input type="text" name="txtSLN" /></td>
+				<td> <input type="text" name="txtSLN"/></td>
 			</tr>
+
 			<tr>
-				<td><input type="checkbox" name="chkMayLanh"/></td>
-				<td>Máy lạnh</td>
+				<td><input type="checkbox" name="chkMayLanh"/>Máy lạnh</td>
 			</tr>
+
 			<tr>
-				<td><input type="button" value="Tính tiền" name="btnTinhTien" onclick="TinhTien()" /></td>
-				<td>	<input type="text" name="txtTinhTien"/></td>
+				<td><input type="button" value="Tính tiền" id="btnTinhTien" onclick="TinhTien()" /></td>
+				<td><input type="text" name="txtTinhTien"/></td>
 			</tr>
+
 		</table>
 	</form>
 </body>
