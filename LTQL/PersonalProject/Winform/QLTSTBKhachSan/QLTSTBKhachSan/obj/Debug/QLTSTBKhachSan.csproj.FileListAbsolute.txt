@@ -1,0 +1,12 @@
+D:\File-HK2-Nam3\LTQL\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\bin\Debug\QLTSTBKhachSan.exe.config
+D:\File-HK2-Nam3\LTQL\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\bin\Debug\QLTSTBKhachSan.exe
+D:\File-HK2-Nam3\LTQL\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\bin\Debug\QLTSTBKhachSan.pdb
+D:\File-HK2-Nam3\LTQL\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.csprojAssemblyReference.cache
+D:\File-HK2-Nam3\LTQL\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.Properties.Resources.resources
+D:\File-HK2-Nam3\LTQL\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.csproj.GenerateResource.cache
+D:\File-HK2-Nam3\LTQL\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.csproj.CoreCompileInputs.cache
+D:\File-HK2-Nam3\LTQL\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.exe
+D:\File-HK2-Nam3\LTQL\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.pdb
+D:\File-HK2-Nam3\LTQL\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.TaiKhoan.resources
+D:\File-HK2-Nam3\LTQL\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.Nhanvien.resources
+D:\File-HK2-Nam3\LTQL\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.BoPhan.resources
