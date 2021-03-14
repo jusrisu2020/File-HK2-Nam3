@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 	<title>Bài 8</title>
 	<style>
 		html,body{
@@ -32,25 +31,25 @@
 			font-size: 18px;
 		}
 	</style>
-	<script type="text/javascript" src="Bai8.js"></script>
+	<script language="Javascript" type="text/javascript" src="Bai8.js"></script>
 </head>
 <body>
-	<form action="Bai8_submit" method="get" accept-charset="utf-8" name="f">
+	<form action="#" method="post" id="f">
 		<table>
 			<th colspan="2">ĐĂNG KÍ PHÒNG</th>
 
 			<tr>
 				<td>Số lượng (Người) </td>
-				<td> <input type="text" name="txtSLN"/></td>
+				<td> <input type="text" id="txtSln"/></td>
+			</tr>
+
+			<tr>	
+				<td><input type="checkbox" id="chkMayLanh"/>Máy lạnh</td>
 			</tr>
 
 			<tr>
-				<td><input type="checkbox" name="chkMayLanh"/>Máy lạnh</td>
-			</tr>
-
-			<tr>
-				<td><input type="button" value="Tính tiền" id="btnTinhTien" onclick="TinhTien()" /></td>
-				<td><input type="text" name="txtTinhTien"/></td>
+				<td><input type="button" value="Tính tiền"  onClick="Count()" /></td>
+				<td><input type="text" id="txtTinhTien"/></td>
 			</tr>
 
 		</table>
