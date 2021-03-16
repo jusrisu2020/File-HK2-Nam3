@@ -1,0 +1,26 @@
+D:\QuanLyKhachSan1\Project\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\QuanLyKhachSan.exe.config
+D:\QuanLyKhachSan1\Project\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\QuanLyKhachSan.exe
+D:\QuanLyKhachSan1\Project\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\QuanLyKhachSan.pdb
+D:\QuanLyKhachSan1\Project\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.csprojAssemblyReference.cache
+D:\QuanLyKhachSan1\Project\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.fLogin.resources
+D:\QuanLyKhachSan1\Project\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.Properties.Resources.resources
+D:\QuanLyKhachSan1\Project\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.csproj.GenerateResource.cache
+D:\QuanLyKhachSan1\Project\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.csproj.CoreCompileInputs.cache
+D:\QuanLyKhachSan1\Project\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.exe
+D:\QuanLyKhachSan1\Project\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.pdb
+D:\QuanLyKhachSan1\Project\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.fTableManager.resources
+D:\QuanLyKhachSan1\Project\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.fAccountProfile.resources
+D:\QuanLyKhachSan1\Project\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.fAdmin.resources
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\Project\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\QuanLyKhachSan.exe.config
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\Project\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\QuanLyKhachSan.exe
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\Project\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\QuanLyKhachSan.pdb
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\Project\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.csprojAssemblyReference.cache
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\Project\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.fAccountProfile.resources
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\Project\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.fAdmin.resources
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\Project\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.fLogin.resources
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\Project\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.fTableManager.resources
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\Project\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.Properties.Resources.resources
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\Project\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.csproj.GenerateResource.cache
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\Project\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.csproj.CoreCompileInputs.cache
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\Project\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.exe
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\Project\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.pdb
