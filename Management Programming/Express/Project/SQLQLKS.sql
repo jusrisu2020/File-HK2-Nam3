@@ -1,7 +1,7 @@
 ﻿create database DBQuanLyKhachSan
 go
 
-use quanlykhachsan
+use DBQuanLyKhachSan
 go
 
 create table TableRoom
@@ -552,4 +552,4 @@ go
 
 select * from Bill
 select * from BillInfo
-select * from account where userName = ngoc
+select * from account 
