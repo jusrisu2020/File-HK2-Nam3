@@ -1,0 +1,11 @@
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\XtraReportDiemSV\XtraReportDiemSV\bin\Debug\XtraReportDiemSV.exe.config
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\XtraReportDiemSV\XtraReportDiemSV\bin\Debug\XtraReportDiemSV.exe
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\XtraReportDiemSV\XtraReportDiemSV\bin\Debug\XtraReportDiemSV.pdb
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\XtraReportDiemSV\XtraReportDiemSV\obj\Debug\XtraReportDiemSV.csprojAssemblyReference.cache
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\XtraReportDiemSV\XtraReportDiemSV\obj\Debug\XtraReportDiemSV.Properties.Resources.resources
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\XtraReportDiemSV\XtraReportDiemSV\obj\Debug\XtraReportDiemSV.csproj.GenerateResource.cache
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\XtraReportDiemSV\XtraReportDiemSV\obj\Debug\XtraReportDiemSV.csproj.CoreCompileInputs.cache
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\XtraReportDiemSV\XtraReportDiemSV\obj\Debug\XtraReportDiemSV.exe
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\XtraReportDiemSV\XtraReportDiemSV\obj\Debug\XtraReportDiemSV.pdb
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\XtraReportDiemSV\XtraReportDiemSV\obj\Debug\XtraReportDiemSV.FThongKeDiemSinhVien.resources
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\XtraReportDiemSV\XtraReportDiemSV\obj\Debug\XtraReportDiemSV.exe.licenses
