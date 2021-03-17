@@ -47,11 +47,14 @@ insert into SinhVienDiem(id,MaSV,MaMH,Diem) values (3,2,2,9)
 insert into SinhVienDiem(id,MaSV,MaMH,Diem) values (4,2,1,10)
 insert into SinhVienDiem(id,MaSV,MaMH,Diem) values (5,2,3,8)
 
+Update SinhVienDiem set Diem = 10 where MaSV = 1
 
 
 select * from MonHoc,SinhVien,SinhVienDiem
 select * From MonHoc
-select * From SinhVienDiem
 select * From SinhVien
 
-select sv.MaSV, TenSV, TenMH, Diem from MonHoc as m, SinhVien as sv, SinhVienDiem as svd where m.MaMH = svd.MaMH and sv.MaSV= svd.MaSV
+select * From SinhVienDiem
+select sv.MaSV, sv.TenSV, m.TenMH, svd.Diem 
+from MonHoc as m, SinhVien as sv, SinhVienDiem as svd 
+where m.MaMH = svd.MaMH and sv.MaSV= svd.MaSV

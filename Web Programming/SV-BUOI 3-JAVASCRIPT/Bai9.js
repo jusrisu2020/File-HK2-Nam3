@@ -11,7 +11,12 @@ function pTB1() {
 		}
 	}
 	else{
-		var x = Number(-soA)/Number(soB);
-		f.kq.value = x;
+		if(soB != 0){
+			var x = Number(-soA)/Number(soB);
+			f.kq.value = x;
+		}
+		else{
+			f.kq.value = 'Error Vì không thể chia cho 0';
+		}
 	}
 }
