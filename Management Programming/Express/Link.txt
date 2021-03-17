@@ -1,1 +1,4 @@
-httpsviblo.asiaptim-hieu-ve-devexpress-ui-control-cho-net-framework-RnB5pBLJZPG
+Download Reportview
+Install-Package Microsoft.ReportingServices.ReportViewerControl.Winforms -Version 150.1427.0
+Download Report
+https://drive.google.com/file/d/1_ysQ9g-hQiWBY0296_x55un7R4iYQIVL/view
