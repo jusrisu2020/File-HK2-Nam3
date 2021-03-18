@@ -47,19 +47,31 @@ CREATE TABLE Bill
 )
 go
 
---Add Data
+--Insert Data to Account table
 insert into Account(UserName,Pass,Access) values(N'Admin1',N'1',N'Chủ tịt1')
+insert into Account(UserName,Pass,Access) values(N'Admin6',N'1',N'Chủ tịt1')
 insert into Account(UserName,Pass,Access) values(N'Admin2',N'2',N'Chủ tịt2')
 insert into Account(UserName,Pass,Access) values(N'Admin3',N'3',N'Chủ tị3')
 insert into Account(UserName,Pass,Access) values(N'Admin4',N'4',N'Chủ tịt4')
 insert into Account(UserName,Pass,Access) values(N'Admin5',N'5',N'Chủ tịt5')
 go
-delete from Account where Pass=1;
-delete from Account
-update Account set Access = N'Chủ tịch' where Pass = 5;
-select * from Account where Access = N'Chủ tịt2'
-select count(UserName) as N'Tổng tài khoản' from Account
---Hàm SUM() tính tổng các giá trị trong 1 cột ""
+
+--Insert Data to Fool table
+insert into Food(FoodName,FoodCount) values(N'Bánh Mì', 1000)
+insert into Food(FoodName,FoodCount) values(N'Bánh Bò', 2000)
+insert into Food(FoodName,FoodCount) values(N'Bánh Chuối', 3000)
+insert into Food(FoodName,FoodCount) values(N'Bánh Bông Lan', 4000)
+
+--Insert Data to TableFood table
+insert into TableFood(TableName) values(N'Trống')
+insert into TableFood(TableName) values(N'Có Khách')
+insert into TableFood(TableName) values(N'Trống')
+insert into TableFood(TableName) values(N'Có Khách')
+insert into TableFood(TableName) values(N'Có Khách')
+
+--Insert Data to Bill table
+
+
 --Account
 --Food
 --TableFood
@@ -68,3 +80,7 @@ select * from Account
 select * from Food
 select * from TableFood
 select * from Bill
+
+SELECT DISTINCT Pass, Access FROM Account
+SELECT DISTINCT Pass FROM Account WHERE Pass BETWEEN N'1' AND N'3'
+
