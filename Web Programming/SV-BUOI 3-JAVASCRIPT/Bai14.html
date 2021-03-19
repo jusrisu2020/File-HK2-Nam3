@@ -1,38 +1,51 @@
-﻿<html>
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Untitled Document</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
 </head>
 
+<script src="Bai14.js"></script>
+
 <body>
-<form name="f1">
-<table>
-<tr>    
-	<td>DỊCH VỤ</td><td align="right">ĐƠN GIÁ</td>
-</tr>
-<tr>    
-	<td><input type="checkbox" name="giat" value="8000" checked="checked"/>Giặt </td><td align="right">8.000</td>
-</tr>
-<tr>
-    <td><input type="checkbox" name="hap" value="5000"/>Hấp </td><td align="right">5.000</td>
-</tr>
-<tr>
-    <td><input type="checkbox" name="ui" value="30000"/>Ủi </td><td align="right">30.000</td>
-</tr>
-<tr>
-	<td>Số kg</td><td><input type="text" name="sokg" size="10"/></td>
-</tr>
-<tr>
-	<td>Tổng tiền</td><td><input type="text" name="sotien" size="10" disabled="true"/></td>
-</tr>
-<tr>
-	<td colspan="2" align="center">
-		<input type="button" name="Tinh" value="Tính" onClick="tinh()" />
-		<input type="reset" name="Xoa" value="Xóa" />
-	</td>
-</tr>
-</table>	
-</form>
+	<form name="f">
+
+		<table>
+		<tr>    
+			<td>DỊCH VỤ</td>	<td align="right">ĐƠN GIÁ</td>
+		</tr>
+		<tr>    
+			<td><input type="checkbox" name="giat" value="8000"/>Giặt </td>	<td align="right">8.000</td>
+		</tr>
+		<tr>
+		    <td><input type="checkbox" name="hap" value="5000"/>Hấp </td><td align="right">5.000</td>
+		</tr>
+		<tr>
+		    <td><input type="checkbox" name="ui" value="30000"/>Ủi </td><td align="right">30.000</td>
+		</tr>
+		<tr>
+			<td>Số kg</td><td><input type="text" name="sokg" size="10" onchange="Notification()" /></td>
+		</tr>
+		<tr>
+			<td>Tổng tiền</td><td><input type="text" name="sotien" size="10" disabled="true"/></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center">
+				<input type="button" name="Tinh" value="Tính" onclick="Count()" />
+				<input type="reset" name="Xoa" value="Xóa" />
+			</td>
+		</tr>
+		</table>	
+
+	</form>
+
 </body>
+
 </html>
+
+
+
+
+
+
