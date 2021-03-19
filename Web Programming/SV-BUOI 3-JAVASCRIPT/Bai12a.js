@@ -9,23 +9,14 @@
 		
 function Send(){
 
-
 	var txtE = document.getElementsByName('txtEmail')[0].value;
-	
 	var Pos_acong = txtE.indexOf("@");
 	var Pos_cham = txtE.indexOf(".");
-	
-	if(Pos_acong == -1 
-		||Pos_acong == 0 
-		||Pos_cham == -1
-		|| Pos_cham>txtE.length+1
-		){
-		
-		alert("lỗi");
-		
+	var Pos_space = txtE.indexOf(" "); 
 
+	if(Pos_acong == -1 ||Pos_acong == 0 ||Pos_cham == -1 ||Pos_cham<txtE.length-1 == false || Pos_cham<txtE.length == false || Pos_space > 1 == true){
+		
+		alert("Lỗi cú pháp");
+		
 	}
-	
-
-	
 }
