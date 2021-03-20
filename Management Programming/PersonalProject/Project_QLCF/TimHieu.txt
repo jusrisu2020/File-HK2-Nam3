@@ -1,0 +1,6 @@
+1.ExecuteQuery
+2.ExecuteNonQuery
+
+
+3.Vòng lập Foreach
+

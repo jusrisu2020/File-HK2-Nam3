@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLCF.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,10 +28,23 @@ namespace QLCF
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            FMain fm = new FMain();
-           
-            fm.Show();
-            this.Hide();
+            string username = txtDangNhap.Text;
+            string pass = txtPass.Text;
+            if (Login(username, pass))
+            {
+                FMain fm = new FMain();
+                fm.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Sai thông tin đăng nhập!");
+            }
+        }
+
+        bool Login(string userName, string passWord)
+        {
+            return AccountDAO.Instance.Login(userName, passWord);
         }
     }
 }

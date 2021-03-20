@@ -42,7 +42,7 @@ namespace QLCF
             this.txtTimTA = new System.Windows.Forms.TextBox();
             this.btnTimTA = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dgvFood = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnXemTA = new System.Windows.Forms.Button();
             this.btnSuaTA = new System.Windows.Forms.Button();
@@ -59,7 +59,7 @@ namespace QLCF
             this.label2 = new System.Windows.Forms.Label();
             this.tpDanhMuc = new System.Windows.Forms.TabPage();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.dgvFoodCategory = new System.Windows.Forms.DataGridView();
             this.panel8 = new System.Windows.Forms.Panel();
             this.btnXemDM = new System.Windows.Forms.Button();
             this.btnSuaDM = new System.Windows.Forms.Button();
@@ -109,13 +109,13 @@ namespace QLCF
             this.tpThucAn.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFood)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmGia)).BeginInit();
             this.tpDanhMuc.SuspendLayout();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFoodCategory)).BeginInit();
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
             this.tpBanAn.SuspendLayout();
@@ -250,21 +250,21 @@ namespace QLCF
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.dataGridView2);
+            this.panel5.Controls.Add(this.dgvFood);
             this.panel5.Location = new System.Drawing.Point(8, 72);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(401, 341);
             this.panel5.TabIndex = 6;
             // 
-            // dataGridView2
+            // dgvFood
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(395, 335);
-            this.dataGridView2.TabIndex = 0;
+            this.dgvFood.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFood.Location = new System.Drawing.Point(3, 3);
+            this.dgvFood.Name = "dgvFood";
+            this.dgvFood.RowHeadersWidth = 51;
+            this.dgvFood.RowTemplate.Height = 24;
+            this.dgvFood.Size = new System.Drawing.Size(395, 335);
+            this.dgvFood.TabIndex = 0;
             // 
             // panel4
             // 
@@ -422,21 +422,21 @@ namespace QLCF
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.dataGridView3);
+            this.panel7.Controls.Add(this.dgvFoodCategory);
             this.panel7.Location = new System.Drawing.Point(6, 72);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(401, 341);
             this.panel7.TabIndex = 11;
             // 
-            // dataGridView3
+            // dgvFoodCategory
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowHeadersWidth = 51;
-            this.dataGridView3.RowTemplate.Height = 24;
-            this.dataGridView3.Size = new System.Drawing.Size(395, 335);
-            this.dataGridView3.TabIndex = 8;
+            this.dgvFoodCategory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFoodCategory.Location = new System.Drawing.Point(3, 3);
+            this.dgvFoodCategory.Name = "dgvFoodCategory";
+            this.dgvFoodCategory.RowHeadersWidth = 51;
+            this.dgvFoodCategory.RowTemplate.Height = 24;
+            this.dgvFoodCategory.Size = new System.Drawing.Size(395, 335);
+            this.dgvFoodCategory.TabIndex = 8;
             // 
             // panel8
             // 
@@ -857,14 +857,14 @@ namespace QLCF
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFood)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmGia)).EndInit();
             this.tpDanhMuc.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFoodCategory)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
@@ -901,7 +901,7 @@ namespace QLCF
         private System.Windows.Forms.Button btnThemTA;
         private System.Windows.Forms.TextBox txtTimTA;
         private System.Windows.Forms.Button btnTimTA;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dgvFood;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Panel panel5;
@@ -927,7 +927,7 @@ namespace QLCF
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtIdDM;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridView dgvFoodCategory;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Button btnXemBA;
         private System.Windows.Forms.Button btnSuaBA;

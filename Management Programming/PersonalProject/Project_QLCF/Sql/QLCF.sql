@@ -66,21 +66,21 @@ CREATE TABLE BillInfo
 )
 go
 
-insert into Account 
-(
-	UserName,
-	DisplayName,
-	PassWord,
-	Type
-)
-Values
-(
-	N'Admin0',
-	N'Trí',
-	N'123',
-	1
-)
-go
+insert into Account (UserName,DisplayName,PassWord,Type)Values(N'Admin0',N'Trí',N'123',1)
+insert into Account (UserName,DisplayName,PassWord,Type)Values(N'Admin1',N'Tín',N'122',2)
+insert into Account (UserName,DisplayName,PassWord,Type)Values(N'Admin2',N'Trường',N'121',3)
+insert into Account (UserName,DisplayName,PassWord,Type)Values(N'Admin3',N'Nhật',N'111',4)
+
+--Data FoodCategory
+insert into FoodCategory (nameCF)Values(N'Cf sữa')
+insert into FoodCategory (nameCF)Values(N'Cacao')
+insert into FoodCategory (nameCF)Values(N'Kem')
+
+
+-- Data Food
+
+
+
 
 create proc USPGetAccountByUserName
 @userName nvarchar(100)
