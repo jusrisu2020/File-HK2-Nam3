@@ -73,6 +73,7 @@
             // 
             // btnThoat
             // 
+            this.btnThoat.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnThoat.Location = new System.Drawing.Point(165, 97);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(75, 23);
@@ -85,7 +86,6 @@
             // 
             this.txtPass.Location = new System.Drawing.Point(129, 54);
             this.txtPass.Name = "txtPass";
-            this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(129, 20);
             this.txtPass.TabIndex = 1;
             // 
