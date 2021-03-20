@@ -78,19 +78,20 @@ insert into FoodCategory (nameCF)Values(N'Kem')
 
 
 -- Data Food
+GO
 
 
 
-
-create proc USPGetAccountByUserName
+CREATE PROC USPGetAccountByUserName
 @userName nvarchar(100)
-as
-begin
-	select * from Account where @userName = UserName;
-end
-go
+AS
+BEGIN
+	SELECT * FROM Account WHERE @userName = UserName;
+END
+GO
 
-exec USPGetAccountByUserName @userName = N'Admin0'
+EXEC USPGetAccountByUserName @userName = N'Admin0'
+SELECT * FROM Account WHERE UserName = N'Admin0'
 
 
 select * from TableFood;

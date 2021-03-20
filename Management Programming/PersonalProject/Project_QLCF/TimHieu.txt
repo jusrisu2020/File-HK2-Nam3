@@ -1,6 +1,5 @@
 1.ExecuteQuery
 2.ExecuteNonQuery
-
-
-3.Vòng lập Foreach
+3.ExcuteScalar
+4.Vòng lập Foreach
 
