@@ -14,7 +14,6 @@ D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\Q
 D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\bin\Debug\QLTSTBKhachSan.exe
 D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\bin\Debug\QLTSTBKhachSan.pdb
 D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.csprojAssemblyReference.cache
-D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.TaiKhoan.resources
 D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.Nhanvien.resources
 D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.BoPhan.resources
 D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.Properties.Resources.resources
@@ -22,3 +21,7 @@ D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\Q
 D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.csproj.CoreCompileInputs.cache
 D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.exe
 D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.pdb
+D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.FTaoTaiKhoan.resources
+D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\bin\Debug\Guna.UI2.dll
+D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.UI.FDangNhap.resources
+D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.csproj.CopyComplete

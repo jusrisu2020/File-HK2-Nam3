@@ -7,19 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
-using QLCF.DAO;
-namespace QLCF
+
+namespace QLTSTBKhachSan.UI
 {
-    public partial class FAdmin : Form
+    public partial class FDangNhap : Form
     {
-        public FAdmin()
+        public FDangNhap()
         {
             InitializeComponent();
-            //dtgvTaiKhoan.DataSource = DataProvider.Instance.ExecuteQuery("EXEC USPGetAccountByUserName @userName", new object[] { "'OR 1=1--" });
         }
-       
-       
-
     }
 }

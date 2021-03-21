@@ -16,7 +16,7 @@ CREATE TABLE TableFood
 	nametext nvarchar(100) NOT NULL DEFAULT N'Bàn chưa đặt tên',
 	status nvarchar(100) NOT NULL DEFAULT N'Trống',  -- Trống || Có người
 )
-go
+GO
 
 CREATE TABLE Account
 (
@@ -25,14 +25,14 @@ CREATE TABLE Account
 	PassWord nvarchar(1000) NOT NULL DEFAULT 0,
 	Type int NOT NULL DEFAULT 0 --1 là admin && 0 là staff
 )
-go
+GO
 
 CREATE TABLE FoodCategory
 (
 	id int identity primary key,
 	nameCF nvarchar(100) NOT NULL DEFAULT N'Chưa đặt tên'
 )
-go
+GO
 
 CREATE TABLE Food
 (
@@ -42,7 +42,7 @@ CREATE TABLE Food
 	idFCategory int NOT NULL
 	foreign key (idFCategory) references FoodCategory(id)
 )
-go
+GO
 
 CREATE TABLE Bill
 (
@@ -53,8 +53,7 @@ CREATE TABLE Bill
 	status int NOT NULL DEFAULT 0, --1: thanh toán  || 0: chưa thanh toán
 	foreign key (idTable) references TableFood(id)
 )
-go
-
+GO
 CREATE TABLE BillInfo
 (
 	id int identity primary key,
@@ -64,35 +63,33 @@ CREATE TABLE BillInfo
 	foreign key (idBill) references Bill(id),
 	foreign key (idFood) references Food(id)
 )
-go
-
-insert into Account (UserName,DisplayName,PassWord,Type)Values(N'Admin0',N'Trí',N'123',1)
-insert into Account (UserName,DisplayName,PassWord,Type)Values(N'Admin1',N'Tín',N'122',2)
-insert into Account (UserName,DisplayName,PassWord,Type)Values(N'Admin2',N'Trường',N'121',3)
-insert into Account (UserName,DisplayName,PassWord,Type)Values(N'Admin3',N'Nhật',N'111',4)
-
---Data FoodCategory
-insert into FoodCategory (nameCF)Values(N'Cf sữa')
-insert into FoodCategory (nameCF)Values(N'Cacao')
-insert into FoodCategory (nameCF)Values(N'Kem')
-
+GO
 
 -- Data Food
 GO
-
-
-
-CREATE PROC USPGetAccountByUserName
-@userName nvarchar(100)
+CREATE PROC USPInsertAccount
+@userName nvarchar(100), @displayName nvarchar(100), @passWord nvarchar(100), @type int
 AS
 BEGIN
-	SELECT * FROM Account WHERE @userName = UserName;
+	INSERT INTO Account(UserName,DisplayName,PassWord,Type) VALUES (@userName,@displayName,@passWord,@type)
+END
+EXEC USPInsertAccount N'ad4', N'ad4', N'4', 2
+
+
+go
+CREATE PROC USPAccount
+@userName nvarchar(100), @passWord nvarchar(100)
+AS
+BEGIN
+	SELECT * FROM Account WHERE @userName = UserName and @passWord = Password
 END
 GO
 
-EXEC USPGetAccountByUserName @userName = N'Admin0'
-SELECT * FROM Account WHERE UserName = N'Admin0'
+INSERT Account
 
+EXEC USPAccount N'ad1', N'1'
+SELECT * FROM Account WHERE UserName = N'Admin0'
+DROP PROC USPGetAccountByUserName
 
 select * from TableFood;
 select * from Account;
