@@ -47,7 +47,7 @@ namespace CreateXtraReport
             // 
             // txtHoten
             // 
-            this.txtHoten.Location = new System.Drawing.Point(118, 30);
+            this.txtHoten.Location = new System.Drawing.Point(117, 27);
             this.txtHoten.Margin = new System.Windows.Forms.Padding(2);
             this.txtHoten.Name = "txtHoten";
             this.txtHoten.Size = new System.Drawing.Size(493, 20);

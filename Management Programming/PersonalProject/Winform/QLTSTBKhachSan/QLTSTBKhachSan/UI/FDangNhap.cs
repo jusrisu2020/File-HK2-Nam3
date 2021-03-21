@@ -16,5 +16,13 @@ namespace QLTSTBKhachSan.UI
         {
             InitializeComponent();
         }
+
+        private void gnBtnThoat_Click(object sender, EventArgs e)
+        {
+            if(MessageBox.Show("Exit?","Notification",MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                Application.Exit();
+            }
+        }
     }
 }

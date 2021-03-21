@@ -9,3 +9,5 @@ C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\XtraR
 C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\XtraReportDiemSV\XtraReportDiemSV\obj\Debug\XtraReportDiemSV.pdb
 C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\XtraReportDiemSV\XtraReportDiemSV\obj\Debug\XtraReportDiemSV.FThongKeDiemSinhVien.resources
 C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\XtraReportDiemSV\XtraReportDiemSV\obj\Debug\XtraReportDiemSV.exe.licenses
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\XtraReportDiemSV\XtraReportDiemSV\obj\Debug\RdlCompile.cache
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\XtraReportDiemSV\XtraReportDiemSV\obj\Debug\RdlCompile.compiled

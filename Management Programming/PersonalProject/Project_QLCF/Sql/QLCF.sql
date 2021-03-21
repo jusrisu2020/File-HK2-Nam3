@@ -22,7 +22,7 @@ CREATE TABLE Account
 (
 	UserName nvarchar(100) primary key,
 	DisplayName nvarchar(100) NOT NULL DEFAULT N'TUser1',
-	PassWord nvarchar(1000) NOT NULL DEFAULT 0,
+	PassWord nvarchar(100) NOT NULL DEFAULT 0,
 	Type int NOT NULL DEFAULT 0 --1 là admin && 0 là staff
 )
 GO
@@ -64,9 +64,6 @@ CREATE TABLE BillInfo
 	foreign key (idFood) references Food(id)
 )
 GO
-
--- Data Food
-GO
 CREATE PROC USPInsertAccount
 @userName nvarchar(100), @displayName nvarchar(100), @passWord nvarchar(100), @type int
 AS
@@ -94,3 +91,5 @@ select * from FoodCategory;
 select * from Food;
 select * from Bill;
 select * from BillInfo;
+
+DROP DATABASE QLCF

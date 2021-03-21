@@ -1,60 +1,57 @@
 ﻿CREATE DATABASE TestReporting
-go
+GO
 
-use TestReporting
-go
+USE TestReporting
+GO
 
-create table MonHoc
+CREATE TABLE MonHoc
 (
-	MaMH int primary key,
-	TenMH nvarchar(50) not null
+	MaMH INT PRIMARY KEY,
+	TenMH NVARCHAR(50) not null
 )
-go
+GO
 
-create table SinhVien
+CREATE TABLE SinhVien
 (
-	MaSV int primary key,
-	TenSV nvarchar(100) null
+	MaSV INT PRIMARY KEY,
+	TenSV NVARCHAR(100) null
 )
-go
+GO
 
-create table SinhVienDiem
+CREATE TABLE SinhVienDiem
 (
-	id int primary key,
-	MaSV int not null,--FK
-	MaMH int not null,--FK
-	Diem float not null
+	id INT PRIMARY KEY,
+	MaSV INT not null,--FK
+	MaMH INT not null,--FK
+	Diem FLOAT not null
 
-	constraint FKMaSV foreign key(MaSV) references SinhVien(MaSV),
-	constraint FKMaMH foreign key(MaMH) references MonHoc(MaMH)
+	CONSTRAINT FKMaSV FOREIGN KEY(MaSV) REFERENCES SinhVien(MaSV),
+	CONSTRAINT FKMaMH FOREIGN KEY(MaMH) REFERENCES MonHoc(MaMH)
 )
-go
+GO
 
 --INSERT INTO SINHVIEN VALUES
-insert into SinhVien(MaSV,TenSV) values (1,N'Trần Minh Trí')
-insert into SinhVien(MaSV,TenSV) values (2,N'Trần Công Minh')
-
+INSERT INTO SinhVien(MaSV,TenSV) VALUES (1,N'Trần Minh Trí')
+INSERT INTO SinhVien(MaSV,TenSV) VALUES (2,N'Trần Công Minh')
 
 --INSERT INTO MonHoc Values
-insert into MonHoc(MaMH,TenMH) values (1,N'Toán')
-insert into MonHoc(MaMH,TenMH) values (2,N'Lý')
-insert into MonHoc(MaMH,TenMH) values (3,N'Hóa')
+INSERT INTO MonHoc(MaMH,TenMH) VALUES (1,N'Toán')
+INSERT INTO MonHoc(MaMH,TenMH) VALUES (2,N'Lý')
+INSERT INTO MonHoc(MaMH,TenMH) VALUES (3,N'Hóa')
 
 --INSERT INTO SinhVienDiem Values
-insert into SinhVienDiem(id,MaSV,MaMH,Diem) values (1,1,1,5)
-insert into SinhVienDiem(id,MaSV,MaMH,Diem) values (2,1,3,7)
-insert into SinhVienDiem(id,MaSV,MaMH,Diem) values (3,2,2,9)
-insert into SinhVienDiem(id,MaSV,MaMH,Diem) values (4,2,1,10)
-insert into SinhVienDiem(id,MaSV,MaMH,Diem) values (5,2,3,8)
+INSERT INTO SinhVienDiem(id,MaSV,MaMH,Diem) VALUES (1,1,1,5)
+INSERT INTO SinhVienDiem(id,MaSV,MaMH,Diem) VALUES (2,1,3,7)
+INSERT INTO SinhVienDiem(id,MaSV,MaMH,Diem) VALUES (3,2,2,9)
+INSERT INTO SinhVienDiem(id,MaSV,MaMH,Diem) VALUES (4,2,1,10)
+INSERT INTO SinhVienDiem(id,MaSV,MaMH,Diem) VALUES (5,2,3,8)
 
-Update SinhVienDiem set Diem = 10 where MaSV = 1
+SELECT * FROM MonHoc
+SELECT * FROM SinhVien
+SELECT * FROM SinhVienDiem
 
+UPDATE SinhVienDiem SET Diem = 10 WHERE MaSV = 1
 
-select * from MonHoc,SinhVien,SinhVienDiem
-select * From MonHoc
-select * From SinhVien
-
-select * From SinhVienDiem
-select sv.MaSV, sv.TenSV, m.TenMH, svd.Diem 
-from MonHoc as m, SinhVien as sv, SinhVienDiem as svd 
-where m.MaMH = svd.MaMH and sv.MaSV= svd.MaSV
+SELECT sv.MaSV, sv.TenSV, m.TenMH, svd.Diem 
+FROM MonHoc AS m, SinhVien AS sv, SinhVienDiem AS svd 
+WHERE m.MaMH = svd.MaMH AND sv.MaSV= svd.MaSV

@@ -125,6 +125,7 @@
       <DependentUpon>FThongKeDiemSinhVien.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportings\ThongKeDiem.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="FThongKeDiemSinhVien.resx">
       <DependentUpon>FThongKeDiemSinhVien.cs</DependentUpon>
@@ -139,6 +140,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Reportings\Report1.rdlc" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

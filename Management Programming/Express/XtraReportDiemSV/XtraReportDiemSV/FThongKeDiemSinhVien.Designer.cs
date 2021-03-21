@@ -43,6 +43,7 @@
             this.btnXemBaoCao.TabIndex = 5;
             this.btnXemBaoCao.Text = "Xem Báo Cáo";
             this.btnXemBaoCao.UseVisualStyleBackColor = true;
+            this.btnXemBaoCao.Click += new System.EventHandler(this.btnXemBaoCao_Click);
             // 
             // txtHoten
             // 
@@ -70,7 +71,7 @@
             this.rpvThongKeDiemSV.Size = new System.Drawing.Size(775, 371);
             this.rpvThongKeDiemSV.TabIndex = 6;
             // 
-            // Form1
+            // FThongKeDiemSinhVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -79,7 +80,7 @@
             this.Controls.Add(this.btnXemBaoCao);
             this.Controls.Add(this.txtHoten);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "FThongKeDiemSinhVien";
             this.Text = "Thống Kê Điểm Sinh Viên";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
