@@ -1,0 +1,10 @@
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\DevExpressXtraReport2\DevExpressXtraReport2\bin\Debug\DevExpressXtraReport2.exe.config
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\DevExpressXtraReport2\DevExpressXtraReport2\bin\Debug\DevExpressXtraReport2.exe
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\DevExpressXtraReport2\DevExpressXtraReport2\bin\Debug\DevExpressXtraReport2.pdb
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\DevExpressXtraReport2\DevExpressXtraReport2\obj\Debug\DevExpressXtraReport2.csprojAssemblyReference.cache
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\DevExpressXtraReport2\DevExpressXtraReport2\obj\Debug\DevExpressXtraReport2.Form1.resources
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\DevExpressXtraReport2\DevExpressXtraReport2\obj\Debug\DevExpressXtraReport2.Properties.Resources.resources
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\DevExpressXtraReport2\DevExpressXtraReport2\obj\Debug\DevExpressXtraReport2.csproj.GenerateResource.cache
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\DevExpressXtraReport2\DevExpressXtraReport2\obj\Debug\DevExpressXtraReport2.csproj.CoreCompileInputs.cache
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\DevExpressXtraReport2\DevExpressXtraReport2\obj\Debug\DevExpressXtraReport2.exe
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\Express\DevExpressXtraReport2\DevExpressXtraReport2\obj\Debug\DevExpressXtraReport2.pdb
