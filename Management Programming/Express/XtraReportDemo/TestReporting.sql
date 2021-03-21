@@ -33,6 +33,8 @@ GO
 --INSERT INTO SINHVIEN VALUES
 INSERT INTO SinhVien(MaSV,TenSV) VALUES (1,N'Trần Minh Trí')
 INSERT INTO SinhVien(MaSV,TenSV) VALUES (2,N'Trần Công Minh')
+INSERT INTO SinhVien(MaSV,TenSV) VALUES (3,N'Lục Tốn')
+INSERT INTO SinhVien(MaSV,TenSV) VALUES (4,N'Từ Thứ')
 
 --INSERT INTO MonHoc Values
 INSERT INTO MonHoc(MaMH,TenMH) VALUES (1,N'Toán')
@@ -40,17 +42,17 @@ INSERT INTO MonHoc(MaMH,TenMH) VALUES (2,N'Lý')
 INSERT INTO MonHoc(MaMH,TenMH) VALUES (3,N'Hóa')
 
 --INSERT INTO SinhVienDiem Values
-INSERT INTO SinhVienDiem(id,MaSV,MaMH,Diem) VALUES (1,1,1,5)
-INSERT INTO SinhVienDiem(id,MaSV,MaMH,Diem) VALUES (2,1,3,7)
+INSERT INTO SinhVienDiem(id,MaSV,MaMH,Diem) VALUES (1,1,1,10)
+INSERT INTO SinhVienDiem(id,MaSV,MaMH,Diem) VALUES (2,1,3,10)
 INSERT INTO SinhVienDiem(id,MaSV,MaMH,Diem) VALUES (3,2,2,9)
 INSERT INTO SinhVienDiem(id,MaSV,MaMH,Diem) VALUES (4,2,1,10)
 INSERT INTO SinhVienDiem(id,MaSV,MaMH,Diem) VALUES (5,2,3,8)
+INSERT INTO SinhVienDiem(id,MaSV,MaMH,Diem) VALUES (6,3,3,10)
+INSERT INTO SinhVienDiem(id,MaSV,MaMH,Diem) VALUES (7,4,3,10)
 
 SELECT * FROM MonHoc
 SELECT * FROM SinhVien
 SELECT * FROM SinhVienDiem
-
-UPDATE SinhVienDiem SET Diem = 10 WHERE MaSV = 1
 
 SELECT sv.MaSV, sv.TenSV, m.TenMH, svd.Diem 
 FROM MonHoc AS m, SinhVien AS sv, SinhVienDiem AS svd 

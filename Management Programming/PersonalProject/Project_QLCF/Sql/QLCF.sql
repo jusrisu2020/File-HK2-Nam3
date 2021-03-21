@@ -3,12 +3,6 @@ GO
 
 USE QLCF
 GO
--- Food
--- Table
--- FoodCategory
--- Account
--- Bill
--- BillInfo
 
 CREATE TABLE TableFood
 (
@@ -64,16 +58,17 @@ CREATE TABLE BillInfo
 	foreign key (idFood) references Food(id)
 )
 GO
+
 CREATE PROC USPInsertAccount
 @userName nvarchar(100), @displayName nvarchar(100), @passWord nvarchar(100), @type int
 AS
 BEGIN
 	INSERT INTO Account(UserName,DisplayName,PassWord,Type) VALUES (@userName,@displayName,@passWord,@type)
 END
-EXEC USPInsertAccount N'ad4', N'ad4', N'4', 2
+EXEC USPInsertAccount N'ad1', N'ad1', N'1', 1
+GO
 
 
-go
 CREATE PROC USPAccount
 @userName nvarchar(100), @passWord nvarchar(100)
 AS
@@ -82,14 +77,19 @@ BEGIN
 END
 GO
 EXEC USPAccount N'ad1', N'1'
-SELECT * FROM Account WHERE UserName = N'Admin0'
-DROP PROC USPGetAccountByUserName
 
-select * from TableFood;
-select * from Account;
-select * from FoodCategory;
-select * from Food;
-select * from Bill;
-select * from BillInfo;
 
-DROP DATABASE QLCF
+DECLARE @i INT = 0
+
+WHILE @i <= 10
+BEGIN
+	INSERT TableFood (nametext) VALUES (N'Bàn ' + CAST(@i AS NVARCHAR(100)))
+	SET @i = @i + 1
+END
+
+SELECT * FROM TableFood;
+SELECT * FROM Account;
+SELECT * FROM FoodCategory;
+SELECT * FROM Food;
+SELECT * FROM Bill;
+SELECT * FROM BillInfo;

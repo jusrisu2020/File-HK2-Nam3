@@ -47,6 +47,7 @@ namespace CreateXtraReport
                 this.rpvThongKeDiem.LocalReport.DataSources.Add(reportDataSource);
                 this.rpvThongKeDiem.RefreshReport();
             }
+
         }
         private void btnXemBaoCao_Click(object sender, EventArgs e)
         {

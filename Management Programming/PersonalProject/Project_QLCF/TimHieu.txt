@@ -2,4 +2,6 @@
 2.ExecuteNonQuery
 3.ExcuteScalar
 4.Vòng lập Foreach
+5. Kỹ thuật SingleTon
+
 

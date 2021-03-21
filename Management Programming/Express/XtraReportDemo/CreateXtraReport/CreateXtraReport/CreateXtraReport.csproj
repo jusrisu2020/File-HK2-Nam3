@@ -77,6 +77,7 @@
     <Compile Include="DAL\QuanLySinhVienDBContext.cs" />
     <Compile Include="DAL\SinhVien.cs" />
     <Compile Include="DAL\SinhVienDiem.cs" />
+    <Compile Include="DAL\sysdiagram.cs" />
     <Compile Include="FThongKeKetQuaSinhVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,5 +131,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

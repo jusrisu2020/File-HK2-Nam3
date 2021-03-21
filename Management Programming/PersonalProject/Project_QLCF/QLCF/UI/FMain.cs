@@ -15,13 +15,16 @@ namespace QLCF
         public FMain()
         {
             InitializeComponent();
+            LoadTable();
         }
 
-        private void FMain_Load(object sender, EventArgs e)
+        #region Method
+        void LoadTable()
         {
 
         }
-
+        #endregion
+        #region Event
         private void adminToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FAdmin fa = new FAdmin();
@@ -42,5 +45,6 @@ namespace QLCF
             this.Hide();
             fa.ShowDialog();
         }
+        #endregion
     }
 }
