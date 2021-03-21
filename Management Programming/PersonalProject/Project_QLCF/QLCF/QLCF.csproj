@@ -48,42 +48,42 @@
   <ItemGroup>
     <Compile Include="DAO\AccountDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
-    <Compile Include="FAdmin.cs">
+    <Compile Include="UI\FAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FAdmin.Designer.cs">
+    <Compile Include="UI\FAdmin.Designer.cs">
       <DependentUpon>FAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="FUserInfo.cs">
+    <Compile Include="UI\FUserInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FUserInfo.Designer.cs">
+    <Compile Include="UI\FUserInfo.Designer.cs">
       <DependentUpon>FUserInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="FDangNhap.cs">
+    <Compile Include="UI\FDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FDangNhap.Designer.cs">
+    <Compile Include="UI\FDangNhap.Designer.cs">
       <DependentUpon>FDangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="FMain.cs">
+    <Compile Include="UI\FMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FMain.Designer.cs">
+    <Compile Include="UI\FMain.Designer.cs">
       <DependentUpon>FMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FAdmin.resx">
+    <EmbeddedResource Include="UI\FAdmin.resx">
       <DependentUpon>FAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FUserInfo.resx">
+    <EmbeddedResource Include="UI\FUserInfo.resx">
       <DependentUpon>FUserInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FDangNhap.resx">
+    <EmbeddedResource Include="UI\FDangNhap.resx">
       <DependentUpon>FDangNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FMain.resx">
+    <EmbeddedResource Include="UI\FMain.resx">
       <DependentUpon>FMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

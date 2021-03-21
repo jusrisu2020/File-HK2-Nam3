@@ -84,9 +84,6 @@ BEGIN
 	SELECT * FROM Account WHERE @userName = UserName and @passWord = Password
 END
 GO
-
-INSERT Account
-
 EXEC USPAccount N'ad1', N'1'
 SELECT * FROM Account WHERE UserName = N'Admin0'
 DROP PROC USPGetAccountByUserName

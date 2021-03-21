@@ -14,6 +14,86 @@ go
 -- Phiếu thanh Lý thiết bị
 -- Báo cáo thiết bị hỏng
 	
+SELECT * FROM TaiKhoan
+
+INSERT dbo.TaiKhoan
+(
+    MaTK,
+    HinhAnh,
+    TenTK,
+    Pass,
+    Email,
+    TrangThai,
+    LoaiNguoiDung,
+    MaBoPhan,
+    BoPhan,
+    ChucVu
+)
+VALUES
+(   N'',  -- MaTK - nvarchar(100)
+    NULL, -- HinhAnh - image
+    N'',  -- TenTK - nvarchar(250)
+    N'',  -- Pass - nvarchar(250)
+    N'',  -- Email - nvarchar(250)
+    N'',  -- TrangThai - nvarchar(100)
+    N'',  -- LoaiNguoiDung - nvarchar(100)
+    N'',  -- MaBoPhan - nvarchar(100)
+    N'',  -- BoPhan - nvarchar(250)
+    N''   -- ChucVu - nvarchar(100)
+    )
+CREATE PROC USPInsertTaiKhoan
+	@matk nvarchar(100), 
+	@hinhanh image ,
+	@tenTK nvarchar(250),
+	@pass nvarchar(250),
+	@email nvarchar(250),
+	@trangthai nvarchar(100),
+	@loainguoidung nvarchar(100),
+	@mabophan nvarchar(100),
+	@bophan nvarchar(250),
+	@chucvu nvarchar(100)
+AS
+BEGIN
+	INSERT dbo.TaiKhoan
+	(
+	    MaTK,
+	    HinhAnh,
+	    TenTK,
+	    Pass,
+	    Email,
+	    TrangThai,
+	    LoaiNguoiDung,
+	    MaBoPhan,
+	    BoPhan,
+	    ChucVu
+	)
+	VALUES
+	(   @matk,
+		@hinhanh,
+		@tenTK,
+		@pass,
+		@email,
+		@trangthai,
+		@loainguoidung,
+		@mabophan,
+		@bophan,
+		@chucvu
+	    )
+END
+GO
+EXEC USPInsertTaiKhoan 
+		@matk = N'TK1',
+		@hinhanh = NULL,
+		@tenTK = N'Admin',
+		@pass = N'1',
+		@email = N'ad1@gmail.com',
+		@trangthai = N'Đang hoạt động',
+		@loainguoidung = N'Admin',
+		@mabophan = NULL,
+		@bophan = N'0',
+		@chucvu = N'Admin'
+
+SELECT * FROM dbo.TaiKhoan
 
 create table TaiKhoan
 (
@@ -23,16 +103,13 @@ create table TaiKhoan
 	TenTK nvarchar (250) not null,
 	Pass nvarchar(250) not null,
 	Email nvarchar (250) not null,
-	TrangThai nvarchar(100) not null,							-- Khóa || Mở
+	TrangThai nvarchar(100) not null,							-- Khóa || Đang hoạt động
 	LoaiNguoiDung nvarchar(100) not null,						-- Admin || User Managerment
 	MaBoPhan nvarchar(100),
 	BoPhan nvarchar (250) not null,
 	ChucVu nvarchar(100) not null,
 )
 go
-
-
-
 
 create table QLNhanVien
 (
