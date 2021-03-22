@@ -63,29 +63,9 @@ namespace QLTSTBKhachSan.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap RChuan {
+        internal static System.Drawing.Bitmap eagle_logo_vector_93835_8 {
             get {
-                object obj = ResourceManager.GetObject("RChuan", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap RChuan1 {
-            get {
-                object obj = ResourceManager.GetObject("RChuan1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap RColor {
-            get {
-                object obj = ResourceManager.GetObject("RColor", resourceCulture);
+                object obj = ResourceManager.GetObject("eagle-logo-vector_93835-8", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

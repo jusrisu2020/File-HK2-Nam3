@@ -82,6 +82,18 @@
     <Compile Include="UI\FTrangChu.Designer.cs">
       <DependentUpon>FTrangChu.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\UCQuanLyNguoiDung.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UCQuanLyNguoiDung.Designer.cs">
+      <DependentUpon>UCQuanLyNguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UCQuanLyNhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UCQuanLyNhanVien.Designer.cs">
+      <DependentUpon>UCQuanLyNhanVien.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="UI\FDangNhap.resx">
       <DependentUpon>FDangNhap.cs</DependentUpon>
     </EmbeddedResource>
@@ -104,6 +116,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UI\FTrangChu.resx">
+      <DependentUpon>FTrangChu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UCQuanLyNguoiDung.resx">
+      <DependentUpon>UCQuanLyNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UCQuanLyNhanVien.resx">
+      <DependentUpon>UCQuanLyNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -119,16 +140,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\RChuan.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\RChuan1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\RColor.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="DTO\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eagle-logo-vector_93835-8.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

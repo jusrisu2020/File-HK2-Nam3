@@ -16,5 +16,26 @@ namespace QLTSTBKhachSan.UI
         {
             InitializeComponent();
         }
+      
+        private void FTrangChu_Load(object sender, EventArgs e)
+        {
+            ucQLND.Hide();
+            ucQLNV.Hide();
+        }
+
+        private void gnBtnQLND_Click(object sender, EventArgs e)
+        {
+            ucQLNV.Hide();
+            ucQLND.Show();
+            ucQLND.BringToFront();
+        }
+
+        private void gnBtnQLNV_Click(object sender, EventArgs e)
+        {
+            ucQLND.Hide();
+            ucQLNV.Show();
+            ucQLNV.BringToFront();
+
+        }
     }
 }

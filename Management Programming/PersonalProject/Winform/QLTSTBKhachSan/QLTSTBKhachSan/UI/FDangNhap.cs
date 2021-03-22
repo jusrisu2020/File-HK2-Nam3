@@ -24,5 +24,12 @@ namespace QLTSTBKhachSan.UI
                 Application.Exit();
             }
         }
+
+        private void gnBtnDangNhap_Click(object sender, EventArgs e)
+        {
+            FTrangChu fTrangChu = new FTrangChu();
+            this.Hide();
+            fTrangChu.Show();
+        }
     }
 }
