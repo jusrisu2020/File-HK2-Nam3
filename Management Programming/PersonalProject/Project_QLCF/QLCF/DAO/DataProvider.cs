@@ -9,9 +9,7 @@ namespace QLCF.DAO
 {
     public class DataProvider
     {
-        private static DataProvider instance;
-        private string ConnectionStr = @"Data Source=.\SQLEXPRESS;Initial Catalog=QLCF;Integrated Security=True";
-
+        private static DataProvider instance; // PHÍM TẮT ĐÓNG GÓI Ctrl + R + E
         public static DataProvider Instance
         {
             get
@@ -22,22 +20,25 @@ namespace QLCF.DAO
             }
             private set
             {
-                instance = value;
+                DataProvider.instance = value;
             }
         }
+        private DataProvider() { }
+        
 
-        public DataTable ExecuteQuery(string AccountQuery,object[] parameter = null)
+        private string ConnectionStr = @"Data Source=.\SQLEXPRESS;Initial Catalog=QLCF;Integrated Security=True";
+        public DataTable ExecuteQuery(string accountQuery,object[] parameter = null)
         {
             DataTable data = new DataTable(); 
             using (SqlConnection conn = new SqlConnection(ConnectionStr)) // Hàm using sau khi chạy đoạn code bên trong nó tự được giải phóng  
             {
                 conn.Open();
 
-                SqlCommand cmd = new SqlCommand(AccountQuery, conn);
+                SqlCommand cmd = new SqlCommand(accountQuery, conn);
 
                 if(parameter != null)
                 {
-                    string[] listPara = AccountQuery.Split(' ');
+                    string[] listPara = accountQuery.Split(' ');
                     int i = 0;
                     foreach(string item in listPara)
                     {

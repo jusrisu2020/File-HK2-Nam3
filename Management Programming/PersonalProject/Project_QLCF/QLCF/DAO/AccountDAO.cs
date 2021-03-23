@@ -9,6 +9,7 @@ namespace QLCF.DAO
 {
     public class AccountDAO
     {
+        #region Đóng Gói SingleTon
         private static AccountDAO instance;
 
         public static AccountDAO Instance 
@@ -21,14 +22,13 @@ namespace QLCF.DAO
             }
             private set => instance = value;
         }
-
+        #endregion
         public AccountDAO() { }
 
         public bool Login(string userName, string passWord)
         {
-            string query = "USPAccount @userName , @passWord";
-            DataTable result = DataProvider.Instance.ExecuteQuery(query,new object[] {userName,passWord });
-            
+            string AccountQuery = "USPAccount @userName , @passWord";
+            DataTable result = DataProvider.Instance.ExecuteQuery(AccountQuery, new object[] {userName,passWord });
             return result.Rows.Count > 0;
         }
     }

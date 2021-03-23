@@ -79,15 +79,25 @@ GO
 EXEC USPAccount N'ad1', N'1'
 
 
-DECLARE @i INT = 0
+DECLARE @i INT = 1
 
 WHILE @i <= 10
 BEGIN
 	INSERT TableFood (nametext) VALUES (N'Bàn ' + CAST(@i AS NVARCHAR(100)))
 	SET @i = @i + 1
 END
+GO
 
-SELECT * FROM TableFood;
+CREATE PROC USPTableFood
+AS SELECT * FROM TableFood
+GO
+EXEC USPTableFood
+
+UPDATE TableFood SET status = N'Có Khách' WHERE id = 1
+
+DBCC CHECKIDENT ('TableFood', RESEED, 0)
+DELETE FROM TableFood
+
 SELECT * FROM Account;
 SELECT * FROM FoodCategory;
 SELECT * FROM Food;

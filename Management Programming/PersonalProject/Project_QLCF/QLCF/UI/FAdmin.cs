@@ -18,8 +18,12 @@ namespace QLCF
             InitializeComponent();
             //dtgvTaiKhoan.DataSource = DataProvider.Instance.ExecuteQuery("EXEC USPGetAccountByUserName @userName", new object[] { "'OR 1=1--" });
         }
-       
-       
 
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            FMain fm = new FMain();
+            this.Hide();
+            fm.Show();
+        }
     }
 }

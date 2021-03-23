@@ -37,12 +37,13 @@
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.gnBtnQLNV = new Guna.UI2.WinForms.Guna2Button();
             this.gnBtnQLND = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.gnEFTrangChu = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.gnDCFTrangChu = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.gnEBgLeft = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.gnEQLND = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.ucQLND = new QLTSTBKhachSan.UI.UCQuanLyNguoiDung();
             this.ucQLNV = new QLTSTBKhachSan.UI.UCQuanLyNhanVien();
+            this.gnQLNV = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.pnBgLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -59,15 +60,16 @@
             this.pnBgLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnBgLeft.Location = new System.Drawing.Point(0, 0);
             this.pnBgLeft.Name = "pnBgLeft";
-            this.pnBgLeft.Size = new System.Drawing.Size(277, 800);
+            this.pnBgLeft.Size = new System.Drawing.Size(300, 800);
             this.pnBgLeft.TabIndex = 0;
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(50, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(168, 145);
+            this.pictureBox2.Size = new System.Drawing.Size(300, 145);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
@@ -94,7 +96,7 @@
             this.guna2Button4.Size = new System.Drawing.Size(232, 55);
             this.guna2Button4.TabIndex = 7;
             this.guna2Button4.Text = "Quản Lí Người Dùng";
-            this.guna2Button4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.guna2Button4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button4.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
             // 
             // guna2Button3
@@ -119,7 +121,7 @@
             this.guna2Button3.Size = new System.Drawing.Size(232, 55);
             this.guna2Button3.TabIndex = 6;
             this.guna2Button3.Text = "Quản Lí Người Dùng";
-            this.guna2Button3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.guna2Button3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button3.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
             // 
             // guna2Button2
@@ -144,7 +146,7 @@
             this.guna2Button2.Size = new System.Drawing.Size(232, 55);
             this.guna2Button2.TabIndex = 5;
             this.guna2Button2.Text = "Quản Lí Người Dùng";
-            this.guna2Button2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.guna2Button2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button2.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
             // 
             // gnBtnQLNV
@@ -169,7 +171,7 @@
             this.gnBtnQLNV.Size = new System.Drawing.Size(232, 55);
             this.gnBtnQLNV.TabIndex = 4;
             this.gnBtnQLNV.Text = "Quản Lí Nhân Viên";
-            this.gnBtnQLNV.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.gnBtnQLNV.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.gnBtnQLNV.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
             this.gnBtnQLNV.Click += new System.EventHandler(this.gnBtnQLNV_Click);
             // 
@@ -194,46 +196,54 @@
             this.gnBtnQLND.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
             this.gnBtnQLND.Size = new System.Drawing.Size(232, 55);
             this.gnBtnQLND.TabIndex = 2;
-            this.gnBtnQLND.Text = "Quản Lí Người Dùng";
-            this.gnBtnQLND.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.gnBtnQLND.Text = "QUẢN LÍ NGƯỜI DÙNG";
+            this.gnBtnQLND.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.gnBtnQLND.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
             this.gnBtnQLND.Click += new System.EventHandler(this.gnBtnQLND_Click);
             // 
-            // guna2Elipse1
+            // gnEFTrangChu
             // 
-            this.guna2Elipse1.BorderRadius = 30;
-            this.guna2Elipse1.TargetControl = this;
+            this.gnEFTrangChu.BorderRadius = 30;
+            this.gnEFTrangChu.TargetControl = this;
             // 
-            // guna2DragControl1
+            // gnDCFTrangChu
             // 
-            this.guna2DragControl1.ContainerControl = this;
-            this.guna2DragControl1.TargetControl = this;
-            this.guna2DragControl1.TransparentWhileDrag = true;
-            this.guna2DragControl1.UseTransparentDrag = true;
+            this.gnDCFTrangChu.ContainerControl = this;
+            this.gnDCFTrangChu.TargetControl = this;
+            this.gnDCFTrangChu.TransparentWhileDrag = true;
+            this.gnDCFTrangChu.UseTransparentDrag = true;
             // 
-            // guna2Elipse2
+            // gnEBgLeft
             // 
-            this.guna2Elipse2.BorderRadius = 30;
-            this.guna2Elipse2.TargetControl = this.pnBgLeft;
+            this.gnEBgLeft.BorderRadius = 30;
+            this.gnEBgLeft.TargetControl = this.pnBgLeft;
             // 
-            // guna2Elipse3
+            // gnEQLND
             // 
-            this.guna2Elipse3.BorderRadius = 30;
+            this.gnEQLND.BorderRadius = 30;
+            this.gnEQLND.TargetControl = this.gnBtnQLND;
             // 
             // ucQLND
             // 
-            this.ucQLND.Location = new System.Drawing.Point(283, 0);
+            this.ucQLND.Dock = System.Windows.Forms.DockStyle.Left;
+            this.ucQLND.Location = new System.Drawing.Point(300, 0);
             this.ucQLND.Name = "ucQLND";
-            this.ucQLND.Size = new System.Drawing.Size(1005, 575);
+            this.ucQLND.Size = new System.Drawing.Size(1000, 800);
             this.ucQLND.TabIndex = 1;
             // 
             // ucQLNV
             // 
-            this.ucQLNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ucQLNV.Location = new System.Drawing.Point(692, 25);
+            this.ucQLNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ucQLNV.Dock = System.Windows.Forms.DockStyle.Left;
+            this.ucQLNV.Location = new System.Drawing.Point(1300, 0);
             this.ucQLNV.Name = "ucQLNV";
-            this.ucQLNV.Size = new System.Drawing.Size(581, 459);
+            this.ucQLNV.Size = new System.Drawing.Size(1000, 800);
             this.ucQLNV.TabIndex = 2;
+            // 
+            // gnQLNV
+            // 
+            this.gnQLNV.BorderRadius = 30;
+            this.gnQLNV.TargetControl = this.ucQLNV;
             // 
             // FTrangChu
             // 
@@ -264,12 +274,13 @@
         private Guna.UI2.WinForms.Guna2Button gnBtnQLNV;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
-        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
-        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
+        private Guna.UI2.WinForms.Guna2Elipse gnEFTrangChu;
+        private Guna.UI2.WinForms.Guna2DragControl gnDCFTrangChu;
+        private Guna.UI2.WinForms.Guna2Elipse gnEBgLeft;
+        private Guna.UI2.WinForms.Guna2Elipse gnEQLND;
         private System.Windows.Forms.PictureBox pictureBox2;
         private UCQuanLyNhanVien ucQLNV;
         private UCQuanLyNguoiDung ucQLND;
+        private Guna.UI2.WinForms.Guna2Elipse gnQLNV;
     }
 }

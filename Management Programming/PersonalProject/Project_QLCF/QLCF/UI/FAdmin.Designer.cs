@@ -101,6 +101,7 @@ namespace QLCF
             this.label15 = new System.Windows.Forms.Label();
             this.txtTenTK = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
+            this.btnExit = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tpDoanhThu.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -176,6 +177,7 @@ namespace QLCF
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnExit);
             this.panel1.Controls.Add(this.dateTimePicker1);
             this.panel1.Controls.Add(this.dateTimePicker2);
             this.panel1.Controls.Add(this.btnDoanhThu);
@@ -200,7 +202,7 @@ namespace QLCF
             // 
             // btnDoanhThu
             // 
-            this.btnDoanhThu.Location = new System.Drawing.Point(357, 5);
+            this.btnDoanhThu.Location = new System.Drawing.Point(307, 6);
             this.btnDoanhThu.Name = "btnDoanhThu";
             this.btnDoanhThu.Size = new System.Drawing.Size(75, 23);
             this.btnDoanhThu.TabIndex = 3;
@@ -839,6 +841,16 @@ namespace QLCF
             this.label16.TabIndex = 5;
             this.label16.Text = "Tên tài khoản";
             // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(388, 3);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.TabIndex = 4;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // FAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -958,5 +970,6 @@ namespace QLCF
         private System.Windows.Forms.ComboBox cbTrangThaiBA;
         private System.Windows.Forms.ComboBox cbLoaiTK;
         private System.Windows.Forms.Button btnDLMK;
+        private System.Windows.Forms.Button btnExit;
     }
 }
