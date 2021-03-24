@@ -1,0 +1,13 @@
+D:\vitua\NHOM7_Tuan5\NHOM7_Tuan5\Buoi5_Bai4_1\bin\Debug\Buoi5_Bai4_1.exe.config
+D:\vitua\NHOM7_Tuan5\NHOM7_Tuan5\Buoi5_Bai4_1\bin\Debug\Buoi5_Bai4_1.exe
+D:\vitua\NHOM7_Tuan5\NHOM7_Tuan5\Buoi5_Bai4_1\bin\Debug\Buoi5_Bai4_1.pdb
+D:\vitua\NHOM7_Tuan5\NHOM7_Tuan5\Buoi5_Bai4_1\obj\Debug\Buoi5_Bai4_1.csprojAssemblyReference.cache
+D:\vitua\NHOM7_Tuan5\NHOM7_Tuan5\Buoi5_Bai4_1\obj\Debug\Buoi5_Bai4_1.Form1.resources
+D:\vitua\NHOM7_Tuan5\NHOM7_Tuan5\Buoi5_Bai4_1\obj\Debug\Buoi5_Bai4_1.Properties.Resources.resources
+D:\vitua\NHOM7_Tuan5\NHOM7_Tuan5\Buoi5_Bai4_1\obj\Debug\Buoi5_Bai4_1.csproj.GenerateResource.cache
+D:\vitua\NHOM7_Tuan5\NHOM7_Tuan5\Buoi5_Bai4_1\obj\Debug\Buoi5_Bai4_1.csproj.CoreCompileInputs.cache
+D:\vitua\NHOM7_Tuan5\NHOM7_Tuan5\Buoi5_Bai4_1\obj\Debug\Buoi5_Bai4_1.exe
+D:\vitua\NHOM7_Tuan5\NHOM7_Tuan5\Buoi5_Bai4_1\obj\Debug\Buoi5_Bai4_1.pdb
+E:\NHOM7_Tuan5\NHOM7_Tuan5\Buoi5_Bai4_1\bin\Debug\Buoi5_Bai4_1.exe.config
+E:\NHOM7_Tuan5\NHOM7_Tuan5\Buoi5_Bai4_1\obj\Debug\Buoi5_Bai4_1.exe
+E:\NHOM7_Tuan5\NHOM7_Tuan5\Buoi5_Bai4_1\obj\Debug\Buoi5_Bai4_1.pdb

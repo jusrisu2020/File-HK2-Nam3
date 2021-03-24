@@ -1,0 +1,54 @@
+C:\Users\ACER\Documents\Nhom21_Tuan6\Bai6.4\bin\Debug\Bai6.4.exe.config
+C:\Users\ACER\Documents\Nhom21_Tuan6\Bai6.4\bin\Debug\Bai6.4.exe
+C:\Users\ACER\Documents\Nhom21_Tuan6\Bai6.4\bin\Debug\Bai6.4.pdb
+C:\Users\ACER\Documents\Nhom21_Tuan6\Bai6.4\obj\Debug\Bai6.4.csprojAssemblyReference.cache
+C:\Users\ACER\Documents\Nhom21_Tuan6\Bai6.4\obj\Debug\Bai6._4.Form1.resources
+C:\Users\ACER\Documents\Nhom21_Tuan6\Bai6.4\obj\Debug\Bai6._4.Properties.Resources.resources
+C:\Users\ACER\Documents\Nhom21_Tuan6\Bai6.4\obj\Debug\Bai6.4.csproj.GenerateResource.cache
+C:\Users\ACER\Documents\Nhom21_Tuan6\Bai6.4\obj\Debug\Bai6.4.csproj.CoreCompileInputs.cache
+C:\Users\ACER\Documents\Nhom21_Tuan6\Bai6.4\obj\Debug\Bai6.4.exe
+C:\Users\ACER\Documents\Nhom21_Tuan6\Bai6.4\obj\Debug\Bai6.4.pdb
+C:\Users\PC GAMING\Desktop\IT\.Net\Nhom21_Tuan6\Bai6.4\bin\Debug\Bai6.4.exe.config
+C:\Users\PC GAMING\Desktop\IT\.Net\Nhom21_Tuan6\Bai6.4\bin\Debug\Bai6.4.exe
+C:\Users\PC GAMING\Desktop\IT\.Net\Nhom21_Tuan6\Bai6.4\bin\Debug\Bai6.4.pdb
+C:\Users\PC GAMING\Desktop\IT\.Net\Nhom21_Tuan6\Bai6.4\obj\Debug\Bai6.4.csprojAssemblyReference.cache
+C:\Users\PC GAMING\Desktop\IT\.Net\Nhom21_Tuan6\Bai6.4\obj\Debug\Bai6._4.Form1.resources
+C:\Users\PC GAMING\Desktop\IT\.Net\Nhom21_Tuan6\Bai6.4\obj\Debug\Bai6._4.Properties.Resources.resources
+C:\Users\PC GAMING\Desktop\IT\.Net\Nhom21_Tuan6\Bai6.4\obj\Debug\Bai6.4.csproj.GenerateResource.cache
+C:\Users\PC GAMING\Desktop\IT\.Net\Nhom21_Tuan6\Bai6.4\obj\Debug\Bai6.4.csproj.CoreCompileInputs.cache
+C:\Users\PC GAMING\Desktop\IT\.Net\Nhom21_Tuan6\Bai6.4\obj\Debug\Bai6.4.exe
+C:\Users\PC GAMING\Desktop\IT\.Net\Nhom21_Tuan6\Bai6.4\obj\Debug\Bai6.4.pdb
+C:\Users\ACER\Downloads\Documents\Nhom21_Tuan6\Bai6.4\bin\Debug\Bai6.4.exe.config
+C:\Users\ACER\Downloads\Documents\Nhom21_Tuan6\Bai6.4\bin\Debug\Bai6.4.exe
+C:\Users\ACER\Downloads\Documents\Nhom21_Tuan6\Bai6.4\bin\Debug\Bai6.4.pdb
+C:\Users\ACER\Downloads\Documents\Nhom21_Tuan6\Bai6.4\obj\Debug\Bai6.4.csprojAssemblyReference.cache
+C:\Users\ACER\Downloads\Documents\Nhom21_Tuan6\Bai6.4\obj\Debug\Bai6._4.Form1.resources
+C:\Users\ACER\Downloads\Documents\Nhom21_Tuan6\Bai6.4\obj\Debug\Bai6._4.Properties.Resources.resources
+C:\Users\ACER\Downloads\Documents\Nhom21_Tuan6\Bai6.4\obj\Debug\Bai6.4.csproj.GenerateResource.cache
+C:\Users\ACER\Downloads\Documents\Nhom21_Tuan6\Bai6.4\obj\Debug\Bai6.4.csproj.CoreCompileInputs.cache
+C:\Users\ACER\Downloads\Documents\Nhom21_Tuan6\Bai6.4\obj\Debug\Bai6.4.exe
+C:\Users\ACER\Downloads\Documents\Nhom21_Tuan6\Bai6.4\obj\Debug\Bai6.4.pdb
+E:\Nhom21_Tuan6\Nhom21_Tuan6\Bai6.4\bin\Debug\Bai6.4.exe.config
+E:\Nhom21_Tuan6\Nhom21_Tuan6\Bai6.4\obj\Debug\Bai6.4.exe
+E:\Nhom21_Tuan6\Nhom21_Tuan6\Bai6.4\obj\Debug\Bai6.4.pdb
+E:\Nhom21_Tuan6\Nhom21_Tuan6\Bai6.4\bin\Debug\Bai6.4.exe
+E:\Nhom21_Tuan6\Nhom21_Tuan6\Bai6.4\bin\Debug\Bai6.4.pdb
+E:\Nhom21_Tuan6\Nhom21_Tuan6\Bai6.4\bin\Debug\mscorlib.dll
+E:\Nhom21_Tuan6\Nhom21_Tuan6\Bai6.4\bin\Debug\normidna.nlp
+E:\Nhom21_Tuan6\Nhom21_Tuan6\Bai6.4\bin\Debug\normnfc.nlp
+E:\Nhom21_Tuan6\Nhom21_Tuan6\Bai6.4\bin\Debug\normnfd.nlp
+E:\Nhom21_Tuan6\Nhom21_Tuan6\Bai6.4\bin\Debug\normnfkc.nlp
+E:\Nhom21_Tuan6\Nhom21_Tuan6\Bai6.4\bin\Debug\normnfkd.nlp
+E:\Nhom21_Tuan6\Nhom21_Tuan6\Bai6.4\obj\Debug\Bai6._4.Form1.resources
+E:\Nhom21_Tuan6\Nhom21_Tuan6\Bai6.4\obj\Debug\Bai6._4.Properties.Resources.resources
+E:\Nhom21_Tuan6\Nhom21_Tuan6\Bai6.4\obj\Debug\Bai6.4.csproj.GenerateResource.Cache
+D:\Nhom21_Tuan6\Nhom21_Tuan6\Bai6.4\bin\Debug\Bai6.4.exe.config
+D:\Nhom21_Tuan6\Nhom21_Tuan6\Bai6.4\bin\Debug\Bai6.4.exe
+D:\Nhom21_Tuan6\Nhom21_Tuan6\Bai6.4\bin\Debug\Bai6.4.pdb
+D:\Nhom21_Tuan6\Nhom21_Tuan6\Bai6.4\obj\Debug\Bai6.4.csprojAssemblyReference.cache
+D:\Nhom21_Tuan6\Nhom21_Tuan6\Bai6.4\obj\Debug\Bai6._4.Form1.resources
+D:\Nhom21_Tuan6\Nhom21_Tuan6\Bai6.4\obj\Debug\Bai6._4.Properties.Resources.resources
+D:\Nhom21_Tuan6\Nhom21_Tuan6\Bai6.4\obj\Debug\Bai6.4.csproj.GenerateResource.cache
+D:\Nhom21_Tuan6\Nhom21_Tuan6\Bai6.4\obj\Debug\Bai6.4.csproj.CoreCompileInputs.cache
+D:\Nhom21_Tuan6\Nhom21_Tuan6\Bai6.4\obj\Debug\Bai6.4.exe
+D:\Nhom21_Tuan6\Nhom21_Tuan6\Bai6.4\obj\Debug\Bai6.4.pdb

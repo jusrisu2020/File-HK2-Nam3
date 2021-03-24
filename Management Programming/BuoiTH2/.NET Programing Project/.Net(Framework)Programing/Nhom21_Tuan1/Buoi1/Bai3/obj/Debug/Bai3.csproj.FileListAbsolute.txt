@@ -1,0 +1,6 @@
+D:\BT\Buoi1\Bai3\bin\Debug\Bai3.exe.config
+D:\BT\Buoi1\Bai3\bin\Debug\Bai3.exe
+D:\BT\Buoi1\Bai3\bin\Debug\Bai3.pdb
+D:\BT\Buoi1\Bai3\obj\Debug\Bai3.csproj.CoreCompileInputs.cache
+D:\BT\Buoi1\Bai3\obj\Debug\Bai3.exe
+D:\BT\Buoi1\Bai3\obj\Debug\Bai3.pdb

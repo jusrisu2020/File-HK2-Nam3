@@ -1,0 +1,14 @@
+Z:\Nhom21_Tuan3\Nhom21_Tuan3\Baif7\bin\Debug\Baif7.exe.config
+Z:\Nhom21_Tuan3\Nhom21_Tuan3\Baif7\bin\Debug\Baif7.exe
+Z:\Nhom21_Tuan3\Nhom21_Tuan3\Baif7\bin\Debug\Baif7.pdb
+Z:\Nhom21_Tuan3\Nhom21_Tuan3\Baif7\bin\Debug\mscorlib.dll
+Z:\Nhom21_Tuan3\Nhom21_Tuan3\Baif7\bin\Debug\normidna.nlp
+Z:\Nhom21_Tuan3\Nhom21_Tuan3\Baif7\bin\Debug\normnfc.nlp
+Z:\Nhom21_Tuan3\Nhom21_Tuan3\Baif7\bin\Debug\normnfd.nlp
+Z:\Nhom21_Tuan3\Nhom21_Tuan3\Baif7\bin\Debug\normnfkc.nlp
+Z:\Nhom21_Tuan3\Nhom21_Tuan3\Baif7\bin\Debug\normnfkd.nlp
+Z:\Nhom21_Tuan3\Nhom21_Tuan3\Baif7\obj\Debug\Baif7.Form1.resources
+Z:\Nhom21_Tuan3\Nhom21_Tuan3\Baif7\obj\Debug\Baif7.Properties.Resources.resources
+Z:\Nhom21_Tuan3\Nhom21_Tuan3\Baif7\obj\Debug\Bai7.csproj.GenerateResource.Cache
+Z:\Nhom21_Tuan3\Nhom21_Tuan3\Baif7\obj\Debug\Baif7.exe
+Z:\Nhom21_Tuan3\Nhom21_Tuan3\Baif7\obj\Debug\Baif7.pdb

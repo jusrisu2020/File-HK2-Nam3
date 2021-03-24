@@ -1,0 +1,52 @@
+Z:\Nhom21_Tuan4\Tuan4\bai1\bin\Debug\bai1.exe.config
+Z:\Nhom21_Tuan4\Tuan4\bai1\bin\Debug\bai1.exe
+Z:\Nhom21_Tuan4\Tuan4\bai1\bin\Debug\bai1.pdb
+Z:\Nhom21_Tuan4\Tuan4\bai1\obj\Debug\bai1.csprojResolveAssemblyReference.cache
+Z:\Nhom21_Tuan4\Tuan4\bai1\obj\Debug\bai1.Form1.resources
+Z:\Nhom21_Tuan4\Tuan4\bai1\obj\Debug\bai1.Properties.Resources.resources
+Z:\Nhom21_Tuan4\Tuan4\bai1\obj\Debug\bai1.csproj.GenerateResource.Cache
+Z:\Nhom21_Tuan4\Tuan4\bai1\obj\Debug\bai1.exe
+Z:\Nhom21_Tuan4\Tuan4\bai1\obj\Debug\bai1.pdb
+C:\Users\DELL\Downloads\Nhom21_Tuan4\Tuan4\bai1\bin\Debug\bai1.exe.config
+C:\Users\DELL\Downloads\Nhom21_Tuan4\Tuan4\bai1\bin\Debug\bai1.exe
+C:\Users\DELL\Downloads\Nhom21_Tuan4\Tuan4\bai1\bin\Debug\bai1.pdb
+C:\Users\DELL\Downloads\Nhom21_Tuan4\Tuan4\bai1\obj\Debug\bai1.csprojAssemblyReference.cache
+C:\Users\DELL\Downloads\Nhom21_Tuan4\Tuan4\bai1\obj\Debug\bai1.Form1.resources
+C:\Users\DELL\Downloads\Nhom21_Tuan4\Tuan4\bai1\obj\Debug\bai1.Properties.Resources.resources
+C:\Users\DELL\Downloads\Nhom21_Tuan4\Tuan4\bai1\obj\Debug\bai1.csproj.GenerateResource.cache
+C:\Users\DELL\Downloads\Nhom21_Tuan4\Tuan4\bai1\obj\Debug\bai1.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Downloads\Nhom21_Tuan4\Tuan4\bai1\obj\Debug\bai1.exe
+C:\Users\DELL\Downloads\Nhom21_Tuan4\Tuan4\bai1\obj\Debug\bai1.pdb
+D:\LT.Net\Nhom21_tuan4\Tuan4\bai1\bin\Debug\bai1.exe.config
+D:\LT.Net\Nhom21_tuan4\Tuan4\bai1\bin\Debug\bai1.exe
+D:\LT.Net\Nhom21_tuan4\Tuan4\bai1\bin\Debug\bai1.pdb
+D:\LT.Net\Nhom21_tuan4\Tuan4\bai1\obj\Debug\bai1.csprojAssemblyReference.cache
+D:\LT.Net\Nhom21_tuan4\Tuan4\bai1\obj\Debug\bai1.Form1.resources
+D:\LT.Net\Nhom21_tuan4\Tuan4\bai1\obj\Debug\bai1.Properties.Resources.resources
+D:\LT.Net\Nhom21_tuan4\Tuan4\bai1\obj\Debug\bai1.csproj.GenerateResource.cache
+D:\LT.Net\Nhom21_tuan4\Tuan4\bai1\obj\Debug\bai1.csproj.CoreCompileInputs.cache
+D:\LT.Net\Nhom21_tuan4\Tuan4\bai1\obj\Debug\bai1.exe
+D:\LT.Net\Nhom21_tuan4\Tuan4\bai1\obj\Debug\bai1.pdb
+C:\Users\PC GAMING\Desktop\Nhom21_tuan4\Tuan4\bai1\bin\Debug\bai1.exe.config
+C:\Users\PC GAMING\Desktop\Nhom21_tuan4\Tuan4\bai1\bin\Debug\bai1.exe
+C:\Users\PC GAMING\Desktop\Nhom21_tuan4\Tuan4\bai1\bin\Debug\bai1.pdb
+C:\Users\PC GAMING\Desktop\Nhom21_tuan4\Tuan4\bai1\obj\Debug\bai1.csprojAssemblyReference.cache
+C:\Users\PC GAMING\Desktop\Nhom21_tuan4\Tuan4\bai1\obj\Debug\bai1.Form1.resources
+C:\Users\PC GAMING\Desktop\Nhom21_tuan4\Tuan4\bai1\obj\Debug\bai1.Properties.Resources.resources
+C:\Users\PC GAMING\Desktop\Nhom21_tuan4\Tuan4\bai1\obj\Debug\bai1.csproj.GenerateResource.cache
+C:\Users\PC GAMING\Desktop\Nhom21_tuan4\Tuan4\bai1\obj\Debug\bai1.csproj.CoreCompileInputs.cache
+C:\Users\PC GAMING\Desktop\Nhom21_tuan4\Tuan4\bai1\obj\Debug\bai1.exe
+C:\Users\PC GAMING\Desktop\Nhom21_tuan4\Tuan4\bai1\obj\Debug\bai1.pdb
+C:\Users\PC GAMING\Desktop\Nhom21_tuan4\bai1\bin\Debug\bai1.exe.config
+C:\Users\PC GAMING\Desktop\Nhom21_tuan4\bai1\bin\Debug\bai1.exe
+C:\Users\PC GAMING\Desktop\Nhom21_tuan4\bai1\bin\Debug\bai1.pdb
+C:\Users\PC GAMING\Desktop\Nhom21_tuan4\bai1\obj\Debug\bai1.csprojAssemblyReference.cache
+C:\Users\PC GAMING\Desktop\Nhom21_tuan4\bai1\obj\Debug\bai1.Form1.resources
+C:\Users\PC GAMING\Desktop\Nhom21_tuan4\bai1\obj\Debug\bai1.Properties.Resources.resources
+C:\Users\PC GAMING\Desktop\Nhom21_tuan4\bai1\obj\Debug\bai1.csproj.GenerateResource.cache
+C:\Users\PC GAMING\Desktop\Nhom21_tuan4\bai1\obj\Debug\bai1.csproj.CoreCompileInputs.cache
+C:\Users\PC GAMING\Desktop\Nhom21_tuan4\bai1\obj\Debug\bai1.exe
+C:\Users\PC GAMING\Desktop\Nhom21_tuan4\bai1\obj\Debug\bai1.pdb
+E:\Nhom21_tuan4\bai1\bin\Debug\bai1.exe.config
+E:\Nhom21_tuan4\bai1\obj\Debug\bai1.exe
+E:\Nhom21_tuan4\bai1\obj\Debug\bai1.pdb

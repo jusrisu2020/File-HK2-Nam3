@@ -1,0 +1,12 @@
+D:\BT\Buoi1\Bai9\bin\Debug\Bai9.exe.config
+D:\BT\Buoi1\Bai9\bin\Debug\Bai9.exe
+D:\BT\Buoi1\Bai9\bin\Debug\Bai9.pdb
+D:\BT\Buoi1\Bai9\obj\Debug\Bai9.csproj.CoreCompileInputs.cache
+D:\BT\Buoi1\Bai9\obj\Debug\Bai9.exe
+D:\BT\Buoi1\Bai9\obj\Debug\Bai9.pdb
+E:\Nhom21_Tuan1\Buoi1\Bai9\bin\Debug\Bai9.exe.config
+E:\Nhom21_Tuan1\Buoi1\Bai9\bin\Debug\Bai9.exe
+E:\Nhom21_Tuan1\Buoi1\Bai9\bin\Debug\Bai9.pdb
+E:\Nhom21_Tuan1\Buoi1\Bai9\obj\Debug\Bai9.csproj.CoreCompileInputs.cache
+E:\Nhom21_Tuan1\Buoi1\Bai9\obj\Debug\Bai9.exe
+E:\Nhom21_Tuan1\Buoi1\Bai9\obj\Debug\Bai9.pdb

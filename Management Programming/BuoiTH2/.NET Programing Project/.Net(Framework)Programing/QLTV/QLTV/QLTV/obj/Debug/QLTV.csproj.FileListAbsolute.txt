@@ -1,0 +1,20 @@
+Z:\Nhom2_To1_DTH185301_NguyenQuangLinh\QLTV\QLTV\obj\Debug\QLTV.csprojAssemblyReference.cache
+Z:\Nhom2_To1_DTH185301_NguyenQuangLinh\QLTV\QLTV\obj\Debug\QLTV.Form1.resources
+Z:\Nhom2_To1_DTH185301_NguyenQuangLinh\QLTV\QLTV\obj\Debug\QLTV.Properties.Resources.resources
+Z:\Nhom2_To1_DTH185301_NguyenQuangLinh\QLTV\QLTV\obj\Debug\QLTV.csproj.GenerateResource.cache
+Z:\Nhom2_To1_DTH185301_NguyenQuangLinh\QLTV\QLTV\obj\Debug\QLTV.csproj.CoreCompileInputs.cache
+Z:\Nhom2_To1_DTH185301_NguyenQuangLinh\QLTV\QLTV\bin\Debug\QLTV.exe.config
+Z:\Nhom2_To1_DTH185301_NguyenQuangLinh\QLTV\QLTV\bin\Debug\QLTV.exe
+Z:\Nhom2_To1_DTH185301_NguyenQuangLinh\QLTV\QLTV\bin\Debug\QLTV.pdb
+Z:\Nhom2_To1_DTH185301_NguyenQuangLinh\QLTV\QLTV\obj\Debug\QLTV.exe
+Z:\Nhom2_To1_DTH185301_NguyenQuangLinh\QLTV\QLTV\obj\Debug\QLTV.pdb
+C:\Users\PC GAMING\Desktop\IT\.NET Programming\Nhom2_To1_DTH185301_NguyenQuangLinh\QLTV\QLTV\bin\Debug\QLTV.exe.config
+C:\Users\PC GAMING\Desktop\IT\.NET Programming\Nhom2_To1_DTH185301_NguyenQuangLinh\QLTV\QLTV\bin\Debug\QLTV.exe
+C:\Users\PC GAMING\Desktop\IT\.NET Programming\Nhom2_To1_DTH185301_NguyenQuangLinh\QLTV\QLTV\bin\Debug\QLTV.pdb
+C:\Users\PC GAMING\Desktop\IT\.NET Programming\Nhom2_To1_DTH185301_NguyenQuangLinh\QLTV\QLTV\obj\Debug\QLTV.csprojAssemblyReference.cache
+C:\Users\PC GAMING\Desktop\IT\.NET Programming\Nhom2_To1_DTH185301_NguyenQuangLinh\QLTV\QLTV\obj\Debug\QLTV.Form1.resources
+C:\Users\PC GAMING\Desktop\IT\.NET Programming\Nhom2_To1_DTH185301_NguyenQuangLinh\QLTV\QLTV\obj\Debug\QLTV.Properties.Resources.resources
+C:\Users\PC GAMING\Desktop\IT\.NET Programming\Nhom2_To1_DTH185301_NguyenQuangLinh\QLTV\QLTV\obj\Debug\QLTV.csproj.GenerateResource.cache
+C:\Users\PC GAMING\Desktop\IT\.NET Programming\Nhom2_To1_DTH185301_NguyenQuangLinh\QLTV\QLTV\obj\Debug\QLTV.csproj.CoreCompileInputs.cache
+C:\Users\PC GAMING\Desktop\IT\.NET Programming\Nhom2_To1_DTH185301_NguyenQuangLinh\QLTV\QLTV\obj\Debug\QLTV.exe
+C:\Users\PC GAMING\Desktop\IT\.NET Programming\Nhom2_To1_DTH185301_NguyenQuangLinh\QLTV\QLTV\obj\Debug\QLTV.pdb

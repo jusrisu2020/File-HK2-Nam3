@@ -1,0 +1,13 @@
+Z:\Nhom21_Tuan4\Bai2\Bai3\bin\Debug\Bai3.exe.config
+C:\Users\PC GAMING\Desktop\.Net\Nhom21_Tuan4\Bai2\Bai3\bin\Debug\Bai3.exe.config
+C:\Users\PC GAMING\Desktop\.Net\Nhom21_Tuan4\Bai2\Bai3\bin\Debug\Bai3.exe
+C:\Users\PC GAMING\Desktop\.Net\Nhom21_Tuan4\Bai2\Bai3\bin\Debug\Bai3.pdb
+C:\Users\PC GAMING\Desktop\.Net\Nhom21_Tuan4\Bai2\Bai3\obj\Debug\Bai3.csprojAssemblyReference.cache
+C:\Users\PC GAMING\Desktop\.Net\Nhom21_Tuan4\Bai2\Bai3\obj\Debug\Bai3.Form1.resources
+C:\Users\PC GAMING\Desktop\.Net\Nhom21_Tuan4\Bai2\Bai3\obj\Debug\Bai3.Properties.Resources.resources
+C:\Users\PC GAMING\Desktop\.Net\Nhom21_Tuan4\Bai2\Bai3\obj\Debug\Bai3.csproj.GenerateResource.cache
+C:\Users\PC GAMING\Desktop\.Net\Nhom21_Tuan4\Bai2\Bai3\obj\Debug\Bai3.csproj.CoreCompileInputs.cache
+C:\Users\PC GAMING\Desktop\.Net\Nhom21_Tuan4\Bai2\Bai3\obj\Debug\Bai3.exe
+C:\Users\PC GAMING\Desktop\.Net\Nhom21_Tuan4\Bai2\Bai3\obj\Debug\Bai3.pdb
+C:\Users\PC GAMING\Desktop\.Net\Nhom21_Tuan4\Bai2\Bai3\obj\Debug\Bai3.Form2.resources
+C:\Users\PC GAMING\Desktop\.Net\Nhom21_Tuan4\Bai2\Bai3\obj\Debug\Bai3.Form3.resources

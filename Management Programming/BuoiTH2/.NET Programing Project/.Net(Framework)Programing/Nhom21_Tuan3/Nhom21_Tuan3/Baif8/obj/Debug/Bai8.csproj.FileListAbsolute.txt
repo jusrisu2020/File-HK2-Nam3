@@ -1,0 +1,4 @@
+Z:\Nhom21_Tuan3\Nhom21_Tuan3\Baif8\obj\Debug\Baif8.Form1.resources
+Z:\Nhom21_Tuan3\Nhom21_Tuan3\Baif8\obj\Debug\Bai8.csproj.GenerateResource.Cache
+Z:\Nhom21_Tuan3\Nhom21_Tuan3\Baif8\obj\Debug\Bai8.csprojResolveAssemblyReference.cache
+Z:\Nhom21_Tuan3\Nhom21_Tuan3\Baif8\bin\Debug\Baif8.exe.config

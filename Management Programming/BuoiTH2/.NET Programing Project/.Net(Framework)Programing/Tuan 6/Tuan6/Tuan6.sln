@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tuan6", "Tuan6\Tuan6.csproj", "{A5D8A400-A381-4B4E-A5A3-A2FCF40D6333}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bai6.2", "Bai6.2\Bai6.2.csproj", "{5F0B892A-8C63-4F6A-82DC-01F3737C7E8C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5D8A400-A381-4B4E-A5A3-A2FCF40D6333}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5D8A400-A381-4B4E-A5A3-A2FCF40D6333}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5D8A400-A381-4B4E-A5A3-A2FCF40D6333}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5D8A400-A381-4B4E-A5A3-A2FCF40D6333}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F0B892A-8C63-4F6A-82DC-01F3737C7E8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F0B892A-8C63-4F6A-82DC-01F3737C7E8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F0B892A-8C63-4F6A-82DC-01F3737C7E8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F0B892A-8C63-4F6A-82DC-01F3737C7E8C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

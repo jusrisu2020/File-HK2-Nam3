@@ -1,0 +1,32 @@
+D:\Nhom21_Tuan2\Bai4\obj\Debug\Bai4.csprojAssemblyReference.cache
+D:\Nhom21_Tuan2\Bai4\obj\Debug\Bai4.FrmBai4_1.resources
+D:\Nhom21_Tuan2\Bai4\obj\Debug\Bai4.Properties.Resources.resources
+D:\Nhom21_Tuan2\Bai4\obj\Debug\Bai4.csproj.GenerateResource.cache
+D:\Nhom21_Tuan2\Bai4\obj\Debug\Bai4.csproj.CoreCompileInputs.cache
+D:\Nhom21_Tuan2\Bai4\bin\Debug\Bai4.exe.config
+D:\Nhom21_Tuan2\Bai4\bin\Debug\Bai4.exe
+D:\Nhom21_Tuan2\Bai4\bin\Debug\Bai4.pdb
+D:\Nhom21_Tuan2\Bai4\obj\Debug\Bai4.exe
+D:\Nhom21_Tuan2\Bai4\obj\Debug\Bai4.pdb
+D:\Nhom21_Tuan2\Bai4\obj\Debug\Bai4.FrmBai4_2.resources
+D:\Nhom21_Tuan2\Bai4\obj\Debug\Bai4.FrmBai4_3.resources
+D:\Nhom21_Tuan2\Bai4\obj\Debug\Bai4.FrmBai4_4.resources
+D:\Nhom21_Tuan2\Bai4\obj\Debug\Bai4.FrmBai4_5.resources
+D:\Nhom21_Tuan2\Bai4\obj\Debug\Bai4.FrmBai4_6.resources
+D:\Nhom21_Tuan2\Bai4\obj\Debug\Bai4.FrmBai4_7.resources
+C:\Users\PC GAMING\Desktop\FILE_20201012_184510_Nhom21_Tuan2\Nhom21_Tuan2\Bai4\bin\Debug\Bai4.exe.config
+C:\Users\PC GAMING\Desktop\FILE_20201012_184510_Nhom21_Tuan2\Nhom21_Tuan2\Bai4\bin\Debug\Bai4.exe
+C:\Users\PC GAMING\Desktop\FILE_20201012_184510_Nhom21_Tuan2\Nhom21_Tuan2\Bai4\bin\Debug\Bai4.pdb
+C:\Users\PC GAMING\Desktop\FILE_20201012_184510_Nhom21_Tuan2\Nhom21_Tuan2\Bai4\obj\Debug\Bai4.csprojAssemblyReference.cache
+C:\Users\PC GAMING\Desktop\FILE_20201012_184510_Nhom21_Tuan2\Nhom21_Tuan2\Bai4\obj\Debug\Bai4.FrmBai4_1.resources
+C:\Users\PC GAMING\Desktop\FILE_20201012_184510_Nhom21_Tuan2\Nhom21_Tuan2\Bai4\obj\Debug\Bai4.FrmBai4_2.resources
+C:\Users\PC GAMING\Desktop\FILE_20201012_184510_Nhom21_Tuan2\Nhom21_Tuan2\Bai4\obj\Debug\Bai4.FrmBai4_3.resources
+C:\Users\PC GAMING\Desktop\FILE_20201012_184510_Nhom21_Tuan2\Nhom21_Tuan2\Bai4\obj\Debug\Bai4.FrmBai4_4.resources
+C:\Users\PC GAMING\Desktop\FILE_20201012_184510_Nhom21_Tuan2\Nhom21_Tuan2\Bai4\obj\Debug\Bai4.FrmBai4_5.resources
+C:\Users\PC GAMING\Desktop\FILE_20201012_184510_Nhom21_Tuan2\Nhom21_Tuan2\Bai4\obj\Debug\Bai4.FrmBai4_6.resources
+C:\Users\PC GAMING\Desktop\FILE_20201012_184510_Nhom21_Tuan2\Nhom21_Tuan2\Bai4\obj\Debug\Bai4.FrmBai4_7.resources
+C:\Users\PC GAMING\Desktop\FILE_20201012_184510_Nhom21_Tuan2\Nhom21_Tuan2\Bai4\obj\Debug\Bai4.Properties.Resources.resources
+C:\Users\PC GAMING\Desktop\FILE_20201012_184510_Nhom21_Tuan2\Nhom21_Tuan2\Bai4\obj\Debug\Bai4.csproj.GenerateResource.cache
+C:\Users\PC GAMING\Desktop\FILE_20201012_184510_Nhom21_Tuan2\Nhom21_Tuan2\Bai4\obj\Debug\Bai4.csproj.CoreCompileInputs.cache
+C:\Users\PC GAMING\Desktop\FILE_20201012_184510_Nhom21_Tuan2\Nhom21_Tuan2\Bai4\obj\Debug\Bai4.exe
+C:\Users\PC GAMING\Desktop\FILE_20201012_184510_Nhom21_Tuan2\Nhom21_Tuan2\Bai4\obj\Debug\Bai4.pdb

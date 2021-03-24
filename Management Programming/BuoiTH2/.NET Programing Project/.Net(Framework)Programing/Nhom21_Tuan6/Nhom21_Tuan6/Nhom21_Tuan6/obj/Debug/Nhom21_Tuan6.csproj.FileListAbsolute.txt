@@ -1,0 +1,10 @@
+C:\Users\PC GAMING\Desktop\Nhom21_Tuan6\Nhom21_Tuan6\bin\Debug\Nhom21_Tuan6.exe.config
+C:\Users\PC GAMING\Desktop\Nhom21_Tuan6\Nhom21_Tuan6\bin\Debug\Nhom21_Tuan6.exe
+C:\Users\PC GAMING\Desktop\Nhom21_Tuan6\Nhom21_Tuan6\bin\Debug\Nhom21_Tuan6.pdb
+C:\Users\PC GAMING\Desktop\Nhom21_Tuan6\Nhom21_Tuan6\obj\Debug\Nhom21_Tuan6.csprojAssemblyReference.cache
+C:\Users\PC GAMING\Desktop\Nhom21_Tuan6\Nhom21_Tuan6\obj\Debug\Nhom21_Tuan6.Form1.resources
+C:\Users\PC GAMING\Desktop\Nhom21_Tuan6\Nhom21_Tuan6\obj\Debug\Nhom21_Tuan6.Properties.Resources.resources
+C:\Users\PC GAMING\Desktop\Nhom21_Tuan6\Nhom21_Tuan6\obj\Debug\Nhom21_Tuan6.csproj.GenerateResource.cache
+C:\Users\PC GAMING\Desktop\Nhom21_Tuan6\Nhom21_Tuan6\obj\Debug\Nhom21_Tuan6.csproj.CoreCompileInputs.cache
+C:\Users\PC GAMING\Desktop\Nhom21_Tuan6\Nhom21_Tuan6\obj\Debug\Nhom21_Tuan6.exe
+C:\Users\PC GAMING\Desktop\Nhom21_Tuan6\Nhom21_Tuan6\obj\Debug\Nhom21_Tuan6.pdb

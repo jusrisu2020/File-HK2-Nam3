@@ -1,0 +1,34 @@
+C:\Users\DELL\Downloads\Nhom21_Tuan3\Bai9\bin\Debug\Bai9.exe.config
+C:\Users\DELL\Downloads\Nhom21_Tuan3\Bai9\bin\Debug\Bai9.exe
+C:\Users\DELL\Downloads\Nhom21_Tuan3\Bai9\bin\Debug\Bai9.pdb
+C:\Users\DELL\Downloads\Nhom21_Tuan3\Bai9\obj\Debug\Bai9.csprojAssemblyReference.cache
+C:\Users\DELL\Downloads\Nhom21_Tuan3\Bai9\obj\Debug\Bai9.Form1.resources
+C:\Users\DELL\Downloads\Nhom21_Tuan3\Bai9\obj\Debug\Bai9.Properties.Resources.resources
+C:\Users\DELL\Downloads\Nhom21_Tuan3\Bai9\obj\Debug\Bai9.csproj.GenerateResource.cache
+C:\Users\DELL\Downloads\Nhom21_Tuan3\Bai9\obj\Debug\Bai9.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Downloads\Nhom21_Tuan3\Bai9\obj\Debug\Bai9.exe
+C:\Users\DELL\Downloads\Nhom21_Tuan3\Bai9\obj\Debug\Bai9.pdb
+C:\Users\PC GAMING\Desktop\Nhom21_Tuan3\Nhom21_Tuan3\Bai9\bin\Debug\Bai9.exe.config
+C:\Users\PC GAMING\Desktop\Nhom21_Tuan3\Nhom21_Tuan3\Bai9\bin\Debug\Bai9.exe
+C:\Users\PC GAMING\Desktop\Nhom21_Tuan3\Nhom21_Tuan3\Bai9\bin\Debug\Bai9.pdb
+C:\Users\PC GAMING\Desktop\Nhom21_Tuan3\Nhom21_Tuan3\Bai9\obj\Debug\Bai9.csprojAssemblyReference.cache
+C:\Users\PC GAMING\Desktop\Nhom21_Tuan3\Nhom21_Tuan3\Bai9\obj\Debug\Bai9.Form1.resources
+C:\Users\PC GAMING\Desktop\Nhom21_Tuan3\Nhom21_Tuan3\Bai9\obj\Debug\Bai9.Properties.Resources.resources
+C:\Users\PC GAMING\Desktop\Nhom21_Tuan3\Nhom21_Tuan3\Bai9\obj\Debug\Bai9.csproj.GenerateResource.cache
+C:\Users\PC GAMING\Desktop\Nhom21_Tuan3\Nhom21_Tuan3\Bai9\obj\Debug\Bai9.csproj.CoreCompileInputs.cache
+C:\Users\PC GAMING\Desktop\Nhom21_Tuan3\Nhom21_Tuan3\Bai9\obj\Debug\Bai9.exe
+C:\Users\PC GAMING\Desktop\Nhom21_Tuan3\Nhom21_Tuan3\Bai9\obj\Debug\Bai9.pdb
+Z:\Nhom21_Tuan3\Nhom21_Tuan3\Bai9\bin\Debug\Bai9.exe.config
+Z:\Nhom21_Tuan3\Nhom21_Tuan3\Bai9\bin\Debug\Bai9.exe
+Z:\Nhom21_Tuan3\Nhom21_Tuan3\Bai9\bin\Debug\Bai9.pdb
+Z:\Nhom21_Tuan3\Nhom21_Tuan3\Bai9\bin\Debug\mscorlib.dll
+Z:\Nhom21_Tuan3\Nhom21_Tuan3\Bai9\bin\Debug\normidna.nlp
+Z:\Nhom21_Tuan3\Nhom21_Tuan3\Bai9\bin\Debug\normnfc.nlp
+Z:\Nhom21_Tuan3\Nhom21_Tuan3\Bai9\bin\Debug\normnfd.nlp
+Z:\Nhom21_Tuan3\Nhom21_Tuan3\Bai9\bin\Debug\normnfkc.nlp
+Z:\Nhom21_Tuan3\Nhom21_Tuan3\Bai9\bin\Debug\normnfkd.nlp
+Z:\Nhom21_Tuan3\Nhom21_Tuan3\Bai9\obj\Debug\Bai9.Form1.resources
+Z:\Nhom21_Tuan3\Nhom21_Tuan3\Bai9\obj\Debug\Bai9.Properties.Resources.resources
+Z:\Nhom21_Tuan3\Nhom21_Tuan3\Bai9\obj\Debug\Bai9.csproj.GenerateResource.Cache
+Z:\Nhom21_Tuan3\Nhom21_Tuan3\Bai9\obj\Debug\Bai9.exe
+Z:\Nhom21_Tuan3\Nhom21_Tuan3\Bai9\obj\Debug\Bai9.pdb
