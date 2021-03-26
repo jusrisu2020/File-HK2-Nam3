@@ -1,0 +1,8 @@
+﻿<h3> Giới thiệu các thành viên nhóm 2 - lớp DH14TH</h3>
+<div id="content2">				
+	<ul>
+		<li>Thành viên 1: <span>Trần Văn A</span><br><br>
+		<li>Thành viên 2: <span>Nguyễn Thị C</span><br><br>
+		<li>Thành viên 3: <span>Võ Thị C</span><br><br>
+	</ul>
+</div>		

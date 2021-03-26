@@ -1,0 +1,16 @@
+﻿<h2> Thành viên lớp DH14TH</h2>
+<div id="content1">					
+	<img class="hinh1" src="images/totnghiep1.jpg"  /><br>					
+</div>	
+<div id="content1">					
+	Họ tên: <span>Trần Văn A</span><br><br>
+	Ngày sinh: <span>02/11/1994</span><br><br>
+	Quê quán: <span>Tri Tôn, An Giang</span><br><br>
+	MSSV: <span>TAG1028917</span><br><br>
+</div>	
+<div id="content2">					
+	<hr>
+	<h3>Quá trình học tập</h3>
+	Từ 2013 đến nay: <span>Trường Đại học An Giang-Khoa Kỹ Thuật - Công Nghệ - Môi Trường</span><br><br>
+	Từ 2010 đến 2013: <span>Trường THPT ABC</span><br><br>
+</div>		

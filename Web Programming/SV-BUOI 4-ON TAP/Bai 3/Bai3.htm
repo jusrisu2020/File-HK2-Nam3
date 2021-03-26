@@ -1,0 +1,194 @@
+﻿<html>
+<head>
+</head>
+
+<body>
+<!-- Sinh vien bo sung them cac the div de bo cuc trang
+	khungtrang
+	phantren
+	phanmenungang
+	phantrai
+	phangiua
+	phanphai
+	phanduoi
+-->
+
+	<div id="khungtrang">
+		<div id="phantren">
+		
+		</div>
+		<!-- Dữ liệu phần menu ngang -->
+		<div id="phanmenungang">
+			<a class="menungang" href="#">Trang chủ</a> |
+			<a class="menungang" href="#">Giới thiệu</a> |
+			<a class="menungang" href="#">Tin tức</a> |
+			<a class="menungang" href="#">Tuyển dụng</a> |
+			<a class="menungang" href="#">Hướng dẫn mua hàng</a> |
+			<a class="menungang" href="#">Liên hệ</a> |
+			<a class="menungang" href="#">Đăng ký</a> |
+			<a class="menungang" href="#">Đăng nhập</a> 
+		</div>
+
+		<div id="phantrai">
+			<!-- Dữ liệu phần menu dọc - Cột trái -->
+			<div class="khungmenu">
+				<p class="tieudemenu">ĐIỆN TỬ</p>
+				<a class="menu" href="#">Tivi</a>
+				<a class="menu" href="#">Đầu DVD</a>
+				<a class="menu" href="#">Đầu Karaoke</a>
+				<a class="menu" href="#">Loa</a>
+				<a class="menu" href="#">Dàn máy</a>
+			</div>
+			<div class="khungmenu">
+				<p class="tieudemenu">ĐIỆN LẠNH</p>
+				<a class="menu" href="#">Tủ lạnh</a>
+				<a class="menu" href="#">Máy giặt</a>
+				<a class="menu" href="#">Máy lạnh</a>
+				<a class="menu" href="#">Máy nước nóng</a>
+			</div>
+			<div class="khungmenu">
+				<p class="tieudemenu">GIA DỤNG</p>
+				<a class="menu" href="#">Lò vi sóng</a>
+				<a class="menu" href="#">Bếp điện từ</a>
+				<a class="menu" href="#">Nồi cơm điện</a>
+				<a class="menu" href="#">Máy hút bụi</a>
+				<a class="menu" href="#">Bàn ủi</a>
+				<a class="menu" href="#">Quạt</a>
+			</div>	
+			<div class="khungmenu">
+			<marquee behavior="alternate" direction="up">
+			<img src="hinhanh/h1.jpg" width="140px"/>
+			<img src="hinhanh/h2.jpg" width="140px"/>
+			<img src="hinhanh/h3.jpg" width="140px"/>
+			<img src="hinhanh/h4.jpg" width="140px"/>
+			</marquee>
+			</div>		
+		</div>
+		
+		
+		<div id="phangiua">
+		<!-- Dữ liệu phần bảng - Cột giữa -->
+				<form name="f" method="post" action="">
+					<table class="bieumau">
+						<tr> 
+						  <td colspan="3" class="canhgiua"><h2>PHIẾU MUA HÀNG TRẢ GÓP</h2></td>
+						</tr>
+						<tr> 
+						  <td>Ngày</td>
+						  <td><input type="text" name="txtNgay"></td>
+						  <td>&nbsp;</td>
+						</tr>
+						<tr> 
+						  <td colspan="3" class="tieude">THÔNG TIN SẢN PHẨM</td>
+						</tr>
+						<tr> 
+						  <td>Chọn sản phẩm</td>
+						  <td> 
+							<select name="optSanPham">
+							  <option value="Máy giặt Toshiba 6.5 kg">Máy giặt Toshiba 6.5 kg</option>
+							  <option value="Máy giặt Toshiba 7.0 kg">Máy giặt Toshiba 7.0 kg</option>
+							  <option value="Máy giặt Samsung 6.5 kg">Máy giặt Samsung 6.5 kg</option>
+							</select>       
+						  <td>&nbsp;</td>
+						</tr>
+						<tr> 
+						  <td>Thời hạn trả</td>
+						  <td>  <input type="radio" name="radThoiHan" value="1">6 tháng	    
+								<input type="radio" name="radThoiHan" value="2">12 tháng</td>
+						  <td>&nbsp;</td>
+						</tr>       
+						  <td>&nbsp;</td>
+						  <td><input type="checkbox" name="chkGiaoHang">
+							  Giao hàng tận nơi</td>
+						  <td>&nbsp;</td>
+						</tr>
+						<tr> 
+						  <td colspan="3" class="tieude">THÔNG TIN KHÁCH HÀNG</td>
+						</tr>
+						<tr> 
+						  <td>Họ tên</td>
+						  <td><input type="text" name="txtHoTen" ></td>
+						  <td>*</td>
+						</tr>
+						
+						
+						
+						
+						<!--  SINH VIÊN BỔ SUNG PHẦN CÒN THIẾU
+							NĂM SINH		
+						
+						
+						-->				
+						
+						<tr> 
+						  <td>Điện thoại</td>
+						  <td><input type="text" name="txtDienThoai" onchange="ktDienThoai();"></td>
+						  <td>*</td>
+						</tr>
+						<tr> 
+						  <td>Email</td>
+						  <td><input type="text" name="txtEmail" onchange="ktEmail();"></td>
+						  <td>&nbsp;</td>
+						</tr>
+						
+						
+						
+						
+						
+						<tr> 
+						  <td>Địa chỉ</td>
+						  <td><textarea name="txtDiaChi"></textarea></td>
+						  <td>*</td>
+						</tr>
+						<tr> 
+						  <td colspan="3" class="canhgiua"> 
+							  <input type="button" name="btnXacNhan" value="Xác nhận" >
+							  <input type="reset" name="btnKhong" value="Không">
+						  </td>
+						</tr>
+					</table>
+				</form>
+
+				<img src="hinhanh/quangcao.gif" />
+			
+			</div>
+			<div id="phanphai">
+				<!-- Dữ liệu phần sản phẩm giảm giá - Cột phải -->
+				<div class="spgiamgia">
+					<img src="hinhanh/gg_banui.jpg"/>
+					<span class="tenhang">GOLDSUN DW-GKY1200</span><br/>
+					<span class="giagoc">299.000</span><br/>
+					<span class="giagiam">149.000</span>
+				</div>
+				<div class="spgiamgia">
+					<img src="hinhanh/gg_nuocnong.jpg"/>
+					<span class="tenhang">PANASONIC DH-3JL1-V</span><br/>
+					<span class="giagoc">2.290.000</span><br/>
+					<span class="giagiam">1.599.000</span>
+				</div>
+				<div class="spgiamgia">
+					<img src="hinhanh/gg_maygiat.jpg"/>
+					<span class="tenhang">SAMSUNG WF1752WQR/XSV</span><br/>
+					<span class="giagoc">8.990.000</span><br/>
+					<span class="giagiam">7.999.000</span>
+				</div>
+
+			</div>
+		<div id="phanduoi">
+			<!-- Dữ liệu phần cuối trang -->
+			<br/>Cửa hàng điện gia dụng GIA KHANG - Chuyên cung cấp mặt hàng của các nhãn hiệu hàng đầu thế giới.<br/>
+					<img src="hinhanh/panasonic.png"/>
+					<img src="hinhanh/philips.png"/>
+					<img src="hinhanh/samsung.png"/>
+					<img src="hinhanh/sanyo.png"/>
+					<img src="hinhanh/sharp.png"/>
+					<img src="hinhanh/sony.png"/>
+					<img src="hinhanh/toshiba.png"/>
+					<img src="hinhanh/lg.png"/>
+					<img src="hinhanh/blacker.png"/>
+					<img src="hinhanh/goldsun.png"/>
+		</div>
+	</div>
+
+</body>
+</html>

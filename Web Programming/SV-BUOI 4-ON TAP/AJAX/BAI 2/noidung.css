@@ -1,0 +1,132 @@
+﻿body{
+    margin: 0;
+	font-family: Arial, Tahoma;
+    font-size: 16px;	
+	cursor: url(images/clovel.cur), auto;
+	background: url(images/sky.jpg) fixed;
+}
+
+img.hinh1{
+	width: 220px;
+	height: 170px;
+}
+
+#main{
+    width: 1000px;   
+	background-image: url('images/background2.jpg');	
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#head{	
+    height: 180px;	
+    background-image: url('images/banner-agu.jpg');	   
+   
+}
+
+#head-link{     
+	 font-weight: bold;
+	 color: #FFFFFF;
+	 height: 30px;  
+     background-color: #00AA00;    
+	 padding-top: 5px;
+     padding-left: 10px;     	 
+     clear: both;	 
+}
+
+#head-link a{
+	text-decoration: none;
+}
+
+#head-link  a:hover {		
+	color: #00008B;
+}
+
+#head-link  a:visited {
+	color: #fff;
+}
+
+#left{     
+	 width: 194px;
+     min-height: 410px;    
+     float:left;         
+	 background-color: #CCFFFF;	 
+}
+#left1{    
+	border: thin silver solid;
+	border-color: #009966;
+	background-color: #f0fff0;	
+	border-bottom-right-radius: 12px;
+	border-bottom-left-radius: 12px;
+	margin-bottom: 2px; 
+}
+
+#left p{
+	margin: 0px 0px 0px 0px;	
+	padding: 2px 1px 3px 15px;	
+	color:blue;
+	font-weight: bold;	
+	background: url(images/t_l.gif);
+}
+
+#left ul {
+    margin-top: 0;
+	list-style-image: url('images/bullet_yellow.png');
+} 
+
+#left  a {
+	text-decoration: none;
+}
+
+#left  a:hover {
+	text-decoration: underline;	
+	background: #00FFFF;	
+}
+
+#left  a:visited {
+	color: #A52A2A;
+}
+
+#content{
+     width: 790px;
+     min-height: 395px;  
+	 color: blue;	 
+	 font-weight: bold;	
+	 text-align: left;
+     float:left;	
+	 margin-left: 10px;   
+}
+
+#content1{
+     width: 220px;
+     float:left;	 
+}
+#content2{
+     width: 790px;
+     float:left;		 
+}
+
+#content span{
+	color:black;
+	font-weight: normal;	
+}
+
+#content h4{
+	text-align: left;	
+}
+
+#content hr {
+  background: #0066FF;
+  border: 0;
+  height: 2px;
+}
+
+#footer{
+     height: 50px;
+     clear: both;   
+	 padding-top:20px;
+     background-color: #1E90FF;
+	 text-align: center;		
+	 color:#ffffff; 
+}
+

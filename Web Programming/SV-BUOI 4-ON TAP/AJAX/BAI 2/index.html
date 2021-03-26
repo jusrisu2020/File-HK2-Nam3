@@ -1,0 +1,62 @@
+﻿<html>
+	<head>
+		<title>Thực hành Ajax</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="noidung.css">	
+		<script type="text/javascript" src="scripts/ajax.js"></script>		
+		<script type="text/javascript" src="scripts/jquery-2.1.0.min.js"></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".m1").click(function(){
+					$(".subm1").toggle();
+				});
+				
+				$(".m2").click(function(){
+					$(".subm2").toggle();
+				});
+				
+				$(".m3").click(function(){
+					$(".subm3").toggle();
+				});
+			});
+		</script>
+	
+	</head>
+	<body onload="loadXMLDoc('test.txt')">
+		<div id="main">
+			<div id="head">
+			</div>
+			<div id="head-link">				
+					<a href="#" onclick="loadXMLDoc('test.txt')">Trang chủ</a> &nbsp;&nbsp;&nbsp;&nbsp; Khoa KT-CN-MT					
+			</div>
+			<div id="left">
+				<div id="left1">
+					<p class="m1">Thông Tin Nhóm</p>
+					<ul class="subm1">
+						<li><a href="#" onclick="loadXMLDoc('test1.txt')">Trần Văn A</a></li>
+						<li><a href="#" onclick="loadXMLDoc('test2.txt')">Nguyễn Thị B</a></li>
+						<li><a href="#" onclick="loadXMLDoc('test3.txt')">Võ Thị C</a></li>							
+					</ul>	
+				</div>
+				
+				<div id="left1">
+					<p class="m2">Các Bài Thực Hành</p>
+					<ul class="subm2">
+						<li><a href="#">Bài Tập Buổi 1</a></li>
+						<li><a href="#">Bài Tập Buổi 2</a></li>
+						<li><a href="#">Bài Tập Buổi 3</a></li>	
+						<li><a href="#">Bài Tập Buổi 4</a></li>	
+					</ul>	
+				</div>	
+			</div>			
+			<div id="content">
+				Noi dung					
+			</div>
+			
+			<div id="footer">
+				Thực hành môn Lập trình web - Bản quyền &copy; lớp DH14TH, Nhóm 2 - Năm 2015
+			</div>
+		</div>	
+	</body>
+</html>

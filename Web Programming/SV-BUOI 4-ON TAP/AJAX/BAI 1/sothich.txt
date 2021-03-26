@@ -1,0 +1,10 @@
+﻿<h3>Sở thích</h3>
+<ul>
+	<li> Đọc sách </li>
+	<li> Xem phim</li>
+	<li> Đá banh</li>
+	<li> Du lịch</li>
+</ul>
+	
+	
+	

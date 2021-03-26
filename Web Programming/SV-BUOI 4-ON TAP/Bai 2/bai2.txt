@@ -1,0 +1,49 @@
+﻿<!-- Dữ liệu nhập sẵn cho phần MENU -->					
+<div>
+	<p class="menutext">BÀI GIẢNG</p>
+	<a class="menu" href="http://www.mediafire.com/?8777n4kn59gyb">HTML</a>
+	<a class="menu" href="http://www.mediafire.com/?8777n4kn59gyb">CSS</a>
+	<a class="menu" href="http://www.mediafire.com/?8777n4kn59gyb">Javascript</a>
+	<a class="menu" href="http://www.mediafire.com/?8777n4kn59gyb">PHP-MySQL</a>
+</div>
+<div>
+	<p class="menutext">BÀI TẬP</p>
+	<a class="menu" href="http://www.mediafire.com/?oho68h9f97jpr">Bài tập số 1</a>
+	<a class="menu" href="http://www.mediafire.com/?oho68h9f97jpr">Bài tập số 2</a>
+	<a class="menu" href="http://www.mediafire.com/?oho68h9f97jpr">Bài tập số 3</a>
+	<a class="menu" href="http://www.mediafire.com/?oho68h9f97jpr">Bài tập số 4</a>
+	<a class="menu" href="http://www.mediafire.com/?oho68h9f97jpr">Bài tập số 5</a>
+	<a class="menu" href="http://www.mediafire.com/?oho68h9f97jpr">Bài tập số 6</a>
+	<a class="menu" href="http://www.mediafire.com/?oho68h9f97jpr">Bài tập số 7</a>
+</div>
+<div>
+	<p class="menutext">THAM KHẢO</p>
+	<a class="menu" href="http://www.w3schools.com">www.w3schools.com</a>
+	<a class="menu" href="http://www.w3.org">www.w3.org</a>
+	<a class="menu" href="http://www.php.net">www.php.net</a>	
+</div>
+
+
+
+<!-- Dữ liệu nhập sẵn cho phần THÔNG BÁO-->
+<p>THÔNG BÁO</p>
+<div class="thongbao">
+	<p class="tieude">Khẩn! Kiểm tra</p>
+	<p class="ngaydang">27/09/2012 07:30</p>
+	<p class="noidung">Kiểm tra môn LT Web vào chiều ngày 06/10, phòng MT05. Nhóm 1 bắt đầu lúc 13g30, nhóm 2 bắt đầu lúc 15g00 (mỗi nhóm 40SV, chia theo thứ tự trong danh sách lớp).</p>
+	<p class="email"><a href="mailto:">ltruong@gmail.com</a></p>
+</div>
+<div class="thongbao">
+	<p class="tieude">Đổi buổi thực hành</p>
+	<p class="ngaydang">26/09/2012 17:15</p>
+	<p class="noidung">Thứ bảy tuần này phòng máy bận thi, buổi thực hành sáng thứ bảy sẽ dời sang sáng thứ sáu.</p>
+	<p class="email"><a href="mailto:">ltruong@gmail.com</a></p>
+</div>
+<div class="thongbao">
+	<p class="tieude">Địa chỉ download bài tập</p>
+	<p class="ngaydang">23/08/2012 15:45</p>
+	<p class="noidung">Các bạn có thể download tài liệu học tập tại <a href="http://www.mediafire.com/?gl6hfz1agkdxc">đây</a></p>
+	<p class="email"><a href="mailto:">ltruong@gmail.com</a></p>
+</div>
+<p><a href="#">Xem thêm</a></p>
+				

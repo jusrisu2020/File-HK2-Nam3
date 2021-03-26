@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bài 2</title>
+</head>
+
+	<link rel="stylesheet" href="Bai2.css">
+<body>
+	<!-- Khung trang web: Độ rộng 1024px, canh lề auto, font chữ Verdana 10pt, màu
+chữ darkblue, đường viền mảnh – nét liền – màu darkblue, có bóng mờ.
+ Phần đầu trang: chèn hình banner.jpg. Độ cao 100px.
+ Phần menu bên trái: canh float bên trái, chèn các liên kết như hình (dữ liệu cho
+sẵn trong bai3.txt). Cột menu bên trái có nền màu #3579cf. Cao 600px, rộng
+160px. -->
+<div id="khungtrang">
+	<div id="phantren">
+		<img src="banner.jpg" alt="BgMenu" title="Hình ảnh Menu">
+	</div>
+
+	<div id="cottrai">
+		<div class="cottrai1">
+			<p class="menutext">BÀI GIẢNG</p>
+			<a class="menu" href="http://www.mediafire.com/?8777n4kn59gyb">HTML</a>
+			<a class="menu" href="http://www.mediafire.com/?8777n4kn59gyb">CSS</a>
+			<a class="menu" href="http://www.mediafire.com/?8777n4kn59gyb">Javascript</a>
+			<a class="menu" href="http://www.mediafire.com/?8777n4kn59gyb">PHP-MySQL</a>
+		</div>
+
+		<div class="cottrai1">
+			<p class="menutext">BÀI TẬP</p>
+			<a class="menu" href="http://www.mediafire.com/?oho68h9f97jpr">Bài tập số 1</a>
+			<a class="menu" href="http://www.mediafire.com/?oho68h9f97jpr">Bài tập số 2</a>
+			<a class="menu" href="http://www.mediafire.com/?oho68h9f97jpr">Bài tập số 3</a>
+			<a class="menu" href="http://www.mediafire.com/?oho68h9f97jpr">Bài tập số 4</a>
+			<a class="menu" href="http://www.mediafire.com/?oho68h9f97jpr">Bài tập số 5</a>
+			<a class="menu" href="http://www.mediafire.com/?oho68h9f97jpr">Bài tập số 6</a>
+			<a class="menu" href="http://www.mediafire.com/?oho68h9f97jpr">Bài tập số 7</a>
+		</div>
+
+		<div class="cottrai1">
+			<p class="menutext">THAM KHẢO</p>
+			<a class="menu" href="http://www.w3schools.com">www.w3schools.com</a>
+			<a class="menu" href="http://www.w3.org">www.w3.org</a>
+			<a class="menu" href="http://www.php.net">www.php.net</a>	
+		</div>
+
+	</div>
+
+	<div id="cotgiua">
+		<form name="f" method="post" action="">
+			<table class="bieumau">
+				<tr> 
+				  <td colspan="3" align="center"><b>THÔNG BÁO MỚI</b></td>
+				</tr>
+				<tr> 
+				  <td width="150">Ngày đăng</td>
+				  <td width="280"><input name="txtNgayDang" type="text" size="30" disabled="true"></td>
+				  <td width="20">&nbsp;</td>
+				</tr>
+				<tr> 
+				  <td>Tiêu đề</td>
+				  <td><input name="txtTieuDe" type="text" size="30"></td>
+				  <td>*</td>
+				</tr>					
+				<tr> 
+				  <td>Nội dung</td>
+				  <td><textarea name="txtNoiDung" cols="26" rows="5"></textarea></td>
+				  <td>*</td>
+				</tr>
+				<tr> 
+				  <td>Người gửi (Email)</td>
+				  <td><input name="txtEmail" type="text" size="30"></td>
+				  <td>*</td>
+				</tr>
+				
+				<tr> 
+				  <td colspan="3" align="center">
+					<input type="button" name="btnGui" value="Gửi">
+					<input type="reset" name="btnHuy" value="Hủy">
+				  </td>
+				</tr>
+			</table>
+		</form>
+	</div>
+
+	<p id="tbao">THÔNG BÁO</p>
+	
+	<div id="cotphai">
+
+		<div class="thongbao">
+			<p class="tieude">Khẩn! Kiểm tra</p>
+			<p class="ngaydang">27/09/2012 07:30</p>
+			<p class="noidung">Kiểm tra môn LT Web vào chiều ngày 06/10, phòng MT05. Nhóm 1 bắt đầu lúc 13g30, nhóm 2 bắt đầu lúc 15g00 (mỗi nhóm 40SV, chia theo thứ tự trong danh sách lớp).</p>
+			<p class="email"><a href="mailto:">ltruong@gmail.com</a></p>
+		</div>
+
+		<div class="thongbao">
+			<p class="tieude">Đổi buổi thực hành</p>
+			<p class="ngaydang">26/09/2012 17:15</p>
+			<p class="noidung">Thứ bảy tuần này phòng máy bận thi, buổi thực hành sáng thứ bảy sẽ dời sang sáng thứ sáu.</p>
+			<p class="email">ltruong@gmail.com</p>
+		</div>
+
+		<div class="thongbao">
+			<p class="tieude">Địa chỉ download bài tập</p>
+			<p class="ngaydang">23/08/2012 15:45</p>
+			<p class="noidung">Các bạn có thể download tài liệu học tập tại <a href="http://www.mediafire.com/?gl6hfz1agkdxc">đây</a></p>
+			<p class="email">ltruong@gmail.com</p>
+		</div>
+
+		<p><a href="#">Xem thêm</a></p>
+	</div>
+
+	<div id="phanduoi">
+		Trang web môn học LT Web<br/> Lớp 35ST - Trường ĐH An Giang
+	</div>
+
+</div>
+</body>
+</html>
+

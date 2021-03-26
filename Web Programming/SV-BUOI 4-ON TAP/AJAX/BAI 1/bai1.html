@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Untitled Document</title>
+		<style type="text/css">
+			#noidung{
+				float:left;
+				margin-right:14px;
+				background-color:#CCFFFF;
+				color:#F00;	
+				width:300px;
+			}
+		</style>		
+      	<script type="text/javascript">
+			function loadXMLDoc(url)
+			{
+				if(window.XMLHttpRequest)
+				{
+					//ma cho IE7+, Firefox, Chrome, opera, Safari
+					xmlhttp = new XMLHttpRequest();
+					xmlhttp.open("GET",url,false);
+					xmlhttp.send(null);
+				}
+				else
+				{
+					//ma cho IE6, IE5
+					xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+					xmlhttp.open("GET",url,false);
+					//khong goi null cho ActiveX
+					xmlhttp.send();					
+				}
+				document.getElementById('noidung').innerHTML = xmlhttp.responseText;				
+			}
+		</script>
+    </head>
+	
+    <body bgcolor="#FFFFCC" onload="loadXMLDoc('gioithieu.txt')">
+		<p>
+			<a href="#" onclick="loadXMLDoc('gioithieu.txt')">Trang chủ</a>
+		</p>
+		<div id="noidung">			
+		</div>
+		<button type="button" onclick="loadXMLDoc('hoctap.txt')">Học tập</button><br />
+		<button type="button" onclick="loadXMLDoc('sothich.txt')">Sở thích</button><br />	
+    </body>
+	
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
