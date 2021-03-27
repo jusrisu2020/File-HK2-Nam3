@@ -101,5 +101,6 @@ DELETE FROM TableFood
 SELECT * FROM Account;
 SELECT * FROM FoodCategory;
 SELECT * FROM Food;
+
 SELECT * FROM Bill;
 SELECT * FROM BillInfo;

@@ -94,6 +94,12 @@
     <Compile Include="UI\UCQuanLyNhanVien.Designer.cs">
       <DependentUpon>UCQuanLyNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\UCTrangChu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UCTrangChu.Designer.cs">
+      <DependentUpon>UCTrangChu.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="UI\FDangNhap.resx">
       <DependentUpon>FDangNhap.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,6 +130,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\UCQuanLyNhanVien.resx">
       <DependentUpon>UCQuanLyNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UCTrangChu.resx">
+      <DependentUpon>UCTrangChu.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
