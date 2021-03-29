@@ -31,6 +31,16 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FTrangChu));
             this.pnBgLeft = new System.Windows.Forms.Panel();
+<<<<<<< HEAD
+=======
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.pbLogo = new System.Windows.Forms.PictureBox();
+            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.gnBtnQLNV = new Guna.UI2.WinForms.Guna2Button();
+            this.gnBtnQLND = new Guna.UI2.WinForms.Guna2Button();
+>>>>>>> e5b494e753fa41864ac493022a340f37080b8a09
             this.gnEFTrangChu = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.gnDCFTrangChu = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.gnEBgLeft = new Guna.UI2.WinForms.Guna2Elipse(this.components);
@@ -38,6 +48,7 @@
             this.ucQLNV = new QLTSTBKhachSan.UI.UCQuanLyNhanVien();
             this.ucQLND = new QLTSTBKhachSan.UI.UCQuanLyNguoiDung();
             this.gnQLNV = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+<<<<<<< HEAD
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.gnBtnCaiDat = new Guna.UI2.WinForms.Guna2Button();
             this.gnBtnQLTB = new Guna.UI2.WinForms.Guna2Button();
@@ -50,22 +61,37 @@
             this.pnBgLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
+=======
+            this.ucTrangChu = new QLTSTBKhachSan.UI.UCTrangChu();
+            this.pnBgLeft.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
+>>>>>>> e5b494e753fa41864ac493022a340f37080b8a09
             this.SuspendLayout();
             // 
             // pnBgLeft
             // 
             this.pnBgLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(59)))), ((int)(((byte)(72)))));
+<<<<<<< HEAD
             this.pnBgLeft.Controls.Add(this.pictureBox2);
             this.pnBgLeft.Controls.Add(this.gnBtnQLTB);
             this.pnBgLeft.Controls.Add(this.gnBtnQLBP);
+=======
+            this.pnBgLeft.Controls.Add(this.guna2Button1);
+            this.pnBgLeft.Controls.Add(this.pbLogo);
+            this.pnBgLeft.Controls.Add(this.guna2Button4);
+            this.pnBgLeft.Controls.Add(this.guna2Button3);
+            this.pnBgLeft.Controls.Add(this.guna2Button2);
+>>>>>>> e5b494e753fa41864ac493022a340f37080b8a09
             this.pnBgLeft.Controls.Add(this.gnBtnQLNV);
             this.pnBgLeft.Controls.Add(this.gnBtnQLND);
             this.pnBgLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnBgLeft.Location = new System.Drawing.Point(0, 0);
+            this.pnBgLeft.Margin = new System.Windows.Forms.Padding(2);
             this.pnBgLeft.Name = "pnBgLeft";
-            this.pnBgLeft.Size = new System.Drawing.Size(300, 800);
+            this.pnBgLeft.Size = new System.Drawing.Size(225, 650);
             this.pnBgLeft.TabIndex = 0;
             // 
+<<<<<<< HEAD
             // gnEFTrangChu
             // 
             this.gnEFTrangChu.BorderRadius = 30;
@@ -111,17 +137,102 @@
             this.gnQLNV.TargetControl = this.ucQLNV;
             // 
             // pictureBox2
+=======
+            // guna2Button1
             // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(300, 145);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
+            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.BorderRadius = 16;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(59)))), ((int)(((byte)(72)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 7.8F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(255)))));
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
+            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button1.Location = new System.Drawing.Point(17, 333);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.BorderRadius = 0;
+            this.guna2Button1.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
+            this.guna2Button1.Size = new System.Drawing.Size(174, 45);
+            this.guna2Button1.TabIndex = 8;
+            this.guna2Button1.Text = "Thiết Bị";
+            this.guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button1.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
+>>>>>>> e5b494e753fa41864ac493022a340f37080b8a09
             // 
+            // pbLogo
+            // 
+            this.pbLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbLogo.Image")));
+            this.pbLogo.Location = new System.Drawing.Point(0, 0);
+            this.pbLogo.Margin = new System.Windows.Forms.Padding(2);
+            this.pbLogo.Name = "pbLogo";
+            this.pbLogo.Size = new System.Drawing.Size(225, 118);
+            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbLogo.TabIndex = 2;
+            this.pbLogo.TabStop = false;
+            this.pbLogo.Click += new System.EventHandler(this.pbLogo_Click);
+            // 
+<<<<<<< HEAD
             // gnBtnCaiDat
+=======
+            // guna2Button4
+            // 
+            this.guna2Button4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button4.BorderRadius = 16;
+            this.guna2Button4.CheckedState.Parent = this.guna2Button4;
+            this.guna2Button4.CustomImages.Parent = this.guna2Button4;
+            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(59)))), ((int)(((byte)(72)))));
+            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button4.ForeColor = System.Drawing.Color.White;
+            this.guna2Button4.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(255)))));
+            this.guna2Button4.HoverState.Parent = this.guna2Button4;
+            this.guna2Button4.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button4.Image")));
+            this.guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button4.Location = new System.Drawing.Point(17, 568);
+            this.guna2Button4.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Button4.Name = "guna2Button4";
+            this.guna2Button4.ShadowDecoration.BorderRadius = 0;
+            this.guna2Button4.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
+            this.guna2Button4.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
+            this.guna2Button4.Size = new System.Drawing.Size(174, 45);
+            this.guna2Button4.TabIndex = 7;
+            this.guna2Button4.Text = "Cài Đặt";
+            this.guna2Button4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button4.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
+            // 
+            // guna2Button3
+            // 
+            this.guna2Button3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button3.BorderRadius = 16;
+            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
+            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
+            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(59)))), ((int)(((byte)(72)))));
+            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 7.8F);
+            this.guna2Button3.ForeColor = System.Drawing.Color.White;
+            this.guna2Button3.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(255)))));
+            this.guna2Button3.HoverState.Parent = this.guna2Button3;
+            this.guna2Button3.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button3.Image")));
+            this.guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button3.Location = new System.Drawing.Point(17, 284);
+            this.guna2Button3.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Button3.Name = "guna2Button3";
+            this.guna2Button3.ShadowDecoration.BorderRadius = 0;
+            this.guna2Button3.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
+            this.guna2Button3.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
+            this.guna2Button3.Size = new System.Drawing.Size(174, 45);
+            this.guna2Button3.TabIndex = 6;
+            this.guna2Button3.Text = "Thiết Bị";
+            this.guna2Button3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button3.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
+>>>>>>> e5b494e753fa41864ac493022a340f37080b8a09
             // 
             this.gnBtnCaiDat.BackColor = System.Drawing.Color.Transparent;
             this.gnBtnCaiDat.BorderRadius = 16;
@@ -147,6 +258,7 @@
             this.gnBtnCaiDat.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.gnBtnCaiDat.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
             // 
+<<<<<<< HEAD
             // gnBtnQLTB
             // 
             this.gnBtnQLTB.BackColor = System.Drawing.Color.Transparent;
@@ -198,6 +310,31 @@
             this.gnBtnQLBP.Text = "Quản Lí Bộ Phận";
             this.gnBtnQLBP.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.gnBtnQLBP.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
+=======
+            this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button2.BorderRadius = 16;
+            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
+            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
+            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(59)))), ((int)(((byte)(72)))));
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(255)))));
+            this.guna2Button2.HoverState.Parent = this.guna2Button2;
+            this.guna2Button2.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.Image")));
+            this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button2.Location = new System.Drawing.Point(17, 235);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.ShadowDecoration.BorderRadius = 0;
+            this.guna2Button2.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
+            this.guna2Button2.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
+            this.guna2Button2.Size = new System.Drawing.Size(174, 45);
+            this.guna2Button2.TabIndex = 5;
+            this.guna2Button2.Text = "Quản Lí Bộ Phận";
+            this.guna2Button2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button2.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
+>>>>>>> e5b494e753fa41864ac493022a340f37080b8a09
             // 
             // gnBtnQLNV
             // 
@@ -212,14 +349,19 @@
             this.gnBtnQLNV.HoverState.Parent = this.gnBtnQLNV;
             this.gnBtnQLNV.Image = global::QLTSTBKhachSan.Properties.Resources.management_30px;
             this.gnBtnQLNV.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+<<<<<<< HEAD
             this.gnBtnQLNV.ImageSize = new System.Drawing.Size(30, 30);
             this.gnBtnQLNV.Location = new System.Drawing.Point(23, 241);
+=======
+            this.gnBtnQLNV.Location = new System.Drawing.Point(17, 186);
+            this.gnBtnQLNV.Margin = new System.Windows.Forms.Padding(2);
+>>>>>>> e5b494e753fa41864ac493022a340f37080b8a09
             this.gnBtnQLNV.Name = "gnBtnQLNV";
             this.gnBtnQLNV.ShadowDecoration.BorderRadius = 0;
             this.gnBtnQLNV.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gnBtnQLNV.ShadowDecoration.Parent = this.gnBtnQLNV;
             this.gnBtnQLNV.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
-            this.gnBtnQLNV.Size = new System.Drawing.Size(232, 55);
+            this.gnBtnQLNV.Size = new System.Drawing.Size(174, 45);
             this.gnBtnQLNV.TabIndex = 4;
             this.gnBtnQLNV.Text = "Quản Lí Nhân Viên";
             this.gnBtnQLNV.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -239,14 +381,19 @@
             this.gnBtnQLND.HoverState.Parent = this.gnBtnQLND;
             this.gnBtnQLND.Image = ((System.Drawing.Image)(resources.GetObject("gnBtnQLND.Image")));
             this.gnBtnQLND.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+<<<<<<< HEAD
             this.gnBtnQLND.ImageSize = new System.Drawing.Size(30, 30);
             this.gnBtnQLND.Location = new System.Drawing.Point(23, 169);
+=======
+            this.gnBtnQLND.Location = new System.Drawing.Point(17, 137);
+            this.gnBtnQLND.Margin = new System.Windows.Forms.Padding(2);
+>>>>>>> e5b494e753fa41864ac493022a340f37080b8a09
             this.gnBtnQLND.Name = "gnBtnQLND";
             this.gnBtnQLND.ShadowDecoration.BorderRadius = 0;
             this.gnBtnQLND.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gnBtnQLND.ShadowDecoration.Parent = this.gnBtnQLND;
             this.gnBtnQLND.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
-            this.gnBtnQLND.Size = new System.Drawing.Size(232, 55);
+            this.gnBtnQLND.Size = new System.Drawing.Size(174, 45);
             this.gnBtnQLND.TabIndex = 2;
             this.gnBtnQLND.Text = "QUẢN LÍ NGƯỜI DÙNG";
             this.gnBtnQLND.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -289,7 +436,40 @@
             this.guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button1.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
             // 
+<<<<<<< HEAD
             // guna2Button2
+=======
+            // gnEBgLeft
+            // 
+            this.gnEBgLeft.BorderRadius = 30;
+            this.gnEBgLeft.TargetControl = this.pnBgLeft;
+            // 
+            // gnEQLND
+            // 
+            this.gnEQLND.BorderRadius = 30;
+            this.gnEQLND.TargetControl = this.gnBtnQLND;
+            // 
+            // ucQLNV
+            // 
+            this.ucQLNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ucQLNV.Dock = System.Windows.Forms.DockStyle.Left;
+            this.ucQLNV.Location = new System.Drawing.Point(975, 0);
+            this.ucQLNV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ucQLNV.Name = "ucQLNV";
+            this.ucQLNV.Size = new System.Drawing.Size(750, 650);
+            this.ucQLNV.TabIndex = 2;
+            // 
+            // ucQLND
+            // 
+            this.ucQLND.Dock = System.Windows.Forms.DockStyle.Left;
+            this.ucQLND.Location = new System.Drawing.Point(225, 0);
+            this.ucQLND.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ucQLND.Name = "ucQLND";
+            this.ucQLND.Size = new System.Drawing.Size(750, 650);
+            this.ucQLND.TabIndex = 1;
+            // 
+            // gnQLNV
+>>>>>>> e5b494e753fa41864ac493022a340f37080b8a09
             // 
             this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
             this.guna2Button2.BorderRadius = 16;
@@ -315,25 +495,42 @@
             this.guna2Button2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button2.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
             // 
+            // ucTrangChu
+            // 
+            this.ucTrangChu.Location = new System.Drawing.Point(230, 21);
+            this.ucTrangChu.Name = "ucTrangChu";
+            this.ucTrangChu.Size = new System.Drawing.Size(679, 608);
+            this.ucTrangChu.TabIndex = 3;
+            // 
             // FTrangChu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(221)))), ((int)(((byte)(225)))));
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1300, 800);
             this.Controls.Add(this.panel1);
+=======
+            this.ClientSize = new System.Drawing.Size(975, 650);
+            this.Controls.Add(this.ucTrangChu);
+>>>>>>> e5b494e753fa41864ac493022a340f37080b8a09
             this.Controls.Add(this.ucQLNV);
             this.Controls.Add(this.ucQLND);
             this.Controls.Add(this.pnBgLeft);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FTrangChu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FTrangChu";
             this.Load += new System.EventHandler(this.FTrangChu_Load);
             this.pnBgLeft.ResumeLayout(false);
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
+>>>>>>> e5b494e753fa41864ac493022a340f37080b8a09
             this.ResumeLayout(false);
 
         }
@@ -350,12 +547,17 @@
         private Guna.UI2.WinForms.Guna2DragControl gnDCFTrangChu;
         private Guna.UI2.WinForms.Guna2Elipse gnEBgLeft;
         private Guna.UI2.WinForms.Guna2Elipse gnEQLND;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pbLogo;
         private UCQuanLyNhanVien ucQLNV;
         private UCQuanLyNguoiDung ucQLND;
         private Guna.UI2.WinForms.Guna2Elipse gnQLNV;
+<<<<<<< HEAD
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
+=======
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private UCTrangChu ucTrangChu;
+>>>>>>> e5b494e753fa41864ac493022a340f37080b8a09
     }
 }
