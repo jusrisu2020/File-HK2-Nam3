@@ -40,7 +40,9 @@ namespace QLTSTBKhachSan.UI
             this.gnBtnDangNhap = new Guna.UI2.WinForms.Guna2Button();
             this.gnBtnThoat = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -58,7 +60,8 @@ namespace QLTSTBKhachSan.UI
             // 
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.FillColor = System.Drawing.SystemColors.Control;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.guna2PictureBox1.Image = global::QLTSTBKhachSan.Properties.Resources.eagle_logo_vector_93835_8;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(115, 11);
             this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
@@ -87,14 +90,14 @@ namespace QLTSTBKhachSan.UI
             this.guna2TextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(246)))), ((int)(((byte)(250)))));
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(24, 174);
+            this.guna2TextBox1.Location = new System.Drawing.Point(26, 200);
             this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "Username";
             this.guna2TextBox1.SelectedText = "";
             this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(365, 36);
+            this.guna2TextBox1.Size = new System.Drawing.Size(291, 36);
             this.guna2TextBox1.TabIndex = 1;
             // 
             // guna2TextBox2
@@ -116,14 +119,14 @@ namespace QLTSTBKhachSan.UI
             this.guna2TextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(246)))), ((int)(((byte)(250)))));
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Location = new System.Drawing.Point(24, 252);
+            this.guna2TextBox2.Location = new System.Drawing.Point(26, 257);
             this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
             this.guna2TextBox2.PlaceholderText = "Password";
             this.guna2TextBox2.SelectedText = "";
             this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Size = new System.Drawing.Size(365, 36);
+            this.guna2TextBox2.Size = new System.Drawing.Size(291, 36);
             this.guna2TextBox2.TabIndex = 2;
             // 
             // guna2ToggleSwitch1
@@ -134,7 +137,7 @@ namespace QLTSTBKhachSan.UI
             this.guna2ToggleSwitch1.CheckedState.InnerBorderColor = System.Drawing.Color.White;
             this.guna2ToggleSwitch1.CheckedState.InnerColor = System.Drawing.Color.Red;
             this.guna2ToggleSwitch1.CheckedState.Parent = this.guna2ToggleSwitch1;
-            this.guna2ToggleSwitch1.Location = new System.Drawing.Point(24, 319);
+            this.guna2ToggleSwitch1.Location = new System.Drawing.Point(26, 297);
             this.guna2ToggleSwitch1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2ToggleSwitch1.Name = "guna2ToggleSwitch1";
             this.guna2ToggleSwitch1.ShadowDecoration.Parent = this.guna2ToggleSwitch1;
@@ -151,7 +154,7 @@ namespace QLTSTBKhachSan.UI
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(123, 92);
+            this.label1.Location = new System.Drawing.Point(98, 126);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(156, 54);
             this.label1.TabIndex = 4;
@@ -171,7 +174,7 @@ namespace QLTSTBKhachSan.UI
             this.gnBtnDangNhap.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.gnBtnDangNhap.HoverState.ForeColor = System.Drawing.Color.Black;
             this.gnBtnDangNhap.HoverState.Parent = this.gnBtnDangNhap;
-            this.gnBtnDangNhap.Location = new System.Drawing.Point(83, 369);
+            this.gnBtnDangNhap.Location = new System.Drawing.Point(42, 345);
             this.gnBtnDangNhap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gnBtnDangNhap.Name = "gnBtnDangNhap";
             this.gnBtnDangNhap.ShadowDecoration.Parent = this.gnBtnDangNhap;
@@ -194,7 +197,7 @@ namespace QLTSTBKhachSan.UI
             this.gnBtnThoat.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.gnBtnThoat.HoverState.ForeColor = System.Drawing.Color.Black;
             this.gnBtnThoat.HoverState.Parent = this.gnBtnThoat;
-            this.gnBtnThoat.Location = new System.Drawing.Point(209, 369);
+            this.gnBtnThoat.Location = new System.Drawing.Point(177, 345);
             this.gnBtnThoat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gnBtnThoat.Name = "gnBtnThoat";
             this.gnBtnThoat.ShadowDecoration.Parent = this.gnBtnThoat;
@@ -210,19 +213,34 @@ namespace QLTSTBKhachSan.UI
             this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
             this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(357, 12);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(286, 11);
             this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
             this.guna2ControlBox2.Size = new System.Drawing.Size(45, 30);
             this.guna2ControlBox2.TabIndex = 8;
             // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox2.FillColor = System.Drawing.SystemColors.Control;
+            this.guna2PictureBox2.Image = global::QLTSTBKhachSan.Properties.Resources.eagle_logo_vector_93835_8;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(107, 11);
+            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
+            this.guna2PictureBox2.Size = new System.Drawing.Size(139, 113);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox2.TabIndex = 0;
+            this.guna2PictureBox2.TabStop = false;
+            this.guna2PictureBox2.UseTransparentBackground = true;
+            // 
             // FDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(60)))), ((int)(((byte)(117)))));
-            this.ClientSize = new System.Drawing.Size(413, 473);
+            this.ClientSize = new System.Drawing.Size(343, 418);
             this.Controls.Add(this.guna2ControlBox2);
             this.Controls.Add(this.gnBtnThoat);
             this.Controls.Add(this.gnBtnDangNhap);
@@ -230,6 +248,7 @@ namespace QLTSTBKhachSan.UI
             this.Controls.Add(this.guna2ToggleSwitch1);
             this.Controls.Add(this.guna2TextBox2);
             this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.guna2PictureBox2);
             this.Controls.Add(this.guna2PictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -237,6 +256,7 @@ namespace QLTSTBKhachSan.UI
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FDangNhap";
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -254,5 +274,6 @@ namespace QLTSTBKhachSan.UI
         private Guna.UI2.WinForms.Guna2Button gnBtnDangNhap;
         private Guna.UI2.WinForms.Guna2Button gnBtnThoat;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
     }
 }

@@ -145,5 +145,17 @@
   <ItemGroup>
     <None Include="Resources\eagle-logo-vector_93835-8.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\management_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\department_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings_50px.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
