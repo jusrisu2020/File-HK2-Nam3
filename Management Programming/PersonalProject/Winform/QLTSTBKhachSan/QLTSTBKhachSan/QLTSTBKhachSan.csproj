@@ -127,6 +127,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UI\FTrangChu.resx">
+      <DependentUpon>FTrangChu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\UCQuanLyNguoiDung.resx">
       <DependentUpon>UCQuanLyNguoiDung.cs</DependentUpon>
     </EmbeddedResource>
