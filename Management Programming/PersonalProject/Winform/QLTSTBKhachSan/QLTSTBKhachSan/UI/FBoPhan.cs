@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QLTSTBKhachSan
 {
-    public partial class BoPhan : Form
+    public partial class FBoPhan : Form
     {
-        public BoPhan()
+        public FBoPhan()
         {
             InitializeComponent();
         }

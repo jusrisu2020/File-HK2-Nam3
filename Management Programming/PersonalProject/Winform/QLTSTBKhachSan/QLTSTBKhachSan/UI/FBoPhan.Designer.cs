@@ -1,7 +1,7 @@
 ﻿
 namespace QLTSTBKhachSan
 {
-    partial class BoPhan
+    partial class FBoPhan
     {
         /// <summary>
         /// Required designer variable.
@@ -31,12 +31,12 @@ namespace QLTSTBKhachSan
         {
             this.SuspendLayout();
             // 
-            // BoPhan
+            // FBoPhan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "BoPhan";
+            this.Name = "FBoPhan";
             this.Text = "Bộ phận";
             this.ResumeLayout(false);
 
