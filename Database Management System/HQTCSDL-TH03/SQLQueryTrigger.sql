@@ -1,32 +1,29 @@
-CREATE TRIGGER UTGInsertNhanVien
-ON dbo.Nhanvien FOR INSERT
+ï»¿ALTER TRIGGER UTGTenPhong ON dbo.Phong FOR INSERT, UPDATE
 AS
 BEGIN
-	PRINT 'Trigger'
-	SELECT * FROM dbo.Nhanvien
+	DECLARE @KTTenPhong NCHAR(40), @Tenphong NCHAR(40)
+	SELECT COUNT(Tenphong) FROM Phong WHERE Tenphong = Inserted.@Tenphong
+	IF(@KTTenPhong > 0)
+		PRINT 'Lá»—i'
 END
 GO
 
+DROP TRIGGER dbo.UTGTenPhong
 
-DROP TRIGGER UTGInsertNhanVien
-INSERT INTO dbo.Nhanvien
+INSERT INTO dbo.Phong
 (
-    Manv,
-    Hoten,
-    Gioitinh,
-    Ngaysinh,
-    Luong,
     Maphong,
-    SDT,
-    Ngaybc
+    Tenphong,
+    Diachi,
+    Tel
 )
 VALUES
-(   'NV5',        -- Manv - char(5)
-    N'Nhân viên 2',       -- Hoten - nchar(40)
-    'Nam',        -- Gioitinh - char(3)
-    '12/03/1999', -- Ngaysinh - datetime
-    1200000,         -- Luong - int
-    'KDA',        -- Maphong - char(3)
-    NULL,        -- SDT - char(10)
-    '12/03/2000'  -- Ngaybc - datetime
+(   'KDS',  -- Maphong - char(3)
+    N'Kinh doanh', -- Tenphong - nchar(40)
+    N'sasa', -- Diachi - nchar(50)
+    'dsds'   -- Tel - char(10)
     )
+
+	SELECT * FROM dbo.Phong
+
+DELETE FROM dbo.Phong WHERE Maphong = 'kdd' OR Maphong = 'kds'
