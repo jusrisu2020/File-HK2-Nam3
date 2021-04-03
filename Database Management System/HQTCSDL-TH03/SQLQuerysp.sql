@@ -1,0 +1,32 @@
+USE QLNVBuoiTH03
+GO
+BEGIN TRANSACTION
+go
+CREATE PROC TinhLuongNV
+
+AS
+BEGIN
+	DECLARE @id VARCHAR(50)
+	SET @id = 'DSDSDS'
+	PRINT @id
+END
+
+ROLLBACK
+
+
+EXEC TinhLuongNV
+
+DROP PROC TinhLuongNV
+GO
+
+CREATE FUNCTION AAA(@Manv CHAR(5))
+
+BEGIN
+    DECLARE @Luong INT
+	SET @Luong = 1000
+	IF(@Luong > 0)	
+		print @Luong
+END
+
+DROP FUNCTION AAA
+
