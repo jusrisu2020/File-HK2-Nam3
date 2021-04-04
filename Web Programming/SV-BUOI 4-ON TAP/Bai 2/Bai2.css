@@ -63,6 +63,7 @@ a.menu{
 /*Midle*/
 #cotgiua{
 	width: 400px;
+	height: 600px;
 	margin-left: 50px;
 	float: left;
 }
@@ -70,6 +71,7 @@ a.menu{
 #cotphai{
 	background: white;
 	width: 350px;
+	height: 600px;
 	float: left;
 	margin-top: 10px; 
 }
@@ -107,8 +109,9 @@ a.menu{
 	border: 2px solid black;
 }
 
-
-
 #phanduoi{
+	width: 100%;
+	border-top: 5px solid blue;
 	float: left;
+	text-align: center;
 }

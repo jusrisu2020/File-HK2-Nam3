@@ -1,0 +1,41 @@
+html,body{
+	height: 100%;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+/*nền silver, padding 5px, font Verdana 10pt*/
+body{
+	background-color: silver;
+	padding: 5px;
+	font-family: Verdana;
+	font-size: 10pt;
+}
+/*Khung trang: độ rộng 804px, nền trắng, lề auto.*/
+#khungtrang{
+	width: 804px;
+	background-color: white;
+	margin: auto; 
+}
+
+#phantren{
+	height: 100px;
+}
+/*Phần menu ngang: độ cao 25px, nền #009933, chữ trắng canh giữa.
+o Liên kết menu ngang (lớp menungang): chữ đậm màu trắng, không gạch
+chân. Khi lướt chuột lên có gạch chân.*/
+#phanmenungang{
+	height: 25px;
+	background: #009933;
+	color: white;
+	text-align: center;
+}
+#phanmenungang a{
+	text-decoration: none;
+}
+#phantrai{}
+#phangiua{}
+#phanphai{}
+#phanduoi{}
