@@ -25,5 +25,7 @@ namespace QLTSTBKhachSan.UI
                 Application.Exit();
             }
         }
+
+        
     }
 }

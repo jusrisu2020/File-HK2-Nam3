@@ -43,6 +43,7 @@ namespace QLTSTBKhachSan.UI
             this.txtPassword = new Guna.UI.WinForms.GunaLineTextBox();
             this.btnLogIn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.btnMini = new Guna.UI2.WinForms.Guna2ControlBox();
             this.linkDoiMatKhau = new Guna.UI.WinForms.GunaLinkLabel();
             this.label7 = new System.Windows.Forms.Label();
@@ -64,7 +65,7 @@ namespace QLTSTBKhachSan.UI
             this.guna2Panel1.Controls.Add(this.lbWC);
             this.guna2Panel1.Controls.Add(this.panel1);
             this.guna2Panel1.Location = new System.Drawing.Point(9, 10);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(299, 460);
@@ -74,7 +75,7 @@ namespace QLTSTBKhachSan.UI
             // 
             this.gnPBLogo.Image = global::QLTSTBKhachSan.Properties.Resources.eagle_logo_vector_93835_8;
             this.gnPBLogo.Location = new System.Drawing.Point(32, 20);
-            this.gnPBLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gnPBLogo.Margin = new System.Windows.Forms.Padding(2);
             this.gnPBLogo.Name = "gnPBLogo";
             this.gnPBLogo.ShadowDecoration.Parent = this.gnPBLogo;
             this.gnPBLogo.Size = new System.Drawing.Size(231, 185);
@@ -112,7 +113,7 @@ namespace QLTSTBKhachSan.UI
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(20, 295);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(266, 80);
             this.panel1.TabIndex = 6;
@@ -158,7 +159,7 @@ namespace QLTSTBKhachSan.UI
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Elephant", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(80, 60);
+            this.label1.Location = new System.Drawing.Point(80, 45);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(156, 49);
@@ -173,7 +174,7 @@ namespace QLTSTBKhachSan.UI
             this.txtUserName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtUserName.LineColor = System.Drawing.Color.Gainsboro;
             this.txtUserName.Location = new System.Drawing.Point(35, 160);
-            this.txtUserName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUserName.Margin = new System.Windows.Forms.Padding(2);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.PasswordChar = '\0';
             this.txtUserName.SelectedText = "";
@@ -188,7 +189,7 @@ namespace QLTSTBKhachSan.UI
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtPassword.LineColor = System.Drawing.Color.Gainsboro;
             this.txtPassword.Location = new System.Drawing.Point(35, 226);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '\0';
             this.txtPassword.SelectedText = "";
@@ -204,7 +205,7 @@ namespace QLTSTBKhachSan.UI
             this.btnLogIn.ForeColor = System.Drawing.Color.White;
             this.btnLogIn.HoverState.Parent = this.btnLogIn;
             this.btnLogIn.Location = new System.Drawing.Point(35, 331);
-            this.btnLogIn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogIn.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogIn.Name = "btnLogIn";
             this.btnLogIn.ShadowDecoration.Parent = this.btnLogIn;
             this.btnLogIn.Size = new System.Drawing.Size(232, 37);
@@ -215,6 +216,7 @@ namespace QLTSTBKhachSan.UI
             // 
             this.guna2Panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
+            this.guna2Panel2.Controls.Add(this.guna2ControlBox1);
             this.guna2Panel2.Controls.Add(this.btnMini);
             this.guna2Panel2.Controls.Add(this.linkDoiMatKhau);
             this.guna2Panel2.Controls.Add(this.label7);
@@ -224,12 +226,26 @@ namespace QLTSTBKhachSan.UI
             this.guna2Panel2.Controls.Add(this.txtPassword);
             this.guna2Panel2.Controls.Add(this.txtUserName);
             this.guna2Panel2.Controls.Add(this.label1);
+            this.guna2Panel2.Font = new System.Drawing.Font("Oswald", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Panel2.Location = new System.Drawing.Point(308, 10);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(299, 460);
             this.guna2Panel2.TabIndex = 1;
+            // 
+            // guna2ControlBox1
+            // 
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(263, 2);
+            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.Size = new System.Drawing.Size(34, 24);
+            this.guna2ControlBox1.TabIndex = 20;
             // 
             // btnMini
             // 
@@ -238,8 +254,8 @@ namespace QLTSTBKhachSan.UI
             this.btnMini.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.btnMini.HoverState.Parent = this.btnMini;
             this.btnMini.IconColor = System.Drawing.Color.White;
-            this.btnMini.Location = new System.Drawing.Point(263, 2);
-            this.btnMini.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMini.Location = new System.Drawing.Point(225, 2);
+            this.btnMini.Margin = new System.Windows.Forms.Padding(2);
             this.btnMini.Name = "btnMini";
             this.btnMini.ShadowDecoration.Parent = this.btnMini;
             this.btnMini.Size = new System.Drawing.Size(34, 24);
@@ -261,22 +277,22 @@ namespace QLTSTBKhachSan.UI
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Elephant", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(34, 205);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(69, 17);
+            this.label7.Size = new System.Drawing.Size(82, 20);
             this.label7.TabIndex = 17;
             this.label7.Text = "Password";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Elephant", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(34, 139);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(79, 17);
+            this.label6.Size = new System.Drawing.Size(93, 20);
             this.label6.TabIndex = 16;
             this.label6.Text = "User Name";
             // 
@@ -284,9 +300,9 @@ namespace QLTSTBKhachSan.UI
             // 
             this.chkPassword.AutoSize = true;
             this.chkPassword.Location = new System.Drawing.Point(35, 264);
-            this.chkPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chkPassword.Margin = new System.Windows.Forms.Padding(2);
             this.chkPassword.Name = "chkPassword";
-            this.chkPassword.Size = new System.Drawing.Size(53, 17);
+            this.chkPassword.Size = new System.Drawing.Size(50, 20);
             this.chkPassword.TabIndex = 15;
             this.chkPassword.Text = "Show";
             this.chkPassword.UseVisualStyleBackColor = true;
@@ -305,7 +321,7 @@ namespace QLTSTBKhachSan.UI
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FDangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FDangNhap";
@@ -341,5 +357,6 @@ namespace QLTSTBKhachSan.UI
         private Guna.UI.WinForms.GunaLinkLabel linkDoiMatKhau;
         private Guna.UI2.WinForms.Guna2Elipse gnEFDangNhap;
         private Guna.UI2.WinForms.Guna2ControlBox btnMini;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
     }
 }
