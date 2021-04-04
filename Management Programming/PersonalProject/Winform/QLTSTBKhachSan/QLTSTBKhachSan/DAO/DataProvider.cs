@@ -24,5 +24,7 @@ namespace QLTSTBKhachSan.DAO
                 
         }
         private DataProvider() { }
+
+        String strcon = @"";
     }
 }

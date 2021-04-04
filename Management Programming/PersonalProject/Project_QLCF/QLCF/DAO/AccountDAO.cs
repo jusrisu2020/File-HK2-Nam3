@@ -23,7 +23,7 @@ namespace QLCF.DAO
             private set => instance = value;
         }
         #endregion
-        public AccountDAO() { }
+        private AccountDAO() { }
 
         public bool Login(string userName, string passWord)
         {
