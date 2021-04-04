@@ -18,7 +18,7 @@ INSERT INTO dbo.Phong
     Tel
 )
 VALUES
-(   'KDS',  -- Maphong - char(3)
+(   'KCA',  -- Maphong - char(3)
     N'Kinh doanh', -- Tenphong - nchar(40)
     N'sasa', -- Diachi - nchar(50)
     'dsds'   -- Tel - char(10)

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,15 +10,11 @@ using System.Windows.Forms;
 
 namespace QLTSTBKhachSan.UI
 {
-    public partial class FDangNhap : Form
+    public partial class UCQuanLiBoPhan : UserControl
     {
-        public FDangNhap()
+        public UCQuanLiBoPhan()
         {
             InitializeComponent();
         }
-
-        
-
-        
     }
 }

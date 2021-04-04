@@ -47,7 +47,7 @@ namespace QLTSTBKhachSan.UI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label1);
             this.Name = "UCQuanLyNhanVien";
-            this.Size = new System.Drawing.Size(1000, 800);
+            this.Size = new System.Drawing.Size(1200, 700);
             this.ResumeLayout(false);
             this.PerformLayout();
 

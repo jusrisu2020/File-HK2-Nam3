@@ -10,15 +10,13 @@ using System.Windows.Forms;
 
 namespace QLTSTBKhachSan.UI
 {
-    public partial class FDangNhap : Form
+    public partial class UCQuanLyBaoCao : UserControl
     {
-        public FDangNhap()
+        public UCQuanLyBaoCao()
         {
             InitializeComponent();
         }
 
-        
-
-        
+     
     }
 }

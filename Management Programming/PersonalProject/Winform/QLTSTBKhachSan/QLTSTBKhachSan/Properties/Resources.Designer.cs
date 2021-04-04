@@ -73,6 +73,16 @@ namespace QLTSTBKhachSan.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap download {
+            get {
+                object obj = ResourceManager.GetObject("download", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap eagle_logo_vector_93835_8 {
             get {
                 object obj = ResourceManager.GetObject("eagle-logo-vector_93835-8", resourceCulture);
@@ -96,6 +106,26 @@ namespace QLTSTBKhachSan.Properties {
         internal static System.Drawing.Bitmap management_30px {
             get {
                 object obj = ResourceManager.GetObject("management_30px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap report_file_64px {
+            get {
+                object obj = ResourceManager.GetObject("report_file_64px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap saw_24px {
+            get {
+                object obj = ResourceManager.GetObject("saw_24px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
