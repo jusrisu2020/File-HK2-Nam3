@@ -34,8 +34,47 @@ chân. Khi lướt chuột lên có gạch chân.*/
 }
 #phanmenungang a{
 	text-decoration: none;
+	height: 25px;
+	background-color: #009933;
+	color: white;
+	margin: auto;
 }
-#phantrai{}
+
+#phanmenungang a:hover{
+	text-decoration: underline;
+}
+
+#phantrai{
+	width: 150px;
+	border-right: thin solid #009933;
+}
+
+.khungmenu{
+	padding: 5px;
+
+}
+
+.tieudemenu{
+	font-weight: bold;
+	text-align: center;
+	color: #009933;
+	border-bottom: 2px dotted blue;
+	margin-top: 20px;
+}
+
+.menu{
+	text-decoration: none;
+	color: darkblue;
+	display: block;
+	margin-left: 5px;
+	margin-right: 5px;  
+}
+
+.menu:hover{
+	background-color: blue;
+	color: white; 
+}
+
 #phangiua{}
 #phanphai{}
 #phanduoi{}

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using LTQL_BuoiTH04.DAO;
+using LTQL_BuoiTH04.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,8 +21,9 @@ namespace LTQL_BuoiTH04.UI
 
         private void FrmDSCV_Load(object sender, EventArgs e)
         {
-
-            this.rpvDSCV.RefreshReport();
+            List<ChucVuDTO> lstChucVu = ChucVuDAO.LayChucVu();
+            dataGridView1.DataSource = lstChucVu;
+            
         }
     }
 }

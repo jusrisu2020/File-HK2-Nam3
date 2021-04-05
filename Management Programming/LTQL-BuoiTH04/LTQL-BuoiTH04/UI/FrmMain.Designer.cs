@@ -32,11 +32,11 @@ namespace LTQL_BuoiTH04
             this.mtTool = new System.Windows.Forms.MenuStrip();
             this.chươngTrìnhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mtDanhMuc = new System.Windows.Forms.ToolStripMenuItem();
+            this.tmtChucVu = new System.Windows.Forms.ToolStripMenuItem();
+            this.tmtNhanVien = new System.Windows.Forms.ToolStripMenuItem();
             this.nghiệpVụToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.báoCáoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.giúpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tmtChucVu = new System.Windows.Forms.ToolStripMenuItem();
-            this.tmtNhanVien = new System.Windows.Forms.ToolStripMenuItem();
             this.mtTool.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,14 +51,14 @@ namespace LTQL_BuoiTH04
             this.giúpToolStripMenuItem});
             this.mtTool.Location = new System.Drawing.Point(0, 0);
             this.mtTool.Name = "mtTool";
-            this.mtTool.Size = new System.Drawing.Size(800, 30);
+            this.mtTool.Size = new System.Drawing.Size(800, 28);
             this.mtTool.TabIndex = 0;
             this.mtTool.Text = "menuStrip1";
             // 
             // chươngTrìnhToolStripMenuItem
             // 
             this.chươngTrìnhToolStripMenuItem.Name = "chươngTrìnhToolStripMenuItem";
-            this.chươngTrìnhToolStripMenuItem.Size = new System.Drawing.Size(109, 26);
+            this.chươngTrìnhToolStripMenuItem.Size = new System.Drawing.Size(109, 24);
             this.chươngTrìnhToolStripMenuItem.Text = "Chương trình";
             // 
             // mtDanhMuc
@@ -67,26 +67,8 @@ namespace LTQL_BuoiTH04
             this.tmtChucVu,
             this.tmtNhanVien});
             this.mtDanhMuc.Name = "mtDanhMuc";
-            this.mtDanhMuc.Size = new System.Drawing.Size(90, 26);
+            this.mtDanhMuc.Size = new System.Drawing.Size(90, 24);
             this.mtDanhMuc.Text = "Danh mục";
-            // 
-            // nghiệpVụToolStripMenuItem
-            // 
-            this.nghiệpVụToolStripMenuItem.Name = "nghiệpVụToolStripMenuItem";
-            this.nghiệpVụToolStripMenuItem.Size = new System.Drawing.Size(91, 26);
-            this.nghiệpVụToolStripMenuItem.Text = "Nghiệp vụ";
-            // 
-            // báoCáoToolStripMenuItem
-            // 
-            this.báoCáoToolStripMenuItem.Name = "báoCáoToolStripMenuItem";
-            this.báoCáoToolStripMenuItem.Size = new System.Drawing.Size(77, 26);
-            this.báoCáoToolStripMenuItem.Text = "Báo cáo";
-            // 
-            // giúpToolStripMenuItem
-            // 
-            this.giúpToolStripMenuItem.Name = "giúpToolStripMenuItem";
-            this.giúpToolStripMenuItem.Size = new System.Drawing.Size(76, 26);
-            this.giúpToolStripMenuItem.Text = "Giúp đỡ";
             // 
             // tmtChucVu
             // 
@@ -99,6 +81,25 @@ namespace LTQL_BuoiTH04
             this.tmtNhanVien.Name = "tmtNhanVien";
             this.tmtNhanVien.Size = new System.Drawing.Size(224, 26);
             this.tmtNhanVien.Text = "Nhân viên";
+            this.tmtNhanVien.Click += new System.EventHandler(this.tmtNhanVien_Click);
+            // 
+            // nghiệpVụToolStripMenuItem
+            // 
+            this.nghiệpVụToolStripMenuItem.Name = "nghiệpVụToolStripMenuItem";
+            this.nghiệpVụToolStripMenuItem.Size = new System.Drawing.Size(91, 24);
+            this.nghiệpVụToolStripMenuItem.Text = "Nghiệp vụ";
+            // 
+            // báoCáoToolStripMenuItem
+            // 
+            this.báoCáoToolStripMenuItem.Name = "báoCáoToolStripMenuItem";
+            this.báoCáoToolStripMenuItem.Size = new System.Drawing.Size(77, 24);
+            this.báoCáoToolStripMenuItem.Text = "Báo cáo";
+            // 
+            // giúpToolStripMenuItem
+            // 
+            this.giúpToolStripMenuItem.Name = "giúpToolStripMenuItem";
+            this.giúpToolStripMenuItem.Size = new System.Drawing.Size(76, 24);
+            this.giúpToolStripMenuItem.Text = "Giúp đỡ";
             // 
             // FrmMain
             // 

@@ -31,13 +31,14 @@ namespace LTQL_BuoiTH04.UI
         {
             this.label1 = new System.Windows.Forms.Label();
             this.txtMaCV = new System.Windows.Forms.TextBox();
-            this.rpvDSCV = new Microsoft.Reporting.WinForms.ReportViewer();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtTenCV = new System.Windows.Forms.TextBox();
             this.txtHSPC = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -55,14 +56,6 @@ namespace LTQL_BuoiTH04.UI
             this.txtMaCV.Name = "txtMaCV";
             this.txtMaCV.Size = new System.Drawing.Size(153, 22);
             this.txtMaCV.TabIndex = 1;
-            // 
-            // rpvDSCV
-            // 
-            this.rpvDSCV.Location = new System.Drawing.Point(12, 182);
-            this.rpvDSCV.Name = "rpvDSCV";
-            this.rpvDSCV.ServerReport.BearerToken = null;
-            this.rpvDSCV.Size = new System.Drawing.Size(557, 246);
-            this.rpvDSCV.TabIndex = 2;
             // 
             // label2
             // 
@@ -109,19 +102,30 @@ namespace LTQL_BuoiTH04.UI
             this.panel1.Size = new System.Drawing.Size(308, 167);
             this.panel1.TabIndex = 7;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 182);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(410, 199);
+            this.dataGridView1.TabIndex = 7;
+            // 
             // FrmDSCV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(585, 440);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.rpvDSCV);
             this.Name = "FrmDSCV";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Danh Sách Chức Vụ";
             this.Load += new System.EventHandler(this.FrmDSCV_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -130,11 +134,11 @@ namespace LTQL_BuoiTH04.UI
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtMaCV;
-        private Microsoft.Reporting.WinForms.ReportViewer rpvDSCV;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtTenCV;
         private System.Windows.Forms.TextBox txtHSPC;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

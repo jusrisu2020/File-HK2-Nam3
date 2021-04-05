@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LTQL_BuoiTH04.UI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +18,11 @@ namespace LTQL_BuoiTH04
             InitializeComponent();
         }
 
-        
+        private void tmtNhanVien_Click(object sender, EventArgs e)
+        {
+            FrmDSCV dscv = new FrmDSCV();
+            dscv.Show();
+            this.Hide();
+        }
     }
 }
