@@ -46,6 +46,7 @@ chân. Khi lướt chuột lên có gạch chân.*/
 
 #phantrai{
 	width: 150px;
+	float: left;
 	border-right: thin solid #009933;
 }
 
@@ -74,7 +75,18 @@ chân. Khi lướt chuột lên có gạch chân.*/
 	background-color: blue;
 	color: white; 
 }
-
-#phangiua{}
-#phanphai{}
+/*Phần phải: độ rộng 150px.
+o Khung sp giảm giá (lớp spgiamgia): độ rộng 140px, viền nét liền mảnh màu
+#009933, bo tròn các góc, lề 2px, padding 5px, chữ canh giữa.
+o Tên hàng (lớp tenhang): chữ đậm màu darkblue.
+o Giá gốc (lớp giagoc): chữ gạch giữa màu gray.
+o Giá giảm (lớp giagiam): chữ đậm màu đỏ.*/
+#phangiua{
+	width: 500px;
+	float: left;
+	
+}
+#phanphai{
+	float: left;
+}
 #phanduoi{}
