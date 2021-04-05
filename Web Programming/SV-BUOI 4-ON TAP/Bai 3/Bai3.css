@@ -16,6 +16,7 @@ body{
 /*Khung trang: độ rộng 804px, nền trắng, lề auto.*/
 #khungtrang{
 	width: 804px;
+	height: 1150px;
 	background-color: white;
 	margin: auto; 
 }
@@ -23,9 +24,7 @@ body{
 #phantren{
 	height: 100px;
 }
-/*Phần menu ngang: độ cao 25px, nền #009933, chữ trắng canh giữa.
-o Liên kết menu ngang (lớp menungang): chữ đậm màu trắng, không gạch
-chân. Khi lướt chuột lên có gạch chân.*/
+
 #phanmenungang{
 	height: 25px;
 	background: #009933;
@@ -46,21 +45,23 @@ chân. Khi lướt chuột lên có gạch chân.*/
 
 #phantrai{
 	width: 150px;
+	height: 920px;
 	float: left;
 	border-right: thin solid #009933;
 }
 
 .khungmenu{
 	padding: 5px;
-
 }
 
 .tieudemenu{
 	font-weight: bold;
 	text-align: center;
 	color: #009933;
-	border-bottom: 2px dotted blue;
+	border-bottom: 1px dashed #009933;
+	padding-bottom: 5px; 
 	margin-top: 20px;
+	margin-bottom: 10px;
 }
 
 .menu{
@@ -75,18 +76,76 @@ chân. Khi lướt chuột lên có gạch chân.*/
 	background-color: blue;
 	color: white; 
 }
-/*Phần phải: độ rộng 150px.
-o Khung sp giảm giá (lớp spgiamgia): độ rộng 140px, viền nét liền mảnh màu
-#009933, bo tròn các góc, lề 2px, padding 5px, chữ canh giữa.
-o Tên hàng (lớp tenhang): chữ đậm màu darkblue.
-o Giá gốc (lớp giagoc): chữ gạch giữa màu gray.
-o Giá giảm (lớp giagiam): chữ đậm màu đỏ.*/
+
 #phangiua{
 	width: 500px;
 	float: left;
-	
+	margin: auto;
+}
+
+.bieumau{
+	margin: auto;
+	margin-top: 20px;
+}
+
+.bieumau td{
+	padding-top: 10px;
+}
+
+.tieude{
+	background-color: #009933;
+	border-radius: 10px;
+	font-size: 12px;
+	color: white;
+	padding: 8px;
+}
+
+.canhgiua{
+	text-align: center;
+}
+
+.canhgiua input{
+	height: 30px;
+	width: 100px;
+}
+
+#phangiua img{
+	margin-top: 30px;
+	margin-left: 30px;
 }
 #phanphai{
-	float: left;
+	width: 150px;
+	float: right;
 }
-#phanduoi{}
+
+.spgiamgia{
+	width: 140px;
+	border: 2px solid #009933; 
+	margin: -4px;
+	padding: 5px;
+	text-align: center;
+}
+
+.tenhang{
+	font-weight: bold;
+	color: darkblue;
+}
+
+.giagoc{
+	text-decoration: line-through;
+	color: gray;
+}
+
+.giagiam{
+	font-weight: bold;
+	color: red;
+}
+
+#phanduoi{
+	width: 100%;
+	float: left;
+	border-top: 2px dashed #009933;
+	text-align: center;
+}
+
+

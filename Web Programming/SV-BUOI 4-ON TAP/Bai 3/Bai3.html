@@ -66,17 +66,23 @@
 		<!-- Dữ liệu phần bảng - Cột giữa -->
 				<form name="f" method="post" action="">
 					<table class="bieumau">
+
 						<tr> 
-						  <td colspan="3" class="canhgiua"><h2>PHIẾU MUA HÀNG TRẢ GÓP</h2></td>
+						  <td colspan="3" class="canhgiua">
+						  	<h2>PHIẾU MUA HÀNG TRẢ GÓP</h2>
+						  </td>
 						</tr>
+
 						<tr> 
 						  <td>Ngày</td>
-						  <td><input type="text" name="txtNgay"></td>
+						  <td><script>setDay();</script></td>
 						  <td>&nbsp;</td>
 						</tr>
+
 						<tr> 
 						  <td colspan="3" class="tieude">THÔNG TIN SẢN PHẨM</td>
 						</tr>
+
 						<tr> 
 						  <td>Chọn sản phẩm</td>
 						  <td> 
@@ -104,7 +110,7 @@
 						</tr>
 						<tr> 
 						  <td>Họ tên</td>
-						  <td><input type="text" name="txtHoTen" ></td>
+						  <td><input type="text" name="txtHoTen"></td>
 						  <td>*</td>
 						</tr>
 						
@@ -118,32 +124,24 @@
 							</td>
 						</tr>
 						
-						
-									
-						
 						<tr> 
 						  <td>Điện thoại</td>
-						  <td><input type="text" name="txtDienThoai" onchange="ktDienThoai();"></td>
+						  <td><input type="text" name="txtDienThoai"></td>
 						  <td>*</td>
 						</tr>
 						<tr> 
 						  <td>Email</td>
-						  <td><input type="text" name="txtEmail" onchange="ktEmail();"></td>
+						  <td><input type="text" name="txtEmail"></td>
 						  <td>&nbsp;</td>
 						</tr>
 						
-						
-						
-						
-						
-						<tr> 
 						  <td>Địa chỉ</td>
 						  <td><textarea name="txtDiaChi"></textarea></td>
 						  <td>*</td>
 						</tr>
 						<tr> 
 						  <td colspan="3" class="canhgiua"> 
-							  <input type="button" name="btnXacNhan" value="Xác nhận" >
+							  <input type="button" name="btnXacNhan" value="Xác nhận" onclick="Test()">
 							  <input type="reset" name="btnKhong" value="Không">
 						  </td>
 						</tr>
