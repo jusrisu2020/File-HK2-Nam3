@@ -16,5 +16,7 @@ namespace QLTSTBKhachSan.UI
         {
             InitializeComponent();
         }
+
+       
     }
 }

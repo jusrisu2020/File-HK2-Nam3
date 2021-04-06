@@ -1,9 +1,8 @@
-﻿create database TSTBKhachSan
-go
+﻿CREATE DATABASE TSTBKhachSan
+GO
 
-use TSTBKhachSan
-go
-
+USE TSTBKhachSan
+GO
 
 -- Tài khoản
 -- Quản lí Nhân viên
@@ -13,34 +12,188 @@ go
 -- Chi tiết bàn giao
 -- Phiếu thanh Lý thiết bị
 -- Báo cáo thiết bị hỏng
-	
-SELECT * FROM TaiKhoan
+--------------------------------------------------- CREATE TABLE
 
-INSERT dbo.TaiKhoan
+CREATE TABLE TaiKhoan
 (
-    MaTK,
-    HinhAnh,
-    TenTK,
-    Pass,
-    Email,
-    TrangThai,
-    LoaiNguoiDung,
-    MaBoPhan,
-    BoPhan,
-    ChucVu
+	MaTK NVARCHAR(100) PRIMARY KEY,						
+	HinhAnh image,
+	MaNV int identity,									
+	TenTK NVARCHAR(100) not null,
+	Pass NVARCHAR(100) not null,
+	Email NVARCHAR(100) not null,
+	TrangThai NVARCHAR(100) not null,							
+	LoaiNguoiDung NVARCHAR(100) not null,						
+	MaBoPhan NVARCHAR(100),
+	BoPhan NVARCHAR(100) not null,
+	ChucVu NVARCHAR(100) not null,
+)
+GO
+
+CREATE TABLE NhanVien
+(
+	MaNV INT IDENTITY PRIMARY KEY,						
+	HoTen NVARCHAR(100) not null ,
+	GioiTinh NVARCHAR(5),
+	NgaySinh DATE,
+	DiaChi NVARCHAR(100) not null,
+	SDT NVARCHAR(100) not null,
+	Email NVARCHAR(100),
+	TonGiao NVARCHAR(100),
+	CMND NVARCHAR(100) not NULL,
+    BoPhan NVARCHAR(100) not null,
+	ChucVu NVARCHAR(100) NOT null
+)
+GO
+
+BEGIN TRANSACTION
+GO
+
+CREATE TABLE QLBoPhan
+(
+	MaBP VARCHAR(10) PRIMARY KEY DEFAULT AUTO_IDKH(),
+	TenBoPhan NVARCHAR(100),
+	MaNVQL NVARCHAR(100),
+	TenNVQL NVARCHAR(100)
+)
+GO
+ROLLBACK
+
+INSERT INTO dbo.QLBoPhan
+(
+    TenBoPhan,
+    MaNVQL,
+    TenNVQL
 )
 VALUES
-(   N'',  -- MaTK - nvarchar(100)
-    NULL, -- HinhAnh - image
-    N'',  -- TenTK - nvarchar(250)
-    N'',  -- Pass - nvarchar(250)
-    N'',  -- Email - nvarchar(250)
-    N'',  -- TrangThai - nvarchar(100)
-    N'',  -- LoaiNguoiDung - nvarchar(100)
-    N'',  -- MaBoPhan - nvarchar(100)
-    N'',  -- BoPhan - nvarchar(250)
-    N''   -- ChucVu - nvarchar(100)
+(   N'Bộ phận sảnh', -- TenBoPhan - nvarchar(100)
+    N'NV1', -- MaNVQL - nvarchar(100)
+    N'Nhân viên 1'  -- TenNVQL - nvarchar(100)
     )
+SELECT * FROM QLBoPhan
+
+DROP TABLE dbo.QLBoPhan
+GO
+
+CREATE FUNCTION AUTO_IDKH()
+RETURNS VARCHAR(10)
+AS
+BEGIN
+	DECLARE @Mabp VARCHAR(10)
+	IF (SELECT COUNT(MaBP) FROM dbo.QLBoPhan) = 0
+		SET @Mabp = '0'
+	ELSE
+		SELECT @Mabp = CASE
+			WHEN @Mabp >= 0 and @Mabp < 9 THEN 'BP0' + CONVERT(VARCHAR, CONVERT(INT, @Mabp) + 1)
+			WHEN @Mabp >= 9 THEN 'BP' + CONVERT(VARCHAR, CONVERT(INT, @Mabp) + 1)
+		END
+	RETURN @Mabp
+END
+
+DROP FUNCTION dbo.AUTO_IDKH
+
+create table ThietBi
+(
+	MaTB  int identity  PRIMARY KEY,
+	TenTB nvarchar (255) not null,
+	DonVi nvarchar (30) not null,
+	SoLuong int not null,
+	DanhMuc nvarchar (255) not null,
+	DonGia int not null,
+	TongGiaTri int not null,
+	TGBaoHanh date,
+	TinhTrangTB nvarchar (30) not null, 
+	BoPhan nvarchar (255) not null,
+	NCC nvarchar (255) not null,
+	NgayMuaTB date,
+	GhiChu nvarchar(255)
+)
+GO
+
+CREATE TABLE QLNhaCungCap
+(
+	MaNCC INT IDENTITY PRIMARY KEY,
+	TenNCC NVARCHAR(100),								
+	TenCongTy NVARCHAR(100),
+	DiaChi NVARCHAR(100),
+	SDT INT,
+	Email NVARCHAR(100)
+)
+GO
+
+create table ChiTietBanGiao
+(
+	MaBanGiao INT IDENTITY,
+	NgayBanGiao DATE,
+	MaTBBanGiao INT,														-- FK
+	TenThietBi nvarchar(250) ,
+	MaNVBanGiao int,
+	NhanVienBanGiao nvarchar(250),											-- FK
+	BoPhanBanGiao nvarchar(250),
+	MaNVTiepNhan int,														-- FK
+	NguoiTiepNhan nvarchar(250),
+	BoPhanTiepNhan nvarchar(250),
+	NoiTiepNhan nvarchar(250),
+	TinhTrangTBBanGiao nvarchar(250)
+)
+go
+
+create table PhieuThanhLyTB
+(
+	MaPhieuThanhLy INT IDENTITY PRIMARY KEY,
+	NgayThanhLy date,
+	MaTB INT,													
+	TenTB NVARCHAR(100),
+	SoLuong INT,
+	DonGia INT,
+	TinhTrangTB nvarchar(250),
+	DanhMuc nvarchar(250),
+	BoPhan nvarchar(250),
+	MaNVThanhLy int,
+	TenNV nvarchar(250),
+	NguoiMua nvarchar(250),
+	SDTNguoiMua nvarchar(250),
+	TongGiaTri int,
+)
+go
+create table BaoCaoTBHong
+(
+	MaBaoCao int identity primary key,
+	MaThietBi int,															--FK	
+	TenTB nvarchar(250),
+	LyDo nvarchar(500),
+	MaNVPhatHien int,														--FK
+	TenNVPhatHien nvarchar(250),
+	BoiThuong int,
+)
+
+SELECT * FROM dbo.NhanVien
+SELECT * FROM dbo.TaiKhoan
+
+
+
+SELECT * FROM BaoCaoTBHong
+SELECT * FROM ChiTietBanGiao
+SELECT * FROM PhieuThanhLyTB
+SELECT * FROM QLBoPhan
+SELECT * FROM QLNhaCungCap
+SELECT * FROM QLNhanVien
+SELECT * FROM TaiKhoan
+SELECT * FROM ThietBi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 CREATE PROC USPInsertTaiKhoan
 	@matk nvarchar(100), 
 	@hinhanh image ,
@@ -56,16 +209,7 @@ AS
 BEGIN
 	INSERT dbo.TaiKhoan
 	(
-	    MaTK,
-	    HinhAnh,
-	    TenTK,
-	    Pass,
-	    Email,
-	    TrangThai,
-	    LoaiNguoiDung,
-	    MaBoPhan,
-	    BoPhan,
-	    ChucVu
+	    
 	)
 	VALUES
 	(   @matk,
@@ -95,139 +239,7 @@ EXEC USPInsertTaiKhoan
 
 SELECT * FROM dbo.TaiKhoan
 
-create table TaiKhoan
-(
-	MaTK nvarchar(100) primary key,						-- TK01 ->...
-	HinhAnh image,
-	MaNV int identity,									--UNIQUE
-	TenTK nvarchar (250) not null,
-	Pass nvarchar(250) not null,
-	Email nvarchar (250) not null,
-	TrangThai nvarchar(100) not null,							-- Khóa || Đang hoạt động
-	LoaiNguoiDung nvarchar(100) not null,						-- Admin || User Managerment
-	MaBoPhan nvarchar(100),
-	BoPhan nvarchar (250) not null,
-	ChucVu nvarchar(100) not null,
-)
-go
 
-create table QLNhanVien
-(
-	MaNV int identity primary key,						-- 001
-	HoTen nvarchar(255) not null ,
-	BoPhan nvarchar (250) not null,
-	ChucVu nvarchar(250) not null,								-- Quản lí hay nhân viên.
-	NgaySinh date,
-	DiaChi nvarchar(100) not null,
-	SDT int not null,
-	Email nvarchar (250),
-	TonGiao nvarchar (250),
-	CMND int not null
-)
-go
-
-
-SELECT * FROM QLNhanVien
-SELECT * FROM TaiKhoan
-
-ALTER TABLE TaiKhoan 
-ADD CONSTRAINT FkMaNV 
-FOREIGN KEY (MaNV) REFERENCES QLNhanVien(MaNV);
-
-ALTER TABLE TaiKhoan 
-ADD CONSTRAINT FkBoPhan
-FOREIGN KEY (BoPhan) REFERENCES QLBoPhan(TenBoPhan);
-
-create table QLBoPhan
-(
-	MaBP nvarchar(100) primary key,
-	TenBoPhan nvarchar (250) not null,
-)
-go
-
-create table ThietBi
-(
-	MaTB  int identity  PRIMARY KEY,
-	TenTB nvarchar (255) not null,
-	DonVi nvarchar (30) not null,
-	SoLuong int not null,
-	DanhMuc nvarchar (255) not null,
-	DonGia int not null,
-	TongGiaTri int not null,
-	TGBaoHanh date,
-	TinhTrangTB nvarchar (30) not null, 
-	BoPhan nvarchar (255) not null,
-	NCC nvarchar (255) not null,
-	NgayMuaTB date,
-	GhiChu nvarchar(255)
-)
-go
-
-create table QLNhaCungCap
-(
-	MaNCC int identity primary key,
-	TenNCC nvarchar (250) not null,								
-	TenCongTy nvarchar(250),
-	DiaChi nvarchar(100),
-	SDT int not null,
-	Email nvarchar (250),
-)
-go
-
-create table ChiTietBanGiao
-(
-	MaBanGiao int identity primary key,
-	NgayBanGiao date,
-	MaTBBanGiao int,														-- FK
-	TenThietBi nvarchar(250) ,
-	MaNVBanGiao int,
-	NhanVienBanGiao nvarchar(250),											-- FK
-	BoPhanBanGiao nvarchar(250),
-	MaNVTiepNhan int,														-- FK
-	NguoiTiepNhan nvarchar(250),
-	BoPhanTiepNhan nvarchar(250),
-	NoiTiepNhan nvarchar(250),
-	TinhTrangTBBanGiao nvarchar(250)
-)
-go
-
-create table PhieuThanhLyTB
-(
-	MaPhieuThanhLy int identity  primary key,
-	NgayThanhLy date,
-	MaTB int,																--FK
-	TenTB nvarchar (250),
-	SoLuong int,
-	DonGia int,
-	TinhTrangTB nvarchar(250),
-	DanhMuc nvarchar(250),
-	BoPhan nvarchar(250),
-	MaNVThanhLy int,
-	TenNV nvarchar(250),
-	NguoiMua nvarchar(250),
-	SDTNguoiMua nvarchar(250),
-	TongGiaTri int,
-)
-go
-create table BaoCaoTBHong
-(
-	MaBaoCao int identity primary key,
-	MaThietBi int,															--FK	
-	TenTB nvarchar(250),
-	LyDo nvarchar(500),
-	MaNVPhatHien int,														--FK
-	TenNVPhatHien nvarchar(250),
-	BoiThuong int,
-)
-
-SELECT * FROM BaoCaoTBHong
-SELECT * FROM ChiTietBanGiao
-SELECT * FROM PhieuThanhLyTB
-SELECT * FROM QLBoPhan
-SELECT * FROM QLNhaCungCap
-SELECT * FROM QLNhanVien
-SELECT * FROM TaiKhoan
-SELECT * FROM ThietBi
 
 -- INSERT DATA
 
