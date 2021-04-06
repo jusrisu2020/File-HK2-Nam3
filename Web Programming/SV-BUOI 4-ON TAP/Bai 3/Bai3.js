@@ -1,8 +1,7 @@
 var Hientai = new Date(); 
-
 function setYear(){
 	var Nam = Hientai.getFullYear();
-	for (var i = 1970; i <= Nam; i++) {
+	for (var i = Nam; i >= 1970; i--) {
 		document.write('<option value="'+i+'">'+i+'</option>');
 	}	
 }
@@ -40,6 +39,18 @@ function Test(){
 	else if(isNaN(dienthoai)){
 		alert("Hãy nhập đúng Số điện thoại!");
 	}
-	else if()
+	// Kiểm tra Email
+	var email = document.getElementsByName('txtEmail')[0].value;
+	var PosA = email.indexOf("@");
+// // Phải có ký tự @
+//  Ký tự @ không nằm ở vị trí đầu
+//  Phải có ít nhất một dấu . trong địa chỉ mail
 
+//  Phải có ít nhất 1 ký tự giữa @ và dấu . cuối cùng
+//  Phải có ít nhất một ký tự sau dấu . cuối cùng
+//  Không có khoảng trắng trong địa chỉ mail
+	
+	if(PosA < 1){
+		alert("Lỗi");
+	}
 }
