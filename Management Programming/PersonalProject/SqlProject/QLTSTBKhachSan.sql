@@ -19,14 +19,14 @@ CREATE TABLE TaiKhoan
 	MaTK NVARCHAR(100) PRIMARY KEY,						
 	HinhAnh image,
 	MaNV int identity,									
-	TenTK NVARCHAR(100) not null,
-	Pass NVARCHAR(100) not null,
-	Email NVARCHAR(100) not null,
-	TrangThai NVARCHAR(100) not null,							
-	LoaiNguoiDung NVARCHAR(100) not null,						
+	TenTK NVARCHAR(100),
+	Pass NVARCHAR(100),
+	Email NVARCHAR(100) ,
+	TrangThai NVARCHAR(100) ,							
+	LoaiNguoiDung NVARCHAR(100),						
 	MaBoPhan NVARCHAR(100),
-	BoPhan NVARCHAR(100) not null,
-	ChucVu NVARCHAR(100) not null,
+	BoPhan NVARCHAR(100),
+	ChucVu NVARCHAR(100)
 )
 GO
 
@@ -51,7 +51,7 @@ GO
 
 CREATE TABLE QLBoPhan
 (
-	MaBP VARCHAR(10) PRIMARY KEY DEFAULT AUTO_IDKH(),
+	MaBP VARCHAR(10) PRIMARY KEY,
 	TenBoPhan NVARCHAR(100),
 	MaNVQL NVARCHAR(100),
 	TenNVQL NVARCHAR(100)
@@ -71,26 +71,7 @@ VALUES
     N'Nhân viên 1'  -- TenNVQL - nvarchar(100)
     )
 SELECT * FROM QLBoPhan
-
-DROP TABLE dbo.QLBoPhan
 GO
-
-CREATE FUNCTION AUTO_IDKH()
-RETURNS VARCHAR(10)
-AS
-BEGIN
-	DECLARE @Mabp VARCHAR(10)
-	IF (SELECT COUNT(MaBP) FROM dbo.QLBoPhan) = 0
-		SET @Mabp = '0'
-	ELSE
-		SELECT @Mabp = CASE
-			WHEN @Mabp >= 0 and @Mabp < 9 THEN 'BP0' + CONVERT(VARCHAR, CONVERT(INT, @Mabp) + 1)
-			WHEN @Mabp >= 9 THEN 'BP' + CONVERT(VARCHAR, CONVERT(INT, @Mabp) + 1)
-		END
-	RETURN @Mabp
-END
-
-DROP FUNCTION dbo.AUTO_IDKH
 
 create table ThietBi
 (
