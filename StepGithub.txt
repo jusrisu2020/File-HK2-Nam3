@@ -11,3 +11,4 @@ $ git pull: upload dữ liệu trên Github về PC
 
 
 ID: git@github.com:jusrisu2020/File-HK2-Nam3.git
+sss
