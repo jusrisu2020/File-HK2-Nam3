@@ -1,0 +1,40 @@
+html,body{
+	height: 100%;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.f{
+	width: 650px;
+	margin: auto;
+	border: 2px solid blue;
+}
+
+
+h1{
+	color: #3498db;
+	text-align: center;
+}
+
+table{
+	margin: auto;
+}
+
+table tr td{
+	padding:5px; 
+}
+
+.Multi1{
+	width: 150px;
+	color: #8e44ad;
+	
+}
+
+.catetory{
+	background-color: #3498db;
+	color: white;
+}
+
