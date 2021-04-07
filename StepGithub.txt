@@ -1,4 +1,4 @@
-sss$ git status: kiểm tra trạng thái dữ liệu
+$ git status: kiểm tra trạng thái dữ liệu
 $ git add . :lưu tất cả file
 $ git commit -m "(tiêu đề)": commit file
 $ git remote add (tên file) (Địa chỉ repository.git): remote file lên repository
@@ -11,4 +11,3 @@ $ git pull: upload dữ liệu trên Github về PC
 
 
 ID: git@github.com:jusrisu2020/File-HK2-Nam3.git
-ssssssssss
