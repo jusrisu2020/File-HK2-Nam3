@@ -10,4 +10,6 @@ $ git clone (Địa chỉ repository.git): lấy 1 file dữ liệu về máy t�
 $ git pull: upload dữ liệu trên Github về PC
 
 
+
+ssss
 ID: git@github.com:jusrisu2020/File-HK2-Nam3.git
