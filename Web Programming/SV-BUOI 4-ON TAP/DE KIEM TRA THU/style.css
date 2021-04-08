@@ -1,0 +1,152 @@
+html,body{
+	height: 100%;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+/*Phần body:
+- Màu nền là silver
+- Padding là 5px
+- Font chữ là Verdana, cỡ chữ là 9pt, canh giữa.*/
+
+body{
+	background-color: silver;
+	padding: 5px;
+	font-family: verdana;
+	font-size: 9pt;
+	margin: auto; 
+}
+
+/*Phần khung trang:
+- Rộng là 1000px
+- Màu nền là trắng
+- Margin là auto*/
+
+
+#container{
+	width: 1001px;
+	background-color: white;
+	margin: auto; 
+}
+
+/*Bổ sung định dạng CSS cho các liên kết trong phần <header>:
+ Màu nền của header là #0066AA
+ Liên kết (thẻ a) ở trạng thái bình thường: chữ đậm, màu trắng, canh giữa,
+không gạch chân. Màu nền #0066AA, hiển thị kiểu khối (block), độ rộng
+188px, float về trái, padding 5px, viền nét liền - mảnh - màu #FFFFFF
+(border).
+ Liên kết khi được lướt chuột lên (hover): đổi màu chữ, đổi màu nền, viền
+tùy ý (border).*/
+
+header{
+	background-color: #0066AA; 
+}
+
+header a{
+	font-weight: bold;
+	color: white;
+	margin: auto;
+	text-decoration: none;
+	background-color: #0066AA;
+	display: block;
+	width: 186px;
+	float: left;
+	padding: 5px;
+	border: 2px solid #FFFFFF;
+}
+
+header a:hover{
+	color: #2ecc71;
+	background: #2c3e50;
+	border: 2px solid #e67e22;
+}
+
+
+/*Bổ sung định dạng CSS cho các liên kết trong phần <nav>:
+- Rộng là 199px, float về trái, clear là both, viền chấm mỏng màu #0066AA
+- Liên kết (thẻ a) ở trạng thái bình thường: chữ đậm, màu trắng, chữ canh
+trái, không gạch chân. hiển thị kiểu khối (block), padding 5px.
+- Liên kết khi được lướt chuột lên (hover): đổi màu chữ thành #FF0000.*/
+
+nav{
+	width: 199px;
+	float: left;
+	clear: both;
+	border: 1px dotted #0066AA;
+}
+
+nav a{
+	font-weight: bold;
+	color: blue;
+	text-align: left;
+	text-decoration: none;
+	display: block;
+	padding: 5px;
+}
+
+nav a:hover{
+	color: #FF0000;
+}
+
+/*Bổ sung định dạng CSS cho các liên kết trong phần <section>:
+- Rộng là 800px, float về trái.
+8. Bổ sung định dạng CSS cho các liên kết trong phần <footer>:
+- Clear là both, màu chữ là lightgray, canh giữa, padding là 10px, màu nền là
+#00066AA
+*/
+
+section{
+	width: 800px;
+	float: left;
+}
+
+footer{
+	clear: both;
+	color: lightgray;
+	margin: auto;
+	padding: 10px;
+	background-color: #0066AA;
+	text-align: center;
+}
+
+/*Lớp tieude: cỡ chữ 11pt in đậm, margin là 5px.
+10.Lớp sach: rộng 389px, float vè trái, margin là 5px.
+11.Lớp tensach: chữ đậm màu #0066AA.
+12.Lớp hinhanh: float về trái, margin là 10px.
+13.Lớp tacgia: cỡ chữ là 8pt.
+14.Lớp giabia: chữ đậm màu #FF0000.*/
+
+.tieude{
+	font-size: 11pt;
+	font-weight: bold;
+	margin: 5px;
+}
+
+.sach{
+	width: 389px;
+	float: left;
+	margin: 5px;
+}
+
+.tensach{
+	font-weight: bold;
+	color: #0066AA;
+}
+
+.hinhanh{
+	float: left;
+	margin: 10px;
+}
+
+.tacgia{
+	font-size: 8pt;
+}
+
+.giabia{
+	font-weight: bold;
+	color: #ff0000;
+}

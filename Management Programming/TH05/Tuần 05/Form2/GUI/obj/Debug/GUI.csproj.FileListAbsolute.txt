@@ -1,0 +1,71 @@
+E:\Vi\2015\LTQL\BTTH\B3\Test\GUI\bin\Debug\GUI.exe.config
+E:\Vi\2015\LTQL\BTTH\B3\BaiMau\LTQL_B3\GUI\bin\Debug\GUI.exe.config
+E:\Vi\2015\LTQL\BTTH\B3\BaiMau\LTQL_B3\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache
+E:\Vi\2015\LTQL\BTTH\B3\BaiMau\LTQL_B3\GUI\obj\Debug\GUI.frmMain.resources
+E:\Vi\2015\LTQL\BTTH\B3\BaiMau\LTQL_B3\GUI\obj\Debug\GUI.frm_dmChucVu.resources
+E:\Vi\2015\LTQL\BTTH\B3\BaiMau\LTQL_B3\GUI\obj\Debug\GUI.frm_dmNhanVien.resources
+E:\Vi\2015\LTQL\BTTH\B3\BaiMau\LTQL_B3\GUI\obj\Debug\GUI.Properties.Resources.resources
+E:\Vi\2015\LTQL\BTTH\B3\BaiMau\LTQL_B3\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
+E:\Vi\2015\LTQL\BTTH\B3\BaiMau\LTQL_B3\GUI\bin\Debug\GUI.exe
+E:\Vi\2015\LTQL\BTTH\B3\BaiMau\LTQL_B3\GUI\bin\Debug\GUI.pdb
+E:\Vi\2015\LTQL\BTTH\B3\BaiMau\LTQL_B3\GUI\bin\Debug\BUS.dll
+E:\Vi\2015\LTQL\BTTH\B3\BaiMau\LTQL_B3\GUI\bin\Debug\DTO.dll
+E:\Vi\2015\LTQL\BTTH\B3\BaiMau\LTQL_B3\GUI\bin\Debug\DAO.dll
+E:\Vi\2015\LTQL\BTTH\B3\BaiMau\LTQL_B3\GUI\bin\Debug\BUS.pdb
+E:\Vi\2015\LTQL\BTTH\B3\BaiMau\LTQL_B3\GUI\bin\Debug\DTO.pdb
+E:\Vi\2015\LTQL\BTTH\B3\BaiMau\LTQL_B3\GUI\bin\Debug\DAO.pdb
+E:\Vi\2015\LTQL\BTTH\B3\BaiMau\LTQL_B3\GUI\obj\Debug\GUI.exe
+E:\Vi\2015\LTQL\BTTH\B3\BaiMau\LTQL_B3\GUI\obj\Debug\GUI.pdb
+E:\Vi\2015\LTQL\BTTH\B4\GUI\bin\Debug\GUI.exe.config
+E:\Vi\2015\LTQL\BTTH\B4\GUI\obj\Debug\GUI.exe
+E:\Vi\2015\LTQL\BTTH\B4\GUI\obj\Debug\GUI.pdb
+E:\Vi\2015\LTQL\BTTH\B4\GUI\bin\Debug\GUI.exe
+E:\Vi\2015\LTQL\BTTH\B4\GUI\bin\Debug\GUI.pdb
+E:\Vi\2015\LTQL\BTTH\B4\GUI\bin\Debug\BUS.dll
+E:\Vi\2015\LTQL\BTTH\B4\GUI\bin\Debug\DTO.dll
+E:\Vi\2015\LTQL\BTTH\B4\GUI\bin\Debug\DAO.dll
+E:\Vi\2015\LTQL\BTTH\B4\GUI\bin\Debug\BUS.pdb
+E:\Vi\2015\LTQL\BTTH\B4\GUI\bin\Debug\DTO.pdb
+E:\Vi\2015\LTQL\BTTH\B4\GUI\bin\Debug\DAO.pdb
+E:\Vi\2015\LTQL\BTTH\B4\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache
+E:\Vi\2015\LTQL\BTTH\B4\GUI\obj\Debug\GUI.frmMain.resources
+E:\Vi\2015\LTQL\BTTH\B4\GUI\obj\Debug\GUI.frm_dmChucVu.resources
+E:\Vi\2015\LTQL\BTTH\B4\GUI\obj\Debug\GUI.frm_dmNhanVien.resources
+E:\Vi\2015\LTQL\BTTH\B4\GUI\obj\Debug\GUI.Properties.Resources.resources
+E:\Vi\2015\LTQL\BTTH\B4\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
+E:\Vi\2016\LTQL\Thuc hanh LTQL\LTQL_BTTH05\B4_mau\GUI\bin\Debug\GUI.exe.config
+E:\Vi\2016\LTQL\Thuc hanh LTQL\LTQL_BTTH05\B4_mau\GUI\obj\Debug\GUI.exe
+E:\Vi\2016\LTQL\Thuc hanh LTQL\LTQL_BTTH05\B4_mau\GUI\obj\Debug\GUI.pdb
+E:\Vi\2016\LTQL\Thuc hanh LTQL\LTQL_BTTH05\B4_mau\GUI\bin\Debug\GUI.exe
+E:\Vi\2016\LTQL\Thuc hanh LTQL\LTQL_BTTH05\B4_mau\GUI\bin\Debug\GUI.pdb
+E:\Vi\2016\LTQL\Thuc hanh LTQL\LTQL_BTTH05\B4_mau\GUI\bin\Debug\BUS.dll
+E:\Vi\2016\LTQL\Thuc hanh LTQL\LTQL_BTTH05\B4_mau\GUI\bin\Debug\DTO.dll
+E:\Vi\2016\LTQL\Thuc hanh LTQL\LTQL_BTTH05\B4_mau\GUI\bin\Debug\DAO.dll
+E:\Vi\2016\LTQL\Thuc hanh LTQL\LTQL_BTTH05\B4_mau\GUI\bin\Debug\BUS.pdb
+E:\Vi\2016\LTQL\Thuc hanh LTQL\LTQL_BTTH05\B4_mau\GUI\bin\Debug\DTO.pdb
+E:\Vi\2016\LTQL\Thuc hanh LTQL\LTQL_BTTH05\B4_mau\GUI\bin\Debug\DAO.pdb
+E:\Vi\2016\LTQL\Thuc hanh LTQL\LTQL_BTTH05\B4_mau\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache
+E:\Vi\2016\LTQL\Thuc hanh LTQL\LTQL_BTTH05\B4_mau\GUI\obj\Debug\GUI.frmMain.resources
+E:\Vi\2016\LTQL\Thuc hanh LTQL\LTQL_BTTH05\B4_mau\GUI\obj\Debug\GUI.frm_dmChucVu.resources
+E:\Vi\2016\LTQL\Thuc hanh LTQL\LTQL_BTTH05\B4_mau\GUI\obj\Debug\GUI.frm_dmNhanVien.resources
+E:\Vi\2016\LTQL\Thuc hanh LTQL\LTQL_BTTH05\B4_mau\GUI\obj\Debug\GUI.Properties.Resources.resources
+E:\Vi\2016\LTQL\Thuc hanh LTQL\LTQL_BTTH05\B4_mau\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
+D:\File-HK2-Nam3\Management Programming\TH05\Tuần 05\Form2\GUI\bin\Debug\GUI.exe.config
+D:\File-HK2-Nam3\Management Programming\TH05\Tuần 05\Form2\GUI\bin\Debug\GUI.exe
+D:\File-HK2-Nam3\Management Programming\TH05\Tuần 05\Form2\GUI\bin\Debug\GUI.pdb
+D:\File-HK2-Nam3\Management Programming\TH05\Tuần 05\Form2\GUI\bin\Debug\BUS.dll
+D:\File-HK2-Nam3\Management Programming\TH05\Tuần 05\Form2\GUI\bin\Debug\DTO.dll
+D:\File-HK2-Nam3\Management Programming\TH05\Tuần 05\Form2\GUI\bin\Debug\DAO.dll
+D:\File-HK2-Nam3\Management Programming\TH05\Tuần 05\Form2\GUI\bin\Debug\BUS.pdb
+D:\File-HK2-Nam3\Management Programming\TH05\Tuần 05\Form2\GUI\bin\Debug\DTO.pdb
+D:\File-HK2-Nam3\Management Programming\TH05\Tuần 05\Form2\GUI\bin\Debug\DAO.pdb
+D:\File-HK2-Nam3\Management Programming\TH05\Tuần 05\Form2\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
+D:\File-HK2-Nam3\Management Programming\TH05\Tuần 05\Form2\GUI\obj\Debug\GUI.frmMain.resources
+D:\File-HK2-Nam3\Management Programming\TH05\Tuần 05\Form2\GUI\obj\Debug\GUI.frm_dmChucVu.resources
+D:\File-HK2-Nam3\Management Programming\TH05\Tuần 05\Form2\GUI\obj\Debug\GUI.frm_dmNhanVien.resources
+D:\File-HK2-Nam3\Management Programming\TH05\Tuần 05\Form2\GUI\obj\Debug\GUI.Properties.Resources.resources
+D:\File-HK2-Nam3\Management Programming\TH05\Tuần 05\Form2\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+D:\File-HK2-Nam3\Management Programming\TH05\Tuần 05\Form2\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+D:\File-HK2-Nam3\Management Programming\TH05\Tuần 05\Form2\GUI\obj\Debug\GUI.csproj.CopyComplete
+D:\File-HK2-Nam3\Management Programming\TH05\Tuần 05\Form2\GUI\obj\Debug\GUI.exe
+D:\File-HK2-Nam3\Management Programming\TH05\Tuần 05\Form2\GUI\obj\Debug\GUI.pdb
