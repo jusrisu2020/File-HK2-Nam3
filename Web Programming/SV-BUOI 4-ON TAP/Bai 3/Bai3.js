@@ -22,7 +22,11 @@ function Test(){
 	var thoihan6 = document.getElementsByName('radThoiHan')[0].checked;
 	var thoihan12 = document.getElementsByName('radThoiHan')[1].checked;
 
-
+	var email = document.getElementsByName('txtEmail')[0].value;
+	var PosA = email.indexOf("@");
+	var PosCham = email.indexOf(".");
+	var PosSpace = email.indexOf(" ");
+	
 	if(hoten == "" || dienthoai == "" || diachi == ""){
 		alert("Hãy điền đầy đủ thông tin!");
 	}
@@ -39,18 +43,18 @@ function Test(){
 	else if(isNaN(dienthoai)){
 		alert("Hãy nhập đúng Số điện thoại!");
 	}
-	// Kiểm tra Email
-	var email = document.getElementsByName('txtEmail')[0].value;
-	var PosA = email.indexOf("@");
-// // Phải có ký tự @
-//  Ký tự @ không nằm ở vị trí đầu
-//  Phải có ít nhất một dấu . trong địa chỉ mail
-
-//  Phải có ít nhất 1 ký tự giữa @ và dấu . cuối cùng
-//  Phải có ít nhất một ký tự sau dấu . cuối cùng
-//  Không có khoảng trắng trong địa chỉ mail
 	
-	if(PosA < 1){
-		alert("Lỗi");
+	else if(PosA < 1 || PosCham < 1){
+		alert("Kiểm tra kĩ Email!");
+		
+	}
+	else if(PosA+1 > PosCham-1){
+		alert("Phải có kí tự ở giữa @ và chấm!");
+	}
+	else if(PosCham+1 > email.length-1){
+		alert("Kiểm tra kĩ Email2!");
+	}
+	else if(PosSpace > 1){
+		alert("Không được có khoảng trắng trong Email!");
 	}
 }
