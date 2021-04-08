@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bài Thêm 1</title>
+	<link rel="stylesheet" href="Bai1.css">
+	<script src="Bai1.js"></script>
+</head>
+<body>
+	<div class="f">
+		<h1 id="titleF">Đăng Kí Thành Viên</h1>
+		<form action="#" method="post">
+			<table class="tSignUp">
+
+<!-- Thông tin chung -->
+
+				<tr>
+					<td class="catetory" colspan="2">Thông Tin Chung</td>
+				</tr>
+				<tr>
+					<td class="Multi1">Email</td>
+					<td><input type="text" id="txtEmail">&emsp;*</td>
+				</tr>
+				<tr>
+					<td class="Multi1">Tên Đăng Nhập</td>
+					<td><input type="text" id="txtLogInName">&emsp;*</td>
+				</tr>
+				<tr>
+					<td class="Multi1">Mật Khẩu</td>
+					<td><input type="text" id="txtPassword">&emsp;*</td>
+				</tr>
+				<tr>
+					<td class="Multi1">Gõ lại mật khẩu</td>
+					<td><input type="text" id="txtPasswordReimported">&emsp;*</td>
+				</tr>
+
+<!-- Thông tin cá nhân -->
+
+				<tr>
+					<td class="catetory" colspan="2">Thông Tin Cá Nhân</td>
+				</tr>
+				<tr>
+					<td class="Multi1">Họ Tên</td>
+					<td><input type="text" id="txtName">&emsp;*</td>
+				</tr>
+				<tr>
+					<td class="Multi1">Giới Tính</td>
+					<td>
+						<input type="radio" id="radNam">Nam&emsp;
+						<input type="radio" id="radNu">Nữ
+					</td>
+				</tr>
+				<tr>
+					<td class="Multi1">Ngày Sinh</td>
+					<td>
+						<input type="text" id="txtDate" size="5">
+						<select id="sMonth"><script>setMonth();</script></select>
+						<input type="text" id="txtYear"size="5">
+					</td>
+				</tr>
+				<tr>
+					<td class="Multi1" >Thông Tin Khác</td>
+					<td>
+						<textarea id="txtareOtherInfo" cols="30" rows="5"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="checkbox" id="chkCmt">&emsp;Tôi đồng ý với các điều khoản chung</td>
+					
+				</tr>
+
+				<tr>
+					<td style="text-align: center;" colspan="2">
+						<input type="button" value="Xác Nhận" id="btnsm" onclick="testForm()">
+						<input type="reset" value="Làm Lại" id="btnReset">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

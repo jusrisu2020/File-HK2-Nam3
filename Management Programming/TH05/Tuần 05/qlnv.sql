@@ -80,4 +80,9 @@ INSERT INTO quatrinhluong VALUES(N'NV007','2011/06/01',2.67,1);
 INSERT INTO quatrinhluong VALUES(N'NV006','2011/06/01',2.59,1);
 INSERT INTO quatrinhluong VALUES(N'NV004','2011/06/01',3.33,1);
 
-select * from quatrinhluong;
+select * from dbo.chucvu;
+select * from dbo.nhanvien;
+select * from dbo.quatrinhluong;
+
+
+SELECT * FROM dbo.nhanvien WHERE manv = 'NV001'
