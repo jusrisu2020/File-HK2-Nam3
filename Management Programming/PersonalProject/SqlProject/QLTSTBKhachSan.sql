@@ -5,12 +5,16 @@ USE TSTBKhachSan
 GO
 
 -- Tài khoản
--- Quản lí Nhân viên
--- Quản lí bộ phận
--- THIẾT BỊ
---Quản lí nhà cung cấp
--- Chi tiết bàn giao
--- Phiếu thanh Lý thiết bị
+-- Nhân viên
+-- Bộ phận
+-- Danh mục
+-- Thiết bị
+-- Hóa đơn Mua thiết bị
+-- Chi tiết hóa đơn mua thiết bị
+-- Xử lí thiết bị
+-- Chi tiết Xử lí thiết bị
+-- Nhà cung cấp
+-- Phiếu bàn giao
 -- Báo cáo thiết bị hỏng
 --------------------------------------------------- CREATE TABLE
 
@@ -49,29 +53,14 @@ GO
 BEGIN TRANSACTION
 GO
 
-CREATE TABLE QLBoPhan
+CREATE TABLE BoPhan
 (
-	MaBP VARCHAR(10) PRIMARY KEY,
+	MaBP NVARCHAR(10) PRIMARY KEY,
 	TenBoPhan NVARCHAR(100),
 	MaNVQL NVARCHAR(100),
-	TenNVQL NVARCHAR(100)
 )
 GO
 ROLLBACK
-
-INSERT INTO dbo.QLBoPhan
-(
-    TenBoPhan,
-    MaNVQL,
-    TenNVQL
-)
-VALUES
-(   N'Bộ phận sảnh', -- TenBoPhan - nvarchar(100)
-    N'NV1', -- MaNVQL - nvarchar(100)
-    N'Nhân viên 1'  -- TenNVQL - nvarchar(100)
-    )
-SELECT * FROM QLBoPhan
-GO
 
 create table ThietBi
 (
