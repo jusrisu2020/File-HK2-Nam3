@@ -26,7 +26,11 @@ function Test(){
 	var PosA = email.indexOf("@");
 	var PosCham = email.indexOf(".");
 	var PosSpace = email.indexOf(" ");
+<<<<<<< HEAD:Web Programming/SV-BUOI 4-ON TAP/Bai 3/Bai3.js
+	
+=======
 
+>>>>>>> bc01381ef573111f15c519e2221f8c9a452f37ee:Web Programming/SV-BUOI 4-ON TAP/BuoiTH04-OnTap/Bai 3/Bai3.js
 	if(hoten == "" || dienthoai == "" || diachi == ""){
 		alert("Hãy điền đầy đủ thông tin!");
 	}
@@ -44,6 +48,20 @@ function Test(){
 		alert("Hãy nhập đúng Số điện thoại!");
 	}
 	
+<<<<<<< HEAD:Web Programming/SV-BUOI 4-ON TAP/Bai 3/Bai3.js
+	else if(PosA < 1 || PosCham < 1){
+		alert("Kiểm tra kĩ Email!");
+		
+	}
+	else if(PosA+1 > PosCham-1){
+		alert("Phải có kí tự ở giữa @ và chấm!");
+	}
+	else if(PosCham+1 > email.length-1){
+		alert("Kiểm tra kĩ Email2!");
+	}
+	else if(PosSpace > 1){
+		alert("Không được có khoảng trắng trong Email!");
+=======
 	else if(PosA < 1 || PosCham < 1 || PosSpace >= 0){
 		alert("Kiểm tra lại Email!");
 	}
@@ -52,5 +70,6 @@ function Test(){
 	}
 	else if(PosCham+1 == email.length){
 		alert("Kiểm tra lại Email3");
+>>>>>>> bc01381ef573111f15c519e2221f8c9a452f37ee:Web Programming/SV-BUOI 4-ON TAP/BuoiTH04-OnTap/Bai 3/Bai3.js
 	}
 }
