@@ -44,6 +44,7 @@ namespace QLTSTBKhachSan.UI
             ucQuanLyBaoCao1.Hide();
         }
 
+       
         private void btnUserM_Click(object sender, EventArgs e)
         {
             ucQuanLyNguoiDung.Show();
@@ -54,7 +55,6 @@ namespace QLTSTBKhachSan.UI
         }
 
         
-
         private void btnEmployeeM_Click(object sender, EventArgs e)
         {
             ucQuanLyNguoiDung.Hide();

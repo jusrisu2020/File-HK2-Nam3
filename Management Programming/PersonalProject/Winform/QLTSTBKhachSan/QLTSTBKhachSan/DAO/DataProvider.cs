@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,6 +27,20 @@ namespace QLTSTBKhachSan.DAO
         }
         private DataProvider() { }
 
-        String strcon = @"";
+        private String strcon = @"Data Source=.\SQLEXPRESS;Initial Catalog=TSTBKhachSan;Integrated Security=True";
+
+        public DataTable ExecuteQuery(string Squery, object[] parameter = null)
+        {
+            DataTable data = new DataTable();
+            using (SqlConnection conn = new SqlConnection(strcon))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(Squery, conn);
+
+                conn.Close();
+            }
+
+                return data;
+        }
     }
 }
