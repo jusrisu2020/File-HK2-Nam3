@@ -1,8 +1,10 @@
-﻿CREATE DATABASE TEST1
-USE TEST1
+﻿CREATE DATABASE TestMaTuSinh
+GO
+USE TestMaTuSinh
 GO
 
 USE QLCF
+GO
 
 
 create table Ban
@@ -25,8 +27,6 @@ create proc procThemBan
 			SET @MaBan=@MaBan+1
 			SET @MaBan='BA'+REPLICATE('0',2-LEN(@MaBan))+@MaBan
 			INSERT into Ban values(@MaBan,@MoTa)
-		IF EXISTS (select IDENT_CURRENT('Ban'))
-			DBCC CHECKIDENT('Ban', RESEED, 0)
 	end
 go
 	exec procThemBan N'Mô tả 1'
@@ -35,6 +35,7 @@ go
 	exec procThemBan N'Mô tả 4'
 	exec procThemBan N'Mô tả 5'
 GO
+SELECT * FROM dbo.Ban
 
 create proc procThemBan2
 		@MoTa nvarchar(50)
@@ -60,5 +61,5 @@ SELECT * FROM dbo.Ban
 DBCC CHECKIDENT('Ban', RESEED, 0)
 DELETE dbo.Ban WHERE MaBan = 'BA01'
 
-DROP PROC dbo.procThemBan2
+DROP PROC dbo.procThemBan
 DROP TABLE dbo.Ban
