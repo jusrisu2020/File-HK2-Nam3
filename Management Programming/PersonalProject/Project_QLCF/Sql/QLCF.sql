@@ -68,7 +68,6 @@ END
 EXEC USPInsertAccount N'ad1', N'ad1', N'1', 1
 GO
 
-
 CREATE PROC USPAccount
 @userName nvarchar(100), @passWord nvarchar(100)
 AS

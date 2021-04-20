@@ -42,18 +42,18 @@ namespace QLTSTBKhachSan.UI
             this.txtPassword = new Guna.UI.WinForms.GunaLineTextBox();
             this.btnLogIn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
             this.btnMini = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.linkDoiMatKhau = new Guna.UI.WinForms.GunaLinkLabel();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.chkPassword = new System.Windows.Forms.CheckBox();
-            this.gnEFDangNhap = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.gnEFDangNhap = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gnPBLogo)).BeginInit();
             this.panel1.SuspendLayout();
@@ -199,6 +199,7 @@ namespace QLTSTBKhachSan.UI
             this.btnLogIn.Size = new System.Drawing.Size(309, 46);
             this.btnLogIn.TabIndex = 13;
             this.btnLogIn.Text = "LOG IN";
+            this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
             // 
             // guna2Panel2
             // 
@@ -221,18 +222,29 @@ namespace QLTSTBKhachSan.UI
             this.guna2Panel2.Size = new System.Drawing.Size(399, 566);
             this.guna2Panel2.TabIndex = 1;
             // 
-            // guna2ControlBox1
+            // panel2
             // 
-            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.DimGray;
-            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
-            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(351, 16);
-            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
-            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 23);
-            this.guna2ControlBox1.TabIndex = 20;
+            this.panel2.BackColor = System.Drawing.Color.DimGray;
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.btnMini);
+            this.panel2.Controls.Add(this.guna2ControlBox3);
+            this.panel2.Controls.Add(this.guna2ControlBox2);
+            this.panel2.Controls.Add(this.guna2ControlBox1);
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(399, 49);
+            this.panel2.TabIndex = 21;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.label8.Location = new System.Drawing.Point(6, 10);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(128, 29);
+            this.label8.TabIndex = 22;
+            this.label8.Text = "Management";
             // 
             // btnMini
             // 
@@ -248,6 +260,45 @@ namespace QLTSTBKhachSan.UI
             this.btnMini.ShadowDecoration.Parent = this.btnMini;
             this.btnMini.Size = new System.Drawing.Size(45, 23);
             this.btnMini.TabIndex = 19;
+            // 
+            // guna2ControlBox3
+            // 
+            this.guna2ControlBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox3.FillColor = System.Drawing.Color.DimGray;
+            this.guna2ControlBox3.HoverState.Parent = this.guna2ControlBox3;
+            this.guna2ControlBox3.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox3.Location = new System.Drawing.Point(338, 10);
+            this.guna2ControlBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2ControlBox3.Name = "guna2ControlBox3";
+            this.guna2ControlBox3.ShadowDecoration.Parent = this.guna2ControlBox3;
+            this.guna2ControlBox3.Size = new System.Drawing.Size(45, 23);
+            this.guna2ControlBox3.TabIndex = 20;
+            // 
+            // guna2ControlBox2
+            // 
+            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox2.FillColor = System.Drawing.Color.DimGray;
+            this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
+            this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox2.Location = new System.Drawing.Point(338, 16);
+            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2ControlBox2.Name = "guna2ControlBox2";
+            this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
+            this.guna2ControlBox2.Size = new System.Drawing.Size(45, 23);
+            this.guna2ControlBox2.TabIndex = 20;
+            // 
+            // guna2ControlBox1
+            // 
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.DimGray;
+            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(351, 16);
+            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 23);
+            this.guna2ControlBox1.TabIndex = 20;
             // 
             // linkDoiMatKhau
             // 
@@ -292,35 +343,6 @@ namespace QLTSTBKhachSan.UI
             this.chkPassword.Text = "Show";
             this.chkPassword.UseVisualStyleBackColor = true;
             // 
-            // gnEFDangNhap
-            // 
-            this.gnEFDangNhap.BorderRadius = 20;
-            this.gnEFDangNhap.TargetControl = this;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.DimGray;
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.btnMini);
-            this.panel2.Controls.Add(this.guna2ControlBox3);
-            this.panel2.Controls.Add(this.guna2ControlBox2);
-            this.panel2.Controls.Add(this.guna2ControlBox1);
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(399, 49);
-            this.panel2.TabIndex = 21;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.label8.Location = new System.Drawing.Point(6, 10);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(128, 29);
-            this.label8.TabIndex = 22;
-            this.label8.Text = "Management";
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -332,31 +354,10 @@ namespace QLTSTBKhachSan.UI
             this.label9.TabIndex = 7;
             this.label9.Text = "LOG IN";
             // 
-            // guna2ControlBox2
+            // gnEFDangNhap
             // 
-            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox2.FillColor = System.Drawing.Color.DimGray;
-            this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
-            this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(338, 16);
-            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
-            this.guna2ControlBox2.Size = new System.Drawing.Size(45, 23);
-            this.guna2ControlBox2.TabIndex = 20;
-            // 
-            // guna2ControlBox3
-            // 
-            this.guna2ControlBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox3.FillColor = System.Drawing.Color.DimGray;
-            this.guna2ControlBox3.HoverState.Parent = this.guna2ControlBox3;
-            this.guna2ControlBox3.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox3.Location = new System.Drawing.Point(338, 10);
-            this.guna2ControlBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2ControlBox3.Name = "guna2ControlBox3";
-            this.guna2ControlBox3.ShadowDecoration.Parent = this.guna2ControlBox3;
-            this.guna2ControlBox3.Size = new System.Drawing.Size(45, 23);
-            this.guna2ControlBox3.TabIndex = 20;
+            this.gnEFDangNhap.BorderRadius = 20;
+            this.gnEFDangNhap.TargetControl = this;
             // 
             // FDangNhap
             // 
@@ -371,6 +372,7 @@ namespace QLTSTBKhachSan.UI
             this.Name = "FDangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FDangNhap";
+            this.Load += new System.EventHandler(this.FDangNhap_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gnPBLogo)).EndInit();

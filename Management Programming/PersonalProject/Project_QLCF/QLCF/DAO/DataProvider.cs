@@ -27,18 +27,18 @@ namespace QLCF.DAO
         
 
         private string ConnectionStr = @"Data Source=.\SQLEXPRESS;Initial Catalog=QLCF;Integrated Security=True";
-        public DataTable ExecuteQuery(string accountQuery,object[] parameter = null)
+        public DataTable ExecuteQuery(string SQuery,object[] parameter = null)
         {
             DataTable data = new DataTable(); 
             using (SqlConnection conn = new SqlConnection(ConnectionStr)) // Hàm using sau khi chạy đoạn code bên trong nó tự được giải phóng  
             {
                 conn.Open();
 
-                SqlCommand cmd = new SqlCommand(accountQuery, conn);
+                SqlCommand cmd = new SqlCommand(SQuery, conn);
 
                 if(parameter != null)
                 {
-                    string[] listPara = accountQuery.Split(' ');
+                    string[] listPara = SQuery.Split(' ');
                     int i = 0;
                     foreach(string item in listPara)
                     {
@@ -59,7 +59,7 @@ namespace QLCF.DAO
             return data;
         }
 
-        public int ExecuteNonQuery(string AccountQuery, object[] parameter = null)
+        public int ExecuteNonQuery(string SQuery, object[] parameter = null)
         {
 
             int data = 0;
@@ -67,11 +67,11 @@ namespace QLCF.DAO
             {
                 conn.Open();
 
-                SqlCommand cmd = new SqlCommand(AccountQuery, conn);
+                SqlCommand cmd = new SqlCommand(SQuery, conn);
 
                 if (parameter != null)
                 {
-                    string[] listPara = AccountQuery.Split(' ');
+                    string[] listPara = SQuery.Split(' ');
                     int i = 0;
                     foreach (string item in listPara)
                     {
@@ -90,18 +90,18 @@ namespace QLCF.DAO
             return data;
         }
 
-        public object ExecuteScalar(string AccountQuery, object[] parameter = null)
+        public object ExecuteScalar(string SQuery, object[] parameter = null)
         {
             object data = 0;
             using (SqlConnection conn = new SqlConnection(ConnectionStr)) // Hàm using sau khi chạy đoạn code bên trong nó tự được giải phóng  
             {
                 conn.Open();
 
-                SqlCommand cmd = new SqlCommand(AccountQuery, conn);
+                SqlCommand cmd = new SqlCommand(SQuery, conn);
 
                 if (parameter != null)
                 {
-                    string[] listPara = AccountQuery.Split(' ');
+                    string[] listPara = SQuery.Split(' ');
                     int i = 0;
                     foreach (string item in listPara)
                     {

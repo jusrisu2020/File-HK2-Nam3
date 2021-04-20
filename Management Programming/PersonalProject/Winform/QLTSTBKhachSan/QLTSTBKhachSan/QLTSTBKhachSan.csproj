@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\TaiKhoanDAO.cs" />
     <Compile Include="UI\FDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
