@@ -40,9 +40,9 @@ namespace QLTSTBKhachSan.UI
 
         }
 
-        bool Login(string TenTK, string Pass)
+        bool Login(string TenTKs, string Passs)
         {
-            return TaiKhoanDAO.Instance.Login(TenTK, Pass);
+            return TaiKhoanDAO.Instance.Login(TenTKs, Passs);
         }
     }
 }

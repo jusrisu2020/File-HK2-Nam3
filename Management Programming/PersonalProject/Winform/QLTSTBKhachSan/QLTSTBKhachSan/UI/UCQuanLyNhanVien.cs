@@ -16,7 +16,11 @@ namespace QLTSTBKhachSan.UI
         {
             InitializeComponent();
         }
-
+        
        
+    }
+
+    internal class dtgvQLNV
+    {
     }
 }

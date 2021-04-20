@@ -17,7 +17,7 @@ namespace QLTSTBKhachSan.UI
         {
             InitializeComponent();
         }
-       
+        
         private void btnSetting_Click(object sender, EventArgs e)
         {
             if (panel2.Visible == false)
@@ -35,6 +35,16 @@ namespace QLTSTBKhachSan.UI
             ucQuanLyNguoiDung.Hide();
         }
 
+        public void showControl(Control ct)
+        {
+            Content.Controls.Clear();
+
+            ct.Dock = DockStyle.Fill;
+            ct.BringToFront();
+            ct.Focus();
+
+            Content.Controls.Add(ct);
+        }
         private void pbLogo_Click(object sender, EventArgs e)
         {
             ucQuanLyNguoiDung.Hide();
@@ -47,7 +57,8 @@ namespace QLTSTBKhachSan.UI
        
         private void btnUserM_Click(object sender, EventArgs e)
         {
-            ucQuanLyNguoiDung.Show();
+            UCQuanLyNguoiDung ucqlnd = new UCQuanLyNguoiDung();
+            showControl(ucqlnd);
             ucQuanLyNhanVien1.Hide();
             ucQuanLiBoPhan1.Hide();
             ucQuanLyThietBi1.Hide();
@@ -104,6 +115,11 @@ namespace QLTSTBKhachSan.UI
             {
                 Application.Exit();
             }
+        }
+
+        private void btnUserM_MouseEnter(object sender, EventArgs e)
+        {
+            
         }
     }
 }

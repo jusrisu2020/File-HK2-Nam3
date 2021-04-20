@@ -278,6 +278,7 @@ CREATE PROC USP_ThemTaiKhoan
 			INSERT INTO dbo.TaiKhoan VALUES(@MaTK,@MaNV,@TenTK,@Pass,@Email,@TrangThai,@LoaiND)
 	END
 GO
+EXEC dbo.USP_ThemTaiKhoan @MaNV = 'NV02',@TenTK = N'Ad',@Pass=N'1',@Email = N'ad1@gmail.com',@TrangThai= N'Đang Hoạt Động',@LoaiND = N'Admin'
 EXEC dbo.USP_ThemTaiKhoan @MaNV = 'NV01',@TenTK = N'Nv1',@Pass=N'1',@Email = N'nv1@gmail.com',@TrangThai= N'Đang Hoạt Động',@LoaiND = N'User'
 EXEC dbo.USP_ThemTaiKhoan @MaNV = 'NV01',@TenTK = N'Nv2',@Pass=N'2',@Email = N'nv2@gmail.com',@TrangThai= N'Đang Hoạt Động',@LoaiND = N'User'
 EXEC dbo.USP_ThemTaiKhoan @MaNV = 'NV01',@TenTK = N'Nv3',@Pass=N'3',@Email = N'nv3@gmail.com',@TrangThai= N'Đang Hoạt Động',@LoaiND = N'User'
@@ -287,10 +288,11 @@ CREATE PROC USP_SelectTaiKhoan
 	@Pass NVARCHAR(100)
 AS 
 BEGIN
-    SELECT * FROM dbo.TaiKhoan WHERE TenTK = @TenTK AND Pass = @Pass
+    SELECT * FROM dbo.TaiKhoan WHERE @TenTK = TenTK AND  @Pass = Pass
 END
 EXEC USP_SelectTaiKhoan N'nv1', N'1'
 GO
+DROP PROC dbo.USP_SelectTaiKhoan
 -------------------------------------------------ThietBi chưa thêm---------------------------------
 CREATE TABLE ThietBi
 (

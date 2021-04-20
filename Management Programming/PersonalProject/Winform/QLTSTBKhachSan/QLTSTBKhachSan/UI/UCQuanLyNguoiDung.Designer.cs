@@ -61,7 +61,7 @@ namespace QLTSTBKhachSan.UI
             // 
             // btnCapNhatND
             // 
-            this.btnCapNhatND.Location = new System.Drawing.Point(50, 151);
+            this.btnCapNhatND.Location = new System.Drawing.Point(31, 120);
             this.btnCapNhatND.Name = "btnCapNhatND";
             this.btnCapNhatND.Size = new System.Drawing.Size(101, 56);
             this.btnCapNhatND.TabIndex = 2;
@@ -70,7 +70,7 @@ namespace QLTSTBKhachSan.UI
             // 
             // btnPhanQuyenND
             // 
-            this.btnPhanQuyenND.Location = new System.Drawing.Point(203, 145);
+            this.btnPhanQuyenND.Location = new System.Drawing.Point(164, 117);
             this.btnPhanQuyenND.Name = "btnPhanQuyenND";
             this.btnPhanQuyenND.Size = new System.Drawing.Size(162, 62);
             this.btnPhanQuyenND.TabIndex = 3;
@@ -79,7 +79,7 @@ namespace QLTSTBKhachSan.UI
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(418, 158);
+            this.btnDelete.Location = new System.Drawing.Point(387, 124);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(95, 49);
             this.btnDelete.TabIndex = 4;
@@ -88,14 +88,14 @@ namespace QLTSTBKhachSan.UI
             // 
             // txtTimKiem
             // 
-            this.txtTimKiem.Location = new System.Drawing.Point(561, 171);
+            this.txtTimKiem.Location = new System.Drawing.Point(561, 137);
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(215, 22);
             this.txtTimKiem.TabIndex = 5;
             // 
             // btnTimKiem
             // 
-            this.btnTimKiem.Location = new System.Drawing.Point(782, 171);
+            this.btnTimKiem.Location = new System.Drawing.Point(782, 124);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(86, 37);
             this.btnTimKiem.TabIndex = 6;
@@ -105,7 +105,7 @@ namespace QLTSTBKhachSan.UI
             // dtgvQLND
             // 
             this.dtgvQLND.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvQLND.Location = new System.Drawing.Point(50, 258);
+            this.dtgvQLND.Location = new System.Drawing.Point(50, 260);
             this.dtgvQLND.Name = "dtgvQLND";
             this.dtgvQLND.RowHeadersWidth = 51;
             this.dtgvQLND.RowTemplate.Height = 24;

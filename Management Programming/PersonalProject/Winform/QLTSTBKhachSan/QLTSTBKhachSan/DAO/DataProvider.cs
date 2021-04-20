@@ -26,7 +26,7 @@ namespace QLTSTBKhachSan.DAO
         }
         private DataProvider() { }
 
-        private String strcon = @"Data Source=DESKTOP-VG1T5FL\SQLEXPRESS;Initial Catalog=TSTBKhachSan;Integrated Security=True";
+        private String strcon = @"Data Source=.\SQLEXPRESS;Initial Catalog=TSTBKhachSan;Integrated Security=True";
 
         public DataTable ExecuteQuery(string Squery, object[] parameter = null)
         {
@@ -34,14 +34,16 @@ namespace QLTSTBKhachSan.DAO
             using (SqlConnection conn = new SqlConnection(strcon))
             {
                 conn.Open();
+
                 SqlCommand cmd = new SqlCommand(Squery, conn);
+
                 if(parameter != null)
                 {
                     string[] listPara = Squery.Split(' ');
                     int i = 0;
-                    foreach(string item in parameter)
+                    foreach(string item in listPara)
                     {
-                        if (item.Contains('@'))
+                        if (item.Contains("@"))
                         {
                             cmd.Parameters.AddWithValue(item, parameter[i]);
                             i++;
@@ -49,7 +51,9 @@ namespace QLTSTBKhachSan.DAO
                     }
                 }
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+
                 adapter.Fill(data);
+
                 conn.Close();
             }
                 return data;
@@ -66,7 +70,7 @@ namespace QLTSTBKhachSan.DAO
                 {
                     string[] listPara = Squery.Split(' ');
                     int i = 0;
-                    foreach (string item in parameter)
+                    foreach (string item in listPara)
                     {
                         if (item.Contains('@'))
                         {
@@ -75,7 +79,6 @@ namespace QLTSTBKhachSan.DAO
                         }
                     }
                 }
-
                 data = cmd.ExecuteNonQuery();
                 conn.Close();
             }
@@ -93,7 +96,7 @@ namespace QLTSTBKhachSan.DAO
                 {
                     string[] listPara = Squery.Split(' ');
                     int i = 0;
-                    foreach (string item in parameter)
+                    foreach (string item in listPara)
                     {
                         if (item.Contains('@'))
                         {
