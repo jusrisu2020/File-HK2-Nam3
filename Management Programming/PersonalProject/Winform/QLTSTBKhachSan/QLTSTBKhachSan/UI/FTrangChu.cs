@@ -32,74 +32,64 @@ namespace QLTSTBKhachSan.UI
         private void FTrangChu_Load(object sender, EventArgs e)
         {
             panel2.Visible = false;
-            ucQuanLyNguoiDung.Hide();
+            ucQuanLyNguoiDung1.Hide();
         }
 
-        public void showControl(Control ct)
-        {
-            Content.Controls.Clear();
-
-            ct.Dock = DockStyle.Fill;
-            ct.BringToFront();
-            ct.Focus();
-
-            Content.Controls.Add(ct);
-        }
+        
         private void pbLogo_Click(object sender, EventArgs e)
         {
-            ucQuanLyNguoiDung.Hide();
-            ucQuanLyNhanVien1.Hide();
+            ucQuanLyNguoiDung1.Hide();
+            /*ucQuanLyNhanVien1.Hide();
             ucQuanLiBoPhan1.Hide();
             ucQuanLyThietBi1.Hide();
-            ucQuanLyBaoCao1.Hide();
+            ucQuanLyBaoCao1.Hide();*/
         }
 
        
         private void btnUserM_Click(object sender, EventArgs e)
         {
-            UCQuanLyNguoiDung ucqlnd = new UCQuanLyNguoiDung();
-            showControl(ucqlnd);
-            ucQuanLyNhanVien1.Hide();
+            ucQuanLyNguoiDung1.Show();
+           /* ucQuanLyNhanVien1.Hide();
             ucQuanLiBoPhan1.Hide();
             ucQuanLyThietBi1.Hide();
-            ucQuanLyBaoCao1.Hide();
+            ucQuanLyBaoCao1.Hide();*/
         }
 
         
         private void btnEmployeeM_Click(object sender, EventArgs e)
         {
-            ucQuanLyNguoiDung.Hide();
-            ucQuanLyNhanVien1.Show();
+            ucQuanLyNguoiDung1.Hide();
+            /*ucQuanLyNhanVien1.Show();
             ucQuanLiBoPhan1.Hide();
             ucQuanLyThietBi1.Hide();
-            ucQuanLyBaoCao1.Hide();
+            ucQuanLyBaoCao1.Hide();*/
         }
 
         private void btnDepartmentM_Click(object sender, EventArgs e)
         {
-            ucQuanLyNguoiDung.Hide();
-            ucQuanLyNhanVien1.Hide();
+            ucQuanLyNguoiDung1.Hide();
+            /*ucQuanLyNhanVien1.Hide();
             ucQuanLiBoPhan1.Show();
             ucQuanLyThietBi1.Hide();
-            ucQuanLyBaoCao1.Hide();
+            ucQuanLyBaoCao1.Hide();*/
         }
 
         private void btnEquipmentM_Click(object sender, EventArgs e)
         {
-            ucQuanLyNguoiDung.Hide();
-            ucQuanLyNhanVien1.Hide();
+            ucQuanLyNguoiDung1.Hide();
+            /*ucQuanLyNhanVien1.Hide();
             ucQuanLiBoPhan1.Hide();
             ucQuanLyThietBi1.Show();
-            ucQuanLyBaoCao1.Hide();
+            ucQuanLyBaoCao1.Hide();*/
         }
 
         private void btnReportM_Click(object sender, EventArgs e)
         {
-            ucQuanLyNguoiDung.Hide();
-            ucQuanLyNhanVien1.Hide();
+            ucQuanLyNguoiDung1.Hide();
+           /* ucQuanLyNhanVien1.Hide();
             ucQuanLiBoPhan1.Hide();
             ucQuanLyThietBi1.Hide();
-            ucQuanLyBaoCao1.Show();
+            ucQuanLyBaoCao1.Show();*/
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)

@@ -3,7 +3,6 @@ CREATE DATABASE TSTBKhachSan
 GO
 USE TSTBKhachSan
 GO
-USE QLCF
 ------------------------------------BoPhan ------------------------------------------------
 CREATE TABLE BoPhan
 (
@@ -35,8 +34,6 @@ SELECT * FROM dbo.BoPhan
 GO
 
 -------------------------------------ChucVu ------------------------------------------------
-DROP TABLE dbo.ChucVu
-DROP PROC dbo.USP_ThemChucVu
 CREATE TABLE ChucVu
 (
 	ID INT IDENTITY,

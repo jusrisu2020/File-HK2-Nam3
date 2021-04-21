@@ -104,6 +104,12 @@
     <Compile Include="UI\FTrangChu.Designer.cs">
       <DependentUpon>FTrangChu.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\SaveXuatImg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaveXuatImg.Designer.cs">
+      <DependentUpon>SaveXuatImg.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\UCQuanLyBaoCao.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -164,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FTrangChu.resx">
       <DependentUpon>FTrangChu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SaveXuatImg.resx">
+      <DependentUpon>SaveXuatImg.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\UCQuanLyBaoCao.resx">
       <DependentUpon>UCQuanLyBaoCao.cs</DependentUpon>

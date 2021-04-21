@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLTSTBKhachSan.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,8 +17,19 @@ namespace QLTSTBKhachSan.UI
         {
             InitializeComponent();
         }
-        
-        
+
+        private void UCQuanLyNguoiDung_Load(object sender, EventArgs e)
+        {
+            string SQuery = "SELECT * FROM dbo.TaiKhoan";
+            dtgvQLND.DataSource = DataProvider.Instance.ExecuteQuery(SQuery);
+            dtgvQLND.Columns["id"].Visible = false;
+        }
+
+        private void btnCapNhatND_Click(object sender, EventArgs e)
+        {
+            FThemSuaND TSND = new FThemSuaND();
+            TSND.Show();
+        }
     }
 
     internal class dtgvQLND
