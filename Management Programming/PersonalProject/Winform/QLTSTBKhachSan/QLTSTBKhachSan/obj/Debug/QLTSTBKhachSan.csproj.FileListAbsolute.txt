@@ -59,3 +59,4 @@ D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\Q
 C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.UI.FThemSuaND.resources
 C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.UI.FThemSuaNV.resources
 C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.UI.SaveXuatImg.resources
+D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.UI.SaveXuatImg.resources

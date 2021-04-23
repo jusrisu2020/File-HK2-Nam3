@@ -34,6 +34,8 @@ namespace QLTSTBKhachSan.UI
 
     internal class dtgvQLND
     {
-        
+        internal static object DataSource;
+
+        public static object Columns { get; internal set; }
     }
 }

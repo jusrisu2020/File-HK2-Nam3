@@ -49,9 +49,9 @@ namespace QLTSTBKhachSan.UI
         private void btnUserM_Click(object sender, EventArgs e)
         {
             ucQuanLyNguoiDung1.Show();
-           /* ucQuanLyNhanVien1.Hide();
+            //ucQuanLyNhanVien1.Hide();
             ucQuanLiBoPhan1.Hide();
-            ucQuanLyThietBi1.Hide();
+           /* ucQuanLyThietBi1.Hide();
             ucQuanLyBaoCao1.Hide();*/
         }
 
@@ -68,9 +68,9 @@ namespace QLTSTBKhachSan.UI
         private void btnDepartmentM_Click(object sender, EventArgs e)
         {
             ucQuanLyNguoiDung1.Hide();
-            /*ucQuanLyNhanVien1.Hide();
+            //ucQuanLyNhanVien1.Hide();
             ucQuanLiBoPhan1.Show();
-            ucQuanLyThietBi1.Hide();
+            /*ucQuanLyThietBi1.Hide();
             ucQuanLyBaoCao1.Hide();*/
         }
 
