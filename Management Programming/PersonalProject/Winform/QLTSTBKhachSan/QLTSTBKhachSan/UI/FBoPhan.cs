@@ -16,5 +16,10 @@ namespace QLTSTBKhachSan
         {
             InitializeComponent();
         }
+    private void btnThemBoPhan_Click(object sender, EventArgs e)
+        {
+            
+           
+        }
     }
 }

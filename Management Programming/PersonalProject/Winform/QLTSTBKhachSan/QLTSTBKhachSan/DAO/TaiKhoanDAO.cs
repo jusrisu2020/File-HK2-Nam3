@@ -28,7 +28,7 @@ namespace QLTSTBKhachSan.DAO
 
         public bool Login(string TenTK, string Pass)
         {
-            string TaiKhoanQuery = "USP_SelectTaiKhoan @TenTK , @Pass";
+            string TaiKhoanQuery = "EXEC USP_DangNhap  @TenTK , @Pass";
             DataTable result = DataProvider.Instance.ExecuteQuery(TaiKhoanQuery, new object[] { TenTK, Pass });
             return result.Rows.Count > 0;
         }

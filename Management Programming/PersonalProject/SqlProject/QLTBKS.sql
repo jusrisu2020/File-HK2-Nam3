@@ -11,6 +11,7 @@ CREATE TABLE BoPhan
 	MaBP NVARCHAR(20) PRIMARY KEY,
 	TenBP NVARCHAR(100)
 )
+
 GO
 CREATE PROC USP_ThemBoPhan
 		@TenBP NVARCHAR(50)
@@ -31,8 +32,11 @@ EXEC dbo.USP_ThemBoPhan @TenBP = N'Khu vực Bếp'
 EXEC dbo.USP_ThemBoPhan @TenBP = N'Nhà Hàng'
 EXEC dbo.USP_ThemBoPhan @TenBP = N'Khu vực khác'
 GO
-SELECT * FROM dbo.BoPhan
+
+CREATE PROC USP_SelectBoPhan
+AS SELECT * FROM dbo.BoPhan
 GO
+EXEC USP_SelectBoPhan
 
 -------------------------------------ChucVu ------------------------------------------------
 DROP TABLE dbo.ChucVu
@@ -136,8 +140,10 @@ EXEC dbo.USP_ThemNhanVien @HoTen = N'Nhân viên 2',@GioiTinh = N'Nam',@NgaySinh
 EXEC dbo.USP_ThemNhanVien @HoTen = N'Nhân viên 3',@GioiTinh = N'Nam',@NgaySinh = '1/1/1990',
 						  @DiaChi = N'An Giang',@SDT = N'123456',@Email = N'nv1@gmail.com',
 						  @TonGiao = N'Phật',@CMND = N'32323232',@MaBP = N'BP01',@MaCV = N'CV01'
-SELECT * FROM dbo.NhanVien
 GO
+
+
+DROP PROC dbo.USP_SelectNhanVien
 -------------------------------------NhaCungCap ------------------------------------------------
 
 CREATE TABLE NhaCungCap
@@ -283,16 +289,38 @@ EXEC dbo.USP_ThemTaiKhoan @MaNV = 'NV01',@TenTK = N'Nv1',@Pass=N'1',@Email = N'n
 EXEC dbo.USP_ThemTaiKhoan @MaNV = 'NV01',@TenTK = N'Nv2',@Pass=N'2',@Email = N'nv2@gmail.com',@TrangThai= N'Đang Hoạt Động',@LoaiND = N'User'
 EXEC dbo.USP_ThemTaiKhoan @MaNV = 'NV01',@TenTK = N'Nv3',@Pass=N'3',@Email = N'nv3@gmail.com',@TrangThai= N'Đang Hoạt Động',@LoaiND = N'User'
 GO
-CREATE PROC USP_SelectTaiKhoan
+--PROC Đăng nhập
+CREATE PROC USP_DangNhap
 	@TenTK NVARCHAR(100),
 	@Pass NVARCHAR(100)
 AS 
 BEGIN
     SELECT * FROM dbo.TaiKhoan WHERE @TenTK = TenTK AND  @Pass = Pass
 END
-EXEC USP_SelectTaiKhoan N'nv1', N'1'
+EXEC USP_DangNhap N'nv1', N'1'
 GO
-DROP PROC dbo.USP_SelectTaiKhoan
+--PROC Select Tất cả tài khoản
+CREATE PROC USP_SelectATaiKhoan
+AS 
+BEGIN
+    SELECT * FROM dbo.TaiKhoan
+END
+EXEC USP_SelectATaiKhoan
+GO
+--PROC Tìm kiếm tài khoản theo Mã
+CREATE PROC USP_SelectTaiKhoan
+	@MaTK NVARCHAR(20),
+	@MaNV NVARCHAR(20),
+	@TenTK NVARCHAR(100),
+	@TrangThai NVARCHAR(100)
+AS 
+BEGIN
+    SELECT * FROM dbo.TaiKhoan WHERE @MaTK = MaTK OR @MaNV = MaNV OR @TenTK = TenTK OR @TrangThai = TrangThai
+END
+EXEC USP_SelectTaiKhoan @MaTK = N'TK01';
+GO
+
+SELECT * FROM TaiKhoan WHERE TrangThai = N'Đang Hoạt Động'
 -------------------------------------------------ThietBi chưa thêm---------------------------------
 CREATE TABLE ThietBi
 (
@@ -359,7 +387,6 @@ CREATE TABLE PhieuBanGiao
 	TinhTrang NVARCHAR(50)
 )
 
-------------------------------------- STORE PROC INSERT----------------------------------------
 
 
 

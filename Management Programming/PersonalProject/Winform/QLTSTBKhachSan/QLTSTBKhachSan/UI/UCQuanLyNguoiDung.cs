@@ -16,26 +16,43 @@ namespace QLTSTBKhachSan.UI
         public UCQuanLyNguoiDung()
         {
             InitializeComponent();
+            LoadNguoiDung();
         }
+        #region Method
+            void LoadNguoiDung()
+            {
+                string SQuery = "USP_SelectATaiKhoan";
+                dtgvQLND.DataSource = DataProvider.Instance.ExecuteQuery(SQuery);
+                dtgvQLND.Columns["id"].Visible = false;
+                dtgvQLND.Columns["Pass"].Visible = false;
+            }
+        #endregion
 
-        private void UCQuanLyNguoiDung_Load(object sender, EventArgs e)
-        {
-            string SQuery = "SELECT * FROM dbo.TaiKhoan";
-            dtgvQLND.DataSource = DataProvider.Instance.ExecuteQuery(SQuery);
-            dtgvQLND.Columns["id"].Visible = false;
-        }
-
+        #region Event
         private void btnCapNhatND_Click(object sender, EventArgs e)
-        {
-            FThemSuaND TSND = new FThemSuaND();
-            TSND.Show();
-        }
+            {
+                FThemSuaND TSND = new FThemSuaND();
+                TSND.Show();
+            }
+
+            private void btnTimKiem_Click(object sender, EventArgs e)
+            {
+                string TimKiem = txtTimKiem.Text;
+                if (txtTimKiem.Text == "")
+                {
+                    LoadNguoiDung();
+                }
+                else
+                {
+                    string SQuery = "SELECT * FROM TaiKhoan WHERE MaTK = '" + TimKiem + "' OR MaNV = '"+ TimKiem + "' OR TenTK = '"+TimKiem+"'";
+                    dtgvQLND.DataSource = DataProvider.Instance.ExecuteQuery(SQuery);
+                    txtTimKiem.Clear();
+                    txtTimKiem.Focus();
+                }
+            }
+        #endregion
+
     }
 
-    internal class dtgvQLND
-    {
-        internal static object DataSource;
-
-        public static object Columns { get; internal set; }
-    }
+    
 }

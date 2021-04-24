@@ -40,8 +40,8 @@ namespace QLTSTBKhachSan.UI
             this.btnEmployeeM = new Guna.UI.WinForms.GunaButton();
             this.btnUserM = new Guna.UI.WinForms.GunaButton();
             this.pbLogo = new System.Windows.Forms.PictureBox();
-            this.ucQuanLyNguoiDung1 = new QLTSTBKhachSan.UI.UCQuanLyNguoiDung();
             this.ucQuanLiBoPhan1 = new QLTSTBKhachSan.UI.UCQuanLiBoPhan();
+            this.ucQuanLyNguoiDung1 = new QLTSTBKhachSan.UI.UCQuanLyNguoiDung();
             this.pnLeft.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
@@ -58,7 +58,7 @@ namespace QLTSTBKhachSan.UI
             this.pnLeft.Controls.Add(this.btnUserM);
             this.pnLeft.Controls.Add(this.pbLogo);
             this.pnLeft.Location = new System.Drawing.Point(0, 0);
-            this.pnLeft.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnLeft.Margin = new System.Windows.Forms.Padding(4);
             this.pnLeft.Name = "pnLeft";
             this.pnLeft.Size = new System.Drawing.Size(291, 700);
             this.pnLeft.TabIndex = 0;
@@ -88,7 +88,7 @@ namespace QLTSTBKhachSan.UI
             this.btnExit.Image = global::QLTSTBKhachSan.Properties.Resources.settings_50px;
             this.btnExit.ImageSize = new System.Drawing.Size(22, 22);
             this.btnExit.Location = new System.Drawing.Point(0, 39);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
             this.btnExit.Name = "btnExit";
             this.btnExit.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnExit.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -115,7 +115,7 @@ namespace QLTSTBKhachSan.UI
             this.btnLogOut.Image = global::QLTSTBKhachSan.Properties.Resources.settings_50px;
             this.btnLogOut.ImageSize = new System.Drawing.Size(22, 22);
             this.btnLogOut.Location = new System.Drawing.Point(0, 0);
-            this.btnLogOut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLogOut.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnLogOut.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -141,7 +141,7 @@ namespace QLTSTBKhachSan.UI
             this.btnReportM.Image = global::QLTSTBKhachSan.Properties.Resources.report_file_64px;
             this.btnReportM.ImageSize = new System.Drawing.Size(22, 22);
             this.btnReportM.Location = new System.Drawing.Point(0, 433);
-            this.btnReportM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnReportM.Margin = new System.Windows.Forms.Padding(4);
             this.btnReportM.Name = "btnReportM";
             this.btnReportM.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnReportM.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -168,7 +168,7 @@ namespace QLTSTBKhachSan.UI
             this.btnEquipmentM.Image = global::QLTSTBKhachSan.Properties.Resources.saw_24px;
             this.btnEquipmentM.ImageSize = new System.Drawing.Size(22, 22);
             this.btnEquipmentM.Location = new System.Drawing.Point(0, 366);
-            this.btnEquipmentM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEquipmentM.Margin = new System.Windows.Forms.Padding(4);
             this.btnEquipmentM.Name = "btnEquipmentM";
             this.btnEquipmentM.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnEquipmentM.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -195,7 +195,7 @@ namespace QLTSTBKhachSan.UI
             this.btnSetting.Image = global::QLTSTBKhachSan.Properties.Resources.settings_50px;
             this.btnSetting.ImageSize = new System.Drawing.Size(22, 22);
             this.btnSetting.Location = new System.Drawing.Point(0, 637);
-            this.btnSetting.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSetting.Margin = new System.Windows.Forms.Padding(4);
             this.btnSetting.Name = "btnSetting";
             this.btnSetting.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnSetting.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -221,7 +221,7 @@ namespace QLTSTBKhachSan.UI
             this.btnDepartmentM.Image = global::QLTSTBKhachSan.Properties.Resources.department_50px;
             this.btnDepartmentM.ImageSize = new System.Drawing.Size(20, 20);
             this.btnDepartmentM.Location = new System.Drawing.Point(0, 298);
-            this.btnDepartmentM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDepartmentM.Margin = new System.Windows.Forms.Padding(4);
             this.btnDepartmentM.Name = "btnDepartmentM";
             this.btnDepartmentM.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnDepartmentM.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -248,7 +248,7 @@ namespace QLTSTBKhachSan.UI
             this.btnEmployeeM.Image = global::QLTSTBKhachSan.Properties.Resources.management_30px;
             this.btnEmployeeM.ImageSize = new System.Drawing.Size(20, 20);
             this.btnEmployeeM.Location = new System.Drawing.Point(0, 231);
-            this.btnEmployeeM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEmployeeM.Margin = new System.Windows.Forms.Padding(4);
             this.btnEmployeeM.Name = "btnEmployeeM";
             this.btnEmployeeM.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnEmployeeM.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -274,7 +274,7 @@ namespace QLTSTBKhachSan.UI
             this.btnUserM.Image = global::QLTSTBKhachSan.Properties.Resources.management_30px;
             this.btnUserM.ImageSize = new System.Drawing.Size(20, 20);
             this.btnUserM.Location = new System.Drawing.Point(0, 164);
-            this.btnUserM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUserM.Margin = new System.Windows.Forms.Padding(4);
             this.btnUserM.Name = "btnUserM";
             this.btnUserM.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnUserM.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -292,13 +292,21 @@ namespace QLTSTBKhachSan.UI
             this.pbLogo.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.pbLogo.Image = global::QLTSTBKhachSan.Properties.Resources.eagle_logo_vector_93835_8;
             this.pbLogo.Location = new System.Drawing.Point(0, 0);
-            this.pbLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbLogo.Margin = new System.Windows.Forms.Padding(4);
             this.pbLogo.Name = "pbLogo";
             this.pbLogo.Size = new System.Drawing.Size(291, 150);
             this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbLogo.TabIndex = 0;
             this.pbLogo.TabStop = false;
             this.pbLogo.Click += new System.EventHandler(this.pbLogo_Click);
+            // 
+            // ucQuanLiBoPhan1
+            // 
+            this.ucQuanLiBoPhan1.Location = new System.Drawing.Point(291, 0);
+            this.ucQuanLiBoPhan1.Margin = new System.Windows.Forms.Padding(4);
+            this.ucQuanLiBoPhan1.Name = "ucQuanLiBoPhan1";
+            this.ucQuanLiBoPhan1.Size = new System.Drawing.Size(1200, 700);
+            this.ucQuanLiBoPhan1.TabIndex = 9;
             // 
             // ucQuanLyNguoiDung1
             // 
@@ -309,14 +317,6 @@ namespace QLTSTBKhachSan.UI
             this.ucQuanLyNguoiDung1.Size = new System.Drawing.Size(1200, 700);
             this.ucQuanLyNguoiDung1.TabIndex = 7;
             // 
-            // ucQuanLiBoPhan1
-            // 
-            this.ucQuanLiBoPhan1.Location = new System.Drawing.Point(291, 0);
-            this.ucQuanLiBoPhan1.Margin = new System.Windows.Forms.Padding(4);
-            this.ucQuanLiBoPhan1.Name = "ucQuanLiBoPhan1";
-            this.ucQuanLiBoPhan1.Size = new System.Drawing.Size(1200, 700);
-            this.ucQuanLiBoPhan1.TabIndex = 9;
-            // 
             // FTrangChu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -326,7 +326,7 @@ namespace QLTSTBKhachSan.UI
             this.Controls.Add(this.ucQuanLyNguoiDung1);
             this.Controls.Add(this.pnLeft);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FTrangChu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "W";

@@ -23,6 +23,16 @@ namespace QLTSTBKhachSan.UI
             string SQuery = "SELECT * FROM dbo.BoPhan";
             dtgvQLBP.DataSource = DataProvider.Instance.ExecuteQuery(SQuery);
             dtgvQLBP.Columns["id"].Visible = false;
+
+            
+
+
+        }
+
+        private void btnThemBoPhan_Click(object sender, EventArgs e)
+        {
+            FBoPhan fbp = new FBoPhan();
+            fbp.Show();
         }
     }
 }

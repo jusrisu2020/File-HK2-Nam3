@@ -44,10 +44,9 @@ namespace QLTSTBKhachSan.UI
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 32);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(28, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 13);
+            this.label1.Size = new System.Drawing.Size(157, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "QUẢN LÍ NGƯỜI DÙNG";
             // 
@@ -56,17 +55,17 @@ namespace QLTSTBKhachSan.UI
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(900, 81);
+            this.panel1.Size = new System.Drawing.Size(1200, 100);
             this.panel1.TabIndex = 1;
             // 
             // btnCapNhatND
             // 
-            this.btnCapNhatND.Location = new System.Drawing.Point(24, 93);
-            this.btnCapNhatND.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCapNhatND.Location = new System.Drawing.Point(32, 114);
+            this.btnCapNhatND.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCapNhatND.Name = "btnCapNhatND";
-            this.btnCapNhatND.Size = new System.Drawing.Size(76, 46);
+            this.btnCapNhatND.Size = new System.Drawing.Size(101, 57);
             this.btnCapNhatND.TabIndex = 2;
             this.btnCapNhatND.Text = "Create User";
             this.btnCapNhatND.UseVisualStyleBackColor = true;
@@ -74,57 +73,58 @@ namespace QLTSTBKhachSan.UI
             // 
             // btnPhanQuyenND
             // 
-            this.btnPhanQuyenND.Location = new System.Drawing.Point(123, 95);
-            this.btnPhanQuyenND.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPhanQuyenND.Location = new System.Drawing.Point(164, 117);
+            this.btnPhanQuyenND.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPhanQuyenND.Name = "btnPhanQuyenND";
-            this.btnPhanQuyenND.Size = new System.Drawing.Size(122, 50);
+            this.btnPhanQuyenND.Size = new System.Drawing.Size(163, 62);
             this.btnPhanQuyenND.TabIndex = 3;
             this.btnPhanQuyenND.Text = "User Authorization";
             this.btnPhanQuyenND.UseVisualStyleBackColor = true;
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(290, 101);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDelete.Location = new System.Drawing.Point(387, 124);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(71, 40);
+            this.btnDelete.Size = new System.Drawing.Size(95, 49);
             this.btnDelete.TabIndex = 4;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
             // 
             // txtTimKiem
             // 
-            this.txtTimKiem.Location = new System.Drawing.Point(421, 111);
-            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTimKiem.Location = new System.Drawing.Point(561, 137);
+            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(162, 20);
+            this.txtTimKiem.Size = new System.Drawing.Size(215, 22);
             this.txtTimKiem.TabIndex = 5;
             // 
             // btnTimKiem
             // 
-            this.btnTimKiem.Location = new System.Drawing.Point(586, 101);
-            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTimKiem.Location = new System.Drawing.Point(781, 124);
+            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(64, 30);
+            this.btnTimKiem.Size = new System.Drawing.Size(85, 37);
             this.btnTimKiem.TabIndex = 6;
             this.btnTimKiem.Text = "Search...";
             this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // dtgvQLND
             // 
             this.dtgvQLND.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvQLND.Location = new System.Drawing.Point(38, 211);
-            this.dtgvQLND.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtgvQLND.Location = new System.Drawing.Point(51, 260);
+            this.dtgvQLND.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtgvQLND.Name = "dtgvQLND";
             this.dtgvQLND.RowHeadersWidth = 51;
             this.dtgvQLND.RowTemplate.Height = 24;
             this.dtgvQLND.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgvQLND.Size = new System.Drawing.Size(544, 169);
+            this.dtgvQLND.Size = new System.Drawing.Size(725, 208);
             this.dtgvQLND.TabIndex = 7;
             // 
             // UCQuanLyNguoiDung
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dtgvQLND);
             this.Controls.Add(this.btnTimKiem);
@@ -133,10 +133,9 @@ namespace QLTSTBKhachSan.UI
             this.Controls.Add(this.btnPhanQuyenND);
             this.Controls.Add(this.btnCapNhatND);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UCQuanLyNguoiDung";
-            this.Size = new System.Drawing.Size(900, 569);
-            this.Load += new System.EventHandler(this.UCQuanLyNguoiDung_Load);
+            this.Size = new System.Drawing.Size(1200, 700);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvQLND)).EndInit();

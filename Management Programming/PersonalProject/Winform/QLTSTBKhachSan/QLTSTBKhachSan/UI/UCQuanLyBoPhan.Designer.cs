@@ -33,7 +33,7 @@
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.btnDelete = new System.Windows.Forms.Button();
-            this.btnCapNhatND = new System.Windows.Forms.Button();
+            this.btnThemBoPhan = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvQLBP)).BeginInit();
             this.panel1.SuspendLayout();
@@ -57,7 +57,7 @@
             this.dtgvQLBP.RowHeadersWidth = 51;
             this.dtgvQLBP.RowTemplate.Height = 24;
             this.dtgvQLBP.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgvQLBP.Size = new System.Drawing.Size(355, 208);
+            this.dtgvQLBP.Size = new System.Drawing.Size(349, 208);
             this.dtgvQLBP.TabIndex = 14;
             // 
             // btnTimKiem
@@ -88,15 +88,16 @@
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
             // 
-            // btnCapNhatND
+            // btnThemBoPhan
             // 
-            this.btnCapNhatND.Location = new System.Drawing.Point(15, 124);
-            this.btnCapNhatND.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnCapNhatND.Name = "btnCapNhatND";
-            this.btnCapNhatND.Size = new System.Drawing.Size(101, 57);
-            this.btnCapNhatND.TabIndex = 9;
-            this.btnCapNhatND.Text = "Tạo Bộ Phận";
-            this.btnCapNhatND.UseVisualStyleBackColor = true;
+            this.btnThemBoPhan.Location = new System.Drawing.Point(40, 114);
+            this.btnThemBoPhan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnThemBoPhan.Name = "btnThemBoPhan";
+            this.btnThemBoPhan.Size = new System.Drawing.Size(101, 57);
+            this.btnThemBoPhan.TabIndex = 9;
+            this.btnThemBoPhan.Text = "Tạo Bộ Phận";
+            this.btnThemBoPhan.UseVisualStyleBackColor = true;
+            this.btnThemBoPhan.Click += new System.EventHandler(this.btnThemBoPhan_Click);
             // 
             // panel1
             // 
@@ -116,7 +117,7 @@
             this.Controls.Add(this.btnTimKiem);
             this.Controls.Add(this.txtTimKiem);
             this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnCapNhatND);
+            this.Controls.Add(this.btnThemBoPhan);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCQuanLiBoPhan";
@@ -137,7 +138,7 @@
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Button btnCapNhatND;
+        private System.Windows.Forms.Button btnThemBoPhan;
         private System.Windows.Forms.Panel panel1;
     }
 }

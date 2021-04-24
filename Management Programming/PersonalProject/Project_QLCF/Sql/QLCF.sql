@@ -92,10 +92,6 @@ AS SELECT * FROM TableFood
 GO
 EXEC USPTableFood
 
-UPDATE TableFood SET status = N'Có Khách' WHERE id = 1
-
-DBCC CHECKIDENT ('TableFood', RESEED, 0)
-DELETE FROM TableFood
 
 SELECT * FROM Account;
 SELECT * FROM FoodCategory;
@@ -103,3 +99,33 @@ SELECT * FROM Food;
 
 SELECT * FROM Bill;
 SELECT * FROM BillInfo;
+-------------------------------------------------Insert FoodCategory---------------------
+INSERT INTO dbo.FoodCategory (nameCF) VALUES (N'Bánh Bao')
+INSERT INTO dbo.FoodCategory (nameCF) VALUES (N'Bánh Tráng')
+DBCC CHECKIDENT("FoodCategory", RESEED, 0)
+DELETE FoodCategory
+SELECT * FROM dbo.FoodCategory
+-------------------------------------------------Insert Food---------------------
+INSERT INTO dbo.Food (nameFood,price,idFCategory) VALUES (   N'Bánh Bao sữa',3000.0, 1)
+INSERT INTO dbo.Food (nameFood,price,idFCategory) VALUES (N'Bánh Bao Chiên',3000.0, 1)
+INSERT INTO dbo.Food (nameFood,price,idFCategory) VALUES (   N'Bánh Tráng sữa',3000.0, 2)
+INSERT INTO dbo.Food (nameFood,price,idFCategory) VALUES (N'Bánh Tráng Cuốn',3000.0, 2)
+
+
+DELETE dbo.Food
+DBCC CHECKIDENT("Food",RESEED , 0)
+SELECT * FROM dbo.Food
+
+-------------------------------------------------Insert Bill---------------------
+INSERT INTO dbo.Bill (DataCheckIn,DateCheckOut,idTable,status) VALUES (GETDATE(),GETDATE(),1,1)
+INSERT INTO dbo.Bill (DataCheckIn,DateCheckOut,idTable,status) VALUES (GETDATE(),GETDATE(),2,2)
+DELETE dbo.Bill
+DBCC CHECKIDENT("Bill",RESEED , 0)
+SELECT * FROM dbo.Bill
+-------------------------------------------------Insert BillInfo---------------------
+INSERT INTO dbo.BillInfo (idBill,idFood,count) VALUES (1,1,2)
+INSERT INTO dbo.BillInfo (idBill,idFood,count) VALUES (1,1,4)
+INSERT INTO dbo.BillInfo (idBill,idFood,count) VALUES (1,1,3)
+
+
+SELECT * FROM dbo.BillInfo

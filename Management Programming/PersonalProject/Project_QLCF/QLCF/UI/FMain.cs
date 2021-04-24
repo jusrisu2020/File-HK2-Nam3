@@ -28,6 +28,8 @@ namespace QLCF
             {
                 Button btn = new Button() { Width = TableDAO.TableWidth, Height = TableDAO.TableHeight };
                 flpTable.Controls.Add(btn);
+
+                btn.Click += btnClick;
                 btn.Text = item.NameText + "\n" + item.StaTus;
                 switch (item.StaTus)
                 {
@@ -38,8 +40,14 @@ namespace QLCF
                 }
             }
         }
+
+
         #endregion
         #region Event
+        void btnClick(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
         private void adminToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FAdmin fa = new FAdmin();
