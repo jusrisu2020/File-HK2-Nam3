@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bài 2</title>
+	<link rel="stylesheet" href="Bai2.css">
+	<script src="Bai2.js"></script>
+</head>
+<body>
+	<form name="f" method="post" action="">
+					<table class="bieumau">
+						<tr> 
+						  <td colspan="3" class="canhgiua">
+						  	<h2>PHIẾU MUA HÀNG TRẢ GÓP</h2>
+						  </td>
+						</tr>
+
+						<tr> 
+						  <td colspan="3" class="tieude">THÔNG TIN SẢN PHẨM</td>
+						</tr>
+
+						<tr> 
+						  <td>Chọn sản phẩm</td>
+						  <td> 
+							<select name="selSanPham">
+							  <option name="MayGiac" value="8000000">Máy giặt Toshiba 6.5 kg</option>
+							  <option name="MayGiac" value="9000000">Máy giặt Toshiba 7.0 kg</option>
+							  <option name="MayGiac" value="9500000">Máy giặt Samsung 8 kg</option>
+							</select>       
+						  <td>&nbsp;</td>
+						</tr>
+
+						<tr> 
+						  <td>Số lượng</td>
+						  <td><input type="text" name="SoLuong"></td>
+						</tr>
+
+						<tr> 
+						  <td>Thời hạn trả</td>
+						  <td>  <input type="radio" name="radThoiHan" value="1">6 tháng	    
+								<input type="radio" name="radThoiHan" value="2">12 tháng</td>
+						  <td>&nbsp;</td>
+						</tr>       
+						  <td>&nbsp;</td>
+						  <td><input type="checkbox" name="chkGiaoHang">
+							  Giao hàng tận nơi</td>
+						  <td>&nbsp;</td>
+						</tr>
+						<!-- Thông tin khách hàng -->
+						<tr> 
+						  <td colspan="3" class="tieude">THÔNG TIN KHÁCH HÀNG</td>
+						</tr>
+						<tr> 
+						  <td>Họ tên</td>
+						  <td><input type="text" name="txtHoTen"></td>
+						  <td>*</td>
+						</tr>
+						
+						<tr>
+							<td>Năm sinh</td>
+							<td>
+								<select name="NamSinh">
+									<option value="Chọn">--Chọn--</option>
+									<script>setYear();</script>
+								</select>
+							</td>
+						</tr>
+						
+					
+						<tr> 
+						  <td colspan="3" class="canhgiua"> 
+							  <input type="button" name="btnXacNhan" value="Xác nhận" onclick="Test()">
+							  <input type="reset" name="btnKhong" value="Không">
+						  </td>
+						</tr>
+					</table>
+				</form>
+</body>
+</html>
