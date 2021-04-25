@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QLTSTBKhachSan.DAO;
+using QLTSTBKhachSan.DTO;
 
 namespace QLTSTBKhachSan.UI
 {
@@ -16,17 +17,13 @@ namespace QLTSTBKhachSan.UI
         public UCQuanLiBoPhan()
         {
             InitializeComponent();
+            LoadBoPhan();
         }
-
-        private void UCQuanLiBoPhan_Load(object sender, EventArgs e)
+        void LoadBoPhan()
         {
-            string SQuery = "SELECT * FROM dbo.BoPhan";
-            dtgvQLBP.DataSource = DataProvider.Instance.ExecuteQuery(SQuery);
+            List<BoPhanDTO> BoPhanList = BoPhanDAO.Instance.LoadBoPhan();
+            dtgvQLBP.DataSource = BoPhanList;
             dtgvQLBP.Columns["id"].Visible = false;
-
-            
-
-
         }
 
         private void btnThemBoPhan_Click(object sender, EventArgs e)

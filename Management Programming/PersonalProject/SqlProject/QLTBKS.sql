@@ -19,7 +19,7 @@ CREATE PROC USP_ThemBoPhan
 	BEGIN
 		DECLARE @MaBP NVARCHAR(20)
 		SET @MaBP=(SELECT IDENT_CURRENT('dbo.BoPhan'))
-		IF EXISTS (SELECT * FROM dbo.BoPhan WHERE ID = @MaBP)
+		IF EXISTS (SELECT * FROM dbo.BoPhan WHERE ID = @MaBP)	
 			SET @MaBP=@MaBP+1
 			SET @MaBP='BP'+REPLICATE('0',2-LEN(@MaBP))+@MaBP
 			INSERT INTO dbo.BoPhan VALUES(@MaBP,@TenBP)
@@ -142,6 +142,10 @@ EXEC dbo.USP_ThemNhanVien @HoTen = N'Nhân viên 3',@GioiTinh = N'Nam',@NgaySinh
 						  @TonGiao = N'Phật',@CMND = N'32323232',@MaBP = N'BP01',@MaCV = N'CV01'
 GO
 
+CREATE PROC USP_SelectNhanVien
+AS SELECT * FROM dbo.NhanVien
+
+EXEC dbo.USP_SelectNhanVien
 
 DROP PROC dbo.USP_SelectNhanVien
 -------------------------------------NhaCungCap ------------------------------------------------
@@ -320,7 +324,6 @@ END
 EXEC USP_SelectTaiKhoan @MaTK = N'TK01';
 GO
 
-SELECT * FROM TaiKhoan WHERE TrangThai = N'Đang Hoạt Động'
 -------------------------------------------------ThietBi chưa thêm---------------------------------
 CREATE TABLE ThietBi
 (

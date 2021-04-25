@@ -42,6 +42,7 @@ namespace QLTSTBKhachSan.UI
             this.pbLogo = new System.Windows.Forms.PictureBox();
             this.ucQuanLiBoPhan1 = new QLTSTBKhachSan.UI.UCQuanLiBoPhan();
             this.ucQuanLyNguoiDung1 = new QLTSTBKhachSan.UI.UCQuanLyNguoiDung();
+            this.ucQuanLyNhanVien1 = new QLTSTBKhachSan.UI.UCQuanLyNhanVien();
             this.pnLeft.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
@@ -317,11 +318,19 @@ namespace QLTSTBKhachSan.UI
             this.ucQuanLyNguoiDung1.Size = new System.Drawing.Size(1200, 700);
             this.ucQuanLyNguoiDung1.TabIndex = 7;
             // 
+            // ucQuanLyNhanVien1
+            // 
+            this.ucQuanLyNhanVien1.Location = new System.Drawing.Point(291, 1);
+            this.ucQuanLyNhanVien1.Name = "ucQuanLyNhanVien1";
+            this.ucQuanLyNhanVien1.Size = new System.Drawing.Size(1200, 700);
+            this.ucQuanLyNhanVien1.TabIndex = 10;
+            // 
             // FTrangChu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1491, 700);
+            this.Controls.Add(this.ucQuanLyNhanVien1);
             this.Controls.Add(this.ucQuanLiBoPhan1);
             this.Controls.Add(this.ucQuanLyNguoiDung1);
             this.Controls.Add(this.pnLeft);
@@ -353,5 +362,6 @@ namespace QLTSTBKhachSan.UI
         private Guna.UI.WinForms.GunaButton btnLogOut;
         private UCQuanLyNguoiDung ucQuanLyNguoiDung1;
         private UCQuanLiBoPhan ucQuanLiBoPhan1;
+        private UCQuanLyNhanVien ucQuanLyNhanVien1;
     }
 }

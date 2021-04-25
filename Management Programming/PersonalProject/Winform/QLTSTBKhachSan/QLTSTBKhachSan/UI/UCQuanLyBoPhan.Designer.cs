@@ -57,7 +57,7 @@
             this.dtgvQLBP.RowHeadersWidth = 51;
             this.dtgvQLBP.RowTemplate.Height = 24;
             this.dtgvQLBP.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgvQLBP.Size = new System.Drawing.Size(349, 208);
+            this.dtgvQLBP.Size = new System.Drawing.Size(342, 208);
             this.dtgvQLBP.TabIndex = 14;
             // 
             // btnTimKiem
@@ -122,7 +122,6 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCQuanLiBoPhan";
             this.Size = new System.Drawing.Size(1200, 700);
-            this.Load += new System.EventHandler(this.UCQuanLiBoPhan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvQLBP)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

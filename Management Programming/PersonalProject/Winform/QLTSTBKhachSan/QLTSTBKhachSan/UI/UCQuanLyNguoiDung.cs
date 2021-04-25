@@ -16,10 +16,10 @@ namespace QLTSTBKhachSan.UI
         public UCQuanLyNguoiDung()
         {
             InitializeComponent();
-            LoadNguoiDung();
+            LoadTaiKhoan();
         }
         #region Method
-            void LoadNguoiDung()
+            void LoadTaiKhoan()
             {
                 string SQuery = "USP_SelectATaiKhoan";
                 dtgvQLND.DataSource = DataProvider.Instance.ExecuteQuery(SQuery);
@@ -40,11 +40,12 @@ namespace QLTSTBKhachSan.UI
                 string TimKiem = txtTimKiem.Text;
                 if (txtTimKiem.Text == "")
                 {
-                    LoadNguoiDung();
+                    LoadTaiKhoan();
                 }
                 else
                 {
-                    string SQuery = "SELECT * FROM TaiKhoan WHERE MaTK = '" + TimKiem + "' OR MaNV = '"+ TimKiem + "' OR TenTK = '"+TimKiem+"'";
+                    string SQuery = "SELECT * FROM TaiKhoan WHERE MaTK = '" + TimKiem + "' OR MaNV = '"+ TimKiem + "' OR TenTK = '"+TimKiem+"'" +
+                    "";
                     dtgvQLND.DataSource = DataProvider.Instance.ExecuteQuery(SQuery);
                     txtTimKiem.Clear();
                     txtTimKiem.Focus();

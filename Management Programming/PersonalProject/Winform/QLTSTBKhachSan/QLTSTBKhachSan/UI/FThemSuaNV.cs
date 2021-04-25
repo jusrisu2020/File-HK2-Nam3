@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLTSTBKhachSan.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,9 @@ namespace QLTSTBKhachSan.UI
         public FThemSuaNV()
         {
             InitializeComponent();
+            
         }
+
+        
     }
 }

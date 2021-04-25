@@ -1,4 +1,6 @@
-﻿using System;
+﻿using QLTSTBKhachSan.DAO;
+using QLTSTBKhachSan.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,12 +17,21 @@ namespace QLTSTBKhachSan.UI
         public UCQuanLyNhanVien()
         {
             InitializeComponent();
+            LoadNhanVien();
         }
-        
+        FThemSuaNV fnv = new FThemSuaNV();
        
-    }
+        void LoadNhanVien()
+        {
+            List<NhanVienDTO> Table = NhanVienDAO.Instance.LoadNhanVien();
+            dgvQLNV.DataSource = Table;
+            Button btn = new Button();
+            
+        }
 
-    internal class dtgvQLNV
-    {
+        private void btnUpdateNV_Click(object sender, EventArgs e)
+        {
+            fnv.Show();
+        }
     }
 }
