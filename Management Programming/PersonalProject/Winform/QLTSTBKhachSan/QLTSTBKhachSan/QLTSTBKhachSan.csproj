@@ -69,9 +69,11 @@
   <ItemGroup>
     <Compile Include="DAO\BoPhanDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\NhaCungCapDAO.cs" />
     <Compile Include="DAO\NhanVienDAO.cs" />
     <Compile Include="DAO\TaiKhoanDAO.cs" />
     <Compile Include="DTO\BoPhanDTO.cs" />
+    <Compile Include="DTO\NhaCungCapDTO.cs" />
     <Compile Include="DTO\NhanVienDTO.cs" />
     <Compile Include="DTO\TaiKhoanDTO.cs" />
     <Compile Include="UI\FDangNhap.cs">

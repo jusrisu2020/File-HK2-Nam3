@@ -4,6 +4,14 @@ GO
 USE TSTBKhachSan
 GO
 USE QLCF
+--BoPhan
+--ChucVu
+--DanhMuc
+--NhanVien
+--NhaCungCap
+--HoaDonMuaTB
+--ChiTietHDMuaTB
+--TaiKhoan
 ------------------------------------BoPhan ------------------------------------------------
 CREATE TABLE BoPhan
 (
@@ -220,7 +228,7 @@ EXEC dbo.USP_ThemHoaDonMuaTB @NgayMuaTB = '1/2/2015',@Manv = N'NV03',@MaNCC = 'N
 GO
 SELECT * FROM HoaDonMuaTB
 GO
--------------------------------------HoaDonMuaTB ------------------------------------------------
+-------------------------------------ChiTietHoaDonMuaTB ------------------------------------------------
 CREATE TABLE ChiTietHoaDonMuaTB
 (
 	MaHDMua NVARCHAR(20) CONSTRAINT FK_ChiTietHoaDonMuaTB_HoaDonMuaTB FOREIGN KEY(MaHDMua) REFERENCES dbo.HoaDonMuaTB(MaHDMua),

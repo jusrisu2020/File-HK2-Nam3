@@ -28,7 +28,6 @@ namespace QLTSTBKhachSan.UI
             Button btn = new Button();
             
         }
-
         private void btnUpdateNV_Click(object sender, EventArgs e)
         {
             fnv.Show();
