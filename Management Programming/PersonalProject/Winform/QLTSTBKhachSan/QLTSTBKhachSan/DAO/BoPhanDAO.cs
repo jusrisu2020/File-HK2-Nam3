@@ -37,5 +37,12 @@ namespace QLTSTBKhachSan.DAO
             }
             return BoPhanList;
         }
+
+        public bool ThemBoPhan(string tenbp)
+        {
+            string Query = string.Format("EXEC dbo.USP_ThemBoPhan N'{0}'",tenbp);
+            int result = DataProvider.Instance.ExecuteNonQuery(Query);
+            return result > 0;
+        }
     }
 }

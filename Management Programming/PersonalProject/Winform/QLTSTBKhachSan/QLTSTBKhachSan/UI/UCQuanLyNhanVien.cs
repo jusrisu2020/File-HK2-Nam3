@@ -25,8 +25,6 @@ namespace QLTSTBKhachSan.UI
         {
             List<NhanVienDTO> Table = NhanVienDAO.Instance.LoadNhanVien();
             dgvQLNV.DataSource = Table;
-            Button btn = new Button();
-            
         }
         private void btnUpdateNV_Click(object sender, EventArgs e)
         {

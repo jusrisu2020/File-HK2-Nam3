@@ -45,10 +45,7 @@ CREATE PROC USP_SelectBoPhan
 AS SELECT * FROM dbo.BoPhan
 GO
 EXEC USP_SelectBoPhan
-
 -------------------------------------ChucVu ------------------------------------------------
-DROP TABLE dbo.ChucVu
-DROP PROC dbo.USP_ThemChucVu
 CREATE TABLE ChucVu
 (
 	ID INT IDENTITY,
@@ -69,9 +66,13 @@ CREATE PROC USP_ThemChucVu
 	END
 GO
 EXEC dbo.USP_ThemChucVu @TenCV = N'Admin'
-EXEC dbo.USP_ThemChucVu @TenCV = N'Quản lí Sảnh'
-EXEC dbo.USP_ThemChucVu @TenCV = N'Quản lí Phòng'
-SELECT * FROM dbo.ChucVu
+EXEC dbo.USP_ThemChucVu @TenCV = N'Quản lí'
+EXEC dbo.USP_ThemChucVu @TenCV = N'Nhân viên khu vực'
+GO
+
+CREATE PROC USP_SelectChucVu
+AS SELECT * FROM dbo.ChucVu
+EXEC USP_SelectChucVu
 GO
 -------------------------------------DanhMuc ------------------------------------------------
 
@@ -94,11 +95,13 @@ CREATE PROC USP_ThemDanhMuc
 			INSERT INTO dbo.DanhMuc VALUES(@MaDanhMuc,@TenDanhMuc)
 	END
 GO
-EXEC dbo.USP_ThemDanhMuc @TenDanhMuc = N'Thiết bị vệ sinh'
 EXEC dbo.USP_ThemDanhMuc @TenDanhMuc = N'Bàn'
 EXEC dbo.USP_ThemDanhMuc @TenDanhMuc = N'Ghế'
+EXEC dbo.USP_ThemDanhMuc @TenDanhMuc = N'Thiết bị vệ sinh'
 GO
-SELECT * FROM dbo.DanhMuc
+CREATE PROC USP_SelectDanhMuc
+AS SELECT * FROM dbo.DanhMuc
+EXEC USP_SelectDanhMuc
 GO
 -------------------------------------NhanVien ------------------------------------------------
 CREATE TABLE NhanVien
@@ -139,23 +142,13 @@ CREATE PROC USP_ThemNhanVien
 			INSERT INTO dbo.NhanVien VALUES(@MaNV,@HoTen,@GioiTinh,@NgaySinh,@DiaChi,@SDT,@Email,@TonGiao,@CMND,@MaBP,@MaCV)
 	END
 GO
-EXEC dbo.USP_ThemNhanVien @HoTen = N'Nhân viên 1',@GioiTinh = N'Nam',@NgaySinh = '1/1/1990',
-						  @DiaChi = N'An Giang',@SDT = N'123456',@Email = N'nv1@gmail.com',
-						  @TonGiao = N'Phật',@CMND = N'32323232',@MaBP = N'BP01',@MaCV = N'CV01'
-EXEC dbo.USP_ThemNhanVien @HoTen = N'Nhân viên 2',@GioiTinh = N'Nam',@NgaySinh = '1/1/1990',
-						  @DiaChi = N'An Giang',@SDT = N'123456',@Email = N'nv1@gmail.com',
-						  @TonGiao = N'Phật',@CMND = N'32323232',@MaBP = N'BP01',@MaCV = N'CV01'
-EXEC dbo.USP_ThemNhanVien @HoTen = N'Nhân viên 3',@GioiTinh = N'Nam',@NgaySinh = '1/1/1990',
-						  @DiaChi = N'An Giang',@SDT = N'123456',@Email = N'nv1@gmail.com',
+EXEC dbo.USP_ThemNhanVien @HoTen = N'Nguyễn Văn Lâm',@GioiTinh = N'Nam',@NgaySinh = '1/1/1990',
+						  @DiaChi = N'An Giang',@SDT = N'012345',@Email = N'lam@gmail.com',
 						  @TonGiao = N'Phật',@CMND = N'32323232',@MaBP = N'BP01',@MaCV = N'CV01'
 GO
-
 CREATE PROC USP_SelectNhanVien
 AS SELECT * FROM dbo.NhanVien
-
 EXEC dbo.USP_SelectNhanVien
-
-DROP PROC dbo.USP_SelectNhanVien
 -------------------------------------NhaCungCap ------------------------------------------------
 
 CREATE TABLE NhaCungCap
@@ -187,17 +180,64 @@ CREATE PROC USP_ThemNhaCungCap
 			INSERT INTO dbo.NhaCungCap VALUES(@MaNCC,@TenNCC,@SDT,@DiaChi,@Email,@STK,@TenCongTy)
 	END
 GO
-EXEC dbo.USP_ThemNhaCungCap @TenNCC = N'Nhà cung cấp 1',@SDT = N'Nam',@DiaChi = '1/1/1990',
-						  @Email = N'An Giang',@STK = N'123456',@TenCongTy = N'nv1@gmail.com'
-EXEC dbo.USP_ThemNhaCungCap @TenNCC = N'Nhân viên 1',@SDT = N'Nam',@DiaChi = '1/1/1990',
-						  @Email = N'An Giang',@STK = N'123456',@TenCongTy = N'nv1@gmail.com'
-EXEC dbo.USP_ThemNhaCungCap @TenNCC = N'Nhân viên 1',@SDT = N'Nam',@DiaChi = '1/1/1990',
-						  @Email = N'An Giang',@STK = N'123456',@TenCongTy = N'nv1@gmail.com'
-SELECT * FROM dbo.NhaCungCap
+EXEC dbo.USP_ThemNhaCungCap @TenNCC = N'Trần Long Kiên',@SDT = N'147258',@DiaChi = 'TP.HCM',
+						  @Email = N'longkien@gmail.com',@STK = N'123456',@TenCongTy = N'Công ty bàn ghế Long Kiên'
+GO
+CREATE PROC USP_SelectNhaCungCap
+AS SELECT * FROM dbo.NhaCungCap
+GO
+EXEC USP_SelectNhaCungCap
+--------------------------------------------------------Tài khoản
+
+CREATE TABLE TaiKhoan
+(
+	Id INT IDENTITY,
+	MaTK NVARCHAR(20) PRIMARY KEY,
+	MaNV NVARCHAR(20) CONSTRAINT FK_TaiKhoan_NhanVien FOREIGN KEY(MaNV) REFERENCES dbo.NhanVien(MaNV),
+	TenTK NVARCHAR(100),
+	Pass NVARCHAR(100),
+	TrangThai NVARCHAR(100),
+	LoaiND NVARCHAR(100)
+)
+GO
+CREATE PROC USP_ThemTaiKhoan
+		@MaNV NVARCHAR(20),
+		@TenTK NVARCHAR(100),
+		@Pass NVARCHAR(100),
+		@TrangThai NVARCHAR(100),
+		@LoaiND NVARCHAR(100)
+	AS
+	BEGIN
+		DECLARE @MaTK NVARCHAR(20)
+		SET @MaTK=(SELECT IDENT_CURRENT('dbo.TaiKhoan'))
+		IF EXISTS (SELECT * FROM dbo.TaiKhoan WHERE ID = @MaTK)
+			SET @MaTK=@MaTK+1
+			SET @MaTK='TK'+REPLICATE('0',2-LEN(@MaTK))+@MaTK
+			INSERT INTO dbo.TaiKhoan VALUES(@MaTK,@MaNV,@TenTK,@Pass,@TrangThai,@LoaiND)
+	END
+GO
+EXEC dbo.USP_ThemTaiKhoan @MaNV = 'NV01',@TenTK = N'ad',@Pass=N'1',@TrangThai= N'Đang Hoạt Động',@LoaiND = N'Admin'
 GO
 
-
--------------------------------------HoaDonMuaTB ------------------------------------------------
+--PROC Đăng nhập
+CREATE PROC USP_DangNhap
+	@TenTK NVARCHAR(100),
+	@Pass NVARCHAR(100)
+AS 
+BEGIN
+    SELECT * FROM dbo.TaiKhoan WHERE @TenTK = TenTK AND  @Pass = Pass
+END
+EXEC USP_DangNhap N'ad', N'1'
+GO
+--PROC Select Tất cả tài khoản
+CREATE PROC USP_SelectATaiKhoan
+AS 
+BEGIN
+    SELECT * FROM dbo.TaiKhoan
+END
+EXEC USP_SelectATaiKhoan
+GO
+-------------------------------------HoaDonMuaTB CHƯA ------------------------------------------------
 CREATE TABLE HoaDonMuaTB
 (
 	Id INT IDENTITY,
@@ -267,70 +307,7 @@ SELECT * FROM dbo.ChiTietHoaDonMuaTB
 GO
 
 -------------------------------------TaiKhoan ------------------------------------------------
-CREATE TABLE TaiKhoan
-(
-	Id INT IDENTITY,
-	MaTK NVARCHAR(20) PRIMARY KEY,
-	MaNV NVARCHAR(20) CONSTRAINT FK_TaiKhoan_NhanVien FOREIGN KEY(MaNV) REFERENCES dbo.NhanVien(MaNV),
-	TenTK NVARCHAR(100),
-	Pass NVARCHAR(100),
-	Email NVARCHAR(100),
-	TrangThai NVARCHAR(100),
-	LoaiND NVARCHAR(100)
-)
-GO
-CREATE PROC USP_ThemTaiKhoan
-		@MaNV NVARCHAR(20),
-		@TenTK NVARCHAR(100),
-		@Pass NVARCHAR(100),
-		@Email NVARCHAR(100),
-		@TrangThai NVARCHAR(100),
-		@LoaiND NVARCHAR(100)
-	AS
-	BEGIN
-		DECLARE @MaTK NVARCHAR(20)
-		SET @MaTK=(SELECT IDENT_CURRENT('dbo.TaiKhoan'))
-		IF EXISTS (SELECT * FROM dbo.TaiKhoan WHERE ID = @MaTK)
-			SET @MaTK=@MaTK+1
-			SET @MaTK='TK'+REPLICATE('0',2-LEN(@MaTK))+@MaTK
-			INSERT INTO dbo.TaiKhoan VALUES(@MaTK,@MaNV,@TenTK,@Pass,@Email,@TrangThai,@LoaiND)
-	END
-GO
-EXEC dbo.USP_ThemTaiKhoan @MaNV = 'NV02',@TenTK = N'Ad',@Pass=N'1',@Email = N'ad1@gmail.com',@TrangThai= N'Đang Hoạt Động',@LoaiND = N'Admin'
-EXEC dbo.USP_ThemTaiKhoan @MaNV = 'NV01',@TenTK = N'Nv1',@Pass=N'1',@Email = N'nv1@gmail.com',@TrangThai= N'Đang Hoạt Động',@LoaiND = N'User'
-EXEC dbo.USP_ThemTaiKhoan @MaNV = 'NV01',@TenTK = N'Nv2',@Pass=N'2',@Email = N'nv2@gmail.com',@TrangThai= N'Đang Hoạt Động',@LoaiND = N'User'
-EXEC dbo.USP_ThemTaiKhoan @MaNV = 'NV01',@TenTK = N'Nv3',@Pass=N'3',@Email = N'nv3@gmail.com',@TrangThai= N'Đang Hoạt Động',@LoaiND = N'User'
-GO
---PROC Đăng nhập
-CREATE PROC USP_DangNhap
-	@TenTK NVARCHAR(100),
-	@Pass NVARCHAR(100)
-AS 
-BEGIN
-    SELECT * FROM dbo.TaiKhoan WHERE @TenTK = TenTK AND  @Pass = Pass
-END
-EXEC USP_DangNhap N'nv1', N'1'
-GO
---PROC Select Tất cả tài khoản
-CREATE PROC USP_SelectATaiKhoan
-AS 
-BEGIN
-    SELECT * FROM dbo.TaiKhoan
-END
-EXEC USP_SelectATaiKhoan
-GO
---PROC Tìm kiếm tài khoản theo Mã
-CREATE PROC USP_SelectTaiKhoan
-	@MaTK NVARCHAR(20),
-	@MaNV NVARCHAR(20),
-	@TenTK NVARCHAR(100),
-	@TrangThai NVARCHAR(100)
-AS 
-BEGIN
-    SELECT * FROM dbo.TaiKhoan WHERE @MaTK = MaTK OR @MaNV = MaNV OR @TenTK = TenTK OR @TrangThai = TrangThai
-END
-EXEC USP_SelectTaiKhoan @MaTK = N'TK01';
-GO
+
 
 -------------------------------------------------ThietBi chưa thêm---------------------------------
 CREATE TABLE ThietBi

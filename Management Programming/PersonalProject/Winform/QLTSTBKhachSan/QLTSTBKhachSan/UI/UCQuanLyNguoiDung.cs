@@ -1,4 +1,5 @@
 ﻿using QLTSTBKhachSan.DAO;
+using QLTSTBKhachSan.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,16 +17,22 @@ namespace QLTSTBKhachSan.UI
         public UCQuanLyNguoiDung()
         {
             InitializeComponent();
-            LoadTaiKhoan();
+            LoadNguoiDung();
+            cbTrangThai.DataSource = TaiKhoanDAO.Instance.LoadTaiKhoan();
+            cbTrangThai.DisplayMember = "TrangThai";
+            cbLoaiND.DataSource = TaiKhoanDAO.Instance.LoadTaiKhoan();
+            cbLoaiND.DisplayMember = "LoaiND";
+
         }
         #region Method
-            void LoadTaiKhoan()
-            {
-                string SQuery = "USP_SelectATaiKhoan";
-                dtgvQLND.DataSource = DataProvider.Instance.ExecuteQuery(SQuery);
-                dtgvQLND.Columns["id"].Visible = false;
-                dtgvQLND.Columns["Pass"].Visible = false;
-            }
+        void LoadNguoiDung()
+        {
+            List<TaiKhoanDTO> tk = TaiKhoanDAO.Instance.LoadTaiKhoan();
+            dtgvQLND.DataSource = tk;
+            dtgvQLND.Columns["id"].Visible = false;
+            dtgvQLND.Columns["Pass"].Visible = false;
+        }
+            
         #endregion
 
         #region Event
@@ -35,24 +42,44 @@ namespace QLTSTBKhachSan.UI
                 TSND.Show();
             }
 
-            private void btnTimKiem_Click(object sender, EventArgs e)
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            string TimKiem = txtTimKiem.Text;
+            if (txtTimKiem.Text == "")
             {
-                string TimKiem = txtTimKiem.Text;
-                if (txtTimKiem.Text == "")
-                {
-                    LoadTaiKhoan();
-                }
-                else
-                {
-                    string SQuery = "SELECT * FROM TaiKhoan WHERE MaTK = '" + TimKiem + "' OR MaNV = '"+ TimKiem + "' OR TenTK = '"+TimKiem+"'" +
-                    "";
-                    dtgvQLND.DataSource = DataProvider.Instance.ExecuteQuery(SQuery);
-                    txtTimKiem.Clear();
-                    txtTimKiem.Focus();
-                }
+                LoadNguoiDung();
             }
+            else
+            {
+                string SQuery = "SELECT * FROM TaiKhoan WHERE MaTK like '%" + TimKiem + "%' OR MaNV like '%" + TimKiem + "%' OR TenTK like '%" + TimKiem+"%'";
+                dtgvQLND.DataSource = DataProvider.Instance.ExecuteQuery(SQuery);
+                txtTimKiem.Clear();
+                txtTimKiem.Focus();
+            }
+        }
+
+
         #endregion
 
+        private void btnThemNv_Click(object sender, EventArgs e)
+        {
+            string Manv = txtManv.Text;
+            string Tentk = txtTenTK.Text;
+            string pass = txtPass.Text;
+            string trangthai = cbTrangThai.Text;
+            string loaind = cbLoaiND.Text;
+
+            if (TaiKhoanDAO.Instance.ThemTaiKhoan(Manv, Tentk, pass, trangthai,loaind))
+            {
+                MessageBox.Show("Thành công");
+                LoadNguoiDung();
+            }
+            else
+            {
+                MessageBox.Show("Không thành công");
+            }
+
+        }
     }
 
     

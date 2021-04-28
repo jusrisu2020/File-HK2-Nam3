@@ -31,5 +31,22 @@ namespace QLTSTBKhachSan.UI
             FBoPhan fbp = new FBoPhan();
             fbp.Show();
         }
+
+        private void btnThemBP_Click(object sender, EventArgs e)
+        {
+            string tenbp = txtThemBoPhan.Text;
+
+            if (BoPhanDAO.Instance.ThemBoPhan(tenbp))
+            {
+                MessageBox.Show("Saved!");
+                LoadBoPhan();
+                txtThemBoPhan.Clear();
+                txtThemBoPhan.Focus();
+            }
+            else
+            {
+                MessageBox.Show("Không thành công");
+            }
+        }
     }
 }
