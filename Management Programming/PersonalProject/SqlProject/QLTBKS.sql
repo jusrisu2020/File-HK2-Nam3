@@ -3,7 +3,6 @@ CREATE DATABASE TSTBKhachSan
 GO
 USE TSTBKhachSan
 GO
-USE QLCF
 --BoPhan
 --ChucVu
 --DanhMuc
@@ -235,6 +234,7 @@ AS
 BEGIN
     SELECT * FROM dbo.TaiKhoan
 END
+GO
 EXEC USP_SelectATaiKhoan
 GO
 -------------------------------------HoaDonMuaTB CHƯA ------------------------------------------------

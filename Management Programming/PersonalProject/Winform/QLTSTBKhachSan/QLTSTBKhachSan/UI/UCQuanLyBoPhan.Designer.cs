@@ -44,59 +44,58 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(19, 30);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(25, 37);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 13);
+            this.label2.Size = new System.Drawing.Size(116, 17);
             this.label2.TabIndex = 0;
             this.label2.Text = "Quản Lí Bộ Phận";
             // 
             // dtgvQLBP
             // 
             this.dtgvQLBP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvQLBP.Location = new System.Drawing.Point(38, 211);
-            this.dtgvQLBP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtgvQLBP.Location = new System.Drawing.Point(51, 260);
+            this.dtgvQLBP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtgvQLBP.Name = "dtgvQLBP";
             this.dtgvQLBP.RowHeadersWidth = 51;
             this.dtgvQLBP.RowTemplate.Height = 24;
             this.dtgvQLBP.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgvQLBP.Size = new System.Drawing.Size(256, 169);
+            this.dtgvQLBP.Size = new System.Drawing.Size(360, 208);
             this.dtgvQLBP.TabIndex = 14;
             // 
             // btnTimKiem
             // 
-            this.btnTimKiem.Location = new System.Drawing.Point(586, 101);
-            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTimKiem.Location = new System.Drawing.Point(781, 124);
+            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(64, 30);
+            this.btnTimKiem.Size = new System.Drawing.Size(85, 37);
             this.btnTimKiem.TabIndex = 13;
             this.btnTimKiem.Text = "Search...";
             this.btnTimKiem.UseVisualStyleBackColor = true;
             // 
             // txtTimKiem
             // 
-            this.txtTimKiem.Location = new System.Drawing.Point(421, 111);
-            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTimKiem.Location = new System.Drawing.Point(561, 137);
+            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(162, 20);
+            this.txtTimKiem.Size = new System.Drawing.Size(215, 22);
             this.txtTimKiem.TabIndex = 12;
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(201, 99);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDelete.Location = new System.Drawing.Point(268, 122);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(71, 40);
+            this.btnDelete.Size = new System.Drawing.Size(95, 49);
             this.btnDelete.TabIndex = 11;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
             // 
             // btnThemBoPhan
             // 
-            this.btnThemBoPhan.Location = new System.Drawing.Point(74, 93);
-            this.btnThemBoPhan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnThemBoPhan.Location = new System.Drawing.Point(99, 114);
+            this.btnThemBoPhan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThemBoPhan.Name = "btnThemBoPhan";
-            this.btnThemBoPhan.Size = new System.Drawing.Size(76, 46);
+            this.btnThemBoPhan.Size = new System.Drawing.Size(101, 57);
             this.btnThemBoPhan.TabIndex = 9;
             this.btnThemBoPhan.Text = "Tạo Bộ Phận";
             this.btnThemBoPhan.UseVisualStyleBackColor = true;
@@ -107,24 +106,25 @@
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(900, 81);
+            this.panel1.Size = new System.Drawing.Size(1200, 100);
             this.panel1.TabIndex = 8;
             // 
             // txtThemBoPhan
             // 
-            this.txtThemBoPhan.Location = new System.Drawing.Point(466, 239);
+            this.txtThemBoPhan.Location = new System.Drawing.Point(621, 294);
+            this.txtThemBoPhan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtThemBoPhan.Name = "txtThemBoPhan";
-            this.txtThemBoPhan.Size = new System.Drawing.Size(100, 20);
+            this.txtThemBoPhan.Size = new System.Drawing.Size(132, 22);
             this.txtThemBoPhan.TabIndex = 15;
             // 
             // btnThemBP
             // 
-            this.btnThemBP.Location = new System.Drawing.Point(586, 225);
-            this.btnThemBP.Margin = new System.Windows.Forms.Padding(2);
+            this.btnThemBP.Location = new System.Drawing.Point(781, 277);
+            this.btnThemBP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThemBP.Name = "btnThemBP";
-            this.btnThemBP.Size = new System.Drawing.Size(76, 46);
+            this.btnThemBP.Size = new System.Drawing.Size(101, 57);
             this.btnThemBP.TabIndex = 16;
             this.btnThemBP.Text = "Tạo Bộ Phận";
             this.btnThemBP.UseVisualStyleBackColor = true;
@@ -132,7 +132,7 @@
             // 
             // UCQuanLiBoPhan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnThemBP);
             this.Controls.Add(this.txtThemBoPhan);
@@ -142,8 +142,9 @@
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnThemBoPhan);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UCQuanLiBoPhan";
-            this.Size = new System.Drawing.Size(900, 569);
+            this.Size = new System.Drawing.Size(1200, 700);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvQLBP)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
