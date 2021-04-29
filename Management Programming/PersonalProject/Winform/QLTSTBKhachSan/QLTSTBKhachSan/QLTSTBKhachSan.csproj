@@ -144,11 +144,11 @@
     <Compile Include="UI\UCQuanLyNhanVien.Designer.cs">
       <DependentUpon>UCQuanLyNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\UCQuanLyBoPhan.cs">
+    <Compile Include="UI\UCQLBoPhanVaChucVu.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UI\UCQuanLyBoPhan.Designer.cs">
-      <DependentUpon>UCQuanLyBoPhan.cs</DependentUpon>
+    <Compile Include="UI\UCQLBoPhanVaChucVu.Designer.cs">
+      <DependentUpon>UCQLBoPhanVaChucVu.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\UCQuanLyThietBi.cs">
       <SubType>UserControl</SubType>
@@ -199,8 +199,8 @@
     <EmbeddedResource Include="UI\UCQuanLyNhanVien.resx">
       <DependentUpon>UCQuanLyNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\UCQuanLyBoPhan.resx">
-      <DependentUpon>UCQuanLyBoPhan.cs</DependentUpon>
+    <EmbeddedResource Include="UI\UCQLBoPhanVaChucVu.resx">
+      <DependentUpon>UCQLBoPhanVaChucVu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\UCQuanLyThietBi.resx">
       <DependentUpon>UCQuanLyThietBi.cs</DependentUpon>

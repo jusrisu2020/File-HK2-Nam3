@@ -40,6 +40,10 @@ EXEC dbo.USP_ThemBoPhan @TenBP = N'Nhà Hàng'
 EXEC dbo.USP_ThemBoPhan @TenBP = N'Khu vực khác'
 GO
 
+UPDATE dbo.BoPhan SET TenBP = N'KHU' WHERE MaBP = N'BP10'
+
+DELETE dbo.BoPhan WHERE MaBP = N'BP12'
+
 CREATE PROC USP_SelectBoPhan
 AS SELECT * FROM dbo.BoPhan
 GO
@@ -237,6 +241,16 @@ END
 GO
 EXEC USP_SelectATaiKhoan
 GO
+
+
+
+CREATE PROC USP_DeleteTaiKhoan
+AS
+BEGIN
+    DELETE dbo.TaiKhoan WHERE 
+END
+GO
+EXEC USP_DeleteTaiKhoan
 -------------------------------------HoaDonMuaTB CHƯA ------------------------------------------------
 CREATE TABLE HoaDonMuaTB
 (

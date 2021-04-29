@@ -44,5 +44,19 @@ namespace QLTSTBKhachSan.DAO
             int result = DataProvider.Instance.ExecuteNonQuery(Query);
             return result > 0;
         }
+
+        public bool SuaBoPhan(string mabp,string tenbp)
+        {
+            string Query = string.Format("UPDATE dbo.BoPhan SET TenBP = N'{0}' WHERE MaBP = N'{1}'", tenbp, mabp);
+            int result = DataProvider.Instance.ExecuteNonQuery(Query);
+            return result > 0;
+        }
+
+        public bool XoaBoPhan(string mabp)
+        {
+            string Query = string.Format("DELETE dbo.BoPhan WHERE MaBP = N'{0}'", mabp);
+            int result = DataProvider.Instance.ExecuteNonQuery(Query);
+            return result > 0;
+        }
     }
 }
