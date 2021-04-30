@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace QLTSTBKhachSan.UI
 {
-    public partial class SaveXuatImg : Form
+    public partial class SaveImg : Form
     {
-        public SaveXuatImg()
+        public SaveImg()
         {
             InitializeComponent();
         }

@@ -30,41 +30,213 @@ namespace QLTSTBKhachSan.UI
         private void InitializeComponent()
         {
             this.pnLeft = new System.Windows.Forms.Panel();
-            this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
-            this.btnNhaCungCap = new Guna.UI.WinForms.GunaButton();
+            this.pnContainer = new System.Windows.Forms.Panel();
+            this.pnTop = new System.Windows.Forms.Panel();
+            this.lbNamePro = new System.Windows.Forms.Label();
             this.pnSetting = new System.Windows.Forms.Panel();
+            this.btnHelp = new Guna.UI2.WinForms.Guna2Button();
+            this.btnNotification = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSetting = new Guna.UI.WinForms.GunaButton();
             this.btnExit = new Guna.UI.WinForms.GunaButton();
             this.btnLogOut = new Guna.UI.WinForms.GunaButton();
+            this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
+            this.btnNhaCungCap = new Guna.UI.WinForms.GunaButton();
             this.btnReportM = new Guna.UI.WinForms.GunaButton();
             this.btnEquipmentM = new Guna.UI.WinForms.GunaButton();
-            this.btnSetting = new Guna.UI.WinForms.GunaButton();
             this.btnDepartmentM = new Guna.UI.WinForms.GunaButton();
             this.btnEmployeeM = new Guna.UI.WinForms.GunaButton();
             this.btnUserM = new Guna.UI.WinForms.GunaButton();
             this.pbLogo = new System.Windows.Forms.PictureBox();
-            this.pnContainer = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.pnLeft.SuspendLayout();
+            this.pnTop.SuspendLayout();
             this.pnSetting.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // pnLeft
             // 
+            this.pnLeft.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnLeft.Controls.Add(this.pnSetting);
             this.pnLeft.Controls.Add(this.gunaButton2);
             this.pnLeft.Controls.Add(this.btnNhaCungCap);
-            this.pnLeft.Controls.Add(this.pnSetting);
-            this.pnLeft.Controls.Add(this.btnSetting);
             this.pnLeft.Controls.Add(this.btnReportM);
             this.pnLeft.Controls.Add(this.btnEquipmentM);
             this.pnLeft.Controls.Add(this.btnDepartmentM);
             this.pnLeft.Controls.Add(this.btnEmployeeM);
             this.pnLeft.Controls.Add(this.btnUserM);
             this.pnLeft.Controls.Add(this.pbLogo);
+            this.pnLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnLeft.Location = new System.Drawing.Point(0, 0);
+            this.pnLeft.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnLeft.Name = "pnLeft";
-            this.pnLeft.Size = new System.Drawing.Size(200, 600);
+            this.pnLeft.Size = new System.Drawing.Size(267, 738);
             this.pnLeft.TabIndex = 0;
+            // 
+            // pnContainer
+            // 
+            this.pnContainer.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnContainer.Location = new System.Drawing.Point(267, 80);
+            this.pnContainer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnContainer.Name = "pnContainer";
+            this.pnContainer.Size = new System.Drawing.Size(1333, 658);
+            this.pnContainer.TabIndex = 1;
+            // 
+            // pnTop
+            // 
+            this.pnTop.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pnTop.Controls.Add(this.btnHelp);
+            this.pnTop.Controls.Add(this.btnNotification);
+            this.pnTop.Controls.Add(this.lbNamePro);
+            this.pnTop.Controls.Add(this.btnSetting);
+            this.pnTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnTop.Location = new System.Drawing.Point(267, 0);
+            this.pnTop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnTop.Name = "pnTop";
+            this.pnTop.Size = new System.Drawing.Size(1333, 80);
+            this.pnTop.TabIndex = 2;
+            // 
+            // lbNamePro
+            // 
+            this.lbNamePro.AutoSize = true;
+            this.lbNamePro.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNamePro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(126)))), ((int)(((byte)(34)))));
+            this.lbNamePro.Location = new System.Drawing.Point(18, 30);
+            this.lbNamePro.Name = "lbNamePro";
+            this.lbNamePro.Size = new System.Drawing.Size(373, 22);
+            this.lbNamePro.TabIndex = 0;
+            this.lbNamePro.Text = "HOTEL EQUIPMENT MANAGEMENT";
+            // 
+            // pnSetting
+            // 
+            this.pnSetting.Controls.Add(this.btnExit);
+            this.pnSetting.Controls.Add(this.btnLogOut);
+            this.pnSetting.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnSetting.Location = new System.Drawing.Point(0, 696);
+            this.pnSetting.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnSetting.Name = "pnSetting";
+            this.pnSetting.Size = new System.Drawing.Size(265, 40);
+            this.pnSetting.TabIndex = 8;
+            // 
+            // btnHelp
+            // 
+            this.btnHelp.CheckedState.Parent = this.btnHelp;
+            this.btnHelp.CustomImages.Parent = this.btnHelp;
+            this.btnHelp.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnHelp.FillColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnHelp.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnHelp.ForeColor = System.Drawing.Color.White;
+            this.btnHelp.HoverState.Parent = this.btnHelp;
+            this.btnHelp.Image = global::QLTSTBKhachSan.Properties.Resources.question_mark_30px;
+            this.btnHelp.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnHelp.Location = new System.Drawing.Point(1153, 0);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.ShadowDecoration.Parent = this.btnHelp;
+            this.btnHelp.Size = new System.Drawing.Size(60, 80);
+            this.btnHelp.TabIndex = 8;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
+            // 
+            // btnNotification
+            // 
+            this.btnNotification.CheckedState.Parent = this.btnNotification;
+            this.btnNotification.CustomImages.Parent = this.btnNotification;
+            this.btnNotification.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnNotification.FillColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnNotification.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnNotification.ForeColor = System.Drawing.Color.White;
+            this.btnNotification.HoverState.Parent = this.btnNotification;
+            this.btnNotification.Image = global::QLTSTBKhachSan.Properties.Resources.notification_24px;
+            this.btnNotification.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnNotification.Location = new System.Drawing.Point(1213, 0);
+            this.btnNotification.Name = "btnNotification";
+            this.btnNotification.ShadowDecoration.Parent = this.btnNotification;
+            this.btnNotification.Size = new System.Drawing.Size(60, 80);
+            this.btnNotification.TabIndex = 0;
+            this.btnNotification.Click += new System.EventHandler(this.btnNotification_Click);
+            // 
+            // btnSetting
+            // 
+            this.btnSetting.AnimationHoverSpeed = 0.07F;
+            this.btnSetting.AnimationSpeed = 0.03F;
+            this.btnSetting.BackColor = System.Drawing.SystemColors.Control;
+            this.btnSetting.BaseColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnSetting.BorderColor = System.Drawing.Color.Black;
+            this.btnSetting.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnSetting.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnSetting.FocusedColor = System.Drawing.Color.Empty;
+            this.btnSetting.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSetting.ForeColor = System.Drawing.Color.Black;
+            this.btnSetting.Image = global::QLTSTBKhachSan.Properties.Resources.settings_50px;
+            this.btnSetting.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnSetting.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnSetting.Location = new System.Drawing.Point(1273, 0);
+            this.btnSetting.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSetting.Name = "btnSetting";
+            this.btnSetting.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnSetting.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnSetting.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnSetting.OnHoverImage = null;
+            this.btnSetting.OnPressedColor = System.Drawing.Color.Black;
+            this.btnSetting.Size = new System.Drawing.Size(60, 80);
+            this.btnSetting.TabIndex = 7;
+            this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.AnimationHoverSpeed = 0.07F;
+            this.btnExit.AnimationSpeed = 0.03F;
+            this.btnExit.BackColor = System.Drawing.SystemColors.Control;
+            this.btnExit.BaseColor = System.Drawing.SystemColors.ControlDark;
+            this.btnExit.BorderColor = System.Drawing.Color.Blue;
+            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnExit.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnExit.FocusedColor = System.Drawing.Color.Empty;
+            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.Color.Black;
+            this.btnExit.Image = global::QLTSTBKhachSan.Properties.Resources.exit_26px;
+            this.btnExit.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnExit.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnExit.Location = new System.Drawing.Point(0, 0);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnExit.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnExit.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnExit.OnHoverImage = null;
+            this.btnExit.OnPressedColor = System.Drawing.Color.Black;
+            this.btnExit.Size = new System.Drawing.Size(130, 40);
+            this.btnExit.TabIndex = 9;
+            this.btnExit.Text = "Exit";
+            this.btnExit.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // btnLogOut
+            // 
+            this.btnLogOut.AnimationHoverSpeed = 0.07F;
+            this.btnLogOut.AnimationSpeed = 0.03F;
+            this.btnLogOut.BackColor = System.Drawing.SystemColors.Control;
+            this.btnLogOut.BaseColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btnLogOut.BorderColor = System.Drawing.Color.Blue;
+            this.btnLogOut.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnLogOut.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnLogOut.FocusedColor = System.Drawing.Color.Empty;
+            this.btnLogOut.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogOut.ForeColor = System.Drawing.Color.Black;
+            this.btnLogOut.Image = global::QLTSTBKhachSan.Properties.Resources.logout_rounded_left_50px;
+            this.btnLogOut.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnLogOut.ImageSize = new System.Drawing.Size(18, 18);
+            this.btnLogOut.Location = new System.Drawing.Point(135, 0);
+            this.btnLogOut.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnLogOut.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnLogOut.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnLogOut.OnHoverImage = null;
+            this.btnLogOut.OnPressedColor = System.Drawing.Color.Black;
+            this.btnLogOut.Size = new System.Drawing.Size(130, 40);
+            this.btnLogOut.TabIndex = 8;
+            this.btnLogOut.Text = "Log Out";
+            this.btnLogOut.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // gunaButton2
             // 
@@ -76,21 +248,22 @@ namespace QLTSTBKhachSan.UI
             this.gunaButton2.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton2.Dock = System.Windows.Forms.DockStyle.Top;
             this.gunaButton2.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaButton2.ForeColor = System.Drawing.Color.Black;
             this.gunaButton2.Image = global::QLTSTBKhachSan.Properties.Resources.report_file_64px;
             this.gunaButton2.ImageSize = new System.Drawing.Size(22, 22);
-            this.gunaButton2.Location = new System.Drawing.Point(0, 340);
+            this.gunaButton2.Location = new System.Drawing.Point(0, 417);
+            this.gunaButton2.Margin = new System.Windows.Forms.Padding(4);
             this.gunaButton2.Name = "gunaButton2";
             this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton2.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaButton2.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaButton2.OnHoverImage = null;
             this.gunaButton2.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton2.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.gunaButton2.Size = new System.Drawing.Size(200, 40);
+            this.gunaButton2.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
+            this.gunaButton2.Size = new System.Drawing.Size(265, 49);
             this.gunaButton2.TabIndex = 10;
-            this.gunaButton2.Text = "Report Management";
+            this.gunaButton2.Text = "Report";
             // 
             // btnNhaCungCap
             // 
@@ -102,85 +275,23 @@ namespace QLTSTBKhachSan.UI
             this.btnNhaCungCap.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnNhaCungCap.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnNhaCungCap.FocusedColor = System.Drawing.Color.Empty;
-            this.btnNhaCungCap.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNhaCungCap.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNhaCungCap.ForeColor = System.Drawing.Color.Black;
             this.btnNhaCungCap.Image = global::QLTSTBKhachSan.Properties.Resources.report_file_64px;
             this.btnNhaCungCap.ImageSize = new System.Drawing.Size(22, 22);
-            this.btnNhaCungCap.Location = new System.Drawing.Point(0, 300);
+            this.btnNhaCungCap.Location = new System.Drawing.Point(0, 368);
+            this.btnNhaCungCap.Margin = new System.Windows.Forms.Padding(4);
             this.btnNhaCungCap.Name = "btnNhaCungCap";
             this.btnNhaCungCap.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnNhaCungCap.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnNhaCungCap.OnHoverForeColor = System.Drawing.Color.White;
             this.btnNhaCungCap.OnHoverImage = null;
             this.btnNhaCungCap.OnPressedColor = System.Drawing.Color.Black;
-            this.btnNhaCungCap.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.btnNhaCungCap.Size = new System.Drawing.Size(200, 40);
+            this.btnNhaCungCap.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
+            this.btnNhaCungCap.Size = new System.Drawing.Size(265, 49);
             this.btnNhaCungCap.TabIndex = 9;
             this.btnNhaCungCap.Text = "Nhà Cung Cấp";
             this.btnNhaCungCap.Click += new System.EventHandler(this.btnNhaCungCap_Click);
-            // 
-            // pnSetting
-            // 
-            this.pnSetting.Controls.Add(this.btnExit);
-            this.pnSetting.Controls.Add(this.btnLogOut);
-            this.pnSetting.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnSetting.Location = new System.Drawing.Point(0, 520);
-            this.pnSetting.Margin = new System.Windows.Forms.Padding(2);
-            this.pnSetting.Name = "pnSetting";
-            this.pnSetting.Size = new System.Drawing.Size(200, 40);
-            this.pnSetting.TabIndex = 8;
-            // 
-            // btnExit
-            // 
-            this.btnExit.AnimationHoverSpeed = 0.07F;
-            this.btnExit.AnimationSpeed = 0.03F;
-            this.btnExit.BackColor = System.Drawing.SystemColors.Control;
-            this.btnExit.BaseColor = System.Drawing.SystemColors.ControlDark;
-            this.btnExit.BorderColor = System.Drawing.Color.Blue;
-            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnExit.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnExit.FocusedColor = System.Drawing.Color.Empty;
-            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ForeColor = System.Drawing.Color.Black;
-            this.btnExit.Image = global::QLTSTBKhachSan.Properties.Resources.settings_50px;
-            this.btnExit.ImageSize = new System.Drawing.Size(18, 18);
-            this.btnExit.Location = new System.Drawing.Point(0, 20);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnExit.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnExit.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnExit.OnHoverImage = null;
-            this.btnExit.OnPressedColor = System.Drawing.Color.Black;
-            this.btnExit.Size = new System.Drawing.Size(200, 20);
-            this.btnExit.TabIndex = 9;
-            this.btnExit.Text = "Exit";
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // btnLogOut
-            // 
-            this.btnLogOut.AnimationHoverSpeed = 0.07F;
-            this.btnLogOut.AnimationSpeed = 0.03F;
-            this.btnLogOut.BackColor = System.Drawing.SystemColors.Control;
-            this.btnLogOut.BaseColor = System.Drawing.SystemColors.AppWorkspace;
-            this.btnLogOut.BorderColor = System.Drawing.Color.Blue;
-            this.btnLogOut.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnLogOut.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnLogOut.FocusedColor = System.Drawing.Color.Empty;
-            this.btnLogOut.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogOut.ForeColor = System.Drawing.Color.Black;
-            this.btnLogOut.Image = global::QLTSTBKhachSan.Properties.Resources.settings_50px;
-            this.btnLogOut.ImageSize = new System.Drawing.Size(18, 18);
-            this.btnLogOut.Location = new System.Drawing.Point(0, 0);
-            this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnLogOut.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnLogOut.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnLogOut.OnHoverImage = null;
-            this.btnLogOut.OnPressedColor = System.Drawing.Color.Black;
-            this.btnLogOut.Size = new System.Drawing.Size(200, 20);
-            this.btnLogOut.TabIndex = 8;
-            this.btnLogOut.Text = "Log Out";
-            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // btnReportM
             // 
@@ -192,21 +303,22 @@ namespace QLTSTBKhachSan.UI
             this.btnReportM.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnReportM.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnReportM.FocusedColor = System.Drawing.Color.Empty;
-            this.btnReportM.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReportM.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReportM.ForeColor = System.Drawing.Color.Black;
             this.btnReportM.Image = global::QLTSTBKhachSan.Properties.Resources.report_file_64px;
             this.btnReportM.ImageSize = new System.Drawing.Size(22, 22);
-            this.btnReportM.Location = new System.Drawing.Point(0, 260);
+            this.btnReportM.Location = new System.Drawing.Point(0, 319);
+            this.btnReportM.Margin = new System.Windows.Forms.Padding(4);
             this.btnReportM.Name = "btnReportM";
             this.btnReportM.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnReportM.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnReportM.OnHoverForeColor = System.Drawing.Color.White;
             this.btnReportM.OnHoverImage = null;
             this.btnReportM.OnPressedColor = System.Drawing.Color.Black;
-            this.btnReportM.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.btnReportM.Size = new System.Drawing.Size(200, 40);
+            this.btnReportM.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
+            this.btnReportM.Size = new System.Drawing.Size(265, 49);
             this.btnReportM.TabIndex = 6;
-            this.btnReportM.Text = "Report Management";
+            this.btnReportM.Text = "Report";
             this.btnReportM.Click += new System.EventHandler(this.btnReportM_Click);
             // 
             // btnEquipmentM
@@ -219,48 +331,23 @@ namespace QLTSTBKhachSan.UI
             this.btnEquipmentM.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnEquipmentM.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnEquipmentM.FocusedColor = System.Drawing.Color.Empty;
-            this.btnEquipmentM.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEquipmentM.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEquipmentM.ForeColor = System.Drawing.Color.Black;
             this.btnEquipmentM.Image = global::QLTSTBKhachSan.Properties.Resources.saw_24px;
             this.btnEquipmentM.ImageSize = new System.Drawing.Size(22, 22);
-            this.btnEquipmentM.Location = new System.Drawing.Point(0, 220);
+            this.btnEquipmentM.Location = new System.Drawing.Point(0, 270);
+            this.btnEquipmentM.Margin = new System.Windows.Forms.Padding(4);
             this.btnEquipmentM.Name = "btnEquipmentM";
             this.btnEquipmentM.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnEquipmentM.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnEquipmentM.OnHoverForeColor = System.Drawing.Color.White;
             this.btnEquipmentM.OnHoverImage = null;
             this.btnEquipmentM.OnPressedColor = System.Drawing.Color.Black;
-            this.btnEquipmentM.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.btnEquipmentM.Size = new System.Drawing.Size(200, 40);
+            this.btnEquipmentM.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
+            this.btnEquipmentM.Size = new System.Drawing.Size(265, 49);
             this.btnEquipmentM.TabIndex = 5;
-            this.btnEquipmentM.Text = "Equipment  Management";
+            this.btnEquipmentM.Text = "Equipment";
             this.btnEquipmentM.Click += new System.EventHandler(this.btnEquipmentM_Click);
-            // 
-            // btnSetting
-            // 
-            this.btnSetting.AnimationHoverSpeed = 0.07F;
-            this.btnSetting.AnimationSpeed = 0.03F;
-            this.btnSetting.BackColor = System.Drawing.SystemColors.Control;
-            this.btnSetting.BaseColor = System.Drawing.SystemColors.Control;
-            this.btnSetting.BorderColor = System.Drawing.Color.Black;
-            this.btnSetting.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnSetting.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnSetting.FocusedColor = System.Drawing.Color.Empty;
-            this.btnSetting.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSetting.ForeColor = System.Drawing.Color.Black;
-            this.btnSetting.Image = global::QLTSTBKhachSan.Properties.Resources.settings_50px;
-            this.btnSetting.ImageSize = new System.Drawing.Size(22, 22);
-            this.btnSetting.Location = new System.Drawing.Point(0, 560);
-            this.btnSetting.Name = "btnSetting";
-            this.btnSetting.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnSetting.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnSetting.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnSetting.OnHoverImage = null;
-            this.btnSetting.OnPressedColor = System.Drawing.Color.Black;
-            this.btnSetting.Size = new System.Drawing.Size(200, 40);
-            this.btnSetting.TabIndex = 7;
-            this.btnSetting.Text = "Setting";
-            this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
             // 
             // btnDepartmentM
             // 
@@ -272,21 +359,22 @@ namespace QLTSTBKhachSan.UI
             this.btnDepartmentM.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnDepartmentM.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnDepartmentM.FocusedColor = System.Drawing.Color.Empty;
-            this.btnDepartmentM.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDepartmentM.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDepartmentM.ForeColor = System.Drawing.Color.Black;
             this.btnDepartmentM.Image = global::QLTSTBKhachSan.Properties.Resources.department_50px;
             this.btnDepartmentM.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnDepartmentM.Location = new System.Drawing.Point(0, 180);
+            this.btnDepartmentM.Location = new System.Drawing.Point(0, 221);
+            this.btnDepartmentM.Margin = new System.Windows.Forms.Padding(4);
             this.btnDepartmentM.Name = "btnDepartmentM";
             this.btnDepartmentM.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnDepartmentM.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnDepartmentM.OnHoverForeColor = System.Drawing.Color.White;
             this.btnDepartmentM.OnHoverImage = null;
             this.btnDepartmentM.OnPressedColor = System.Drawing.Color.Black;
-            this.btnDepartmentM.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.btnDepartmentM.Size = new System.Drawing.Size(200, 40);
+            this.btnDepartmentM.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
+            this.btnDepartmentM.Size = new System.Drawing.Size(265, 49);
             this.btnDepartmentM.TabIndex = 4;
-            this.btnDepartmentM.Text = "Department Management";
+            this.btnDepartmentM.Text = "Department";
             this.btnDepartmentM.Click += new System.EventHandler(this.btnDepartmentM_Click);
             // 
             // btnEmployeeM
@@ -299,20 +387,21 @@ namespace QLTSTBKhachSan.UI
             this.btnEmployeeM.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnEmployeeM.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnEmployeeM.FocusedColor = System.Drawing.Color.Empty;
-            this.btnEmployeeM.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEmployeeM.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmployeeM.ForeColor = System.Drawing.Color.Black;
             this.btnEmployeeM.Image = global::QLTSTBKhachSan.Properties.Resources.management_30px;
             this.btnEmployeeM.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnEmployeeM.Location = new System.Drawing.Point(0, 140);
+            this.btnEmployeeM.Location = new System.Drawing.Point(0, 172);
+            this.btnEmployeeM.Margin = new System.Windows.Forms.Padding(4);
             this.btnEmployeeM.Name = "btnEmployeeM";
             this.btnEmployeeM.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnEmployeeM.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnEmployeeM.OnHoverForeColor = System.Drawing.Color.White;
             this.btnEmployeeM.OnHoverImage = null;
             this.btnEmployeeM.OnPressedColor = System.Drawing.Color.Black;
-            this.btnEmployeeM.Size = new System.Drawing.Size(200, 40);
+            this.btnEmployeeM.Size = new System.Drawing.Size(265, 49);
             this.btnEmployeeM.TabIndex = 3;
-            this.btnEmployeeM.Text = "Employee Management";
+            this.btnEmployeeM.Text = "Employee";
             this.btnEmployeeM.Click += new System.EventHandler(this.btnEmployeeM_Click);
             // 
             // btnUserM
@@ -325,62 +414,53 @@ namespace QLTSTBKhachSan.UI
             this.btnUserM.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnUserM.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnUserM.FocusedColor = System.Drawing.Color.Empty;
-            this.btnUserM.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUserM.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUserM.ForeColor = System.Drawing.Color.Black;
             this.btnUserM.Image = global::QLTSTBKhachSan.Properties.Resources.management_30px;
             this.btnUserM.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnUserM.Location = new System.Drawing.Point(0, 100);
+            this.btnUserM.Location = new System.Drawing.Point(0, 123);
+            this.btnUserM.Margin = new System.Windows.Forms.Padding(4);
             this.btnUserM.Name = "btnUserM";
             this.btnUserM.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnUserM.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnUserM.OnHoverForeColor = System.Drawing.Color.White;
             this.btnUserM.OnHoverImage = null;
             this.btnUserM.OnPressedColor = System.Drawing.Color.Black;
-            this.btnUserM.Size = new System.Drawing.Size(200, 40);
+            this.btnUserM.Size = new System.Drawing.Size(265, 49);
             this.btnUserM.TabIndex = 2;
-            this.btnUserM.Text = "User Management";
+            this.btnUserM.Text = "User";
             this.btnUserM.Click += new System.EventHandler(this.btnUserM_Click);
             // 
             // pbLogo
             // 
-            this.pbLogo.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pbLogo.BackColor = System.Drawing.SystemColors.Control;
             this.pbLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pbLogo.Image = global::QLTSTBKhachSan.Properties.Resources.eagle_logo_vector_93835_8;
             this.pbLogo.Location = new System.Drawing.Point(0, 0);
+            this.pbLogo.Margin = new System.Windows.Forms.Padding(4);
             this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(200, 100);
+            this.pbLogo.Size = new System.Drawing.Size(265, 123);
             this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbLogo.TabIndex = 0;
             this.pbLogo.TabStop = false;
             this.pbLogo.Click += new System.EventHandler(this.pbLogo_Click);
             // 
-            // pnContainer
-            // 
-            this.pnContainer.Location = new System.Drawing.Point(223, 167);
-            this.pnContainer.Name = "pnContainer";
-            this.pnContainer.Size = new System.Drawing.Size(859, 336);
-            this.pnContainer.TabIndex = 1;
-            // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(223, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(895, 100);
-            this.panel1.TabIndex = 2;
-            // 
             // FTrangChu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 600);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(1600, 738);
+            this.Controls.Add(this.pnTop);
             this.Controls.Add(this.pnContainer);
             this.Controls.Add(this.pnLeft);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FTrangChu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.FTrangChu_Load);
             this.pnLeft.ResumeLayout(false);
+            this.pnTop.ResumeLayout(false);
+            this.pnTop.PerformLayout();
             this.pnSetting.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.ResumeLayout(false);
@@ -397,12 +477,15 @@ namespace QLTSTBKhachSan.UI
         private Guna.UI.WinForms.GunaButton btnEquipmentM;
         private Guna.UI.WinForms.GunaButton btnReportM;
         private Guna.UI.WinForms.GunaButton btnSetting;
-        private System.Windows.Forms.Panel pnSetting;
         private Guna.UI.WinForms.GunaButton btnExit;
         private Guna.UI.WinForms.GunaButton btnLogOut;
         private Guna.UI.WinForms.GunaButton gunaButton2;
         private Guna.UI.WinForms.GunaButton btnNhaCungCap;
         private System.Windows.Forms.Panel pnContainer;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnTop;
+        private System.Windows.Forms.Label lbNamePro;
+        private Guna.UI2.WinForms.Guna2Button btnNotification;
+        private Guna.UI2.WinForms.Guna2Button btnHelp;
+        private System.Windows.Forms.Panel pnSetting;
     }
 }

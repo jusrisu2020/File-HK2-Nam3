@@ -93,6 +93,16 @@ namespace QLTSTBKhachSan.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap exit_26px {
+            get {
+                object obj = ResourceManager.GetObject("exit_26px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap light_64px {
             get {
                 object obj = ResourceManager.GetObject("light_64px", resourceCulture);
@@ -103,9 +113,49 @@ namespace QLTSTBKhachSan.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logout_rounded_left_50px {
+            get {
+                object obj = ResourceManager.GetObject("logout_rounded_left_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap management_30px {
             get {
                 object obj = ResourceManager.GetObject("management_30px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap notification_100px {
+            get {
+                object obj = ResourceManager.GetObject("notification_100px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap notification_24px {
+            get {
+                object obj = ResourceManager.GetObject("notification_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap question_mark_30px {
+            get {
+                object obj = ResourceManager.GetObject("question_mark_30px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

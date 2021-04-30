@@ -56,7 +56,7 @@ namespace QLTSTBKhachSan.UI
         #region Event
             private void btnThemBoPhan_Click(object sender, EventArgs e)
             {
-                FBoPhan fbp = new FBoPhan();
+                FThongBao fbp = new FThongBao();
                 fbp.Show();
             }
 

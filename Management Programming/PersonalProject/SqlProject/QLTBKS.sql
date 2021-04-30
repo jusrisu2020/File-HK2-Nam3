@@ -3,14 +3,7 @@ CREATE DATABASE TSTBKhachSan
 GO
 USE TSTBKhachSan
 GO
---BoPhan
---ChucVu
---DanhMuc
---NhanVien
---NhaCungCap
---HoaDonMuaTB
---ChiTietHDMuaTB
---TaiKhoan
+
 ------------------------------------BoPhan ------------------------------------------------
 CREATE TABLE BoPhan
 (
@@ -325,9 +318,6 @@ EXEC dbo.USP_ThemChiTietHoaDonMuaTB @MaHDMua = N'HDM02',@TenTB = N'Ghế Dài th
 SELECT * FROM dbo.ChiTietHoaDonMuaTB
 GO
 
--------------------------------------TaiKhoan ------------------------------------------------
-
-
 -------------------------------------------------ThietBi chưa thêm---------------------------------
 CREATE TABLE ThietBi
 (
@@ -344,6 +334,7 @@ CREATE TABLE ThietBi
 	MaHDMuaTB NVARCHAR(20) CONSTRAINT FK_ThietBi_HoaDonMuaTB FOREIGN KEY(MaHDMuaTB) REFERENCES dbo.HoaDonMuaTB(MaHDMua),
 	GhiChu NVARCHAR(300)
 )
+-------------------------------------------------ThietBi chưa thêm---------------------------------
 
 CREATE TABLE BaoCaoTBHong
 (
@@ -355,6 +346,7 @@ CREATE TABLE BaoCaoTBHong
 	PhuongThucPhat NVARCHAR(50),
 	TienPhat INT
 )
+-------------------------------------------------XuLyTB chưa thêm---------------------------------
 
 CREATE TABLE XuLyTB
 (
@@ -363,6 +355,7 @@ CREATE TABLE XuLyTB
 	MaNV NVARCHAR(20) CONSTRAINT FK_XuLyTB_NhanVien FOREIGN KEY (MaNV) REFERENCES dbo.NhanVien(MaNV),
 	NgayXuLy DATE
 )
+-------------------------------------------------ChiTietXuLyTB chưa thêm---------------------------------
 
 CREATE TABLE ChiTietXuLyTB
 (
@@ -377,6 +370,7 @@ CREATE TABLE ChiTietXuLyTB
 	ThanhTien INT,
 	NguoiMua NVARCHAR(50)
 )
+-------------------------------------------------PhieuBanGiao chưa thêm---------------------------------
 
 CREATE TABLE PhieuBanGiao
 (

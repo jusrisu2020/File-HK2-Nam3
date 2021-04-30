@@ -87,6 +87,18 @@
     <Compile Include="UI\FDangNhap.Designer.cs">
       <DependentUpon>FDangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\FHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FHelp.Designer.cs">
+      <DependentUpon>FHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FSetting.Designer.cs">
+      <DependentUpon>FSetting.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\FTaoTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,11 +111,11 @@
     <Compile Include="UI\FNhanVien.Designer.cs">
       <DependentUpon>FNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\FBoPhan.cs">
+    <Compile Include="UI\FThongBao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\FBoPhan.Designer.cs">
-      <DependentUpon>FBoPhan.cs</DependentUpon>
+    <Compile Include="UI\FThongBao.Designer.cs">
+      <DependentUpon>FThongBao.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -125,11 +137,17 @@
     <Compile Include="UI\FTrangChu.Designer.cs">
       <DependentUpon>FTrangChu.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\SaveXuatImg.cs">
+    <Compile Include="UI\FLoading.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\SaveXuatImg.Designer.cs">
-      <DependentUpon>SaveXuatImg.cs</DependentUpon>
+    <Compile Include="UI\FLoading.Designer.cs">
+      <DependentUpon>FLoading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SaveImg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SaveImg.Designer.cs">
+      <DependentUpon>SaveImg.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\UCQLNhaCungCap.cs">
       <SubType>UserControl</SubType>
@@ -170,14 +188,23 @@
     <EmbeddedResource Include="UI\FDangNhap.resx">
       <DependentUpon>FDangNhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\FHelp.resx">
+      <DependentUpon>FHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FLoading.resx">
+      <DependentUpon>FLoading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FSetting.resx">
+      <DependentUpon>FSetting.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\FTaoTaiKhoan.resx">
       <DependentUpon>FTaoTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FNhanVien.resx">
       <DependentUpon>FNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\FBoPhan.resx">
-      <DependentUpon>FBoPhan.cs</DependentUpon>
+    <EmbeddedResource Include="UI\FThongBao.resx">
+      <DependentUpon>FThongBao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -198,8 +225,8 @@
     <EmbeddedResource Include="UI\FTrangChu.resx">
       <DependentUpon>FTrangChu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\SaveXuatImg.resx">
-      <DependentUpon>SaveXuatImg.cs</DependentUpon>
+    <EmbeddedResource Include="UI\SaveImg.resx">
+      <DependentUpon>SaveImg.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\UCQLNhaCungCap.resx">
       <DependentUpon>UCQLNhaCungCap.cs</DependentUpon>
@@ -270,6 +297,21 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notification_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notification_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout_rounded_left_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question_mark_30px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

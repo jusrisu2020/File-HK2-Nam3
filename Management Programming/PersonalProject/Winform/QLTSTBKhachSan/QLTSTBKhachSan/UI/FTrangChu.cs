@@ -12,12 +12,19 @@ namespace QLTSTBKhachSan.UI
 {
     public partial class FTrangChu : Form
     {
-       
         public FTrangChu()
         {
             InitializeComponent();
+            AddLoadToolTip();
         }
         
+        void AddLoadToolTip()
+        {
+            ToolTip tt = new ToolTip();
+            tt.SetToolTip(btnSetting, "Setting\nCtrl + S");
+            tt.SetToolTip(btnNotification, "Setting\nCtrl + N");
+            tt.SetToolTip(btnHelp, "Help\nCtrl + H");
+        }
         public void pbLogo_Click(object sender, EventArgs e)
         {
             pnContainer.Controls.Clear();
@@ -68,18 +75,12 @@ namespace QLTSTBKhachSan.UI
         #region Event_Setting
             private void FTrangChu_Load(object sender, EventArgs e)
             {
-                pnSetting.Visible = false;
+                
             }
             private void btnSetting_Click(object sender, EventArgs e)
             {
-                if (pnSetting.Visible == false)
-                {
-                    pnSetting.Visible = true;
-                }
-                else
-                {
-                    pnSetting.Visible = false;
-                }
+                FSetting st = new FSetting();
+                st.Show();
             }
             private void btnExit_Click(object sender, EventArgs e)
             {
@@ -89,5 +90,17 @@ namespace QLTSTBKhachSan.UI
                 }
             }
         #endregion
+
+        private void btnNotification_Click(object sender, EventArgs e)
+        {
+            FThongBao tb = new FThongBao();
+            tb.Show();
+        }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            FHelp h = new FHelp();
+            h.Show();
+        }
     }
 }
