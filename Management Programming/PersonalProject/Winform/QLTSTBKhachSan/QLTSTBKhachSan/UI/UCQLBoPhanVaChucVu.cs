@@ -31,6 +31,16 @@ namespace QLTSTBKhachSan.UI
             void LoadBoPhan()
             {
                 List<BoPhanDTO> BoPhanList = BoPhanDAO.Instance.LoadBoPhan();
+                foreach(BoPhanDTO item in BoPhanList)
+                {
+                    Button btn = new Button() { Width = 150, Height = 100 };
+                    flpBoPhan.Controls.Add(btn);
+                    btn.Text = item.MaBP + "\n" + item.TenBP;
+                    btn.Image = Image.FromFile(@"C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\PersonalProject\Winform\Img\management_30px.png");
+                    btn.ImageAlign = ContentAlignment.MiddleCenter;
+                    btn.TextAlign = ContentAlignment.TopCenter;
+                //= ";
+            }
                 BoPhanListBD.DataSource = BoPhanList;
                 dtgvQLBP.Columns["id"].Visible = false;
             }
@@ -109,10 +119,10 @@ namespace QLTSTBKhachSan.UI
                     string mabp = txtMaBP.Text;
                     if (BoPhanDAO.Instance.XoaBoPhan(mabp))
                     {
-                        MessageBox.Show("Đã xoá!");
                         LoadBoPhan();
                         txtThemBoPhan.Clear();
                         txtThemBoPhan.Focus();
+                        MessageBox.Show("Đã xoá!");
                     }
                     else
                     {

@@ -18,78 +18,36 @@ namespace QLTSTBKhachSan.UI
             InitializeComponent();
         }
         
-        private void btnSetting_Click(object sender, EventArgs e)
+        public void pbLogo_Click(object sender, EventArgs e)
         {
-            if (panel2.Visible == false)
-            {
-                panel2.Visible = true;
-            }
-            else
-            {
-                panel2.Visible = false;
-            }
+            pnContainer.Controls.Clear();
         }
-        private void FTrangChu_Load(object sender, EventArgs e)
-        {
-            panel2.Visible = false;
-            ucQuanLyNguoiDung1.Hide();
-        }
-
-        
-        private void pbLogo_Click(object sender, EventArgs e)
-        {
-            ucQuanLyNguoiDung1.Hide();
-            /*ucQuanLyNhanVien1.Hide();
-            ucQuanLiBoPhan1.Hide();
-            ucQuanLyThietBi1.Hide();
-            ucQuanLyBaoCao1.Hide();*/
-        }
-
-       
         private void btnUserM_Click(object sender, EventArgs e)
         {
-            ucQuanLyNguoiDung1.Show();
-            ucQuanLyNhanVien1.Hide();
-            ucQuanLiBoPhan1.Hide();
-           /* ucQuanLyThietBi1.Hide();
-            ucQuanLyBaoCao1.Hide();*/
+            pnContainer.Controls.Clear();
+            UCQuanLyNguoiDung nd = new UCQuanLyNguoiDung();
+            pnContainer.Controls.Add(nd);
         }
 
         
         private void btnEmployeeM_Click(object sender, EventArgs e)
         {
-            ucQuanLyNguoiDung1.Hide();
-            ucQuanLyNhanVien1.Show();
-            ucQuanLiBoPhan1.Hide();
-            /*ucQuanLyThietBi1.Hide();
-            ucQuanLyBaoCao1.Hide();*/
+           
         }
 
         private void btnDepartmentM_Click(object sender, EventArgs e)
         {
-            ucQuanLyNguoiDung1.Hide();
-            ucQuanLyNhanVien1.Hide();
-            ucQuanLiBoPhan1.Show();
-            /*ucQuanLyThietBi1.Hide();
-            ucQuanLyBaoCao1.Hide();*/
+            
         }
 
         private void btnEquipmentM_Click(object sender, EventArgs e)
         {
-            ucQuanLyNguoiDung1.Hide();
-            /*ucQuanLyNhanVien1.Hide();
-            ucQuanLiBoPhan1.Hide();
-            ucQuanLyThietBi1.Show();
-            ucQuanLyBaoCao1.Hide();*/
+            
         }
 
         private void btnReportM_Click(object sender, EventArgs e)
         {
-            ucQuanLyNguoiDung1.Hide();
-           /* ucQuanLyNhanVien1.Hide();
-            ucQuanLiBoPhan1.Hide();
-            ucQuanLyThietBi1.Hide();
-            ucQuanLyBaoCao1.Show();*/
+            
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)
@@ -99,17 +57,37 @@ namespace QLTSTBKhachSan.UI
             this.Hide();
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            if(MessageBox.Show("Exit?","Notification",MessageBoxButtons.OKCancel) == DialogResult.OK)
-            {
-                Application.Exit();
-            }
-        }
+        
 
-        private void btnUserM_MouseEnter(object sender, EventArgs e)
+        private void btnNhaCungCap_Click(object sender, EventArgs e)
         {
-            
+            pnContainer.Controls.Clear();
+            UCQLNhaCungCap ncc = new UCQLNhaCungCap();
+            pnContainer.Controls.Add(ncc);
         }
+        #region Event_Setting
+            private void FTrangChu_Load(object sender, EventArgs e)
+            {
+                pnSetting.Visible = false;
+            }
+            private void btnSetting_Click(object sender, EventArgs e)
+            {
+                if (pnSetting.Visible == false)
+                {
+                    pnSetting.Visible = true;
+                }
+                else
+                {
+                    pnSetting.Visible = false;
+                }
+            }
+            private void btnExit_Click(object sender, EventArgs e)
+            {
+                if (MessageBox.Show("Exit?", "Notification", MessageBoxButtons.OKCancel) == DialogResult.OK)
+                {
+                    Application.Exit();
+                }
+            }
+        #endregion
     }
 }

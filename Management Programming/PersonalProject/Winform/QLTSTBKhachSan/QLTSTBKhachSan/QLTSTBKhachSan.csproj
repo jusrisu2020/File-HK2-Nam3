@@ -76,6 +76,11 @@
     <Compile Include="DTO\NhaCungCapDTO.cs" />
     <Compile Include="DTO\NhanVienDTO.cs" />
     <Compile Include="DTO\TaiKhoanDTO.cs" />
+    <Compile Include="TSTBKhachSanDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TSTBKhachSanDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="UI\FDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +130,12 @@
     </Compile>
     <Compile Include="UI\SaveXuatImg.Designer.cs">
       <DependentUpon>SaveXuatImg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UCQLNhaCungCap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UCQLNhaCungCap.Designer.cs">
+      <DependentUpon>UCQLNhaCungCap.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\UCQuanLyBaoCao.cs">
       <SubType>UserControl</SubType>
@@ -190,6 +201,9 @@
     <EmbeddedResource Include="UI\SaveXuatImg.resx">
       <DependentUpon>SaveXuatImg.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\UCQLNhaCungCap.resx">
+      <DependentUpon>UCQLNhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\UCQuanLyBaoCao.resx">
       <DependentUpon>UCQuanLyBaoCao.cs</DependentUpon>
     </EmbeddedResource>
@@ -215,6 +229,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="TSTBKhachSanDataSet.xsc">
+      <DependentUpon>TSTBKhachSanDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TSTBKhachSanDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TSTBKhachSanDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TSTBKhachSanDataSet.xss">
+      <DependentUpon>TSTBKhachSanDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

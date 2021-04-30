@@ -25,15 +25,11 @@ namespace QLCF.DTO
         }
 
         private int iD;
-        public int ID { get => iD; set => iD = value; }
-
-
         private string nameText;
-        public string NameText { get => nameText; set => nameText = value; }
-
-
         private string staTus;
+
+        public int ID { get => iD; set => iD = value; }
+        public string NameText { get => nameText; set => nameText = value; }
         public string StaTus { get => staTus; set => staTus = value; }
-        public static object Instance { get; internal set; }
     }
 }

@@ -48,35 +48,45 @@ CREATE PROC USP_SelectBoPhan
 AS SELECT * FROM dbo.BoPhan
 GO
 EXEC USP_SelectBoPhan
--------------------------------------ChucVu ------------------------------------------------
-CREATE TABLE ChucVu
+-------------------------------------NhaCungCap ------------------------------------------------
+
+CREATE TABLE NhaCungCap
 (
-	ID INT IDENTITY,
-	MaCV NVARCHAR(20) PRIMARY KEY,
-	TenCV NVARCHAR(100)
+	Id INT IDENTITY,
+	MaNCC NVARCHAR(20) PRIMARY KEY,
+	TenNCC NVARCHAR(255),
+	SDT NVARCHAR(50),
+	DiaChi NVARCHAR(300),
+	Email NVARCHAR(50),
+	STK NVARCHAR(50),
+	TenCongTy NVARCHAR(300)
 )
 GO
-CREATE PROC USP_ThemChucVu
-		@TenCV NVARCHAR(50)
+CREATE PROC USP_ThemNhaCungCap
+		@TenNCC NVARCHAR(255),
+		@SDT NVARCHAR(50),
+		@DiaChi NVARCHAR(300),
+		@Email NVARCHAR(50),
+		@STK NVARCHAR(50),
+		@TenCongTy NVARCHAR(300)
 	AS
 	BEGIN
-		DECLARE @MaCV NVARCHAR(20)
-		SET @MaCV=(SELECT IDENT_CURRENT('dbo.ChucVu'))
-		IF EXISTS (SELECT * FROM dbo.ChucVu WHERE ID = @MaCV)
-			SET @MaCV=@MaCV+1
-			SET @MaCV='CV'+REPLICATE('0',2-LEN(@MaCV))+@MaCV
-			INSERT INTO dbo.ChucVu VALUES(@MaCV,@TenCV)
+		DECLARE @MaNCC NVARCHAR(20)
+		SET @MaNCC=(SELECT IDENT_CURRENT('dbo.NhaCungCap'))
+		IF EXISTS (SELECT * FROM dbo.NhaCungCap WHERE ID = @MaNCC)
+			SET @MaNCC=@MaNCC+1
+			SET @MaNCC='NCC'+REPLICATE('0',2-LEN(@MaNCC))+@MaNCC
+			INSERT INTO dbo.NhaCungCap VALUES(@MaNCC,@TenNCC,@SDT,@DiaChi,@Email,@STK,@TenCongTy)
 	END
 GO
-EXEC dbo.USP_ThemChucVu @TenCV = N'Admin'
-EXEC dbo.USP_ThemChucVu @TenCV = N'Quản lí'
-EXEC dbo.USP_ThemChucVu @TenCV = N'Nhân viên khu vực'
+EXEC dbo.USP_ThemNhaCungCap @TenNCC = N'Trần Long Kiên',@SDT = N'147258',@DiaChi = 'TP.HCM',
+						  @Email = N'longkien@gmail.com',@STK = N'123456',@TenCongTy = N'Công ty bàn ghế Long Kiên'
 GO
-
-CREATE PROC USP_SelectChucVu
-AS SELECT * FROM dbo.ChucVu
-EXEC USP_SelectChucVu
+CREATE PROC USP_SelectNhaCungCap
+AS SELECT * FROM dbo.NhaCungCap
 GO
+EXEC USP_SelectNhaCungCap
+--thêm danh mục
 -------------------------------------DanhMuc ------------------------------------------------
 
 CREATE TABLE DanhMuc
@@ -106,6 +116,38 @@ CREATE PROC USP_SelectDanhMuc
 AS SELECT * FROM dbo.DanhMuc
 EXEC USP_SelectDanhMuc
 GO
+select * from danhmuc
+--thêm dữ liệu thiết bị
+-------------------------------------ChucVu ------------------------------------------------
+CREATE TABLE ChucVu
+(
+	ID INT IDENTITY,
+	MaCV NVARCHAR(20) PRIMARY KEY,
+	TenCV NVARCHAR(100)
+)
+GO
+CREATE PROC USP_ThemChucVu
+		@TenCV NVARCHAR(50)
+	AS
+	BEGIN
+		DECLARE @MaCV NVARCHAR(20)
+		SET @MaCV=(SELECT IDENT_CURRENT('dbo.ChucVu'))
+		IF EXISTS (SELECT * FROM dbo.ChucVu WHERE ID = @MaCV)
+			SET @MaCV=@MaCV+1
+			SET @MaCV='CV'+REPLICATE('0',2-LEN(@MaCV))+@MaCV
+			INSERT INTO dbo.ChucVu VALUES(@MaCV,@TenCV)
+	END
+GO
+EXEC dbo.USP_ThemChucVu @TenCV = N'Admin'
+EXEC dbo.USP_ThemChucVu @TenCV = N'Quản lí'
+EXEC dbo.USP_ThemChucVu @TenCV = N'Nhân viên khu vực'
+GO
+
+CREATE PROC USP_SelectChucVu
+AS SELECT * FROM dbo.ChucVu
+EXEC USP_SelectChucVu
+GO
+
 -------------------------------------NhanVien ------------------------------------------------
 CREATE TABLE NhanVien
 (
@@ -152,44 +194,7 @@ GO
 CREATE PROC USP_SelectNhanVien
 AS SELECT * FROM dbo.NhanVien
 EXEC dbo.USP_SelectNhanVien
--------------------------------------NhaCungCap ------------------------------------------------
 
-CREATE TABLE NhaCungCap
-(
-	Id INT IDENTITY,
-	MaNCC NVARCHAR(20) PRIMARY KEY,
-	TenNCC NVARCHAR(255),
-	SDT NVARCHAR(50),
-	DiaChi NVARCHAR(300),
-	Email NVARCHAR(50),
-	STK NVARCHAR(50),
-	TenCongTy NVARCHAR(300)
-)
-GO
-CREATE PROC USP_ThemNhaCungCap
-		@TenNCC NVARCHAR(255),
-		@SDT NVARCHAR(50),
-		@DiaChi NVARCHAR(300),
-		@Email NVARCHAR(50),
-		@STK NVARCHAR(50),
-		@TenCongTy NVARCHAR(300)
-	AS
-	BEGIN
-		DECLARE @MaNCC NVARCHAR(20)
-		SET @MaNCC=(SELECT IDENT_CURRENT('dbo.NhaCungCap'))
-		IF EXISTS (SELECT * FROM dbo.NhaCungCap WHERE ID = @MaNCC)
-			SET @MaNCC=@MaNCC+1
-			SET @MaNCC='NCC'+REPLICATE('0',2-LEN(@MaNCC))+@MaNCC
-			INSERT INTO dbo.NhaCungCap VALUES(@MaNCC,@TenNCC,@SDT,@DiaChi,@Email,@STK,@TenCongTy)
-	END
-GO
-EXEC dbo.USP_ThemNhaCungCap @TenNCC = N'Trần Long Kiên',@SDT = N'147258',@DiaChi = 'TP.HCM',
-						  @Email = N'longkien@gmail.com',@STK = N'123456',@TenCongTy = N'Công ty bàn ghế Long Kiên'
-GO
-CREATE PROC USP_SelectNhaCungCap
-AS SELECT * FROM dbo.NhaCungCap
-GO
-EXEC USP_SelectNhaCungCap
 --------------------------------------------------------Tài khoản
 
 CREATE TABLE TaiKhoan
