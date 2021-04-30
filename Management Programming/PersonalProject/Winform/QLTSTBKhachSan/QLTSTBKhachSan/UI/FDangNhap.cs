@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Media.Media3D;
 
 namespace QLTSTBKhachSan.UI
 {
@@ -23,19 +24,9 @@ namespace QLTSTBKhachSan.UI
         {
 
         }
-        void Loading()
-        {
-            for (int i = 0; i <= 80; i++)
-            {
-                Thread.Sleep(10);
-            }
-        }
+        
         private void btnLogIn_Click(object sender, EventArgs e)
         {
-            using (FLoading ld = new FLoading(Loading))
-            {
-                ld.ShowDialog(this);
-            }
             string UserName = txtUserName.Text;
             string PassWord = txtPassword.Text;
             if (Login(UserName, PassWord))

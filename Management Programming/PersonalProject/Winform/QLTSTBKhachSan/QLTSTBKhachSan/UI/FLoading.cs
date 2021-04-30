@@ -12,21 +12,23 @@ namespace QLTSTBKhachSan.UI
 {
     public partial class FLoading : Form
     {
-        public Action Worker { get; set; }
-        public FLoading(Action worker)
+        public FLoading()
         {
             InitializeComponent();
-            if(worker == null)
-            {
-                throw new ArgumentNullException();
-            }
-            Worker = worker;
+            PgbLoading.Value = 0;
         }
 
-        protected override void OnLoad(EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
-            base.OnLoad(e);
-            Task.Factory.StartNew(Worker).ContinueWith(t => { this.Close(); }, TaskScheduler.FromCurrentSynchronizationContext());
+            PgbLoading.Value += 4;
+            lbPercent.Text = "Loading... " + PgbLoading.Value.ToString() + "%";
+            if (PgbLoading.Value >= 100)
+            {
+                tmLoading.Enabled = false;
+                FDangNhap dn = new FDangNhap();
+                dn.Show();
+                this.Hide();
+            }
         }
     }
 }

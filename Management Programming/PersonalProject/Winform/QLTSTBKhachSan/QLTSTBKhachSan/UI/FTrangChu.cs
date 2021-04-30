@@ -17,7 +17,7 @@ namespace QLTSTBKhachSan.UI
             InitializeComponent();
             AddLoadToolTip();
         }
-        
+        #region Method
         void AddLoadToolTip()
         {
             ToolTip tt = new ToolTip();
@@ -25,6 +25,8 @@ namespace QLTSTBKhachSan.UI
             tt.SetToolTip(btnNotification, "Setting\nCtrl + N");
             tt.SetToolTip(btnHelp, "Help\nCtrl + H");
         }
+        #endregion
+        #region Envent_Main
         public void pbLogo_Click(object sender, EventArgs e)
         {
             pnContainer.Controls.Clear();
@@ -36,61 +38,46 @@ namespace QLTSTBKhachSan.UI
             pnContainer.Controls.Add(nd);
         }
 
-        
+
         private void btnEmployeeM_Click(object sender, EventArgs e)
         {
-           
+            pnContainer.Controls.Clear();
+            UCQuanLyNhanVien nv = new UCQuanLyNhanVien();
+            pnContainer.Controls.Add(nv);
         }
 
         private void btnDepartmentM_Click(object sender, EventArgs e)
         {
-            
+            pnContainer.Controls.Clear();
+            UCQuanLiBoPhan bp = new UCQuanLiBoPhan();
+            pnContainer.Controls.Add(bp);
         }
 
         private void btnEquipmentM_Click(object sender, EventArgs e)
         {
-            
+            pnContainer.Controls.Clear();
+            UCQuanLyThietBi tb = new UCQuanLyThietBi();
+            pnContainer.Controls.Add(tb);
         }
 
         private void btnReportM_Click(object sender, EventArgs e)
         {
-            
+            pnContainer.Controls.Clear();
+            UCQuanLyBaoCao bc = new UCQuanLyBaoCao();
+            pnContainer.Controls.Add(bc);
         }
-
-        private void btnLogOut_Click(object sender, EventArgs e)
-        {
-            FDangNhap fdn = new FDangNhap();
-            fdn.Show();
-            this.Hide();
-        }
-
-        
-
         private void btnNhaCungCap_Click(object sender, EventArgs e)
         {
             pnContainer.Controls.Clear();
             UCQLNhaCungCap ncc = new UCQLNhaCungCap();
             pnContainer.Controls.Add(ncc);
         }
-        #region Event_Setting
-            private void FTrangChu_Load(object sender, EventArgs e)
-            {
-                
-            }
-            private void btnSetting_Click(object sender, EventArgs e)
-            {
-                FSetting st = new FSetting();
-                st.Show();
-            }
-            private void btnExit_Click(object sender, EventArgs e)
-            {
-                if (MessageBox.Show("Exit?", "Notification", MessageBoxButtons.OKCancel) == DialogResult.OK)
-                {
-                    Application.Exit();
-                }
-            }
-        #endregion
+        private void btnHeThong_Click(object sender, EventArgs e)
+        {
 
+        }
+        #endregion
+        #region Event_Dif
         private void btnNotification_Click(object sender, EventArgs e)
         {
             FThongBao tb = new FThongBao();
@@ -102,5 +89,27 @@ namespace QLTSTBKhachSan.UI
             FHelp h = new FHelp();
             h.Show();
         }
+        private void btnSetting_Click(object sender, EventArgs e)
+        {
+            FSetting st = new FSetting();
+            st.Show();
+        }
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Exit?", "Notification", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                Application.Exit();
+            }
+        }
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            FDangNhap fdn = new FDangNhap();
+            fdn.Show();
+            this.Hide();
+        }
+
+        #endregion
+
+        
     }
 }

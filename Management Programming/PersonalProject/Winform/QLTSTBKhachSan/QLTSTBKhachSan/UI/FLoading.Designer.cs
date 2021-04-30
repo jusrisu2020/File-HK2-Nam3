@@ -29,49 +29,78 @@ namespace QLTSTBKhachSan.UI
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FLoading));
-            this.label1 = new System.Windows.Forms.Label();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.PgbLoading = new System.Windows.Forms.ProgressBar();
+            this.tmLoading = new System.Windows.Forms.Timer(this.components);
+            this.lbPercent = new System.Windows.Forms.Label();
+            this.PtbLoading = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.PtbLoading)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // PgbLoading
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(343, 276);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Loading";
+            this.PgbLoading.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.PgbLoading.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.PgbLoading.Location = new System.Drawing.Point(0, 386);
+            this.PgbLoading.Margin = new System.Windows.Forms.Padding(2);
+            this.PgbLoading.Name = "PgbLoading";
+            this.PgbLoading.Size = new System.Drawing.Size(600, 14);
+            this.PgbLoading.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.PgbLoading.TabIndex = 1;
             // 
-            // progressBar1
+            // tmLoading
             // 
-            this.progressBar1.Location = new System.Drawing.Point(218, 312);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(313, 23);
-            this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
-            this.progressBar1.TabIndex = 1;
+            this.tmLoading.Enabled = true;
+            this.tmLoading.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // lbPercent
+            // 
+            this.lbPercent.AutoSize = true;
+            this.lbPercent.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPercent.Location = new System.Drawing.Point(11, 368);
+            this.lbPercent.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbPercent.Name = "lbPercent";
+            this.lbPercent.Size = new System.Drawing.Size(27, 16);
+            this.lbPercent.TabIndex = 2;
+            this.lbPercent.Text = "0%";
+            this.lbPercent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PtbLoading
+            // 
+            this.PtbLoading.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PtbLoading.Image = ((System.Drawing.Image)(resources.GetObject("PtbLoading.Image")));
+            this.PtbLoading.Location = new System.Drawing.Point(0, 0);
+            this.PtbLoading.Name = "PtbLoading";
+            this.PtbLoading.Size = new System.Drawing.Size(600, 400);
+            this.PtbLoading.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PtbLoading.TabIndex = 3;
+            this.PtbLoading.TabStop = false;
             // 
             // FLoading
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(756, 429);
-            this.Controls.Add(this.progressBar1);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(600, 400);
+            this.Controls.Add(this.lbPercent);
+            this.Controls.Add(this.PgbLoading);
+            this.Controls.Add(this.PtbLoading);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FLoading";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Loading";
+            ((System.ComponentModel.ISupportInitialize)(this.PtbLoading)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ProgressBar PgbLoading;
+        private System.Windows.Forms.Timer tmLoading;
+        private System.Windows.Forms.Label lbPercent;
+        private System.Windows.Forms.PictureBox PtbLoading;
     }
 }

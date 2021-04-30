@@ -42,7 +42,6 @@ D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\Q
 D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.UI.FDangNhap.resources
 D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\bin\Debug\Guna.UI.dll
 C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\bin\Debug\Guna.UI.dll
-C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.FBoPhan.resources
 C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.csprojAssemblyReference.cache
 D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.UI.FTrangChu.resources
 C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.UI.FTrangChu.resources
@@ -57,7 +56,6 @@ D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\Q
 D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.UI.FThemSuaNV.resources
 C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.UI.FThemSuaND.resources
 C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.UI.FThemSuaNV.resources
-C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.UI.SaveXuatImg.resources
 D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\bin\Debug\EntityFramework.dll
 D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\bin\Debug\EntityFramework.SqlServer.dll
 D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\bin\Debug\EntityFramework.xml
@@ -73,3 +71,8 @@ D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\Q
 D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.UI.SaveImg.resources
 D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.UI.FSetting.resources
 D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.UI.FLoading.resources
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.UI.FHelp.resources
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.UI.FLoading.resources
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.UI.FSetting.resources
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.FThongBao.resources
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.UI.SaveImg.resources
