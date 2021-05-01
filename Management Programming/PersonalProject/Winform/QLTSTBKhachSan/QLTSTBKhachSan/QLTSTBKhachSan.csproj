@@ -72,10 +72,12 @@
     <Compile Include="DAO\NhaCungCapDAO.cs" />
     <Compile Include="DAO\NhanVienDAO.cs" />
     <Compile Include="DAO\TaiKhoanDAO.cs" />
+    <Compile Include="DAO\ThietBiDAO.cs" />
     <Compile Include="DTO\BoPhanDTO.cs" />
     <Compile Include="DTO\NhaCungCapDTO.cs" />
     <Compile Include="DTO\NhanVienDTO.cs" />
     <Compile Include="DTO\TaiKhoanDTO.cs" />
+    <Compile Include="DTO\ThietBiDTO.cs" />
     <Compile Include="TSTBKhachSanDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -173,11 +175,11 @@
     <Compile Include="UI\UCQuanLyNhanVien.Designer.cs">
       <DependentUpon>UCQuanLyNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\UCQLBoPhanVaChucVu.cs">
+    <Compile Include="UI\UCQLBoPhan.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UI\UCQLBoPhanVaChucVu.Designer.cs">
-      <DependentUpon>UCQLBoPhanVaChucVu.cs</DependentUpon>
+    <Compile Include="UI\UCQLBoPhan.Designer.cs">
+      <DependentUpon>UCQLBoPhan.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\UCQuanLyThietBi.cs">
       <SubType>UserControl</SubType>
@@ -240,8 +242,8 @@
     <EmbeddedResource Include="UI\UCQuanLyNhanVien.resx">
       <DependentUpon>UCQuanLyNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\UCQLBoPhanVaChucVu.resx">
-      <DependentUpon>UCQLBoPhanVaChucVu.cs</DependentUpon>
+    <EmbeddedResource Include="UI\UCQLBoPhan.resx">
+      <DependentUpon>UCQLBoPhan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\UCQuanLyThietBi.resx">
       <DependentUpon>UCQuanLyThietBi.cs</DependentUpon>

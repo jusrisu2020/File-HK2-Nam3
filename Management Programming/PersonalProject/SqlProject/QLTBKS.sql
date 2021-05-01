@@ -101,6 +101,9 @@ CREATE PROC USP_ThemDanhMuc
 			INSERT INTO dbo.DanhMuc VALUES(@MaDanhMuc,@TenDanhMuc)
 	END
 GO
+
+
+
 EXEC dbo.USP_ThemDanhMuc @TenDanhMuc = N'Bàn'
 EXEC dbo.USP_ThemDanhMuc @TenDanhMuc = N'Ghế'
 EXEC dbo.USP_ThemDanhMuc @TenDanhMuc = N'Thiết bị vệ sinh'
@@ -334,6 +337,48 @@ CREATE TABLE ThietBi
 	MaHDMuaTB NVARCHAR(20) CONSTRAINT FK_ThietBi_HoaDonMuaTB FOREIGN KEY(MaHDMuaTB) REFERENCES dbo.HoaDonMuaTB(MaHDMua),
 	GhiChu NVARCHAR(300)
 )
+GO
+CREATE PROC USP_ThemThietBi
+		@TenTB NVARCHAR(255),
+		@DonVi NVARCHAR(50),
+		@SoLuongHienHuu INT,
+		@MaDanhMuc NVARCHAR(20),
+		@MaBP NVARCHAR(20),
+		@ThoiGianBH DATE,
+		@TinhTrangTB NVARCHAR(50),
+		@MaNCC NVARCHAR(20),
+		@MaHDMuaTB NVARCHAR(20),
+		@GhiChu NVARCHAR(300)
+	AS
+	BEGIN
+		DECLARE @MaTB NVARCHAR(20)
+		SET @MaTB=(SELECT IDENT_CURRENT('dbo.ThietBi'))
+		IF EXISTS (SELECT * FROM dbo.ThietBi WHERE ID = @MaTB)
+			SET @MaTB=@MaTB+1
+			SET @MaTB='TB'+REPLICATE('0',2-LEN(@MaTB))+@MaTB
+			INSERT INTO dbo.ThietBi VALUES(@MaTB,@TenTB,@DonVi,@SoLuongHienHuu,@MaDanhMuc,@MaBP,@ThoiGianBH,
+			@TinhTrangTB,@MaNCC,@MaHDMuaTB,@GhiChu)
+	END
+GO
+EXEC dbo.USP_ThemThietBi @TenTB = N'Ghế tiếp khách',@DonVi = N'bộ',@SoLuongHienHuu = 10,
+						  @MaDanhMuc = N'DM02',@MaBP = N'BP01',@ThoiGianBH = N'3/3/2025',
+						  @TinhTrangTB= N'Tốt',@MaNCC='NCC01',@MaHDMuaTB='HDM01',@GhiChu=N''
+EXEC dbo.USP_ThemThietBi @TenTB = N'Bàn tiếp khách',@DonVi = N'bộ',@SoLuongHienHuu = 10,
+						  @MaDanhMuc = N'DM01',@MaBP = N'BP02',@ThoiGianBH = N'3/3/2025',
+						  @TinhTrangTB= N'Tốt',@MaNCC='NCC01',@MaHDMuaTB='HDM01',@GhiChu=N''
+GO
+
+CREATE PROC USP_SelectAThietBi
+AS SELECT * FROM dbo.ThietBi
+EXEC USP_SelectAThietBi
+
+SELECT * FROM dbo.ThietBi WHERE MaBP = 'BP01';
+
+SELECT * FROM dbo.DanhMuc
+SELECT * FROM dbo.BoPhan
+SELECT * FROM dbo.NhaCungCap
+SELECT * FROM dbo.HoaDonMuaTB
+
 -------------------------------------------------ThietBi chưa thêm---------------------------------
 
 CREATE TABLE BaoCaoTBHong

@@ -30,24 +30,49 @@ namespace QLTSTBKhachSan.UI
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
+            this.dtgvThietBi = new System.Windows.Forms.DataGridView();
+            this.flpBtnBoPhan = new System.Windows.Forms.FlowLayoutPanel();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvThietBi)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(102, 115);
+            this.label1.Location = new System.Drawing.Point(22, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(99, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Quản lí thiết bị";
             // 
+            // dtgvThietBi
+            // 
+            this.dtgvThietBi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvThietBi.Location = new System.Drawing.Point(752, 79);
+            this.dtgvThietBi.Name = "dtgvThietBi";
+            this.dtgvThietBi.ReadOnly = true;
+            this.dtgvThietBi.RowHeadersWidth = 51;
+            this.dtgvThietBi.RowTemplate.Height = 24;
+            this.dtgvThietBi.Size = new System.Drawing.Size(305, 250);
+            this.dtgvThietBi.TabIndex = 1;
+            // 
+            // flpBtnBoPhan
+            // 
+            this.flpBtnBoPhan.AutoScroll = true;
+            this.flpBtnBoPhan.Location = new System.Drawing.Point(25, 79);
+            this.flpBtnBoPhan.Name = "flpBtnBoPhan";
+            this.flpBtnBoPhan.Size = new System.Drawing.Size(620, 451);
+            this.flpBtnBoPhan.TabIndex = 2;
+            // 
             // UCQuanLyThietBi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.flpBtnBoPhan);
+            this.Controls.Add(this.dtgvThietBi);
             this.Controls.Add(this.label1);
             this.Name = "UCQuanLyThietBi";
             this.Size = new System.Drawing.Size(1200, 700);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvThietBi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -56,5 +81,7 @@ namespace QLTSTBKhachSan.UI
         #endregion
 
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dtgvThietBi;
+        private System.Windows.Forms.FlowLayoutPanel flpBtnBoPhan;
     }
 }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using QLTSTBKhachSan.DAO;
+using QLTSTBKhachSan.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,39 @@ namespace QLTSTBKhachSan.UI
         public UCQuanLyThietBi()
         {
             InitializeComponent();
+            LoadData();
+        }
+
+        void LoadData()
+        {
+            LoadBtnBoPhan();
+        }
+        void ShowThietBiTrongBoPhan(int id)
+        {
+            List<ThietBiDTO> ThietBiList = ThietBiDAO.Instance.SelectThietBiTrongBoPhan(id);
+            dtgvThietBi.DataSource = ThietBiList;
+        }
+
+        void LoadBtnBoPhan()
+        {
+            List<BoPhanDTO> BoPhanList = BoPhanDAO.Instance.LoadBoPhan();
+            foreach (BoPhanDTO item in BoPhanList)
+            {
+                Button btn = new Button() { Width = 150, Height = 100 };
+                flpBtnBoPhan.Controls.Add(btn);
+                btn.Click += btnClick;
+                btn.Tag = item;
+                btn.Text = item.MaBP +"\n"+ item.TenBP;
+                btn.Image = Image.FromFile(@"D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\Resources\department_50px.png");
+                btn.ImageAlign = ContentAlignment.MiddleCenter;
+                btn.TextAlign = ContentAlignment.TopCenter;
+            }
+        }
+
+        private void btnClick(object sender, EventArgs e)
+        {
+            int id = ((sender as Button).Tag as ThietBiDTO).ID;
+            ShowThietBiTrongBoPhan(id);
         }
     }
 }

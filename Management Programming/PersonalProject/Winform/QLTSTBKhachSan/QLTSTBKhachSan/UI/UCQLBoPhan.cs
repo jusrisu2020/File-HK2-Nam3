@@ -36,11 +36,10 @@ namespace QLTSTBKhachSan.UI
                     Button btn = new Button() { Width = 150, Height = 100 };
                     flpBoPhan.Controls.Add(btn);
                     btn.Text = item.MaBP + "\n" + item.TenBP;
-                    btn.Image = Image.FromFile(@"C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\PersonalProject\Winform\Img\management_30px.png");
+                    btn.Image = Image.FromFile(@"D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\Resources\department_50px.png");
                     btn.ImageAlign = ContentAlignment.MiddleCenter;
                     btn.TextAlign = ContentAlignment.TopCenter;
-                //= ";
-            }
+                }
                 BoPhanListBD.DataSource = BoPhanList;
                 dtgvQLBP.Columns["id"].Visible = false;
             }
@@ -71,6 +70,7 @@ namespace QLTSTBKhachSan.UI
                 {
                     if (BoPhanDAO.Instance.ThemBoPhan(tenbp))
                     {
+                        flpBoPhan.Controls.Clear();
                         MessageBox.Show("Saved!");
                         LoadBoPhan();
                         txtThemBoPhan.Clear();
@@ -95,6 +95,7 @@ namespace QLTSTBKhachSan.UI
                 {
                     if (BoPhanDAO.Instance.SuaBoPhan(mabp, tenbp))
                     {
+                        flpBoPhan.Controls.Clear();
                         MessageBox.Show("Đã thay đổi!");
                         LoadBoPhan();
                         txtThemBoPhan.Clear();
@@ -109,6 +110,9 @@ namespace QLTSTBKhachSan.UI
 
             private void btnRefesh_Click(object sender, EventArgs e)
             {
+                flpBoPhan.Controls.Clear();
+                txtThemBoPhan.Clear();
+                txtThemBoPhan.Focus();
                 LoadBoPhan();
             }
 
@@ -119,6 +123,7 @@ namespace QLTSTBKhachSan.UI
                     string mabp = txtMaBP.Text;
                     if (BoPhanDAO.Instance.XoaBoPhan(mabp))
                     {
+                        flpBoPhan.Controls.Clear();
                         LoadBoPhan();
                         txtThemBoPhan.Clear();
                         txtThemBoPhan.Focus();

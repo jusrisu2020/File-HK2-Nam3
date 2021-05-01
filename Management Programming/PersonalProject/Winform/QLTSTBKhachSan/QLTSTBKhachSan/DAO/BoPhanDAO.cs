@@ -37,6 +37,7 @@ namespace QLTSTBKhachSan.DAO
             }
             return BoPhanList;
         }
+        
 
         public bool ThemBoPhan(string tenbp)
         {

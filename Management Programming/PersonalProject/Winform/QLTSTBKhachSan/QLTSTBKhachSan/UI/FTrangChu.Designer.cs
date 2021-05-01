@@ -29,8 +29,8 @@ namespace QLTSTBKhachSan.UI
         /// </summary>
         private void InitializeComponent()
         {
-            this.pnLeft = new System.Windows.Forms.Panel();
-            this.pnSetting = new System.Windows.Forms.Panel();
+            this.pnLogo = new System.Windows.Forms.Panel();
+            this.pnExitApp = new System.Windows.Forms.Panel();
             this.btnExit = new Guna.UI.WinForms.GunaButton();
             this.btnLogOut = new Guna.UI.WinForms.GunaButton();
             this.btnHeThong = new Guna.UI.WinForms.GunaButton();
@@ -42,45 +42,46 @@ namespace QLTSTBKhachSan.UI
             this.btnUserM = new Guna.UI.WinForms.GunaButton();
             this.pbLogo = new System.Windows.Forms.PictureBox();
             this.pnContainer = new System.Windows.Forms.Panel();
-            this.pnTop = new System.Windows.Forms.Panel();
+            this.pnTitle = new System.Windows.Forms.Panel();
             this.btnHelp = new Guna.UI2.WinForms.Guna2Button();
             this.btnNotification = new Guna.UI2.WinForms.Guna2Button();
             this.lbNamePro = new System.Windows.Forms.Label();
             this.btnSetting = new Guna.UI.WinForms.GunaButton();
-            this.pnLeft.SuspendLayout();
-            this.pnSetting.SuspendLayout();
+            this.pnLogo.SuspendLayout();
+            this.pnExitApp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
-            this.pnTop.SuspendLayout();
+            this.pnTitle.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pnLeft
+            // pnLogo
             // 
-            this.pnLeft.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnLeft.Controls.Add(this.pnSetting);
-            this.pnLeft.Controls.Add(this.btnHeThong);
-            this.pnLeft.Controls.Add(this.btnNhaCungCap);
-            this.pnLeft.Controls.Add(this.btnReportM);
-            this.pnLeft.Controls.Add(this.btnEquipmentM);
-            this.pnLeft.Controls.Add(this.btnDepartmentM);
-            this.pnLeft.Controls.Add(this.btnEmployeeM);
-            this.pnLeft.Controls.Add(this.btnUserM);
-            this.pnLeft.Controls.Add(this.pbLogo);
-            this.pnLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnLeft.Location = new System.Drawing.Point(0, 0);
-            this.pnLeft.Name = "pnLeft";
-            this.pnLeft.Size = new System.Drawing.Size(201, 600);
-            this.pnLeft.TabIndex = 0;
+            this.pnLogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnLogo.Controls.Add(this.pnExitApp);
+            this.pnLogo.Controls.Add(this.btnHeThong);
+            this.pnLogo.Controls.Add(this.btnNhaCungCap);
+            this.pnLogo.Controls.Add(this.btnReportM);
+            this.pnLogo.Controls.Add(this.btnEquipmentM);
+            this.pnLogo.Controls.Add(this.btnDepartmentM);
+            this.pnLogo.Controls.Add(this.btnEmployeeM);
+            this.pnLogo.Controls.Add(this.btnUserM);
+            this.pnLogo.Controls.Add(this.pbLogo);
+            this.pnLogo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnLogo.Location = new System.Drawing.Point(0, 0);
+            this.pnLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnLogo.Name = "pnLogo";
+            this.pnLogo.Size = new System.Drawing.Size(267, 738);
+            this.pnLogo.TabIndex = 0;
             // 
-            // pnSetting
+            // pnExitApp
             // 
-            this.pnSetting.Controls.Add(this.btnExit);
-            this.pnSetting.Controls.Add(this.btnLogOut);
-            this.pnSetting.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnSetting.Location = new System.Drawing.Point(0, 566);
-            this.pnSetting.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pnSetting.Name = "pnSetting";
-            this.pnSetting.Size = new System.Drawing.Size(199, 32);
-            this.pnSetting.TabIndex = 8;
+            this.pnExitApp.Controls.Add(this.btnExit);
+            this.pnExitApp.Controls.Add(this.btnLogOut);
+            this.pnExitApp.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnExitApp.Location = new System.Drawing.Point(0, 697);
+            this.pnExitApp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnExitApp.Name = "pnExitApp";
+            this.pnExitApp.Size = new System.Drawing.Size(265, 39);
+            this.pnExitApp.TabIndex = 8;
             // 
             // btnExit
             // 
@@ -98,13 +99,14 @@ namespace QLTSTBKhachSan.UI
             this.btnExit.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnExit.ImageSize = new System.Drawing.Size(20, 20);
             this.btnExit.Location = new System.Drawing.Point(0, 0);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnExit.Name = "btnExit";
             this.btnExit.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnExit.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnExit.OnHoverForeColor = System.Drawing.Color.White;
             this.btnExit.OnHoverImage = null;
             this.btnExit.OnPressedColor = System.Drawing.Color.Black;
-            this.btnExit.Size = new System.Drawing.Size(98, 32);
+            this.btnExit.Size = new System.Drawing.Size(131, 39);
             this.btnExit.TabIndex = 9;
             this.btnExit.Text = "Exit";
             this.btnExit.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -125,14 +127,15 @@ namespace QLTSTBKhachSan.UI
             this.btnLogOut.Image = global::QLTSTBKhachSan.Properties.Resources.logout_rounded_left_50px;
             this.btnLogOut.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnLogOut.ImageSize = new System.Drawing.Size(18, 18);
-            this.btnLogOut.Location = new System.Drawing.Point(101, 0);
+            this.btnLogOut.Location = new System.Drawing.Point(134, 0);
+            this.btnLogOut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnLogOut.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnLogOut.OnHoverForeColor = System.Drawing.Color.White;
             this.btnLogOut.OnHoverImage = null;
             this.btnLogOut.OnPressedColor = System.Drawing.Color.Black;
-            this.btnLogOut.Size = new System.Drawing.Size(98, 32);
+            this.btnLogOut.Size = new System.Drawing.Size(131, 39);
             this.btnLogOut.TabIndex = 8;
             this.btnLogOut.Text = "Log Out";
             this.btnLogOut.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -152,15 +155,16 @@ namespace QLTSTBKhachSan.UI
             this.btnHeThong.ForeColor = System.Drawing.Color.Black;
             this.btnHeThong.Image = global::QLTSTBKhachSan.Properties.Resources.report_file_64px;
             this.btnHeThong.ImageSize = new System.Drawing.Size(22, 22);
-            this.btnHeThong.Location = new System.Drawing.Point(0, 340);
+            this.btnHeThong.Location = new System.Drawing.Point(0, 417);
+            this.btnHeThong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnHeThong.Name = "btnHeThong";
             this.btnHeThong.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnHeThong.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnHeThong.OnHoverForeColor = System.Drawing.Color.White;
             this.btnHeThong.OnHoverImage = null;
             this.btnHeThong.OnPressedColor = System.Drawing.Color.Black;
-            this.btnHeThong.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.btnHeThong.Size = new System.Drawing.Size(199, 40);
+            this.btnHeThong.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
+            this.btnHeThong.Size = new System.Drawing.Size(265, 49);
             this.btnHeThong.TabIndex = 10;
             this.btnHeThong.Text = "Hệ Thống";
             this.btnHeThong.Click += new System.EventHandler(this.btnHeThong_Click);
@@ -179,15 +183,16 @@ namespace QLTSTBKhachSan.UI
             this.btnNhaCungCap.ForeColor = System.Drawing.Color.Black;
             this.btnNhaCungCap.Image = global::QLTSTBKhachSan.Properties.Resources.report_file_64px;
             this.btnNhaCungCap.ImageSize = new System.Drawing.Size(22, 22);
-            this.btnNhaCungCap.Location = new System.Drawing.Point(0, 300);
+            this.btnNhaCungCap.Location = new System.Drawing.Point(0, 368);
+            this.btnNhaCungCap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNhaCungCap.Name = "btnNhaCungCap";
             this.btnNhaCungCap.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnNhaCungCap.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnNhaCungCap.OnHoverForeColor = System.Drawing.Color.White;
             this.btnNhaCungCap.OnHoverImage = null;
             this.btnNhaCungCap.OnPressedColor = System.Drawing.Color.Black;
-            this.btnNhaCungCap.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.btnNhaCungCap.Size = new System.Drawing.Size(199, 40);
+            this.btnNhaCungCap.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
+            this.btnNhaCungCap.Size = new System.Drawing.Size(265, 49);
             this.btnNhaCungCap.TabIndex = 9;
             this.btnNhaCungCap.Text = "Nhà Cung Cấp";
             this.btnNhaCungCap.Click += new System.EventHandler(this.btnNhaCungCap_Click);
@@ -206,15 +211,16 @@ namespace QLTSTBKhachSan.UI
             this.btnReportM.ForeColor = System.Drawing.Color.Black;
             this.btnReportM.Image = global::QLTSTBKhachSan.Properties.Resources.report_file_64px;
             this.btnReportM.ImageSize = new System.Drawing.Size(22, 22);
-            this.btnReportM.Location = new System.Drawing.Point(0, 260);
+            this.btnReportM.Location = new System.Drawing.Point(0, 319);
+            this.btnReportM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnReportM.Name = "btnReportM";
             this.btnReportM.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnReportM.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnReportM.OnHoverForeColor = System.Drawing.Color.White;
             this.btnReportM.OnHoverImage = null;
             this.btnReportM.OnPressedColor = System.Drawing.Color.Black;
-            this.btnReportM.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.btnReportM.Size = new System.Drawing.Size(199, 40);
+            this.btnReportM.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
+            this.btnReportM.Size = new System.Drawing.Size(265, 49);
             this.btnReportM.TabIndex = 6;
             this.btnReportM.Text = "Report";
             this.btnReportM.Click += new System.EventHandler(this.btnReportM_Click);
@@ -233,15 +239,16 @@ namespace QLTSTBKhachSan.UI
             this.btnEquipmentM.ForeColor = System.Drawing.Color.Black;
             this.btnEquipmentM.Image = global::QLTSTBKhachSan.Properties.Resources.saw_24px;
             this.btnEquipmentM.ImageSize = new System.Drawing.Size(22, 22);
-            this.btnEquipmentM.Location = new System.Drawing.Point(0, 220);
+            this.btnEquipmentM.Location = new System.Drawing.Point(0, 270);
+            this.btnEquipmentM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEquipmentM.Name = "btnEquipmentM";
             this.btnEquipmentM.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnEquipmentM.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnEquipmentM.OnHoverForeColor = System.Drawing.Color.White;
             this.btnEquipmentM.OnHoverImage = null;
             this.btnEquipmentM.OnPressedColor = System.Drawing.Color.Black;
-            this.btnEquipmentM.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.btnEquipmentM.Size = new System.Drawing.Size(199, 40);
+            this.btnEquipmentM.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
+            this.btnEquipmentM.Size = new System.Drawing.Size(265, 49);
             this.btnEquipmentM.TabIndex = 5;
             this.btnEquipmentM.Text = "Equipment";
             this.btnEquipmentM.Click += new System.EventHandler(this.btnEquipmentM_Click);
@@ -260,15 +267,16 @@ namespace QLTSTBKhachSan.UI
             this.btnDepartmentM.ForeColor = System.Drawing.Color.Black;
             this.btnDepartmentM.Image = global::QLTSTBKhachSan.Properties.Resources.department_50px;
             this.btnDepartmentM.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnDepartmentM.Location = new System.Drawing.Point(0, 180);
+            this.btnDepartmentM.Location = new System.Drawing.Point(0, 221);
+            this.btnDepartmentM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDepartmentM.Name = "btnDepartmentM";
             this.btnDepartmentM.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnDepartmentM.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnDepartmentM.OnHoverForeColor = System.Drawing.Color.White;
             this.btnDepartmentM.OnHoverImage = null;
             this.btnDepartmentM.OnPressedColor = System.Drawing.Color.Black;
-            this.btnDepartmentM.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.btnDepartmentM.Size = new System.Drawing.Size(199, 40);
+            this.btnDepartmentM.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
+            this.btnDepartmentM.Size = new System.Drawing.Size(265, 49);
             this.btnDepartmentM.TabIndex = 4;
             this.btnDepartmentM.Text = "Department";
             this.btnDepartmentM.Click += new System.EventHandler(this.btnDepartmentM_Click);
@@ -287,14 +295,15 @@ namespace QLTSTBKhachSan.UI
             this.btnEmployeeM.ForeColor = System.Drawing.Color.Black;
             this.btnEmployeeM.Image = global::QLTSTBKhachSan.Properties.Resources.management_30px;
             this.btnEmployeeM.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnEmployeeM.Location = new System.Drawing.Point(0, 140);
+            this.btnEmployeeM.Location = new System.Drawing.Point(0, 172);
+            this.btnEmployeeM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEmployeeM.Name = "btnEmployeeM";
             this.btnEmployeeM.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnEmployeeM.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnEmployeeM.OnHoverForeColor = System.Drawing.Color.White;
             this.btnEmployeeM.OnHoverImage = null;
             this.btnEmployeeM.OnPressedColor = System.Drawing.Color.Black;
-            this.btnEmployeeM.Size = new System.Drawing.Size(199, 40);
+            this.btnEmployeeM.Size = new System.Drawing.Size(265, 49);
             this.btnEmployeeM.TabIndex = 3;
             this.btnEmployeeM.Text = "Employee";
             this.btnEmployeeM.Click += new System.EventHandler(this.btnEmployeeM_Click);
@@ -313,14 +322,15 @@ namespace QLTSTBKhachSan.UI
             this.btnUserM.ForeColor = System.Drawing.Color.Black;
             this.btnUserM.Image = global::QLTSTBKhachSan.Properties.Resources.management_30px;
             this.btnUserM.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnUserM.Location = new System.Drawing.Point(0, 100);
+            this.btnUserM.Location = new System.Drawing.Point(0, 123);
+            this.btnUserM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnUserM.Name = "btnUserM";
             this.btnUserM.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnUserM.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnUserM.OnHoverForeColor = System.Drawing.Color.White;
             this.btnUserM.OnHoverImage = null;
             this.btnUserM.OnPressedColor = System.Drawing.Color.Black;
-            this.btnUserM.Size = new System.Drawing.Size(199, 40);
+            this.btnUserM.Size = new System.Drawing.Size(265, 49);
             this.btnUserM.TabIndex = 2;
             this.btnUserM.Text = "User";
             this.btnUserM.Click += new System.EventHandler(this.btnUserM_Click);
@@ -331,8 +341,9 @@ namespace QLTSTBKhachSan.UI
             this.pbLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pbLogo.Image = global::QLTSTBKhachSan.Properties.Resources.eagle_logo_vector_93835_8;
             this.pbLogo.Location = new System.Drawing.Point(0, 0);
+            this.pbLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(199, 100);
+            this.pbLogo.Size = new System.Drawing.Size(265, 123);
             this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbLogo.TabIndex = 0;
             this.pbLogo.TabStop = false;
@@ -341,23 +352,25 @@ namespace QLTSTBKhachSan.UI
             // pnContainer
             // 
             this.pnContainer.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnContainer.Location = new System.Drawing.Point(201, 65);
+            this.pnContainer.Location = new System.Drawing.Point(267, 80);
+            this.pnContainer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnContainer.Name = "pnContainer";
-            this.pnContainer.Size = new System.Drawing.Size(999, 535);
+            this.pnContainer.Size = new System.Drawing.Size(1333, 658);
             this.pnContainer.TabIndex = 1;
             // 
-            // pnTop
+            // pnTitle
             // 
-            this.pnTop.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pnTop.Controls.Add(this.btnHelp);
-            this.pnTop.Controls.Add(this.btnNotification);
-            this.pnTop.Controls.Add(this.lbNamePro);
-            this.pnTop.Controls.Add(this.btnSetting);
-            this.pnTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnTop.Location = new System.Drawing.Point(201, 0);
-            this.pnTop.Name = "pnTop";
-            this.pnTop.Size = new System.Drawing.Size(999, 65);
-            this.pnTop.TabIndex = 2;
+            this.pnTitle.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pnTitle.Controls.Add(this.btnHelp);
+            this.pnTitle.Controls.Add(this.btnNotification);
+            this.pnTitle.Controls.Add(this.lbNamePro);
+            this.pnTitle.Controls.Add(this.btnSetting);
+            this.pnTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnTitle.Location = new System.Drawing.Point(267, 0);
+            this.pnTitle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnTitle.Name = "pnTitle";
+            this.pnTitle.Size = new System.Drawing.Size(1333, 80);
+            this.pnTitle.TabIndex = 2;
             // 
             // btnHelp
             // 
@@ -370,11 +383,11 @@ namespace QLTSTBKhachSan.UI
             this.btnHelp.HoverState.Parent = this.btnHelp;
             this.btnHelp.Image = global::QLTSTBKhachSan.Properties.Resources.question_mark_30px;
             this.btnHelp.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnHelp.Location = new System.Drawing.Point(864, 0);
-            this.btnHelp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnHelp.Location = new System.Drawing.Point(1153, 0);
+            this.btnHelp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.ShadowDecoration.Parent = this.btnHelp;
-            this.btnHelp.Size = new System.Drawing.Size(45, 65);
+            this.btnHelp.Size = new System.Drawing.Size(60, 80);
             this.btnHelp.TabIndex = 8;
             this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
@@ -389,11 +402,11 @@ namespace QLTSTBKhachSan.UI
             this.btnNotification.HoverState.Parent = this.btnNotification;
             this.btnNotification.Image = global::QLTSTBKhachSan.Properties.Resources.notification_24px;
             this.btnNotification.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnNotification.Location = new System.Drawing.Point(909, 0);
-            this.btnNotification.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNotification.Location = new System.Drawing.Point(1213, 0);
+            this.btnNotification.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNotification.Name = "btnNotification";
             this.btnNotification.ShadowDecoration.Parent = this.btnNotification;
-            this.btnNotification.Size = new System.Drawing.Size(45, 65);
+            this.btnNotification.Size = new System.Drawing.Size(60, 80);
             this.btnNotification.TabIndex = 0;
             this.btnNotification.Click += new System.EventHandler(this.btnNotification_Click);
             // 
@@ -402,10 +415,9 @@ namespace QLTSTBKhachSan.UI
             this.lbNamePro.AutoSize = true;
             this.lbNamePro.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNamePro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(126)))), ((int)(((byte)(34)))));
-            this.lbNamePro.Location = new System.Drawing.Point(14, 24);
-            this.lbNamePro.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbNamePro.Location = new System.Drawing.Point(19, 30);
             this.lbNamePro.Name = "lbNamePro";
-            this.lbNamePro.Size = new System.Drawing.Size(308, 18);
+            this.lbNamePro.Size = new System.Drawing.Size(373, 22);
             this.lbNamePro.TabIndex = 0;
             this.lbNamePro.Text = "HOTEL EQUIPMENT MANAGEMENT";
             // 
@@ -424,40 +436,42 @@ namespace QLTSTBKhachSan.UI
             this.btnSetting.Image = global::QLTSTBKhachSan.Properties.Resources.settings_50px;
             this.btnSetting.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnSetting.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnSetting.Location = new System.Drawing.Point(954, 0);
+            this.btnSetting.Location = new System.Drawing.Point(1273, 0);
+            this.btnSetting.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSetting.Name = "btnSetting";
             this.btnSetting.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnSetting.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnSetting.OnHoverForeColor = System.Drawing.Color.White;
             this.btnSetting.OnHoverImage = null;
             this.btnSetting.OnPressedColor = System.Drawing.Color.Black;
-            this.btnSetting.Size = new System.Drawing.Size(45, 65);
+            this.btnSetting.Size = new System.Drawing.Size(60, 80);
             this.btnSetting.TabIndex = 7;
             this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
             // 
             // FTrangChu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 600);
-            this.Controls.Add(this.pnTop);
+            this.ClientSize = new System.Drawing.Size(1600, 738);
+            this.Controls.Add(this.pnTitle);
             this.Controls.Add(this.pnContainer);
-            this.Controls.Add(this.pnLeft);
+            this.Controls.Add(this.pnLogo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FTrangChu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.pnLeft.ResumeLayout(false);
-            this.pnSetting.ResumeLayout(false);
+            this.pnLogo.ResumeLayout(false);
+            this.pnExitApp.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
-            this.pnTop.ResumeLayout(false);
-            this.pnTop.PerformLayout();
+            this.pnTitle.ResumeLayout(false);
+            this.pnTitle.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel pnLeft;
+        private System.Windows.Forms.Panel pnLogo;
         private System.Windows.Forms.PictureBox pbLogo;
         private Guna.UI.WinForms.GunaButton btnUserM;
         private Guna.UI.WinForms.GunaButton btnEmployeeM;
@@ -470,10 +484,10 @@ namespace QLTSTBKhachSan.UI
         private Guna.UI.WinForms.GunaButton btnHeThong;
         private Guna.UI.WinForms.GunaButton btnNhaCungCap;
         private System.Windows.Forms.Panel pnContainer;
-        private System.Windows.Forms.Panel pnTop;
+        private System.Windows.Forms.Panel pnTitle;
         private System.Windows.Forms.Label lbNamePro;
         private Guna.UI2.WinForms.Guna2Button btnNotification;
         private Guna.UI2.WinForms.Guna2Button btnHelp;
-        private System.Windows.Forms.Panel pnSetting;
+        private System.Windows.Forms.Panel pnExitApp;
     }
 }

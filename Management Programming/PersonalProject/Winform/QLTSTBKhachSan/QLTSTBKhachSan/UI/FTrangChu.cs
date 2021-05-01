@@ -21,9 +21,9 @@ namespace QLTSTBKhachSan.UI
         void AddLoadToolTip()
         {
             ToolTip tt = new ToolTip();
-            tt.SetToolTip(btnSetting, "Setting\nCtrl + S");
-            tt.SetToolTip(btnNotification, "Setting\nCtrl + N");
-            tt.SetToolTip(btnHelp, "Help\nCtrl + H");
+            tt.SetToolTip(btnSetting, "Setting\n(Ctrl + S)");
+            tt.SetToolTip(btnNotification, "Setting\n(Ctrl + N)");
+            tt.SetToolTip(btnHelp, "Help\n(Ctrl + H)");
         }
         #endregion
         #region Envent_Main
@@ -37,7 +37,6 @@ namespace QLTSTBKhachSan.UI
             UCQuanLyNguoiDung nd = new UCQuanLyNguoiDung();
             pnContainer.Controls.Add(nd);
         }
-
 
         private void btnEmployeeM_Click(object sender, EventArgs e)
         {
@@ -109,7 +108,5 @@ namespace QLTSTBKhachSan.UI
         }
 
         #endregion
-
-        
     }
 }

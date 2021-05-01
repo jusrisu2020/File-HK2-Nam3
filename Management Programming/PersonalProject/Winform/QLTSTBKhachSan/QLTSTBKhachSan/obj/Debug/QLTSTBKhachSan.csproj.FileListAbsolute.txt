@@ -46,7 +46,6 @@ C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\PersonalProje
 D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.UI.FTrangChu.resources
 C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.UI.FTrangChu.resources
 D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.csprojAssemblyReference.cache
-D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.UI.UCQuanLiBoPhan.resources
 D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.UI.UCQuanLyThietBi.resources
 D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.UI.UCQuanLyBaoCao.resources
 C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.UI.UCQuanLyBaoCao.resources
@@ -76,3 +75,4 @@ C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\PersonalProje
 C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.UI.FSetting.resources
 C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.FThongBao.resources
 C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.UI.SaveImg.resources
+D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\obj\Debug\QLTSTBKhachSan.UI.UCQuanLiBoPhan.resources
