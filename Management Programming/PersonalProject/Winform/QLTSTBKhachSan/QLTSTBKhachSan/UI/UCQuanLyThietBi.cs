@@ -24,9 +24,11 @@ namespace QLTSTBKhachSan.UI
         {
             LoadBtnBoPhan();
         }
-        void ShowThietBiTrongBoPhan(int id)
+        void ShowThietBiTrongBoPhan(string mabp)
         {
-            
+            List<ThietBiDTO> tb = ThietBiDAO.Instance.LoadThietBiTrongBoPhan(mabp);
+            dtgvThietBi.DataSource = tb;
+            dtgvThietBi.Columns["id"].Visible = false;
         }
 
         void LoadBtnBoPhan()
@@ -34,21 +36,23 @@ namespace QLTSTBKhachSan.UI
             List<BoPhanDTO> BoPhanList = BoPhanDAO.Instance.LoadBoPhan();
             foreach (BoPhanDTO item in BoPhanList)
             {
-                Button btn = new Button() { Width = 150, Height = 100 };
+                Button btn = new Button() { Width = 120, Height = 80 };
                 flpBtnBoPhan.Controls.Add(btn);
                 btn.Click += btnClick;
                 btn.Tag = item;
                 btn.Text = item.MaBP +"\n"+ item.TenBP;
                 btn.Image = Image.FromFile(@"D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\Resources\department_50px.png");
-                btn.ImageAlign = ContentAlignment.MiddleCenter;
+                btn.ImageAlign = ContentAlignment.BottomCenter;
                 btn.TextAlign = ContentAlignment.TopCenter;
             }
         }
 
         private void btnClick(object sender, EventArgs e)
         {
-            int BoPhanID = ((sender as Button).Tag as BoPhanDTO).ID;
-            ShowThietBiTrongBoPhan(BoPhanID);
+            string mabp = ((sender as Button).Tag as BoPhanDTO).MaBP;
+            ShowThietBiTrongBoPhan(mabp);
         }
+
+        
     }
 }

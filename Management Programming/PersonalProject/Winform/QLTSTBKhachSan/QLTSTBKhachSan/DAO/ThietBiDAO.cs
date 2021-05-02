@@ -26,6 +26,19 @@ namespace QLTSTBKhachSan.DAO
         }
         private ThietBiDAO() { }
 
+        public List<ThietBiDTO> LoadThietBiTrongBoPhan(string mabp)
+        {
+            List<ThietBiDTO> ThietBiList = new List<ThietBiDTO>();
+            string Query = string.Format("SELECT * FROM dbo.ThietBi WHERE MaBP = '{0}'", mabp);
+            DataTable data = DataProvider.Instance.ExecuteQuery(Query);
+            foreach (DataRow item in data.Rows)
+            {
+                ThietBiDTO thietbi = new ThietBiDTO(item);
+                ThietBiList.Add(thietbi);
+            }
+            return ThietBiList;
+        }
+        
         
     }
 }
