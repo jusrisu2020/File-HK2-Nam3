@@ -37,19 +37,19 @@ namespace QLTSTBKhachSan.DTO
         public string GhiChu { get => ghiChu; set => ghiChu = value; }
 
         public ThietBiDTO(int id, string matb, string tentb, string donvi,
-                        int slhh, string madanhmuc, string mabp, string tgbh,
-                        string tttb, string mancc, string mahdmuatb, string ghichu
+                        int soluonghienhuu, string madanhmuc, string mabp, string thoigianbaohanh,
+                        string tinhtrangthietbi, string mancc, string mahdmuatb, string ghichu
                             )
         {
             this.ID = id;
             this.MaTB = matb;
             this.TenTB = tentb;
             this.DonVi = donvi;
-            this.SoLuongHienHuu = slhh;
+            this.SoLuongHienHuu = soluonghienhuu;
             this.MaDanhMuc = madanhmuc;
             this.MaBP = mabp;
-            this.ThoiGianBH = tgbh;
-            this.TinhTrangTB = tttb;
+            this.ThoiGianBH = thoigianbaohanh;
+            this.TinhTrangTB = tinhtrangthietbi;
             this.MaNCC = mancc;
             this.MaHDMuaTB = mahdmuatb;
             this.GhiChu = ghichu;

@@ -30,9 +30,10 @@ namespace QLTSTBKhachSan.UI
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.dtgvThietBi = new System.Windows.Forms.DataGridView();
             this.flpBtnBoPhan = new System.Windows.Forms.FlowLayoutPanel();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvThietBi)).BeginInit();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // label1
@@ -44,17 +45,6 @@ namespace QLTSTBKhachSan.UI
             this.label1.TabIndex = 0;
             this.label1.Text = "Quản lí thiết bị";
             // 
-            // dtgvThietBi
-            // 
-            this.dtgvThietBi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvThietBi.Location = new System.Drawing.Point(752, 79);
-            this.dtgvThietBi.Name = "dtgvThietBi";
-            this.dtgvThietBi.ReadOnly = true;
-            this.dtgvThietBi.RowHeadersWidth = 51;
-            this.dtgvThietBi.RowTemplate.Height = 24;
-            this.dtgvThietBi.Size = new System.Drawing.Size(305, 250);
-            this.dtgvThietBi.TabIndex = 1;
-            // 
             // flpBtnBoPhan
             // 
             this.flpBtnBoPhan.AutoScroll = true;
@@ -63,16 +53,38 @@ namespace QLTSTBKhachSan.UI
             this.flpBtnBoPhan.Size = new System.Drawing.Size(620, 451);
             this.flpBtnBoPhan.TabIndex = 2;
             // 
+            // listView1
+            // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2});
+            this.listView1.GridLines = true;
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(726, 187);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(417, 343);
+            this.listView1.TabIndex = 3;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = " Mã Thiet Bi";
+            this.columnHeader1.Width = 31;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Tên thiết bị";
+            // 
             // UCQuanLyThietBi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.listView1);
             this.Controls.Add(this.flpBtnBoPhan);
-            this.Controls.Add(this.dtgvThietBi);
             this.Controls.Add(this.label1);
             this.Name = "UCQuanLyThietBi";
             this.Size = new System.Drawing.Size(1200, 700);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvThietBi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -81,7 +93,9 @@ namespace QLTSTBKhachSan.UI
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dtgvThietBi;
         private System.Windows.Forms.FlowLayoutPanel flpBtnBoPhan;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
     }
 }

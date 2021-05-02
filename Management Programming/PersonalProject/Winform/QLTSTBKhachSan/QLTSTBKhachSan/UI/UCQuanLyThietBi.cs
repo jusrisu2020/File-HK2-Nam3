@@ -26,8 +26,7 @@ namespace QLTSTBKhachSan.UI
         }
         void ShowThietBiTrongBoPhan(int id)
         {
-            List<ThietBiDTO> ThietBiList = ThietBiDAO.Instance.SelectThietBiTrongBoPhan(id);
-            dtgvThietBi.DataSource = ThietBiList;
+            
         }
 
         void LoadBtnBoPhan()
@@ -48,8 +47,8 @@ namespace QLTSTBKhachSan.UI
 
         private void btnClick(object sender, EventArgs e)
         {
-            int id = ((sender as Button).Tag as ThietBiDTO).ID;
-            ShowThietBiTrongBoPhan(id);
+            int BoPhanID = ((sender as Button).Tag as BoPhanDTO).ID;
+            ShowThietBiTrongBoPhan(BoPhanID);
         }
     }
 }

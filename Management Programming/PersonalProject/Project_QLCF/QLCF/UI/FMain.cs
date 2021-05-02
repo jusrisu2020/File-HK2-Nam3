@@ -28,8 +28,8 @@ namespace QLCF
             {
                 Button btn = new Button() { Width = TableDAO.TableWidth, Height = TableDAO.TableHeight };
                 flpTable.Controls.Add(btn);
-
                 btn.Click += btnClick;
+                btn.Tag = item;
                 btn.Text = item.NameText + "\n" + item.StaTus;
                 switch (item.StaTus)
                 {
@@ -41,12 +41,22 @@ namespace QLCF
             }
         }
 
-
+        void ShowBill(int id)
+        {
+            List<BillInfoDTO> listBillInfo = BillInfoDAO.Instance.GetListBillInfo(BillDAO.Instance.GetUncheckBillIdByTableId(id));
+            foreach(BillInfoDTO item in listBillInfo)
+            {
+                ListViewItem lsvItem = new ListViewItem(item.IdFood.ToString());
+                lsvItem.SubItems.Add(item.Count.ToString());
+                lsvBill.Items.Add(lsvItem);
+            }
+        }
         #endregion
         #region Event
         void btnClick(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            int idTable = ((sender as Button).Tag as TableDTO).ID;
+            ShowBill(idTable);
         }
         private void adminToolStripMenuItem_Click(object sender, EventArgs e)
         {

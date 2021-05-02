@@ -26,17 +26,6 @@ namespace QLTSTBKhachSan.DAO
         }
         private ThietBiDAO() { }
 
-        public List<ThietBiDTO> SelectThietBiTrongBoPhan(int id)
-        {
-            List<ThietBiDTO> ThietBiList = new List<ThietBiDTO>();
-            string Query = "USP_SelectAThietBi";
-            DataTable data = DataProvider.Instance.ExecuteQuery("SELECT * FROM dbo.ThietBi WHERE MaBP = '"+id+"'");
-            foreach (DataRow item in data.Rows)
-            {
-                ThietBiDTO table = new ThietBiDTO(item);
-                ThietBiList.Add(table);
-            }
-            return ThietBiList;
-        }
+        
     }
 }
