@@ -60,10 +60,10 @@ namespace QLTSTBKhachSan.UI
             // 
             // btnUpdateNV
             // 
-            this.btnUpdateNV.Location = new System.Drawing.Point(19, 69);
+            this.btnUpdateNV.Location = new System.Drawing.Point(31, 137);
             this.btnUpdateNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUpdateNV.Name = "btnUpdateNV";
-            this.btnUpdateNV.Size = new System.Drawing.Size(188, 57);
+            this.btnUpdateNV.Size = new System.Drawing.Size(106, 57);
             this.btnUpdateNV.TabIndex = 1;
             this.btnUpdateNV.Text = "Add...";
             this.btnUpdateNV.UseVisualStyleBackColor = true;
@@ -71,7 +71,7 @@ namespace QLTSTBKhachSan.UI
             // 
             // btnDeleteNV
             // 
-            this.btnDeleteNV.Location = new System.Drawing.Point(269, 69);
+            this.btnDeleteNV.Location = new System.Drawing.Point(152, 137);
             this.btnDeleteNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDeleteNV.Name = "btnDeleteNV";
             this.btnDeleteNV.Size = new System.Drawing.Size(77, 57);
@@ -81,7 +81,7 @@ namespace QLTSTBKhachSan.UI
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(516, 75);
+            this.button3.Location = new System.Drawing.Point(405, 144);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(95, 50);
@@ -104,10 +104,10 @@ namespace QLTSTBKhachSan.UI
             // 
             // txtTimKiemNV
             // 
-            this.txtTimKiemNV.Location = new System.Drawing.Point(367, 86);
+            this.txtTimKiemNV.Location = new System.Drawing.Point(250, 154);
             this.txtTimKiemNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTimKiemNV.Name = "txtTimKiemNV";
-            this.txtTimKiemNV.Size = new System.Drawing.Size(116, 22);
+            this.txtTimKiemNV.Size = new System.Drawing.Size(149, 22);
             this.txtTimKiemNV.TabIndex = 5;
             // 
             // groupBox2
@@ -120,10 +120,10 @@ namespace QLTSTBKhachSan.UI
             this.groupBox2.Controls.Add(this.btnUpdateCV);
             this.groupBox2.Controls.Add(this.txtTenCV);
             this.groupBox2.Controls.Add(this.btnThemCV);
-            this.groupBox2.Location = new System.Drawing.Point(600, 162);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Location = new System.Drawing.Point(662, 18);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(525, 473);
             this.groupBox2.TabIndex = 22;
             this.groupBox2.TabStop = false;
@@ -165,7 +165,7 @@ namespace QLTSTBKhachSan.UI
             // txtMaCV
             // 
             this.txtMaCV.Location = new System.Drawing.Point(32, 38);
-            this.txtMaCV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaCV.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaCV.Name = "txtMaCV";
             this.txtMaCV.Size = new System.Drawing.Size(88, 22);
             this.txtMaCV.TabIndex = 18;
@@ -193,7 +193,7 @@ namespace QLTSTBKhachSan.UI
             // txtTenCV
             // 
             this.txtTenCV.Location = new System.Drawing.Point(32, 70);
-            this.txtTenCV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTenCV.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenCV.Name = "txtTenCV";
             this.txtTenCV.Size = new System.Drawing.Size(169, 22);
             this.txtTenCV.TabIndex = 15;

@@ -18,6 +18,7 @@ namespace QLTSTBKhachSan.UI
         {
             InitializeComponent();
             LoadNhanVien();
+            LoadChucVu();
         }
         FThemSuaNV fnv = new FThemSuaNV();
        
@@ -25,6 +26,15 @@ namespace QLTSTBKhachSan.UI
         {
             List<NhanVienDTO> Table = NhanVienDAO.Instance.LoadNhanVien();
             dgvQLNV.DataSource = Table;
+            dgvQLNV.Columns["id"].Visible = false;
+        }
+        
+
+        void LoadChucVu()
+        {
+            List<ChucVuDTO> ChucVuList = ChucVuDAO.Instance.LoadChucVu();
+            dtgvChucVu.DataSource = ChucVuList;
+            dtgvChucVu.Columns["id"].Visible = false;
         }
         private void btnUpdateNV_Click(object sender, EventArgs e)
         {

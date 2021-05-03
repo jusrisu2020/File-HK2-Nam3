@@ -3,7 +3,6 @@ CREATE DATABASE TSTBKhachSan
 GO
 USE TSTBKhachSan
 GO
-
 ------------------------------------BoPhan ------------------------------------------------
 CREATE TABLE BoPhan
 (
@@ -32,11 +31,7 @@ EXEC dbo.USP_ThemBoPhan @TenBP = N'Khu vực Bếp'
 EXEC dbo.USP_ThemBoPhan @TenBP = N'Nhà Hàng'
 EXEC dbo.USP_ThemBoPhan @TenBP = N'Khu vực khác'
 GO
-
-UPDATE dbo.BoPhan SET TenBP = N'KHU' WHERE MaBP = N'BP10'
-
-DELETE dbo.BoPhan WHERE MaBP = N'BP12'
-
+----Event
 CREATE PROC USP_SelectBoPhan
 AS SELECT * FROM dbo.BoPhan
 GO
@@ -138,12 +133,10 @@ EXEC dbo.USP_ThemChucVu @TenCV = N'Admin'
 EXEC dbo.USP_ThemChucVu @TenCV = N'Quản lí'
 EXEC dbo.USP_ThemChucVu @TenCV = N'Nhân viên khu vực'
 GO
-
 CREATE PROC USP_SelectChucVu
 AS SELECT * FROM dbo.ChucVu
 EXEC USP_SelectChucVu
 GO
-
 -------------------------------------NhanVien ------------------------------------------------
 CREATE TABLE NhanVien
 (
@@ -373,7 +366,6 @@ AS SELECT * FROM dbo.ThietBi
 EXEC USP_SelectAThietBi
 
 SELECT * FROM dbo.ThietBi WHERE MaBP = 'BP01';
-
 SELECT * FROM dbo.DanhMuc
 SELECT * FROM dbo.BoPhan
 SELECT * FROM dbo.NhaCungCap

@@ -47,20 +47,20 @@ namespace QLTSTBKhachSan.UI
             // flpBtnBoPhan
             // 
             this.flpBtnBoPhan.AutoScroll = true;
-            this.flpBtnBoPhan.Location = new System.Drawing.Point(25, 34);
+            this.flpBtnBoPhan.Location = new System.Drawing.Point(13, 208);
             this.flpBtnBoPhan.Name = "flpBtnBoPhan";
-            this.flpBtnBoPhan.Size = new System.Drawing.Size(1155, 159);
+            this.flpBtnBoPhan.Size = new System.Drawing.Size(1167, 223);
             this.flpBtnBoPhan.TabIndex = 2;
             // 
             // dtgvThietBi
             // 
             this.dtgvThietBi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvThietBi.Location = new System.Drawing.Point(13, 257);
+            this.dtgvThietBi.Location = new System.Drawing.Point(13, 456);
             this.dtgvThietBi.Name = "dtgvThietBi";
             this.dtgvThietBi.ReadOnly = true;
             this.dtgvThietBi.RowHeadersWidth = 51;
             this.dtgvThietBi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgvThietBi.Size = new System.Drawing.Size(1167, 346);
+            this.dtgvThietBi.Size = new System.Drawing.Size(1167, 147);
             this.dtgvThietBi.TabIndex = 0;
             // 
             // UCQuanLyThietBi
