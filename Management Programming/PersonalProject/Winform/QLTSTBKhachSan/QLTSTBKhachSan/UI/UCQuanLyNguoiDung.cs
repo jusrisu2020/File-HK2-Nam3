@@ -14,25 +14,66 @@ namespace QLTSTBKhachSan.UI
 {
     public partial class UCQuanLyNguoiDung : UserControl
     {
+        
         public UCQuanLyNguoiDung()
         {
             InitializeComponent();
-            LoadNguoiDung();
-            cbTrangThai.DataSource = TaiKhoanDAO.Instance.LoadTaiKhoan();
-            cbTrangThai.DisplayMember = "TrangThai";
-            cbLoaiND.DataSource = TaiKhoanDAO.Instance.LoadTaiKhoan();
-            cbLoaiND.DisplayMember = "LoaiND";
-
+            LoadData();
         }
+
+        void LoadData()
+        {
+            LoadNguoiDung();
+            LoadCBChucVu();
+            LoadCBTrangThai();
+            AddBinding();
+        }
+
+        void LoadCBTrangThai()
+        {
+           
+            cbTrangThai.DataSource = TaiKhoanDAO.Instance.LoadTaiKhoan();
+            cbTrangThai.DisplayMember = "idTrangThai";
+           /* if (cbTrangThai.Text == "1")
+            {
+                cbTrangThai.Text = "Đang Hoạt Động";
+            }
+            else
+            {
+                cbTrangThai.Text = "Tài Khoản Khóa";
+            }*/
+        }
+        void LoadCBChucVu()
+        {
+            cbChucVu.DataSource = ChucVuDAO.Instance.LoadChucVu();
+            cbChucVu.DisplayMember = "TenCV";
+        }
+
+        void AddBinding()
+        {
+            txtMaTK.DataBindings.Add(new Binding("Text", dtgvQLND.DataSource, "MaTK",true,DataSourceUpdateMode.Never));
+            txtManv.DataBindings.Add(new Binding("Text", dtgvQLND.DataSource, "MaNV", true, DataSourceUpdateMode.Never));
+            txtTenTK.DataBindings.Add(new Binding("Text", dtgvQLND.DataSource, "TenTK", true, DataSourceUpdateMode.Never));
+            txtPass.DataBindings.Add(new Binding("Text", dtgvQLND.DataSource, "Pass", true, DataSourceUpdateMode.Never));
+        }
+        void EditColumns()
+        {
+            dtgvQLND.Columns["id"].Visible = false;
+            dtgvQLND.Columns["Pass"].Visible = false;
+            dtgvQLND.Columns["MaTK"].HeaderText = "Mã Tài Khoản";
+            dtgvQLND.Columns["MaNV"].HeaderText = "Mã Nhân Viên";
+            dtgvQLND.Columns["TenTK"].HeaderText = "Tên Tài Khoan";
+            dtgvQLND.Columns["idTrangThai"].HeaderText = "Trạng Thái";
+            dtgvQLND.Columns["Macv"].HeaderText = "Chức Vụ";
+        }
+
         #region Method
         void LoadNguoiDung()
         {
             List<TaiKhoanDTO> tk = TaiKhoanDAO.Instance.LoadTaiKhoan();
             dtgvQLND.DataSource = tk;
-            dtgvQLND.Columns["id"].Visible = false;
-            dtgvQLND.Columns["Pass"].Visible = false;
+            EditColumns();
         }
-            
         #endregion
 
         #region Event
@@ -67,7 +108,7 @@ namespace QLTSTBKhachSan.UI
             string Tentk = txtTenTK.Text;
             string pass = txtPass.Text;
             string trangthai = cbTrangThai.Text;
-            string loaind = cbLoaiND.Text;
+            string loaind = cbChucVu.Text;
 
             if (TaiKhoanDAO.Instance.ThemTaiKhoan(Manv, Tentk, pass, trangthai,loaind))
             {

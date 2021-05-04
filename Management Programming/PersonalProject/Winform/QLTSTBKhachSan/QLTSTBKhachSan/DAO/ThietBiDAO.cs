@@ -26,6 +26,19 @@ namespace QLTSTBKhachSan.DAO
         }
         private ThietBiDAO() { }
 
+        public List<ThietBiDTO> LoadThietBi()
+        {
+            List<ThietBiDTO> ThietBiList = new List<ThietBiDTO>();
+            string Query = string.Format("EXEC USP_SelectAThietBi");
+            DataTable data = DataProvider.Instance.ExecuteQuery(Query);
+            foreach (DataRow item in data.Rows)
+            {
+                ThietBiDTO thietbi = new ThietBiDTO(item);
+                ThietBiList.Add(thietbi);
+            }
+            return ThietBiList;
+        }
+
         public List<ThietBiDTO> LoadThietBiTrongBoPhan(string mabp)
         {
             List<ThietBiDTO> ThietBiList = new List<ThietBiDTO>();
@@ -38,7 +51,6 @@ namespace QLTSTBKhachSan.DAO
             }
             return ThietBiList;
         }
-        
         
     }
 }

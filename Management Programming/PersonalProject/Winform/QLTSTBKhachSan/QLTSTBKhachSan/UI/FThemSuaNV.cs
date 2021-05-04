@@ -19,6 +19,9 @@ namespace QLTSTBKhachSan.UI
             
         }
 
-        
+        private void FThemSuaNV_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

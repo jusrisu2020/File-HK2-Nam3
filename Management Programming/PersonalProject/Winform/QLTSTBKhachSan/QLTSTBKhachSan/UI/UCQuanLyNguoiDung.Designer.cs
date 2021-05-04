@@ -46,8 +46,10 @@ namespace QLTSTBKhachSan.UI
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.cbTrangThai = new System.Windows.Forms.ComboBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.cbLoaiND = new System.Windows.Forms.ComboBox();
+            this.cbChucVu = new System.Windows.Forms.ComboBox();
             this.btnThemNv = new System.Windows.Forms.Button();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.txtMaTK = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvQLND)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -55,6 +57,7 @@ namespace QLTSTBKhachSan.UI
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -109,7 +112,7 @@ namespace QLTSTBKhachSan.UI
             // 
             // txtTimKiem
             // 
-            this.txtTimKiem.Location = new System.Drawing.Point(561, 137);
+            this.txtTimKiem.Location = new System.Drawing.Point(550, 131);
             this.txtTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(215, 22);
@@ -129,10 +132,11 @@ namespace QLTSTBKhachSan.UI
             // dtgvQLND
             // 
             this.dtgvQLND.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvQLND.Location = new System.Drawing.Point(52, 370);
+            this.dtgvQLND.Location = new System.Drawing.Point(31, 370);
             this.dtgvQLND.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtgvQLND.Name = "dtgvQLND";
             this.dtgvQLND.ReadOnly = true;
+            this.dtgvQLND.RowHeadersVisible = false;
             this.dtgvQLND.RowHeadersWidth = 51;
             this.dtgvQLND.RowTemplate.Height = 24;
             this.dtgvQLND.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -142,19 +146,19 @@ namespace QLTSTBKhachSan.UI
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.txtManv);
-            this.groupBox1.Location = new System.Drawing.Point(32, 196);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Location = new System.Drawing.Point(223, 196);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(173, 64);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Manv";
+            this.groupBox1.Text = "Mã Nhân Viên";
             // 
             // txtManv
             // 
             this.txtManv.Location = new System.Drawing.Point(8, 23);
-            this.txtManv.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtManv.Margin = new System.Windows.Forms.Padding(4);
             this.txtManv.Name = "txtManv";
             this.txtManv.Size = new System.Drawing.Size(132, 22);
             this.txtManv.TabIndex = 0;
@@ -162,19 +166,19 @@ namespace QLTSTBKhachSan.UI
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.txtTenTK);
-            this.groupBox2.Location = new System.Drawing.Point(237, 196);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Location = new System.Drawing.Point(418, 196);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(173, 64);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Tên TK";
+            this.groupBox2.Text = "Tên Tài Khoản";
             // 
             // txtTenTK
             // 
             this.txtTenTK.Location = new System.Drawing.Point(8, 23);
-            this.txtTenTK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTenTK.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenTK.Name = "txtTenTK";
             this.txtTenTK.Size = new System.Drawing.Size(132, 22);
             this.txtTenTK.TabIndex = 0;
@@ -182,10 +186,10 @@ namespace QLTSTBKhachSan.UI
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.txtPass);
-            this.groupBox3.Location = new System.Drawing.Point(435, 196);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Location = new System.Drawing.Point(418, 273);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(173, 64);
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
@@ -194,7 +198,7 @@ namespace QLTSTBKhachSan.UI
             // txtPass
             // 
             this.txtPass.Location = new System.Drawing.Point(8, 23);
-            this.txtPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPass.Margin = new System.Windows.Forms.Padding(4);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(132, 22);
             this.txtPass.TabIndex = 0;
@@ -202,10 +206,10 @@ namespace QLTSTBKhachSan.UI
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.cbTrangThai);
-            this.groupBox4.Location = new System.Drawing.Point(639, 196);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Location = new System.Drawing.Point(620, 196);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox4.Size = new System.Drawing.Size(173, 64);
             this.groupBox4.TabIndex = 9;
             this.groupBox4.TabStop = false;
@@ -214,36 +218,35 @@ namespace QLTSTBKhachSan.UI
             // cbTrangThai
             // 
             this.cbTrangThai.FormattingEnabled = true;
-            this.cbTrangThai.Location = new System.Drawing.Point(8, 23);
-            this.cbTrangThai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbTrangThai.Location = new System.Drawing.Point(23, 23);
             this.cbTrangThai.Name = "cbTrangThai";
-            this.cbTrangThai.Size = new System.Drawing.Size(137, 24);
-            this.cbTrangThai.TabIndex = 2;
+            this.cbTrangThai.Size = new System.Drawing.Size(121, 24);
+            this.cbTrangThai.TabIndex = 0;
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.cbLoaiND);
-            this.groupBox5.Location = new System.Drawing.Point(873, 196);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox5.Controls.Add(this.cbChucVu);
+            this.groupBox5.Location = new System.Drawing.Point(822, 196);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox5.Size = new System.Drawing.Size(173, 64);
             this.groupBox5.TabIndex = 10;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Loaind";
+            this.groupBox5.Text = "Chức Vụ";
             // 
-            // cbLoaiND
+            // cbChucVu
             // 
-            this.cbLoaiND.FormattingEnabled = true;
-            this.cbLoaiND.Location = new System.Drawing.Point(8, 23);
-            this.cbLoaiND.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.cbLoaiND.Name = "cbLoaiND";
-            this.cbLoaiND.Size = new System.Drawing.Size(140, 24);
-            this.cbLoaiND.TabIndex = 12;
+            this.cbChucVu.FormattingEnabled = true;
+            this.cbChucVu.Location = new System.Drawing.Point(8, 23);
+            this.cbChucVu.Margin = new System.Windows.Forms.Padding(4);
+            this.cbChucVu.Name = "cbChucVu";
+            this.cbChucVu.Size = new System.Drawing.Size(140, 24);
+            this.cbChucVu.TabIndex = 12;
             // 
             // btnThemNv
             // 
-            this.btnThemNv.Location = new System.Drawing.Point(896, 300);
+            this.btnThemNv.Location = new System.Drawing.Point(802, 300);
             this.btnThemNv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThemNv.Name = "btnThemNv";
             this.btnThemNv.Size = new System.Drawing.Size(123, 37);
@@ -252,10 +255,32 @@ namespace QLTSTBKhachSan.UI
             this.btnThemNv.UseVisualStyleBackColor = true;
             this.btnThemNv.Click += new System.EventHandler(this.btnThemNv_Click);
             // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.txtMaTK);
+            this.groupBox6.Location = new System.Drawing.Point(31, 196);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox6.Size = new System.Drawing.Size(173, 64);
+            this.groupBox6.TabIndex = 9;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Mã Tài Khoản";
+            // 
+            // txtMaTK
+            // 
+            this.txtMaTK.Enabled = false;
+            this.txtMaTK.Location = new System.Drawing.Point(8, 23);
+            this.txtMaTK.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMaTK.Name = "txtMaTK";
+            this.txtMaTK.Size = new System.Drawing.Size(132, 22);
+            this.txtMaTK.TabIndex = 0;
+            // 
             // UCQuanLyNguoiDung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.btnThemNv);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
@@ -283,6 +308,8 @@ namespace QLTSTBKhachSan.UI
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -307,7 +334,9 @@ namespace QLTSTBKhachSan.UI
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Button btnThemNv;
+        private System.Windows.Forms.ComboBox cbChucVu;
         private System.Windows.Forms.ComboBox cbTrangThai;
-        private System.Windows.Forms.ComboBox cbLoaiND;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.TextBox txtMaTK;
     }
 }

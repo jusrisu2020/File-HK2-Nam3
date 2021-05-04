@@ -69,17 +69,21 @@
   <ItemGroup>
     <Compile Include="DAO\BoPhanDAO.cs" />
     <Compile Include="DAO\ChucVuDAO.cs" />
+    <Compile Include="DAO\DanhMucDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\NhaCungCapDAO.cs" />
     <Compile Include="DAO\NhanVienDAO.cs" />
     <Compile Include="DAO\TaiKhoanDAO.cs" />
     <Compile Include="DAO\ThietBiDAO.cs" />
+    <Compile Include="DAO\TrangThaiDAO.cs" />
     <Compile Include="DTO\BoPhanDTO.cs" />
     <Compile Include="DTO\ChucVuDTO.cs" />
+    <Compile Include="DTO\DanhMucDTO.cs" />
     <Compile Include="DTO\NhaCungCapDTO.cs" />
     <Compile Include="DTO\NhanVienDTO.cs" />
     <Compile Include="DTO\TaiKhoanDTO.cs" />
     <Compile Include="DTO\ThietBiDTO.cs" />
+    <Compile Include="DTO\TrangThaiDTO.cs" />
     <Compile Include="TSTBKhachSanDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -109,11 +113,11 @@
     <Compile Include="UI\FTaoTaiKhoan.Designer.cs">
       <DependentUpon>FTaoTaiKhoan.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\FNhanVien.cs">
+    <Compile Include="UI\FDanhMuc.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\FNhanVien.Designer.cs">
-      <DependentUpon>FNhanVien.cs</DependentUpon>
+    <Compile Include="UI\FDanhMuc.Designer.cs">
+      <DependentUpon>FDanhMuc.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\FThongBao.cs">
       <SubType>Form</SubType>
@@ -204,8 +208,8 @@
     <EmbeddedResource Include="UI\FTaoTaiKhoan.resx">
       <DependentUpon>FTaoTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\FNhanVien.resx">
-      <DependentUpon>FNhanVien.cs</DependentUpon>
+    <EmbeddedResource Include="UI\FDanhMuc.resx">
+      <DependentUpon>FDanhMuc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FThongBao.resx">
       <DependentUpon>FThongBao.cs</DependentUpon>

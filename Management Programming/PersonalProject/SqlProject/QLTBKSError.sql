@@ -13,7 +13,10 @@
 --PhieuBanGiao
 USE TSTBKhachSan
 ------------------------Xử lí Load dữ liệu thiết bị trong từng bộ phận
-SELECT * FROM DANHMUC
-SELECT * FROM dbo.ThietBi
+--HoaDonMuaTB
+--ChiTietHDMuaTB
+
+--Form thiết bị -> Danhmuc
+
 
 

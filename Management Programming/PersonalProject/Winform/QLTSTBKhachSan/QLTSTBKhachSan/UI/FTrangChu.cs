@@ -16,6 +16,7 @@ namespace QLTSTBKhachSan.UI
         {
             InitializeComponent();
             AddLoadToolTip();
+            pnMuiti.Visible = false;
         }
         #region Method
         void AddLoadToolTip()
@@ -54,17 +55,28 @@ namespace QLTSTBKhachSan.UI
 
         private void btnEquipmentM_Click(object sender, EventArgs e)
         {
-            pnContainer.Controls.Clear();
-            UCQuanLyThietBi tb = new UCQuanLyThietBi();
-            pnContainer.Controls.Add(tb);
+            if (pnMuiti.Visible == true)
+            {
+                pnMuiti.Visible = false;
+            }
+            else
+            {
+                pnMuiti.Visible = true;
+            }
         }
-
+            private void gunaButton1_Click(object sender, EventArgs e)
+            {
+                pnContainer.Controls.Clear();
+                UCQuanLyThietBi tb = new UCQuanLyThietBi();
+                pnContainer.Controls.Add(tb);
+            }
         private void btnReportM_Click(object sender, EventArgs e)
         {
             pnContainer.Controls.Clear();
             UCQuanLyBaoCao bc = new UCQuanLyBaoCao();
             pnContainer.Controls.Add(bc);
         }
+            
         private void btnNhaCungCap_Click(object sender, EventArgs e)
         {
             pnContainer.Controls.Clear();
@@ -107,6 +119,13 @@ namespace QLTSTBKhachSan.UI
             this.Hide();
         }
 
+
+
         #endregion
+
+        private void pnLogo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

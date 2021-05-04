@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QLTSTBKhachSan
 {
-    public partial class Nhanvien : Form
+    public partial class FDanhMuc : Form
     {
-        public Nhanvien()
+        public FDanhMuc()
         {
             InitializeComponent();
         }

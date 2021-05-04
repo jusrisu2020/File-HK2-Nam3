@@ -23,13 +23,28 @@ namespace QLTSTBKhachSan.UI
         void LoadData()
         {
             LoadBtnBoPhan();
+            //LoadDanhMuc();
+        }
+        void EditColums()
+        {
+            dtgvThietBi.Columns["id"].Visible = false;
+            dtgvThietBi.Columns["MaTB"].HeaderText = "Mã Thiết Bị";
+            dtgvThietBi.Columns["TenTB"].HeaderText = "Tên Thiết Bị";
+            dtgvThietBi.Columns["Donvi"].HeaderText = "Đơn vị";
+            dtgvThietBi.Columns["SoLuongHienHuu"].HeaderText = "Số Lượng";
+            dtgvThietBi.Columns["MaDanhMuc"].HeaderText = "Mã Danh Mục";
+            dtgvThietBi.Columns["Mabp"].HeaderText = "Mã Bộ Phận";
+            dtgvThietBi.Columns["ThoiGianBH"].HeaderText = "Bảo Hành";
+            dtgvThietBi.Columns["TinhTrangTB"].HeaderText = "Tình Trạng Thiết Bị";
+            dtgvThietBi.Columns["MaNCC"].HeaderText = "Mã Nhà Cung Cấp";
+            dtgvThietBi.Columns["MaHDMuaTB"].HeaderText = "Ma Hóa Đơn Mua Thiết Bị";
+            dtgvThietBi.Columns["GhiChu"].HeaderText = "Ghi Chú";
         }
         void ShowThietBiTrongBoPhan(string mabp)
         {
             List<ThietBiDTO> tb = ThietBiDAO.Instance.LoadThietBiTrongBoPhan(mabp);
             dtgvThietBi.DataSource = tb;
             dtgvThietBi.Columns["id"].Visible = false;
-            
         }
 
         void LoadBtnBoPhan()
@@ -47,13 +62,35 @@ namespace QLTSTBKhachSan.UI
                 btn.TextAlign = ContentAlignment.TopCenter;
             }
         }
-
         private void btnClick(object sender, EventArgs e)
         {
             string mabp = ((sender as Button).Tag as BoPhanDTO).MaBP;
             ShowThietBiTrongBoPhan(mabp);
+            EditColums();
+        }
+        void LoadDanhMuc()
+        {
+            dtgvThietBi.Controls.Clear();
+            List<DanhMucDTO> DanhMucList = DanhMucDAO.Instance.LoadDanhMuc();
+            cbDanhMuc.DataSource = DanhMucList;
+            cbDanhMuc.DisplayMember = "TenDanhMuc";
+            dtgvThietBi.DataSource = DanhMucList;
+        }
+        
+
+        private void btnThemDanhMuc_Click(object sender, EventArgs e)
+        {
+            FDanhMuc dm = new FDanhMuc();
+            dm.Show();
         }
 
         
+        private void btnLoadAllThietBi_Click(object sender, EventArgs e)
+        {
+            dtgvThietBi.Controls.Clear();
+            List<ThietBiDTO> ThietBiList = ThietBiDAO.Instance.LoadThietBi();
+            dtgvThietBi.DataSource = ThietBiList;
+            EditColums();
+        }
     }
 }

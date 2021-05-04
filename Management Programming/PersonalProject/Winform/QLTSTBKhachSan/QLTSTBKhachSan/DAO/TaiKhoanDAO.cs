@@ -54,6 +54,5 @@ namespace QLTSTBKhachSan.DAO
             int result = DataProvider.Instance.ExecuteNonQuery(TaiKhoanQuery);
             return result > 0;
         }
-
     }
 }

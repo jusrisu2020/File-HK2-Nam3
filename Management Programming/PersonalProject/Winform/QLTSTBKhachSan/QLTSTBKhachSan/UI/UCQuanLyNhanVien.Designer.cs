@@ -36,12 +36,9 @@ namespace QLTSTBKhachSan.UI
             this.dgvQLNV = new System.Windows.Forms.DataGridView();
             this.txtTimKiemNV = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.dtgvChucVu = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
             this.txtMaCV = new System.Windows.Forms.TextBox();
-            this.btnDeleteChucVu = new System.Windows.Forms.Button();
-            this.btnUpdateCV = new System.Windows.Forms.Button();
             this.txtTenCV = new System.Windows.Forms.TextBox();
             this.btnThemCV = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvQLNV)).BeginInit();
@@ -92,14 +89,15 @@ namespace QLTSTBKhachSan.UI
             // dgvQLNV
             // 
             this.dgvQLNV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvQLNV.Location = new System.Drawing.Point(31, 244);
+            this.dgvQLNV.Location = new System.Drawing.Point(41, 377);
             this.dgvQLNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvQLNV.Name = "dgvQLNV";
             this.dgvQLNV.ReadOnly = true;
+            this.dgvQLNV.RowHeadersVisible = false;
             this.dgvQLNV.RowHeadersWidth = 51;
             this.dgvQLNV.RowTemplate.Height = 24;
             this.dgvQLNV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvQLNV.Size = new System.Drawing.Size(516, 217);
+            this.dgvQLNV.Size = new System.Drawing.Size(671, 217);
             this.dgvQLNV.TabIndex = 4;
             // 
             // txtTimKiemNV
@@ -112,87 +110,55 @@ namespace QLTSTBKhachSan.UI
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.dtgvChucVu);
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.txtMaCV);
-            this.groupBox2.Controls.Add(this.btnDeleteChucVu);
-            this.groupBox2.Controls.Add(this.btnUpdateCV);
             this.groupBox2.Controls.Add(this.txtTenCV);
             this.groupBox2.Controls.Add(this.btnThemCV);
             this.groupBox2.Location = new System.Drawing.Point(662, 18);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(525, 473);
+            this.groupBox2.Size = new System.Drawing.Size(446, 316);
             this.groupBox2.TabIndex = 22;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chức vụ";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(411, 123);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 49);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "DeleteAll";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // dtgvChucVu
             // 
             this.dtgvChucVu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvChucVu.Location = new System.Drawing.Point(7, 258);
+            this.dtgvChucVu.Location = new System.Drawing.Point(21, 107);
             this.dtgvChucVu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtgvChucVu.Name = "dtgvChucVu";
             this.dtgvChucVu.ReadOnly = true;
+            this.dtgvChucVu.RowHeadersVisible = false;
             this.dtgvChucVu.RowHeadersWidth = 51;
             this.dtgvChucVu.RowTemplate.Height = 24;
             this.dtgvChucVu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgvChucVu.Size = new System.Drawing.Size(473, 208);
+            this.dtgvChucVu.Size = new System.Drawing.Size(281, 140);
             this.dtgvChucVu.TabIndex = 14;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(411, 38);
+            this.button2.Location = new System.Drawing.Point(307, 15);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 49);
+            this.button2.Size = new System.Drawing.Size(118, 34);
             this.button2.TabIndex = 19;
             this.button2.Text = "Refesh";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // txtMaCV
             // 
-            this.txtMaCV.Location = new System.Drawing.Point(32, 38);
+            this.txtMaCV.Location = new System.Drawing.Point(21, 33);
             this.txtMaCV.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaCV.Name = "txtMaCV";
             this.txtMaCV.Size = new System.Drawing.Size(88, 22);
             this.txtMaCV.TabIndex = 18;
             // 
-            // btnDeleteChucVu
-            // 
-            this.btnDeleteChucVu.Location = new System.Drawing.Point(284, 192);
-            this.btnDeleteChucVu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnDeleteChucVu.Name = "btnDeleteChucVu";
-            this.btnDeleteChucVu.Size = new System.Drawing.Size(95, 49);
-            this.btnDeleteChucVu.TabIndex = 11;
-            this.btnDeleteChucVu.Text = "Delete";
-            this.btnDeleteChucVu.UseVisualStyleBackColor = true;
-            // 
-            // btnUpdateCV
-            // 
-            this.btnUpdateCV.Location = new System.Drawing.Point(284, 123);
-            this.btnUpdateCV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnUpdateCV.Name = "btnUpdateCV";
-            this.btnUpdateCV.Size = new System.Drawing.Size(101, 49);
-            this.btnUpdateCV.TabIndex = 17;
-            this.btnUpdateCV.Text = "Update";
-            this.btnUpdateCV.UseVisualStyleBackColor = true;
-            // 
             // txtTenCV
             // 
-            this.txtTenCV.Location = new System.Drawing.Point(32, 70);
+            this.txtTenCV.Location = new System.Drawing.Point(117, 33);
             this.txtTenCV.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenCV.Name = "txtTenCV";
             this.txtTenCV.Size = new System.Drawing.Size(169, 22);
@@ -200,10 +166,10 @@ namespace QLTSTBKhachSan.UI
             // 
             // btnThemCV
             // 
-            this.btnThemCV.Location = new System.Drawing.Point(284, 38);
+            this.btnThemCV.Location = new System.Drawing.Point(307, 53);
             this.btnThemCV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThemCV.Name = "btnThemCV";
-            this.btnThemCV.Size = new System.Drawing.Size(101, 57);
+            this.btnThemCV.Size = new System.Drawing.Size(118, 34);
             this.btnThemCV.TabIndex = 16;
             this.btnThemCV.Text = "Tạo Bộ Phận";
             this.btnThemCV.UseVisualStyleBackColor = true;
@@ -240,13 +206,10 @@ namespace QLTSTBKhachSan.UI
         private System.Windows.Forms.DataGridView dgvQLNV;
         private System.Windows.Forms.TextBox txtTimKiemNV;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dtgvChucVu;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox txtMaCV;
-        private System.Windows.Forms.Button btnDeleteChucVu;
-        private System.Windows.Forms.Button btnUpdateCV;
         private System.Windows.Forms.TextBox txtTenCV;
         private System.Windows.Forms.Button btnThemCV;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridView dtgvChucVu;
     }
 }

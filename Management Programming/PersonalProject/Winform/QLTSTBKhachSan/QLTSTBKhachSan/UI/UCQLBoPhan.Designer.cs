@@ -132,7 +132,7 @@
             // 
             // btnSuaBoPhan
             // 
-            this.btnSuaBoPhan.Location = new System.Drawing.Point(284, 123);
+            this.btnSuaBoPhan.Location = new System.Drawing.Point(278, 99);
             this.btnSuaBoPhan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSuaBoPhan.Name = "btnSuaBoPhan";
             this.btnSuaBoPhan.Size = new System.Drawing.Size(101, 49);
