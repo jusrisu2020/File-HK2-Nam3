@@ -14,25 +14,32 @@ namespace QLTSTBKhachSan.UI
 {
     public partial class UCQuanLyNguoiDung : UserControl
     {
-        
+        private ComboBox sender;
+
         public UCQuanLyNguoiDung()
         {
             InitializeComponent();
             LoadData();
+            pnShowChucVu.Visible = false;
         }
 
         void LoadData()
         {
             LoadNguoiDung();
-            LoadCBChucVu();
             LoadCBTrangThai();
             AddBinding();
+            LoadCBChucVu();
         }
+
         
         void LoadCBChucVu()
         {
-            cbChucVu.DataSource = TaiKhoanDAO.Instance.LoadTaiKhoan(); 
-            cbChucVu.DisplayMember = "MaCV";
+            List<ChucVuDTO> ChucVuList = ChucVuDAO.Instance.LoadChucVu();
+            cbChucVu.DataSource = ChucVuList;
+            cbChucVu.DisplayMember = "TenCV";
+
+            dtgvChucVu.DataSource = ChucVuList;
+            dtgvChucVu.Columns[0].Visible = false;
         }
         void LoadCBTrangThai()
         {
@@ -40,6 +47,7 @@ namespace QLTSTBKhachSan.UI
             cbTrangThai.ValueMember = "TenTT";
             cbTrangThai.DisplayMember = "TenTT";
         }
+        List<ChucVuDTO> ChucVuList = ChucVuDAO.Instance.LoadChucVu();
         void AddBinding()
         {
             txtMaTK.DataBindings.Add(new Binding("Text", dtgvQLND.DataSource, "MaTK", true, DataSourceUpdateMode.Never));
@@ -47,7 +55,7 @@ namespace QLTSTBKhachSan.UI
             txtTenTK.DataBindings.Add(new Binding("Text", dtgvQLND.DataSource, "TenTK", true, DataSourceUpdateMode.Never));
             txtPass.DataBindings.Add(new Binding("Text", dtgvQLND.DataSource, "Pass", true, DataSourceUpdateMode.Never));
             cbTrangThai.DataBindings.Add(new Binding("Text", dtgvQLND.DataSource, "TenTT", true, DataSourceUpdateMode.Never));
-            cbChucVu.DataBindings.Add(new Binding("Text", dtgvQLND.DataSource, "MaCV", true, DataSourceUpdateMode.Never));
+            //cbChucVu.DataBindings.Add(new Binding("Text", dtgvQLND.DataSource, "MaCV", true, DataSourceUpdateMode.Never));
         }
         void EditColumns()
         {
@@ -92,7 +100,6 @@ namespace QLTSTBKhachSan.UI
             }
         }
 
-
         #endregion
 
         private void btnThemNv_Click(object sender, EventArgs e)
@@ -123,6 +130,17 @@ namespace QLTSTBKhachSan.UI
         private void btnSua_Click(object sender, EventArgs e)
         {
 
+        }
+        private void btnShowChucVu_Click(object sender, EventArgs e)
+        {
+            if(pnShowChucVu.Visible == true)
+            {
+                pnShowChucVu.Visible = false;
+            }
+            else
+            {
+                pnShowChucVu.Visible = true;
+            }
         }
     }
 

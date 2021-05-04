@@ -51,12 +51,30 @@ namespace QLTSTBKhachSan.DAO
             int result = DataProvider.Instance.ExecuteNonQuery(Query);
             return result > 0;
         }
-
+        
+        
+        
         public bool XoaBoPhan(string mabp)
         {
+            NhanVienDAO.Instance.DeleteNhanVienByBoPhan(mabp);
             string Query = string.Format("DELETE dbo.BoPhan WHERE MaBP = N'{0}'", mabp);
             int result = DataProvider.Instance.ExecuteNonQuery(Query);
             return result > 0;
+        }
+        
+
+        public List<BoPhanDTO> SearchTenBoPhan(string name)
+        {
+            List<BoPhanDTO> BoPhanList = new List<BoPhanDTO>();
+            
+            string SBoPhan = string.Format("EXEC USP_TKTenBoPhan N'{0}'", name);
+            DataTable data = DataProvider.Instance.ExecuteQuery(SBoPhan);
+            foreach (DataRow item in data.Rows)
+            {
+                BoPhanDTO table = new BoPhanDTO(item);
+                BoPhanList.Add(table);
+            }
+            return BoPhanList;
         }
     }
 }

@@ -29,33 +29,35 @@ namespace QLTSTBKhachSan.UI
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnPhanQuyen = new System.Windows.Forms.Button();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.btnTimKiem = new System.Windows.Forms.Button();
+            this.btnPhanQuyen = new System.Windows.Forms.Button();
             this.dtgvQLND = new System.Windows.Forms.DataGridView();
             this.btnThemNv = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btnXoa = new System.Windows.Forms.Button();
-            this.btnSua = new System.Windows.Forms.Button();
-            this.cbTrangThai = new System.Windows.Forms.ComboBox();
-            this.cbChucVu = new System.Windows.Forms.ComboBox();
             this.txtPass = new System.Windows.Forms.TextBox();
-            this.txtTenTK = new System.Windows.Forms.TextBox();
-            this.txtManv = new System.Windows.Forms.TextBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.txtMaTK = new System.Windows.Forms.TextBox();
-            this.cbTest = new System.Windows.Forms.ComboBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtManv = new System.Windows.Forms.TextBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.txtTenTK = new System.Windows.Forms.TextBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.cbChucVu = new System.Windows.Forms.ComboBox();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.cbTrangThai = new System.Windows.Forms.ComboBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btnSua = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnShowChucVu = new System.Windows.Forms.Button();
+            this.pnShowChucVu = new System.Windows.Forms.Panel();
+            this.dtgvChucVu = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvQLND)).BeginInit();
             this.panel2.SuspendLayout();
@@ -67,6 +69,8 @@ namespace QLTSTBKhachSan.UI
             this.groupBox5.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.pnShowChucVu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvChucVu)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -90,6 +94,25 @@ namespace QLTSTBKhachSan.UI
             this.panel1.Size = new System.Drawing.Size(1200, 100);
             this.panel1.TabIndex = 1;
             // 
+            // txtTimKiem
+            // 
+            this.txtTimKiem.Location = new System.Drawing.Point(238, 36);
+            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(215, 22);
+            this.txtTimKiem.TabIndex = 5;
+            // 
+            // btnTimKiem
+            // 
+            this.btnTimKiem.Location = new System.Drawing.Point(459, 29);
+            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(85, 37);
+            this.btnTimKiem.TabIndex = 6;
+            this.btnTimKiem.Text = "Search...";
+            this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
+            // 
             // btnPhanQuyen
             // 
             this.btnPhanQuyen.Location = new System.Drawing.Point(110, 2);
@@ -101,45 +124,26 @@ namespace QLTSTBKhachSan.UI
             this.btnPhanQuyen.UseVisualStyleBackColor = true;
             this.btnPhanQuyen.Click += new System.EventHandler(this.btnCapNhatND_Click);
             // 
-            // txtTimKiem
-            // 
-            this.txtTimKiem.Location = new System.Drawing.Point(549, 39);
-            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(215, 22);
-            this.txtTimKiem.TabIndex = 5;
-            // 
-            // btnTimKiem
-            // 
-            this.btnTimKiem.Location = new System.Drawing.Point(770, 32);
-            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(85, 37);
-            this.btnTimKiem.TabIndex = 6;
-            this.btnTimKiem.Text = "Search...";
-            this.btnTimKiem.UseVisualStyleBackColor = true;
-            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
-            // 
             // dtgvQLND
             // 
             this.dtgvQLND.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvQLND.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle29.BackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvQLND.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle29;
             this.dtgvQLND.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvQLND.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle30.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle30.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvQLND.DefaultCellStyle = dataGridViewCellStyle30;
             this.dtgvQLND.Location = new System.Drawing.Point(11, 16);
             this.dtgvQLND.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtgvQLND.Name = "dtgvQLND";
@@ -195,6 +199,14 @@ namespace QLTSTBKhachSan.UI
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "pass";
             // 
+            // txtPass
+            // 
+            this.txtPass.Location = new System.Drawing.Point(8, 23);
+            this.txtPass.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.Size = new System.Drawing.Size(132, 22);
+            this.txtPass.TabIndex = 0;
+            // 
             // groupBox6
             // 
             this.groupBox6.Controls.Add(this.txtMaTK);
@@ -206,6 +218,15 @@ namespace QLTSTBKhachSan.UI
             this.groupBox6.TabIndex = 9;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Mã Tài Khoản";
+            // 
+            // txtMaTK
+            // 
+            this.txtMaTK.Enabled = false;
+            this.txtMaTK.Location = new System.Drawing.Point(8, 23);
+            this.txtMaTK.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMaTK.Name = "txtMaTK";
+            this.txtMaTK.Size = new System.Drawing.Size(132, 22);
+            this.txtMaTK.TabIndex = 0;
             // 
             // groupBox2
             // 
@@ -219,6 +240,14 @@ namespace QLTSTBKhachSan.UI
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Mã Nhân Viên";
             // 
+            // txtManv
+            // 
+            this.txtManv.Location = new System.Drawing.Point(8, 23);
+            this.txtManv.Margin = new System.Windows.Forms.Padding(4);
+            this.txtManv.Name = "txtManv";
+            this.txtManv.Size = new System.Drawing.Size(132, 22);
+            this.txtManv.TabIndex = 0;
+            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.txtTenTK);
@@ -230,6 +259,14 @@ namespace QLTSTBKhachSan.UI
             this.groupBox4.TabIndex = 9;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Tên Tài Khoản";
+            // 
+            // txtTenTK
+            // 
+            this.txtTenTK.Location = new System.Drawing.Point(8, 23);
+            this.txtTenTK.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTenTK.Name = "txtTenTK";
+            this.txtTenTK.Size = new System.Drawing.Size(132, 22);
+            this.txtTenTK.TabIndex = 0;
             // 
             // groupBox5
             // 
@@ -243,6 +280,15 @@ namespace QLTSTBKhachSan.UI
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Chức Vụ";
             // 
+            // cbChucVu
+            // 
+            this.cbChucVu.FormattingEnabled = true;
+            this.cbChucVu.Location = new System.Drawing.Point(8, 23);
+            this.cbChucVu.Margin = new System.Windows.Forms.Padding(4);
+            this.cbChucVu.Name = "cbChucVu";
+            this.cbChucVu.Size = new System.Drawing.Size(140, 24);
+            this.cbChucVu.TabIndex = 12;
+            // 
             // groupBox7
             // 
             this.groupBox7.Controls.Add(this.cbTrangThai);
@@ -255,27 +301,24 @@ namespace QLTSTBKhachSan.UI
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Trangthai";
             // 
+            // cbTrangThai
+            // 
+            this.cbTrangThai.FormattingEnabled = true;
+            this.cbTrangThai.Location = new System.Drawing.Point(23, 23);
+            this.cbTrangThai.Name = "cbTrangThai";
+            this.cbTrangThai.Size = new System.Drawing.Size(121, 24);
+            this.cbTrangThai.TabIndex = 0;
+            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.btnSua);
             this.panel4.Controls.Add(this.btnXoa);
             this.panel4.Controls.Add(this.btnPhanQuyen);
             this.panel4.Controls.Add(this.btnThemNv);
-            this.panel4.Location = new System.Drawing.Point(489, 141);
+            this.panel4.Location = new System.Drawing.Point(421, 105);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(216, 163);
             this.panel4.TabIndex = 16;
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.Location = new System.Drawing.Point(3, 55);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(101, 49);
-            this.btnXoa.TabIndex = 12;
-            this.btnXoa.Text = "Delete";
-            this.btnXoa.UseVisualStyleBackColor = true;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
@@ -288,74 +331,55 @@ namespace QLTSTBKhachSan.UI
             this.btnSua.UseVisualStyleBackColor = true;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
-            // cbTrangThai
+            // btnXoa
             // 
-            this.cbTrangThai.FormattingEnabled = true;
-            this.cbTrangThai.Location = new System.Drawing.Point(23, 23);
-            this.cbTrangThai.Name = "cbTrangThai";
-            this.cbTrangThai.Size = new System.Drawing.Size(121, 24);
-            this.cbTrangThai.TabIndex = 0;
+            this.btnXoa.Location = new System.Drawing.Point(3, 55);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(101, 49);
+            this.btnXoa.TabIndex = 12;
+            this.btnXoa.Text = "Delete";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
-            // cbChucVu
+            // btnShowChucVu
             // 
-            this.cbChucVu.FormattingEnabled = true;
-            this.cbChucVu.Location = new System.Drawing.Point(8, 23);
-            this.cbChucVu.Margin = new System.Windows.Forms.Padding(4);
-            this.cbChucVu.Name = "cbChucVu";
-            this.cbChucVu.Size = new System.Drawing.Size(140, 24);
-            this.cbChucVu.TabIndex = 12;
+            this.btnShowChucVu.Location = new System.Drawing.Point(401, 285);
+            this.btnShowChucVu.Name = "btnShowChucVu";
+            this.btnShowChucVu.Size = new System.Drawing.Size(105, 36);
+            this.btnShowChucVu.TabIndex = 17;
+            this.btnShowChucVu.Text = "Chức Vụ Info";
+            this.btnShowChucVu.UseVisualStyleBackColor = true;
+            this.btnShowChucVu.Click += new System.EventHandler(this.btnShowChucVu_Click);
             // 
-            // txtPass
+            // pnShowChucVu
             // 
-            this.txtPass.Location = new System.Drawing.Point(8, 23);
-            this.txtPass.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(132, 22);
-            this.txtPass.TabIndex = 0;
+            this.pnShowChucVu.Controls.Add(this.dtgvChucVu);
+            this.pnShowChucVu.Location = new System.Drawing.Point(512, 285);
+            this.pnShowChucVu.Name = "pnShowChucVu";
+            this.pnShowChucVu.Size = new System.Drawing.Size(323, 121);
+            this.pnShowChucVu.TabIndex = 18;
             // 
-            // txtTenTK
+            // dtgvChucVu
             // 
-            this.txtTenTK.Location = new System.Drawing.Point(8, 23);
-            this.txtTenTK.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTenTK.Name = "txtTenTK";
-            this.txtTenTK.Size = new System.Drawing.Size(132, 22);
-            this.txtTenTK.TabIndex = 0;
-            // 
-            // txtManv
-            // 
-            this.txtManv.Location = new System.Drawing.Point(8, 23);
-            this.txtManv.Margin = new System.Windows.Forms.Padding(4);
-            this.txtManv.Name = "txtManv";
-            this.txtManv.Size = new System.Drawing.Size(132, 22);
-            this.txtManv.TabIndex = 0;
-            // 
-            // txtMaTK
-            // 
-            this.txtMaTK.Enabled = false;
-            this.txtMaTK.Location = new System.Drawing.Point(8, 23);
-            this.txtMaTK.Margin = new System.Windows.Forms.Padding(4);
-            this.txtMaTK.Name = "txtMaTK";
-            this.txtMaTK.Size = new System.Drawing.Size(132, 22);
-            this.txtMaTK.TabIndex = 0;
-            // 
-            // cbTest
-            // 
-            this.cbTest.FormattingEnabled = true;
-            this.cbTest.Items.AddRange(new object[] {
-            "Admin",
-            "Quản Lí",
-            "Nhân Viên Bộ Phận"});
-            this.cbTest.Location = new System.Drawing.Point(214, 359);
-            this.cbTest.Margin = new System.Windows.Forms.Padding(4);
-            this.cbTest.Name = "cbTest";
-            this.cbTest.Size = new System.Drawing.Size(140, 24);
-            this.cbTest.TabIndex = 13;
+            this.dtgvChucVu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvChucVu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvChucVu.Location = new System.Drawing.Point(3, 3);
+            this.dtgvChucVu.Name = "dtgvChucVu";
+            this.dtgvChucVu.ReadOnly = true;
+            this.dtgvChucVu.RowHeadersVisible = false;
+            this.dtgvChucVu.RowHeadersWidth = 51;
+            this.dtgvChucVu.RowTemplate.Height = 24;
+            this.dtgvChucVu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgvChucVu.Size = new System.Drawing.Size(317, 111);
+            this.dtgvChucVu.TabIndex = 19;
             // 
             // UCQuanLyNguoiDung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.cbTest);
+            this.Controls.Add(this.pnShowChucVu);
+            this.Controls.Add(this.btnShowChucVu);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -379,6 +403,8 @@ namespace QLTSTBKhachSan.UI
             this.groupBox5.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            this.pnShowChucVu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvChucVu)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -409,6 +435,8 @@ namespace QLTSTBKhachSan.UI
         private System.Windows.Forms.TextBox txtTenTK;
         private System.Windows.Forms.ComboBox cbChucVu;
         private System.Windows.Forms.ComboBox cbTrangThai;
-        private System.Windows.Forms.ComboBox cbTest;
+        private System.Windows.Forms.Button btnShowChucVu;
+        private System.Windows.Forms.Panel pnShowChucVu;
+        private System.Windows.Forms.DataGridView dtgvChucVu;
     }
 }

@@ -38,5 +38,11 @@ namespace QLTSTBKhachSan.DAO
             }
             return NhanVienList;
         }
+        public void DeleteNhanVienByBoPhan(string mabp)
+        {
+            string Query = "DELETE dbo.NhanVien WHERE MaBP = N'" + mabp + "'";
+            DataProvider.Instance.ExecuteQuery(Query);
+        }
+
     }
 }

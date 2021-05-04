@@ -27,6 +27,12 @@ namespace QLTSTBKhachSan.UI
                 LoadBoPhan();
                 LoadBinding();
             }
+            
+            List<BoPhanDTO> SearchTenBoPhan(string name)
+            {
+                List<BoPhanDTO> BoPhanList = BoPhanDAO.Instance.SearchTenBoPhan(name);
+                return BoPhanList;
+            }
             void LoadBoPhan()
             {
                 List<BoPhanDTO> BoPhanList = BoPhanDAO.Instance.LoadBoPhan();
@@ -102,7 +108,7 @@ namespace QLTSTBKhachSan.UI
                         LoadBoPhan();
                         txtThemBoPhan.Clear();
                         txtThemBoPhan.Focus();
-                        MessageBox.Show("Đã xoá!");
+                        MessageBox.Show("Đã xoá!","Notification",MessageBoxButtons.OK);
                     }
                     else
                     {
@@ -119,8 +125,10 @@ namespace QLTSTBKhachSan.UI
 
         private void btnTKBoPhan_Click(object sender, EventArgs e)
         {
-
+            dtgvQLBP.DataSource = SearchTenBoPhan(txtTKBoPhan.Text);
         }
+
+        
     }
         #endregion
 }

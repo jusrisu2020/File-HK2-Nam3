@@ -3,6 +3,32 @@ CREATE DATABASE TSTBKhachSan
 GO
 USE TSTBKhachSan
 GO
+------------------------------------  Function TimKiemGanDung ----------------------------------------------------------
+CREATE FUNCTION dbo.fuConvertToUnsign1 ( @strInput NVARCHAR(4000) ) 
+RETURNS NVARCHAR(4000) 
+AS 
+BEGIN 
+	IF @strInput IS NULL RETURN @strInput IF @strInput = '' 
+		RETURN @strInput DECLARE @RT NVARCHAR(4000) 
+		DECLARE @SIGN_CHARS NCHAR(136) 
+		DECLARE @UNSIGN_CHARS NCHAR (136) 
+		SET @SIGN_CHARS = N'ăâđêôơưàảãạáằẳẵặắầẩẫậấèẻẽẹéềểễệế 
+							ìỉĩịíòỏõọóồổỗộốờởỡợớùủũụúừửữựứỳỷỹỵý 
+							ĂÂĐÊÔƠƯÀẢÃẠÁẰẲẴẶẮẦẨẪẬẤÈẺẼẸÉỀỂỄỆẾÌỈĨỊÍ 
+							ÒỎÕỌÓỒỔỖỘỐỜỞỠỢỚÙỦŨỤÚỪỬỮỰỨỲỶỸỴÝ' +NCHAR(272)+ NCHAR(208) 
+		SET @UNSIGN_CHARS = N'aadeoouaaaaaaaaaaaaaaaeeeeeeeeee 
+							iiiiiooooooooooooooouuuuuuuuuuyyyyy 
+							AADEOOUAAAAAAAAAAAAAAAEEEEEEEEEEIIIII 
+							OOOOOOOOOOOOOOOUUUUUUUUUUYYYYYDD' 
+		DECLARE @COUNTER INT 
+		DECLARE @COUNTER1 INT 
+		SET @COUNTER = 1 WHILE (@COUNTER <=LEN(@strInput)) 
+		BEGIN SET @COUNTER1 = 1 WHILE (@COUNTER1 <=LEN(@SIGN_CHARS)+1) 
+		BEGIN IF UNICODE(SUBSTRING(@SIGN_CHARS, @COUNTER1,1)) = UNICODE(SUBSTRING(@strInput,@COUNTER ,1) ) 
+		BEGIN IF @COUNTER=1 SET @strInput = SUBSTRING(@UNSIGN_CHARS, @COUNTER1,1) + SUBSTRING(@strInput, @COUNTER+1,LEN(@strInput)-1) 
+	ELSE SET @strInput = SUBSTRING(@strInput, 1, @COUNTER-1) +SUBSTRING(@UNSIGN_CHARS, @COUNTER1,1) + SUBSTRING(@strInput, @COUNTER+1,LEN(@strInput)- @COUNTER) BREAK END SET @COUNTER1 = @COUNTER1 +1 END SET @COUNTER = @COUNTER +1 END SET @strInput = REPLACE(@strInput,' ','-') 
+	RETURN @strInput 
+END
 ------------------------------------BoPhan ------------------------------------------------
 CREATE TABLE BoPhan
 (
@@ -11,16 +37,17 @@ CREATE TABLE BoPhan
 	TenBP NVARCHAR(100),
 )
 GO
+
 CREATE PROC USP_ThemBoPhan
 		@TenBP NVARCHAR(50)
 	AS
 	BEGIN
 		DECLARE @MaBP NVARCHAR(20)
-		SET @MaBP=(SELECT IDENT_CURRENT('dbo.BoPhan'))
-		IF EXISTS (SELECT * FROM dbo.BoPhan WHERE ID = @MaBP)	
-			SET @MaBP=@MaBP+1
-			SET @MaBP='BP'+REPLICATE('0',2-LEN(@MaBP))+@MaBP
-			INSERT INTO dbo.BoPhan VALUES(@MaBP,@TenBP)
+			SET @MaBP=(SELECT IDENT_CURRENT('dbo.BoPhan'))
+			IF EXISTS (SELECT * FROM dbo.BoPhan WHERE ID = @MaBP)	
+				SET @MaBP=@MaBP+1
+				SET @MaBP='BP'+REPLICATE('0',2-LEN(@MaBP))+@MaBP
+				INSERT INTO dbo.BoPhan VALUES(@MaBP,@TenBP)
 	END
 GO
 EXEC dbo.USP_ThemBoPhan @TenBP = N'Sảnh đón tiếp'
@@ -30,35 +57,20 @@ EXEC dbo.USP_ThemBoPhan @TenBP = N'Khu vực Bếp'
 EXEC dbo.USP_ThemBoPhan @TenBP = N'Nhà Hàng'
 EXEC dbo.USP_ThemBoPhan @TenBP = N'Khu vực khác'
 GO
-
-
-----Event
 CREATE PROC USP_SelectBoPhan
 AS SELECT * FROM dbo.BoPhan
 GO
 EXEC USP_SelectBoPhan
 GO
-
-CREATE PROC USP_TimKiemMaBoPhan
-(
-	@MaBP NVARCHAR(20)
-)
+--------------------	Tìm kiếm gần đúng
+CREATE PROC USP_TKTenBoPhan
+	@TenBP NVARCHAR(100)
 AS
 BEGIN
-	SELECT * FROM dbo.BoPhan WHERE MaBP = @MaBP
+	SELECT * FROM dbo.BoPhan WHERE dbo.fuConvertToUnsign1(TenBP) LIKE N'%'+dbo.fuConvertToUnsign1(@TenBP)+'%'
 END
-EXEC USP_TimKiemMaBoPhan 'BP01'
 GO
-CREATE PROC USP_TimKiemTenBoPhan
-(
-	@Ten NVARCHAR(100)
-)
-AS
-BEGIN
-	SELECT * FROM dbo.BoPhan WHERE MaBP = @MaBP
-END
-EXEC USP_TimKiemMaBoPhan 'BP01'
-DROP PROC USP_TimKiemMaBoPhan
+EXEC USP_TKTenBoPhan N'a'
 -------------------------------------NhaCungCap ------------------------------------------------
 CREATE TABLE NhaCungCap
 (
@@ -95,14 +107,12 @@ EXEC dbo.USP_ThemNhaCungCap @TenNCC = N'Trần Long Kiên',@SDT = N'147258',@Dia
 EXEC dbo.USP_ThemNhaCungCap @TenNCC = N'Hải Lý',@SDT = N'111111',@DiaChi = 'Cà Mau',
 						  @Email = N'haily@gmail.com',@STK = N'222222',@TenCongTy = N'Công ty Hải lý'
 GO
-
 CREATE PROC USP_SelectNhaCungCap
 AS SELECT * FROM dbo.NhaCungCap
 GO
 EXEC USP_SelectNhaCungCap
---thêm danh mục
+GO
 -------------------------------------DanhMuc ------------------------------------------------
-
 CREATE TABLE DanhMuc
 (
 	ID INT IDENTITY,
@@ -130,6 +140,7 @@ GO
 
 CREATE PROC USP_SelectDanhMuc
 AS SELECT * FROM dbo.DanhMuc
+GO
 EXEC USP_SelectDanhMuc
 GO
 -------------------------------------ChucVu ------------------------------------------------
@@ -160,8 +171,17 @@ GO
 
 CREATE PROC USP_SelectChucVu
 AS SELECT * FROM dbo.ChucVu
+GO
 EXEC USP_SelectChucVu
 GO
+
+CREATE VIEW a
+AS
+SELECT * FROM TaiKhoan
+
+	
+
+SELECT * FROM dbo.TaiKhoan WHERE MaCV = 'CV01'
 -------------------------------------NhanVien ------------------------------------------------
 CREATE TABLE NhanVien
 (
@@ -213,10 +233,10 @@ EXEC dbo.USP_ThemNhanVien @HoTen = N'Lý Nhã Kỳ',@GioiTinh = N'Nữ',@NgaySin
 GO
 CREATE PROC USP_SelectNhanVien
 AS SELECT * FROM dbo.NhanVien
+GO
 EXEC dbo.USP_SelectNhanVien
-
+GO
 --------------------------------------------------------Tài khoản
-SELECT * FROM dbo.ChucVu
 CREATE TABLE TaiKhoan
 (
 	Id INT IDENTITY,
@@ -250,7 +270,6 @@ GO
 EXEC dbo.USP_ThemTaiKhoan @MaNV = 'NV01',@TenTK = N'ad',@Pass=N'1',@idTrangThai = 1, @TenTT = N'Đang Hoạt Động', @MaCV = N'CV01'
 EXEC dbo.USP_ThemTaiKhoan @MaNV = 'NV02',@TenTK = N'tk1',@Pass=N'1',@idTrangThai = 1, @TenTT = N'Tài khoản Khóa', @MaCV = N'CV02'
 GO
---PROC Đăng nhập
 CREATE PROC USP_DangNhap
 	@TenTK NVARCHAR(100),
 	@Pass NVARCHAR(100)
@@ -258,8 +277,10 @@ AS
 BEGIN
     SELECT * FROM dbo.TaiKhoan WHERE @TenTK = TenTK AND  @Pass = Pass
 END
+GO
 EXEC USP_DangNhap N'ad', N'1'
 GO
+
 --PROC Select Tất cả tài khoản
 CREATE PROC USP_SelectATaiKhoan
 AS 
@@ -269,6 +290,8 @@ END
 GO
 EXEC USP_SelectATaiKhoan
 GO
+
+
 -------------------------------------HoaDonMuaTB CHƯA ------------------------------------------------
 CREATE TABLE HoaDonMuaTB
 (

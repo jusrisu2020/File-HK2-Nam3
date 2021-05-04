@@ -44,7 +44,6 @@ namespace QLTSTBKhachSan.UI
         {
             List<ThietBiDTO> tb = ThietBiDAO.Instance.LoadThietBiTrongBoPhan(mabp);
             dtgvThietBi.DataSource = tb;
-            dtgvThietBi.Columns["id"].Visible = false;
         }
 
         void LoadBtnBoPhan()
