@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLTSTBKhachSan.UI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,10 @@ namespace QLTSTBKhachSan
         public FDanhMuc()
         {
             InitializeComponent();
+        }
+
+        private void btnThemDanhMuc_Click(object sender, EventArgs e)
+        {
         }
     }
 }

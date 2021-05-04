@@ -14,36 +14,30 @@ namespace QLTSTBKhachSan.UI
 {
     public partial class UCQuanLiBoPhan : UserControl
     {
-        BindingSource BoPhanListBD = new BindingSource();
         public UCQuanLiBoPhan()
         {
             InitializeComponent();
-            Load();
+            LoadData();
+            EditColumn();
         }
 
         #region Method
-            void Load()
+            void LoadData()
             {
-                dtgvQLBP.DataSource = BoPhanListBD;
                 LoadBoPhan();
                 LoadBinding();
             }
             void LoadBoPhan()
             {
                 List<BoPhanDTO> BoPhanList = BoPhanDAO.Instance.LoadBoPhan();
-                foreach(BoPhanDTO item in BoPhanList)
-                {
-                    Button btn = new Button() { Width = 150, Height = 100 };
-                    flpBoPhan.Controls.Add(btn);
-                    btn.Text = item.MaBP + "\n" + item.TenBP;
-                    btn.Image = Image.FromFile(@"D:\File-HK2-Nam3\Management Programming\PersonalProject\Winform\QLTSTBKhachSan\QLTSTBKhachSan\Resources\department_50px.png");
-                    btn.ImageAlign = ContentAlignment.MiddleCenter;
-                    btn.TextAlign = ContentAlignment.TopCenter;
-                }
-                BoPhanListBD.DataSource = BoPhanList;
-                dtgvQLBP.Columns["id"].Visible = false;
+                dtgvQLBP.DataSource = BoPhanList;
             }
-
+            void EditColumn()
+            {
+                dtgvQLBP.Columns[0].Visible = false;
+                dtgvQLBP.Columns[1].HeaderText = "Mã Bộ Phận";
+                dtgvQLBP.Columns[2].HeaderText = "Tên Bộ Phận";
+            }
             void LoadBinding()
             {
                 txtThemBoPhan.DataBindings.Add(new Binding("Text", dtgvQLBP.DataSource, "Tenbp", true, DataSourceUpdateMode.Never));
@@ -53,12 +47,6 @@ namespace QLTSTBKhachSan.UI
         #endregion
 
         #region Event
-            private void btnThemBoPhan_Click(object sender, EventArgs e)
-            {
-                FThongBao fbp = new FThongBao();
-                fbp.Show();
-            }
-
             private void btnThemBP_Click(object sender, EventArgs e)
             {
                 string tenbp = txtThemBoPhan.Text;
@@ -70,7 +58,6 @@ namespace QLTSTBKhachSan.UI
                 {
                     if (BoPhanDAO.Instance.ThemBoPhan(tenbp))
                     {
-                        flpBoPhan.Controls.Clear();
                         MessageBox.Show("Saved!");
                         LoadBoPhan();
                         txtThemBoPhan.Clear();
@@ -82,7 +69,6 @@ namespace QLTSTBKhachSan.UI
                     }
                 }
             }
-
             private void btnSuaBoPhan_Click(object sender, EventArgs e)
             {
                 string tenbp = txtThemBoPhan.Text;
@@ -95,7 +81,6 @@ namespace QLTSTBKhachSan.UI
                 {
                     if (BoPhanDAO.Instance.SuaBoPhan(mabp, tenbp))
                     {
-                        flpBoPhan.Controls.Clear();
                         MessageBox.Show("Đã thay đổi!");
                         LoadBoPhan();
                         txtThemBoPhan.Clear();
@@ -107,15 +92,6 @@ namespace QLTSTBKhachSan.UI
                     }
                 }
             }
-
-            private void btnRefesh_Click(object sender, EventArgs e)
-            {
-                flpBoPhan.Controls.Clear();
-                txtThemBoPhan.Clear();
-                txtThemBoPhan.Focus();
-                LoadBoPhan();
-            }
-
             private void btnDelete_Click(object sender, EventArgs e)
             {
                 if (MessageBox.Show("Bạn thật sự muốn xoá", "Notification", MessageBoxButtons.OKCancel) == DialogResult.OK)
@@ -123,7 +99,6 @@ namespace QLTSTBKhachSan.UI
                     string mabp = txtMaBP.Text;
                     if (BoPhanDAO.Instance.XoaBoPhan(mabp))
                     {
-                        flpBoPhan.Controls.Clear();
                         LoadBoPhan();
                         txtThemBoPhan.Clear();
                         txtThemBoPhan.Focus();
@@ -135,6 +110,17 @@ namespace QLTSTBKhachSan.UI
                     }
                 }
             }
+            private void btnRefesh_Click(object sender, EventArgs e)
+            {
+                txtThemBoPhan.Clear();
+                txtThemBoPhan.Focus();
+                LoadBoPhan();
+            }
+
+        private void btnTKBoPhan_Click(object sender, EventArgs e)
+        {
+
         }
+    }
         #endregion
 }

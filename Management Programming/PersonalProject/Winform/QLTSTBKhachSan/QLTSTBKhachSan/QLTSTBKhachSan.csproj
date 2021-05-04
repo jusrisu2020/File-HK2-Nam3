@@ -75,7 +75,6 @@
     <Compile Include="DAO\NhanVienDAO.cs" />
     <Compile Include="DAO\TaiKhoanDAO.cs" />
     <Compile Include="DAO\ThietBiDAO.cs" />
-    <Compile Include="DAO\TrangThaiDAO.cs" />
     <Compile Include="DTO\BoPhanDTO.cs" />
     <Compile Include="DTO\ChucVuDTO.cs" />
     <Compile Include="DTO\DanhMucDTO.cs" />
@@ -83,12 +82,6 @@
     <Compile Include="DTO\NhanVienDTO.cs" />
     <Compile Include="DTO\TaiKhoanDTO.cs" />
     <Compile Include="DTO\ThietBiDTO.cs" />
-    <Compile Include="DTO\TrangThaiDTO.cs" />
-    <Compile Include="TSTBKhachSanDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TSTBKhachSanDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="UI\FDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,18 +120,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UI\FThemSuaND.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\FThemSuaND.Designer.cs">
-      <DependentUpon>FThemSuaND.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\FThemSuaNV.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\FThemSuaNV.Designer.cs">
-      <DependentUpon>FThemSuaNV.cs</DependentUpon>
-    </Compile>
     <Compile Include="UI\FTrangChu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -224,12 +205,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UI\FThemSuaND.resx">
-      <DependentUpon>FThemSuaND.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\FThemSuaNV.resx">
-      <DependentUpon>FThemSuaNV.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UI\FTrangChu.resx">
       <DependentUpon>FTrangChu.cs</DependentUpon>
     </EmbeddedResource>
@@ -264,17 +239,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="TSTBKhachSanDataSet.xsc">
-      <DependentUpon>TSTBKhachSanDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="TSTBKhachSanDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>TSTBKhachSanDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="TSTBKhachSanDataSet.xss">
-      <DependentUpon>TSTBKhachSanDataSet.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -22,7 +22,7 @@ namespace QLTSTBKhachSan.UI
         {
             PgbLoading.Value += 4;
             lbPercent.Text = "Loading... " + PgbLoading.Value.ToString() + "%";
-            if (PgbLoading.Value >= 100)
+            if (PgbLoading.Value == 100)
             {
                 tmLoading.Enabled = false;
                 FDangNhap dn = new FDangNhap();

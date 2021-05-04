@@ -50,8 +50,7 @@ namespace QLTSTBKhachSan.UI
         }
         private void btnUpdateNV_Click(object sender, EventArgs e)
         {
-            FThemSuaNV fnv = new FThemSuaNV();
-            fnv.ShowDialog();
+            
         }
     }
 }

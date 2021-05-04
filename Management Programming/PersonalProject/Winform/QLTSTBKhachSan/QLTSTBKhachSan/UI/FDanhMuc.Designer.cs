@@ -98,6 +98,7 @@ namespace QLTSTBKhachSan
             this.btnThemDanhMuc.TabIndex = 7;
             this.btnThemDanhMuc.Text = "Thêm";
             this.btnThemDanhMuc.UseVisualStyleBackColor = true;
+            this.btnThemDanhMuc.Click += new System.EventHandler(this.btnThemDanhMuc_Click);
             // 
             // gbTool
             // 

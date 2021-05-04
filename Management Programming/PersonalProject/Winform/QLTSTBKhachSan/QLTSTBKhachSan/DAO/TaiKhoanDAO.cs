@@ -48,9 +48,9 @@ namespace QLTSTBKhachSan.DAO
             return TaiKhoanList;
         }
 
-        public bool ThemTaiKhoan(string manv, string tentk, string pass, string trangthai, string loaind)
+        public bool ThemTaiKhoan(string manv, string tentk, string pass, int idtrangthai, string loaind)
         {
-            string TaiKhoanQuery = string.Format("EXEC dbo.USP_ThemTaiKhoan {0},{1},{2},N'{3}',{4}", manv,tentk,pass,trangthai,loaind);
+            string TaiKhoanQuery = string.Format("EXEC dbo.USP_ThemTaiKhoan {0},{1},{2},N'{3}',{4}", manv,tentk,pass, idtrangthai, loaind);
             int result = DataProvider.Instance.ExecuteNonQuery(TaiKhoanQuery);
             return result > 0;
         }
