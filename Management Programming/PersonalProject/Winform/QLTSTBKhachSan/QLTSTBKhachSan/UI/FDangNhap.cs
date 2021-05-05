@@ -20,10 +20,6 @@ namespace QLTSTBKhachSan.UI
             InitializeComponent();
         }
 
-        private void FDangNhap_Load(object sender, EventArgs e)
-        {
-
-        }
         
         private void btnLogIn_Click(object sender, EventArgs e)
         {
@@ -40,10 +36,27 @@ namespace QLTSTBKhachSan.UI
                 MessageBox.Show("Sai thông tin tài khoản");
             }
         }
-
         bool Login(string TenTKs, string Passs)
         {
             return TaiKhoanDAO.Instance.Login(TenTKs, Passs);
+        }
+
+        private void chkPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkPassword.Checked == true)
+            {
+                txtPassword.UseSystemPasswordChar = true;
+            }
+            else
+            {
+                txtPassword.UseSystemPasswordChar = false;
+            }
+        }
+
+        private void linkTaoTaiKhoan_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FTaoTaiKhoan ttk = new FTaoTaiKhoan();
+            ttk.Show();
         }
     }
 }

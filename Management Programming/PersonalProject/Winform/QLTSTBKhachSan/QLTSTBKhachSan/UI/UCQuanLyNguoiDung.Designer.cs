@@ -29,8 +29,8 @@ namespace QLTSTBKhachSan.UI
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
@@ -42,10 +42,6 @@ namespace QLTSTBKhachSan.UI
             this.panel3 = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.txtPass = new System.Windows.Forms.TextBox();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.txtMaTK = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txtManv = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.txtTenTK = new System.Windows.Forms.TextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
@@ -58,19 +54,24 @@ namespace QLTSTBKhachSan.UI
             this.btnShowChucVu = new System.Windows.Forms.Button();
             this.pnShowChucVu = new System.Windows.Forms.Panel();
             this.dtgvChucVu = new System.Windows.Forms.DataGridView();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtManv = new System.Windows.Forms.TextBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.txtMaTK = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvQLND)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.panel4.SuspendLayout();
             this.pnShowChucVu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvChucVu)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -127,23 +128,23 @@ namespace QLTSTBKhachSan.UI
             // dtgvQLND
             // 
             this.dtgvQLND.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle29.BackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle29.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvQLND.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvQLND.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dtgvQLND.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle30.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle30.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvQLND.DefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvQLND.DefaultCellStyle = dataGridViewCellStyle4;
             this.dtgvQLND.Location = new System.Drawing.Point(11, 16);
             this.dtgvQLND.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtgvQLND.Name = "dtgvQLND";
@@ -176,9 +177,9 @@ namespace QLTSTBKhachSan.UI
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.groupBox3);
             this.panel3.Controls.Add(this.groupBox6);
             this.panel3.Controls.Add(this.groupBox2);
+            this.panel3.Controls.Add(this.groupBox3);
             this.panel3.Controls.Add(this.groupBox4);
             this.panel3.Controls.Add(this.groupBox5);
             this.panel3.Controls.Add(this.groupBox7);
@@ -206,47 +207,6 @@ namespace QLTSTBKhachSan.UI
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(132, 22);
             this.txtPass.TabIndex = 0;
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.txtMaTK);
-            this.groupBox6.Location = new System.Drawing.Point(13, 13);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox6.Size = new System.Drawing.Size(173, 64);
-            this.groupBox6.TabIndex = 9;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Mã Tài Khoản";
-            // 
-            // txtMaTK
-            // 
-            this.txtMaTK.Enabled = false;
-            this.txtMaTK.Location = new System.Drawing.Point(8, 23);
-            this.txtMaTK.Margin = new System.Windows.Forms.Padding(4);
-            this.txtMaTK.Name = "txtMaTK";
-            this.txtMaTK.Size = new System.Drawing.Size(132, 22);
-            this.txtMaTK.TabIndex = 0;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.txtManv);
-            this.groupBox2.Location = new System.Drawing.Point(203, 13);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(173, 64);
-            this.groupBox2.TabIndex = 8;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Mã Nhân Viên";
-            // 
-            // txtManv
-            // 
-            this.txtManv.Location = new System.Drawing.Point(8, 23);
-            this.txtManv.Margin = new System.Windows.Forms.Padding(4);
-            this.txtManv.Name = "txtManv";
-            this.txtManv.Size = new System.Drawing.Size(132, 22);
-            this.txtManv.TabIndex = 0;
             // 
             // groupBox4
             // 
@@ -374,6 +334,47 @@ namespace QLTSTBKhachSan.UI
             this.dtgvChucVu.Size = new System.Drawing.Size(317, 111);
             this.dtgvChucVu.TabIndex = 19;
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.txtManv);
+            this.groupBox2.Location = new System.Drawing.Point(219, 13);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Size = new System.Drawing.Size(173, 64);
+            this.groupBox2.TabIndex = 10;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Mã Nhân Viên";
+            // 
+            // txtManv
+            // 
+            this.txtManv.Location = new System.Drawing.Point(8, 23);
+            this.txtManv.Margin = new System.Windows.Forms.Padding(4);
+            this.txtManv.Name = "txtManv";
+            this.txtManv.Size = new System.Drawing.Size(132, 22);
+            this.txtManv.TabIndex = 0;
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.txtMaTK);
+            this.groupBox6.Location = new System.Drawing.Point(13, 13);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox6.Size = new System.Drawing.Size(173, 64);
+            this.groupBox6.TabIndex = 11;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Mã Tài Khoản";
+            // 
+            // txtMaTK
+            // 
+            this.txtMaTK.Enabled = false;
+            this.txtMaTK.Location = new System.Drawing.Point(8, 23);
+            this.txtMaTK.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMaTK.Name = "txtMaTK";
+            this.txtMaTK.Size = new System.Drawing.Size(132, 22);
+            this.txtMaTK.TabIndex = 0;
+            // 
             // UCQuanLyNguoiDung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -394,10 +395,6 @@ namespace QLTSTBKhachSan.UI
             this.panel3.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
@@ -405,6 +402,10 @@ namespace QLTSTBKhachSan.UI
             this.panel4.ResumeLayout(false);
             this.pnShowChucVu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvChucVu)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -421,8 +422,6 @@ namespace QLTSTBKhachSan.UI
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.GroupBox groupBox7;
@@ -430,13 +429,16 @@ namespace QLTSTBKhachSan.UI
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.TextBox txtPass;
-        private System.Windows.Forms.TextBox txtMaTK;
-        private System.Windows.Forms.TextBox txtManv;
         private System.Windows.Forms.TextBox txtTenTK;
         private System.Windows.Forms.ComboBox cbChucVu;
         private System.Windows.Forms.ComboBox cbTrangThai;
         private System.Windows.Forms.Button btnShowChucVu;
         private System.Windows.Forms.Panel pnShowChucVu;
         private System.Windows.Forms.DataGridView dtgvChucVu;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.TextBox txtManv;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.TextBox txtMaTK;
     }
 }

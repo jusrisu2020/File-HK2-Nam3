@@ -5,7 +5,7 @@ GO
 CREATE PROC USP_DangNhap
 	@TenTK NVARCHAR(100),
 	@Pass NVARCHAR(100)
-AS 
+AS
 BEGIN
     SELECT * FROM dbo.TaiKhoan WHERE @TenTK = TenTK AND  @Pass = Pass
 END
