@@ -18,6 +18,7 @@ namespace QLTSTBKhachSan.UI
         public FDangNhap()
         {
             InitializeComponent();
+            txtPassword.UseSystemPasswordChar = true;
         }
 
         
@@ -45,11 +46,11 @@ namespace QLTSTBKhachSan.UI
         {
             if (chkPassword.Checked == true)
             {
-                txtPassword.UseSystemPasswordChar = true;
+                txtPassword.UseSystemPasswordChar = false;
             }
             else
             {
-                txtPassword.UseSystemPasswordChar = false;
+                txtPassword.UseSystemPasswordChar = true;
             }
         }
 
