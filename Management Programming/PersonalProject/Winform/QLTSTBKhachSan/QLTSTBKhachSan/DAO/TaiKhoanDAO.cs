@@ -53,6 +53,17 @@ namespace QLTSTBKhachSan.DAO
             return TaiKhoanList;
         }
 
+        public TaiKhoanDTO GetAccountByUserName(string username)
+        {
+            string Query = string.Format("SELECT * FROM TaiKhoan WHERE tentk = '{0}'",username);
+            DataTable data = DataProvider.Instance.ExecuteQuery(Query);
+            foreach(DataRow item in data.Rows)
+            {
+                return new TaiKhoanDTO(item);
+            }
+            return null;
+        }
+
         public bool Login(string TenTK, string Pass)
         {
             string TaiKhoanQuery = "EXEC USP_DangNhap  @TenTK , @Pass";

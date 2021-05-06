@@ -71,6 +71,7 @@ BEGIN
 END
 GO
 EXEC USP_TKTenBoPhan N'a'
+GO
 -------------------------------------NhaCungCap ------------------------------------------------
 CREATE TABLE NhaCungCap
 (
@@ -174,14 +175,6 @@ AS SELECT * FROM dbo.ChucVu
 GO
 EXEC USP_SelectChucVu
 GO
-
-CREATE VIEW a
-AS
-SELECT * FROM TaiKhoan
-
-	
-
-SELECT * FROM dbo.TaiKhoan WHERE MaCV = 'CV01'
 -------------------------------------NhanVien ------------------------------------------------
 CREATE TABLE NhanVien
 (
@@ -244,8 +237,6 @@ CREATE TABLE TaiKhoan
 	MaNV NVARCHAR(20) CONSTRAINT FK_TaiKhoan_NhanVien FOREIGN KEY(MaNV) REFERENCES dbo.NhanVien(MaNV),
 	TenTK NVARCHAR(100),
 	Pass NVARCHAR(100),
-	idTrangThai INT,
-	TenTT NVARCHAR(100),
 	MaCV NVARCHAR(20) CONSTRAINT FK_TaiKhoan_ChucVu FOREIGN KEY(MaCV) REFERENCES dbo.ChucVu(MaCV)
 )
 GO
@@ -254,8 +245,6 @@ CREATE PROC USP_ThemTaiKhoan
 		@MaNV NVARCHAR(20),
 		@TenTK NVARCHAR(100),
 		@Pass NVARCHAR(100),
-		@idTrangThai int,
-		@TenTT NVARCHAR(100),
 		@MaCV NVARCHAR(20)
 	AS
 	BEGIN
@@ -264,11 +253,11 @@ CREATE PROC USP_ThemTaiKhoan
 		IF EXISTS (SELECT * FROM dbo.TaiKhoan WHERE ID = @MaTK)
 			SET @MaTK=@MaTK+1
 			SET @MaTK='TK'+REPLICATE('0',2-LEN(@MaTK))+@MaTK
-			INSERT INTO dbo.TaiKhoan VALUES(@MaTK,@MaNV,@TenTK,@Pass,@idTrangThai,@TenTT,@MaCV)
+			INSERT INTO dbo.TaiKhoan VALUES(@MaTK,@MaNV,@TenTK,@Pass,@MaCV)
 	END
 GO
-EXEC dbo.USP_ThemTaiKhoan @MaNV = 'NV01',@TenTK = N'ad',@Pass=N'1',@idTrangThai = 1, @TenTT = N'Đang Hoạt Động', @MaCV = N'CV01'
-EXEC dbo.USP_ThemTaiKhoan @MaNV = 'NV02',@TenTK = N'tk1',@Pass=N'1',@idTrangThai = 1, @TenTT = N'Tài khoản Khóa', @MaCV = N'CV02'
+EXEC dbo.USP_ThemTaiKhoan @MaNV = 'NV01',@TenTK = N'ad',@Pass=N'1', @MaCV = N'CV01'
+EXEC dbo.USP_ThemTaiKhoan @MaNV = 'NV02',@TenTK = N'tk1',@Pass=N'1', @MaCV = N'CV02'
 GO
 CREATE PROC USP_DangNhap
 	@TenTK NVARCHAR(100),
@@ -291,6 +280,7 @@ GO
 EXEC USP_SelectATaiKhoan
 GO
 
+SELECT * FROM TaiKhoan WHERE tentk = N'ad';
 
 -------------------------------------HoaDonMuaTB CHƯA ------------------------------------------------
 CREATE TABLE HoaDonMuaTB

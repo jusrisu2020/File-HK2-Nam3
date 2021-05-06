@@ -8,13 +8,24 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using QLTSTBKhachSan.DTO;
+
 namespace QLTSTBKhachSan.UI
 {
     public partial class FTrangChu : Form
     {
-        public FTrangChu()
+        private TaiKhoanDTO loginTaiKhoan;
+        public TaiKhoanDTO LoginTaiKhoan 
+        {
+            get { return loginTaiKhoan; }
+            set { loginTaiKhoan = value; ChangeTaiKhoan(loginTaiKhoan.MaCV); } 
+        }
+
+        public FTrangChu(TaiKhoanDTO tk)
         {
             InitializeComponent();
+
+            this.LoginTaiKhoan = tk;
             AddLoadToolTip();
             pnMuiti.Visible = false;
         }
@@ -25,6 +36,13 @@ namespace QLTSTBKhachSan.UI
             tt.SetToolTip(btnSetting, "Setting\n(Ctrl + S)");
             tt.SetToolTip(btnNotification, "Setting\n(Ctrl + N)");
             tt.SetToolTip(btnHelp, "Help\n(Ctrl + H)");
+        }
+        void ChangeTaiKhoan(string matk)
+        {
+            if (matk != "CV01")
+            {
+                btnUserM.Enabled = false;
+            }
         }
         #endregion
         #region Envent_Main

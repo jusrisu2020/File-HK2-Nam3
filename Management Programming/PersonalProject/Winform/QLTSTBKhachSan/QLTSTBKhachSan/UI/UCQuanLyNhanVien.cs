@@ -45,8 +45,8 @@ namespace QLTSTBKhachSan.UI
             List<ChucVuDTO> ChucVuList = ChucVuDAO.Instance.LoadChucVu();
             dtgvChucVu.DataSource = ChucVuList;
             dtgvChucVu.Columns["id"].Visible = false;
-            dtgvChucVu.Columns["MaCV"].HeaderText = "Mã bộ phận";
-            dtgvChucVu.Columns["TenCV"].HeaderText = "Tên Bộ Phận";
+            dtgvChucVu.Columns["MaCV"].HeaderText = "Mã chức vụ";
+            dtgvChucVu.Columns["TenCV"].HeaderText = "Tên chức vụ";
         }
         private void btnUpdateNV_Click(object sender, EventArgs e)
         {

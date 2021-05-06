@@ -49,18 +49,19 @@ namespace QLTSTBKhachSan.UI
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 18);
+            this.label1.Location = new System.Drawing.Point(11, 15);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(141, 17);
+            this.label1.Size = new System.Drawing.Size(112, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "QUẢN LÍ NHÂN VIÊN";
             // 
             // btnUpdateNV
             // 
-            this.btnUpdateNV.Location = new System.Drawing.Point(31, 137);
-            this.btnUpdateNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnUpdateNV.Location = new System.Drawing.Point(23, 111);
+            this.btnUpdateNV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnUpdateNV.Name = "btnUpdateNV";
-            this.btnUpdateNV.Size = new System.Drawing.Size(106, 57);
+            this.btnUpdateNV.Size = new System.Drawing.Size(80, 46);
             this.btnUpdateNV.TabIndex = 1;
             this.btnUpdateNV.Text = "Add...";
             this.btnUpdateNV.UseVisualStyleBackColor = true;
@@ -68,20 +69,20 @@ namespace QLTSTBKhachSan.UI
             // 
             // btnDeleteNV
             // 
-            this.btnDeleteNV.Location = new System.Drawing.Point(152, 137);
-            this.btnDeleteNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDeleteNV.Location = new System.Drawing.Point(114, 111);
+            this.btnDeleteNV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDeleteNV.Name = "btnDeleteNV";
-            this.btnDeleteNV.Size = new System.Drawing.Size(77, 57);
+            this.btnDeleteNV.Size = new System.Drawing.Size(58, 46);
             this.btnDeleteNV.TabIndex = 2;
             this.btnDeleteNV.Text = "Delete";
             this.btnDeleteNV.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(405, 144);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button3.Location = new System.Drawing.Point(304, 117);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(95, 50);
+            this.button3.Size = new System.Drawing.Size(71, 41);
             this.button3.TabIndex = 3;
             this.button3.Text = "Search...";
             this.button3.UseVisualStyleBackColor = true;
@@ -89,23 +90,23 @@ namespace QLTSTBKhachSan.UI
             // dgvQLNV
             // 
             this.dgvQLNV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvQLNV.Location = new System.Drawing.Point(41, 377);
-            this.dgvQLNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvQLNV.Location = new System.Drawing.Point(31, 306);
+            this.dgvQLNV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvQLNV.Name = "dgvQLNV";
             this.dgvQLNV.ReadOnly = true;
             this.dgvQLNV.RowHeadersVisible = false;
             this.dgvQLNV.RowHeadersWidth = 51;
             this.dgvQLNV.RowTemplate.Height = 24;
             this.dgvQLNV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvQLNV.Size = new System.Drawing.Size(671, 217);
+            this.dgvQLNV.Size = new System.Drawing.Size(503, 176);
             this.dgvQLNV.TabIndex = 4;
             // 
             // txtTimKiemNV
             // 
-            this.txtTimKiemNV.Location = new System.Drawing.Point(250, 154);
-            this.txtTimKiemNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTimKiemNV.Location = new System.Drawing.Point(188, 125);
+            this.txtTimKiemNV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTimKiemNV.Name = "txtTimKiemNV";
-            this.txtTimKiemNV.Size = new System.Drawing.Size(149, 22);
+            this.txtTimKiemNV.Size = new System.Drawing.Size(113, 20);
             this.txtTimKiemNV.TabIndex = 5;
             // 
             // groupBox2
@@ -115,68 +116,65 @@ namespace QLTSTBKhachSan.UI
             this.groupBox2.Controls.Add(this.txtMaCV);
             this.groupBox2.Controls.Add(this.txtTenCV);
             this.groupBox2.Controls.Add(this.btnThemCV);
-            this.groupBox2.Location = new System.Drawing.Point(662, 18);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Location = new System.Drawing.Point(496, 15);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(446, 316);
+            this.groupBox2.Size = new System.Drawing.Size(334, 257);
             this.groupBox2.TabIndex = 22;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chức vụ";
             // 
             // dtgvChucVu
             // 
+            this.dtgvChucVu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvChucVu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvChucVu.Location = new System.Drawing.Point(21, 107);
-            this.dtgvChucVu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtgvChucVu.Location = new System.Drawing.Point(16, 87);
+            this.dtgvChucVu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtgvChucVu.Name = "dtgvChucVu";
             this.dtgvChucVu.ReadOnly = true;
             this.dtgvChucVu.RowHeadersVisible = false;
             this.dtgvChucVu.RowHeadersWidth = 51;
             this.dtgvChucVu.RowTemplate.Height = 24;
             this.dtgvChucVu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgvChucVu.Size = new System.Drawing.Size(281, 140);
+            this.dtgvChucVu.Size = new System.Drawing.Size(211, 114);
             this.dtgvChucVu.TabIndex = 14;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(307, 15);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Location = new System.Drawing.Point(230, 12);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(118, 34);
+            this.button2.Size = new System.Drawing.Size(88, 28);
             this.button2.TabIndex = 19;
             this.button2.Text = "Refesh";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // txtMaCV
             // 
-            this.txtMaCV.Location = new System.Drawing.Point(21, 33);
-            this.txtMaCV.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMaCV.Location = new System.Drawing.Point(16, 27);
             this.txtMaCV.Name = "txtMaCV";
-            this.txtMaCV.Size = new System.Drawing.Size(88, 22);
+            this.txtMaCV.Size = new System.Drawing.Size(67, 20);
             this.txtMaCV.TabIndex = 18;
             // 
             // txtTenCV
             // 
-            this.txtTenCV.Location = new System.Drawing.Point(117, 33);
-            this.txtTenCV.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTenCV.Location = new System.Drawing.Point(88, 27);
             this.txtTenCV.Name = "txtTenCV";
-            this.txtTenCV.Size = new System.Drawing.Size(169, 22);
+            this.txtTenCV.Size = new System.Drawing.Size(128, 20);
             this.txtTenCV.TabIndex = 15;
             // 
             // btnThemCV
             // 
-            this.btnThemCV.Location = new System.Drawing.Point(307, 53);
-            this.btnThemCV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnThemCV.Location = new System.Drawing.Point(230, 43);
+            this.btnThemCV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnThemCV.Name = "btnThemCV";
-            this.btnThemCV.Size = new System.Drawing.Size(118, 34);
+            this.btnThemCV.Size = new System.Drawing.Size(88, 28);
             this.btnThemCV.TabIndex = 16;
             this.btnThemCV.Text = "Tạo Bộ Phận";
             this.btnThemCV.UseVisualStyleBackColor = true;
             // 
             // UCQuanLyNhanVien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.txtTimKiemNV);
@@ -185,9 +183,9 @@ namespace QLTSTBKhachSan.UI
             this.Controls.Add(this.btnDeleteNV);
             this.Controls.Add(this.btnUpdateNV);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UCQuanLyNhanVien";
-            this.Size = new System.Drawing.Size(1200, 700);
+            this.Size = new System.Drawing.Size(900, 569);
             ((System.ComponentModel.ISupportInitialize)(this.dgvQLNV)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

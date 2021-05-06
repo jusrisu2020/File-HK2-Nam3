@@ -44,8 +44,6 @@ namespace QLTSTBKhachSan.UI
         void LoadCBTrangThai()
         {
             cbTrangThai.DataSource = TaiKhoanDAO.Instance.LoadTaiKhoan();
-            cbTrangThai.ValueMember = "TenTT";
-            cbTrangThai.DisplayMember = "TenTT";
         }
         List<ChucVuDTO> ChucVuList = ChucVuDAO.Instance.LoadChucVu();
         void AddBinding()
@@ -54,18 +52,14 @@ namespace QLTSTBKhachSan.UI
             txtManv.DataBindings.Add(new Binding("Text", dtgvQLND.DataSource, "MaNV", true, DataSourceUpdateMode.Never));
             txtTenTK.DataBindings.Add(new Binding("Text", dtgvQLND.DataSource, "TenTK", true, DataSourceUpdateMode.Never));
             txtPass.DataBindings.Add(new Binding("Text", dtgvQLND.DataSource, "Pass", true, DataSourceUpdateMode.Never));
-            cbTrangThai.DataBindings.Add(new Binding("Text", dtgvQLND.DataSource, "TenTT", true, DataSourceUpdateMode.Never));
-            //cbChucVu.DataBindings.Add(new Binding("Text", dtgvQLND.DataSource, "MaCV", true, DataSourceUpdateMode.Never));
         }
         void EditColumns()
         {
             dtgvQLND.Columns["id"].Visible = false;
             dtgvQLND.Columns["Pass"].Visible = false;
-            dtgvQLND.Columns["idTrangThai"].Visible = false;
             dtgvQLND.Columns["MaTK"].HeaderText = "Mã Tài Khoản";
             dtgvQLND.Columns["MaNV"].HeaderText = "Mã Nhân Viên";
             dtgvQLND.Columns["TenTK"].HeaderText = "Tên Tài Khoản";
-            dtgvQLND.Columns["TenTT"].HeaderText = "Trạng Thái";
             dtgvQLND.Columns["Macv"].HeaderText = "Chức Vụ";
         }
 

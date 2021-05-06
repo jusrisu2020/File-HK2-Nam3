@@ -1,4 +1,5 @@
 ﻿using QLTSTBKhachSan.DAO;
+using QLTSTBKhachSan.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -28,7 +29,8 @@ namespace QLTSTBKhachSan.UI
             string PassWord = txtPassword.Text;
             if (Login(UserName, PassWord))
             {
-                FTrangChu Ftc = new FTrangChu();
+                TaiKhoanDTO LoginTaiKhoan = TaiKhoanDAO.Instance.GetAccountByUserName(UserName);
+                FTrangChu Ftc = new FTrangChu(LoginTaiKhoan);
                 Ftc.Show();
                 this.Hide();
             }
