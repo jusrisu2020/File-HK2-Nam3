@@ -1,0 +1,5 @@
+https://www.bingmapsportal.com
+AuHzyES1gFpq_CP3GpSfqM4Nw3uS9-E4k7NzDPhiqBhEWeNz6HQUInjGiMg0PM0E
+
+Docs:
+https://docs.microsoft.com/en-us/bingmaps/v8-web-control/
