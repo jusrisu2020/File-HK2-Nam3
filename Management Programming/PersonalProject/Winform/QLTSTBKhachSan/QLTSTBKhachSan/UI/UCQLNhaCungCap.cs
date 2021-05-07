@@ -16,12 +16,24 @@ namespace QLTSTBKhachSan.UI
         public UCQLNhaCungCap()
         {
             InitializeComponent();
-            LoadNCCUC();
+            LoadData();
         }
 
+        void LoadData()
+        {
+            EditColumns();
+            LoadNCCUC();
+        }
         void LoadNCCUC()
         {
             dtgvNCC.DataSource = NhaCungCapDAO.Instance.LoadNCC();
+        }
+
+        void EditColumns()
+        {
+            dtgvNCC.Columns[0].Visible = false;
+            dtgvNCC.Columns[1].HeaderText = "Mã Nhà Cung Cấp";
+            dtgvNCC.Columns[2].HeaderText = "Tên Nhà Cung Cấp";
         }
     }
 }
