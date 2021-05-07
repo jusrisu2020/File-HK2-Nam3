@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QLTSTBKhachSan.DAO;
+using QLTSTBKhachSan.DTO;
 
 namespace QLTSTBKhachSan.UI
 {
@@ -26,12 +27,13 @@ namespace QLTSTBKhachSan.UI
         }
         void LoadNCCUC()
         {
-            dtgvNCC.DataSource = NhaCungCapDAO.Instance.LoadNCC();
+            List<NhaCungCapDTO> NhaCungCapList = NhaCungCapDAO.Instance.LoadNCC();
+            dtgvNCC.DataSource = NhaCungCapList;
         }
 
         void EditColumns()
         {
-            dtgvNCC.Columns[0].Visible = false;
+            dtgvNCC.Columns["ID"].Visible = false;
             dtgvNCC.Columns[1].HeaderText = "Mã Nhà Cung Cấp";
             dtgvNCC.Columns[2].HeaderText = "Tên Nhà Cung Cấp";
         }
