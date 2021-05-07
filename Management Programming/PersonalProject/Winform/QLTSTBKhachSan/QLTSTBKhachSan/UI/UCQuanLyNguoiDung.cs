@@ -14,7 +14,6 @@ namespace QLTSTBKhachSan.UI
 {
     public partial class UCQuanLyNguoiDung : UserControl
     {
-        private ComboBox sender;
 
         public UCQuanLyNguoiDung()
         {
@@ -26,7 +25,6 @@ namespace QLTSTBKhachSan.UI
         void LoadData()
         {
             LoadNguoiDung();
-            LoadCBTrangThai();
             AddBinding();
             LoadCBChucVu();
         }
@@ -35,20 +33,16 @@ namespace QLTSTBKhachSan.UI
         void LoadCBChucVu()
         {
             List<ChucVuDTO> ChucVuList = ChucVuDAO.Instance.LoadChucVu();
-            cbChucVu.DataSource = ChucVuList;
-            cbChucVu.DisplayMember = "TenCV";
+            cbMaCV.DataSource = ChucVuList;
+            cbMaCV.DisplayMember = "TenCV";
 
             dtgvChucVu.DataSource = ChucVuList;
             dtgvChucVu.Columns[0].Visible = false;
         }
-        void LoadCBTrangThai()
-        {
-            cbTrangThai.DataSource = TaiKhoanDAO.Instance.LoadTaiKhoan();
-        }
+       
         List<ChucVuDTO> ChucVuList = ChucVuDAO.Instance.LoadChucVu();
         void AddBinding()
         {
-            txtMaTK.DataBindings.Add(new Binding("Text", dtgvQLND.DataSource, "MaTK", true, DataSourceUpdateMode.Never));
             txtManv.DataBindings.Add(new Binding("Text", dtgvQLND.DataSource, "MaNV", true, DataSourceUpdateMode.Never));
             txtTenTK.DataBindings.Add(new Binding("Text", dtgvQLND.DataSource, "TenTK", true, DataSourceUpdateMode.Never));
             txtPass.DataBindings.Add(new Binding("Text", dtgvQLND.DataSource, "Pass", true, DataSourceUpdateMode.Never));
@@ -73,10 +67,7 @@ namespace QLTSTBKhachSan.UI
         #endregion
 
         #region Event
-        private void btnCapNhatND_Click(object sender, EventArgs e)
-        {
-              
-        }
+        
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
@@ -101,10 +92,9 @@ namespace QLTSTBKhachSan.UI
             string Manv = txtManv.Text;
             string Tentk = txtTenTK.Text;
             string pass = txtPass.Text;
-            int idtrangthai = int.Parse(cbTrangThai.Text);
-            string loaind = cbChucVu.Text;
+            string macv = cbMaCV.Text;
 
-            if (TaiKhoanDAO.Instance.ThemTaiKhoan(Manv, Tentk, pass, idtrangthai, loaind))
+            if (TaiKhoanDAO.Instance.ThemTaiKhoan(Manv, Tentk, pass, macv))
             {
                 MessageBox.Show("Thành công");
                 LoadNguoiDung();
@@ -116,15 +106,7 @@ namespace QLTSTBKhachSan.UI
 
         }
 
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnSua_Click(object sender, EventArgs e)
-        {
-
-        }
+       
         private void btnShowChucVu_Click(object sender, EventArgs e)
         {
             if(pnShowChucVu.Visible == true)
@@ -135,6 +117,12 @@ namespace QLTSTBKhachSan.UI
             {
                 pnShowChucVu.Visible = true;
             }
+        }
+
+        private void btnThemTaiKhoan_Click(object sender, EventArgs e)
+        {
+            FTaoTaiKhoan ttk = new FTaoTaiKhoan();
+            ttk.Show();
         }
     }
 

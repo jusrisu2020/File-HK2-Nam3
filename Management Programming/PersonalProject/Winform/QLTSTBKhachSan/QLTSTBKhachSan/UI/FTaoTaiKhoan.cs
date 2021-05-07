@@ -33,8 +33,8 @@ namespace QLTSTBKhachSan
         {
             pnShowChucVu.Visible = false;
             List<ChucVuDTO> ChucVuList = ChucVuDAO.Instance.LoadChucVu();
-            cbChucVu.DataSource = ChucVuList;
-            cbChucVu.DisplayMember = "MaCV";
+            cbMaCV.DataSource = ChucVuList;
+            cbMaCV.DisplayMember = "MaCV";
             dtgvChucVu.DataSource = ChucVuList;
             dtgvChucVu.Columns[0].Visible = false;
             dtgvChucVu.Columns[1].HeaderText = "Mã chức vụ";
@@ -51,5 +51,23 @@ namespace QLTSTBKhachSan
                 pnShowChucVu.Visible = true;
             }
         }
+
+        private void btnTaoTaiKhoan_Click(object sender, EventArgs e)
+        {
+            string manv = cbMaNV.Text;
+            string macv = cbMaCV.Text;
+            string tentk = txtTenTK.Text;
+            string pass = txtPass.Text;
+            if (TaiKhoanDAO.Instance.ThemTaiKhoan(manv,tentk,pass, macv))
+            {
+                MessageBox.Show("Thành công");
+            }
+            else
+            {
+                MessageBox.Show("không Thành công");
+            }
+        }
+
+       
     }
 }

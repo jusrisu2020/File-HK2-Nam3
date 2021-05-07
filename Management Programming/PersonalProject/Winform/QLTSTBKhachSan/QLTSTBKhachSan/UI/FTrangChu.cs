@@ -18,16 +18,16 @@ namespace QLTSTBKhachSan.UI
         public TaiKhoanDTO LoginTaiKhoan 
         {
             get { return loginTaiKhoan; }
-            set { loginTaiKhoan = value; ChangeTaiKhoan(loginTaiKhoan.MaCV); } 
+            set { loginTaiKhoan = value; ChangeTaiKhoan(loginTaiKhoan.TenTK); } 
         }
 
         public FTrangChu(TaiKhoanDTO tk)
         {
             InitializeComponent();
-
             this.LoginTaiKhoan = tk;
             AddLoadToolTip();
             pnMuiti.Visible = false;
+            panel1.Visible = false;
         }
         #region Method
         void AddLoadToolTip()
@@ -37,12 +37,13 @@ namespace QLTSTBKhachSan.UI
             tt.SetToolTip(btnNotification, "Setting\n(Ctrl + N)");
             tt.SetToolTip(btnHelp, "Help\n(Ctrl + H)");
         }
-        void ChangeTaiKhoan(string matk)
+        void ChangeTaiKhoan(string tentk)
         {
-            if (matk != "CV01")
+            if (tentk != "ad")
             {
                 btnUserM.Enabled = false;
             }
+            lbUserName.Text += " (" + tentk + ") ";
         }
         #endregion
         #region Envent_Main
@@ -144,6 +145,23 @@ namespace QLTSTBKhachSan.UI
         private void pnLogo_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnSuaNguoiDung_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHeThong_Click_1(object sender, EventArgs e)
+        {
+            if(panel1.Visible == false)
+            {
+                panel1.Visible = true;
+            }
+            else
+            {
+                panel1.Visible = false;
+            }
         }
     }
 }

@@ -29,7 +29,7 @@ namespace QLTSTBKhachSan.UI
             string PassWord = txtPassword.Text;
             if (Login(UserName, PassWord))
             {
-                TaiKhoanDTO LoginTaiKhoan = TaiKhoanDAO.Instance.GetAccountByUserName(UserName);
+                TaiKhoanDTO LoginTaiKhoan = TaiKhoanDAO.Instance.LayTKTuMaCV(UserName);
                 FTrangChu Ftc = new FTrangChu(LoginTaiKhoan);
                 Ftc.Show();
                 this.Hide();
@@ -54,12 +54,6 @@ namespace QLTSTBKhachSan.UI
             {
                 txtPassword.UseSystemPasswordChar = true;
             }
-        }
-
-        private void linkTaoTaiKhoan_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            FTaoTaiKhoan ttk = new FTaoTaiKhoan();
-            ttk.Show();
         }
     }
 }

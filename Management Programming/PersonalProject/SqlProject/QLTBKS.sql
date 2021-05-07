@@ -29,6 +29,7 @@ BEGIN
 	ELSE SET @strInput = SUBSTRING(@strInput, 1, @COUNTER-1) +SUBSTRING(@UNSIGN_CHARS, @COUNTER1,1) + SUBSTRING(@strInput, @COUNTER+1,LEN(@strInput)- @COUNTER) BREAK END SET @COUNTER1 = @COUNTER1 +1 END SET @COUNTER = @COUNTER +1 END SET @strInput = REPLACE(@strInput,' ','-') 
 	RETURN @strInput 
 END
+GO
 ------------------------------------BoPhan ------------------------------------------------
 CREATE TABLE BoPhan
 (
@@ -258,6 +259,7 @@ CREATE PROC USP_ThemTaiKhoan
 GO
 EXEC dbo.USP_ThemTaiKhoan @MaNV = 'NV01',@TenTK = N'ad',@Pass=N'1', @MaCV = N'CV01'
 EXEC dbo.USP_ThemTaiKhoan @MaNV = 'NV02',@TenTK = N'tk1',@Pass=N'1', @MaCV = N'CV02'
+EXEC dbo.USP_ThemTaiKhoan @MaNV = 'NV02',@TenTK = N'tk2',@Pass=N'1', @MaCV = N'CV01'
 GO
 CREATE PROC USP_DangNhap
 	@TenTK NVARCHAR(100),

@@ -53,9 +53,9 @@ namespace QLTSTBKhachSan.DAO
             return TaiKhoanList;
         }
 
-        public TaiKhoanDTO GetAccountByUserName(string username)
+        public TaiKhoanDTO LayTKTuMaCV(string tentk)
         {
-            string Query = string.Format("SELECT * FROM TaiKhoan WHERE tentk = '{0}'",username);
+            string Query = string.Format("SELECT * FROM TaiKhoan WHERE tentk = '{0}'", tentk);
             DataTable data = DataProvider.Instance.ExecuteQuery(Query);
             foreach(DataRow item in data.Rows)
             {
@@ -71,9 +71,9 @@ namespace QLTSTBKhachSan.DAO
             return result.Rows.Count > 0;
         }
 
-        public bool ThemTaiKhoan(string manv, string tentk, string pass, int idtrangthai, string loaind)
+        public bool ThemTaiKhoan(string manv, string tentk ,string pass ,string macv)
         {
-            string TaiKhoanQuery = string.Format("EXEC dbo.USP_ThemTaiKhoan {0},{1},{2},N'{3}',{4}", manv, tentk, pass, idtrangthai, loaind);
+            string TaiKhoanQuery = string.Format("EXEC dbo.USP_ThemTaiKhoan '{0}','{1}','{2}','{3}'", manv, tentk, pass, macv);
             int result = DataProvider.Instance.ExecuteNonQuery(TaiKhoanQuery);
             return result > 0;
         }
