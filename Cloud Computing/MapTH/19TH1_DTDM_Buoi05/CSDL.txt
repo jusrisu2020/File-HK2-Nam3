@@ -1,0 +1,23 @@
+1. DiaDiem
+  `id` int(10) NOT NULL,
+  `id_user` int(10) NOT NULL,
+  `ten_dia_diem` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `kinh_do` double NOT NULL,
+  `vi_do` double NOT NULL,
+  `hinh_anh` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `ap_khom` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `xa_phuong` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `huyen_thi` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `so_duong` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `ten_duong` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `mo_ta` text COLLATE utf8_unicode_ci,
+  `dien_thoai` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `fax` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `email` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `website` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `nguoi_lien_lac` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `trang_thai` tinyint(2) NOT NULL
+2. DiaGioi
+3. LoaiDiaDiem
+4. NguoiDung
+5. 
