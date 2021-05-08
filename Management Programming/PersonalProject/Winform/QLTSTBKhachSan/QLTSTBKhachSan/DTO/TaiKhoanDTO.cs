@@ -13,6 +13,7 @@ namespace QLTSTBKhachSan.DTO
 		private string maTK;
 		private string maNV;
 		private string tenTK;
+        private string tenHienThi;
 		private string pAss;
 		private string maCV;
 
@@ -20,15 +21,17 @@ namespace QLTSTBKhachSan.DTO
         public string MaTK { get => maTK; set => maTK = value; }
         public string MaNV { get => maNV; set => maNV = value; }
         public string TenTK { get => tenTK; set => tenTK = value; }
+        public string TenHienThi { get => tenHienThi; set => tenHienThi = value; }
         public string PAss { get => pAss; set => pAss = value; }
         public string MaCV { get => maCV; set => maCV = value; }
 
-        public TaiKhoanDTO(int id, string matk, string manv, string tentk, string pass, string macv)
+        public TaiKhoanDTO(int id, string matk, string manv, string tentk,string tenhienthi, string pass, string macv)
         {
             this.ID = id;
             this.MaTK = matk;
             this.MaNV = manv;
             this.TenTK = tentk;
+            this.TenHienThi = tenhienthi;
             this.PAss = pass;
             this.MaCV = macv;
         }
@@ -39,6 +42,7 @@ namespace QLTSTBKhachSan.DTO
             this.MaTK = row["matk"].ToString();
             this.MaNV = row["manv"].ToString();
             this.TenTK = row["tentk"].ToString();
+            this.TenHienThi = row["tenhienthi"].ToString();
             this.PAss = row["pass"].ToString();
             this.MaCV = row["Macv"].ToString();
         }

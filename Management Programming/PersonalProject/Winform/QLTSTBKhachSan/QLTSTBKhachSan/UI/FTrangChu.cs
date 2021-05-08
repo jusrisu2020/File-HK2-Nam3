@@ -9,22 +9,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using QLTSTBKhachSan.DTO;
+using QLTSTBKhachSan.DAO;
 
 namespace QLTSTBKhachSan.UI
 {
     public partial class FTrangChu : Form
     {
-        private TaiKhoanDTO loginTaiKhoan;
-        public TaiKhoanDTO LoginTaiKhoan 
-        {
-            get { return loginTaiKhoan; }
-            set { loginTaiKhoan = value; ChangeTaiKhoan(loginTaiKhoan.TenTK); } 
-        }
-
-        public FTrangChu(TaiKhoanDTO tk)
+        public FTrangChu()
         {
             InitializeComponent();
-            this.LoginTaiKhoan = tk;
             AddLoadToolTip();
             pnMuiti.Visible = false;
             panel1.Visible = false;
@@ -37,14 +30,8 @@ namespace QLTSTBKhachSan.UI
             tt.SetToolTip(btnNotification, "Setting\n(Ctrl + N)");
             tt.SetToolTip(btnHelp, "Help\n(Ctrl + H)");
         }
-        void ChangeTaiKhoan(string tentk)
-        {
-            if (tentk != "ad")
-            {
-                btnUserM.Enabled = false;
-            }
-            lbUserName.Text += " (" + tentk + ") ";
-        }
+       
+        
         #endregion
         #region Envent_Main
         public void pbLogo_Click(object sender, EventArgs e)
@@ -162,6 +149,12 @@ namespace QLTSTBKhachSan.UI
             {
                 panel1.Visible = false;
             }
+        }
+
+        private void btnSuaTaiKhoan_Click(object sender, EventArgs e)
+        {
+            FSuaTaiKhoan stk = new FSuaTaiKhoan();
+            stk.Show();
         }
     }
 }

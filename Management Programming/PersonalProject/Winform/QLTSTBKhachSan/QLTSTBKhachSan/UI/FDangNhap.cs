@@ -29,8 +29,7 @@ namespace QLTSTBKhachSan.UI
             string PassWord = txtPassword.Text;
             if (Login(UserName, PassWord))
             {
-                TaiKhoanDTO LoginTaiKhoan = TaiKhoanDAO.Instance.LayTKTuMaCV(UserName);
-                FTrangChu Ftc = new FTrangChu(LoginTaiKhoan);
+                FTrangChu Ftc = new FTrangChu();
                 Ftc.Show();
                 this.Hide();
             }

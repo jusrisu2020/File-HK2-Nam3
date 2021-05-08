@@ -237,6 +237,7 @@ CREATE TABLE TaiKhoan
 	MaTK NVARCHAR(20) PRIMARY KEY,
 	MaNV NVARCHAR(20) CONSTRAINT FK_TaiKhoan_NhanVien FOREIGN KEY(MaNV) REFERENCES dbo.NhanVien(MaNV),
 	TenTK NVARCHAR(100),
+	TenHienThi NVARCHAR(100),
 	Pass NVARCHAR(100),
 	MaCV NVARCHAR(20) CONSTRAINT FK_TaiKhoan_ChucVu FOREIGN KEY(MaCV) REFERENCES dbo.ChucVu(MaCV)
 )
@@ -245,6 +246,7 @@ GO
 CREATE PROC USP_ThemTaiKhoan
 		@MaNV NVARCHAR(20),
 		@TenTK NVARCHAR(100),
+		@TenHienThi NVARCHAR(100),
 		@Pass NVARCHAR(100),
 		@MaCV NVARCHAR(20)
 	AS
@@ -254,12 +256,12 @@ CREATE PROC USP_ThemTaiKhoan
 		IF EXISTS (SELECT * FROM dbo.TaiKhoan WHERE ID = @MaTK)
 			SET @MaTK=@MaTK+1
 			SET @MaTK='TK'+REPLICATE('0',2-LEN(@MaTK))+@MaTK
-			INSERT INTO dbo.TaiKhoan VALUES(@MaTK,@MaNV,@TenTK,@Pass,@MaCV)
+			INSERT INTO dbo.TaiKhoan VALUES(@MaTK,@MaNV,@TenTK,@TenHienThi,@Pass,@MaCV)
 	END
 GO
-EXEC dbo.USP_ThemTaiKhoan @MaNV = 'NV01',@TenTK = N'ad',@Pass=N'1', @MaCV = N'CV01'
-EXEC dbo.USP_ThemTaiKhoan @MaNV = 'NV02',@TenTK = N'tk1',@Pass=N'1', @MaCV = N'CV02'
-EXEC dbo.USP_ThemTaiKhoan @MaNV = 'NV02',@TenTK = N'tk2',@Pass=N'1', @MaCV = N'CV01'
+EXEC dbo.USP_ThemTaiKhoan @MaNV = 'NV01',@TenTK = N'ad',@TenHienThi='Tricua',@Pass=N'1', @MaCV = N'CV01'
+EXEC dbo.USP_ThemTaiKhoan @MaNV = 'NV02',@TenTK = N'tk1',@TenHienThi='Tricua1',@Pass=N'1', @MaCV = N'CV02'
+EXEC dbo.USP_ThemTaiKhoan @MaNV = 'NV02',@TenTK = N'tk2',@TenHienThi='Tricua2',@Pass=N'1', @MaCV = N'CV01'
 GO
 CREATE PROC USP_DangNhap
 	@TenTK NVARCHAR(100),
@@ -282,8 +284,36 @@ GO
 EXEC USP_SelectATaiKhoan
 GO
 
-SELECT * FROM TaiKhoan WHERE tentk = N'ad';
+CREATE PROC USP_UpdateTaiKhoan
+	@TenTK NVARCHAR(100),
+	@TenHienThi NVARCHAR(100),
+	@Pass NVARCHAR(100),
+	@newPass NVARCHAR(100)
+AS
+BEGIN
+	DECLARE @RightPass INT = 0
 
+	SELECT @RightPass = COUNT(*)FROM dbo.TaiKhoan WHERE TenTK = @TenTK AND Pass = @Pass;
+
+	IF(@RightPass = 1)
+	BEGIN
+	    IF(@newPass = NULL OR @newPass = '')
+		BEGIN
+		    UPDATE dbo.TaiKhoan SET TenHienThi = @TenHienThi WHERE TenTK = @TenTK
+		END
+		ELSE
+		    UPDATE dbo.TaiKhoan SET TenHienThi = @TenHienThi, Pass = @newPass WHERE TenTK = @TenTK 
+	END
+END
+GO
+
+EXEC USP_UpdateTaiKhoan @TenTK,@TenHienThi,@Pass,@newPass
+
+
+
+EXEC USP_UpdateTaiKhoan @TenTK = 'ad',@TenHienThi='trtr',@Pass='1',@newPass='2'
+
+SELECT * FROM dbo.TaiKhoan
 -------------------------------------HoaDonMuaTB CHƯA ------------------------------------------------
 CREATE TABLE HoaDonMuaTB
 (

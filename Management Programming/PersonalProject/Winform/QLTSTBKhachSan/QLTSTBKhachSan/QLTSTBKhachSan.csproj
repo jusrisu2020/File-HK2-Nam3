@@ -100,6 +100,12 @@
     <Compile Include="UI\FSetting.Designer.cs">
       <DependentUpon>FSetting.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\FSuaTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FSuaTaiKhoan.Designer.cs">
+      <DependentUpon>FSuaTaiKhoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\FTaoTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FSetting.resx">
       <DependentUpon>FSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FSuaTaiKhoan.resx">
+      <DependentUpon>FSuaTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FTaoTaiKhoan.resx">
       <DependentUpon>FTaoTaiKhoan.cs</DependentUpon>
