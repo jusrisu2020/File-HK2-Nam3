@@ -15,10 +15,24 @@ namespace QLTSTBKhachSan.UI
 {
     public partial class FTrangChu : Form
     {
-        public FTrangChu()
+        private TaiKhoanDTO loginTaiKhoan;
+
+        public TaiKhoanDTO LoginTaiKhoan 
+        { 
+            get => loginTaiKhoan;
+            set
+            {
+                loginTaiKhoan = value;
+                PhanQuyen(loginTaiKhoan.TenTK);
+                LoadDisPlayName(loginTaiKhoan.TenHienThi);
+            }
+        }
+
+        public FTrangChu(TaiKhoanDTO tk)
         {
             InitializeComponent();
             AddLoadToolTip();
+            LoginTaiKhoan = tk;
             pnMuiti.Visible = false;
             panel1.Visible = false;
         }
@@ -31,6 +45,17 @@ namespace QLTSTBKhachSan.UI
             tt.SetToolTip(btnHelp, "Help\n(Ctrl + H)");
         }
        
+        void LoadDisPlayName(string tenhienthi)
+        {
+            lbUserName.Text = tenhienthi;
+        }
+        void PhanQuyen(string tentk)
+        {
+            if (!tentk.Equals("ad"))
+            {
+                btnUserM.Enabled = false;
+            }
+        }
         
         #endregion
         #region Envent_Main
@@ -153,8 +178,14 @@ namespace QLTSTBKhachSan.UI
 
         private void btnSuaTaiKhoan_Click(object sender, EventArgs e)
         {
-            FSuaTaiKhoan stk = new FSuaTaiKhoan();
+            FSuaTaiKhoan stk = new FSuaTaiKhoan(LoginTaiKhoan);
+            stk.UpdateAccount += Stk_UpdateAccount;
             stk.Show();
+        }
+
+        private void Stk_UpdateAccount(object sender, EventArgs e)
+        {
+
         }
     }
 }

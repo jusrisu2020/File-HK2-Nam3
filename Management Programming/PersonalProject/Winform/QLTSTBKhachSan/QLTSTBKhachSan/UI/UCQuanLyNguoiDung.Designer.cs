@@ -107,7 +107,6 @@ namespace QLTSTBKhachSan.UI
             this.btnTimKiem.TabIndex = 6;
             this.btnTimKiem.Text = "Search...";
             this.btnTimKiem.UseVisualStyleBackColor = true;
-            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // btnThemTaiKhoan
             // 
@@ -160,7 +159,6 @@ namespace QLTSTBKhachSan.UI
             this.btnSuaTaiKhoan.TabIndex = 11;
             this.btnSuaTaiKhoan.Text = "Thêm Tài Khoản";
             this.btnSuaTaiKhoan.UseVisualStyleBackColor = true;
-            this.btnSuaTaiKhoan.Click += new System.EventHandler(this.btnThemNv_Click);
             // 
             // panel2
             // 

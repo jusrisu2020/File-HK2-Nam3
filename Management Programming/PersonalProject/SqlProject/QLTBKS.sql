@@ -231,6 +231,10 @@ GO
 EXEC dbo.USP_SelectNhanVien
 GO
 --------------------------------------------------------Tài khoản
+
+DROP TABLE dbo.TaiKhoan
+DROP PROC USP_ThemTaiKhoan
+
 CREATE TABLE TaiKhoan
 (
 	Id INT IDENTITY,
@@ -273,7 +277,7 @@ END
 GO
 EXEC USP_DangNhap N'ad', N'1'
 GO
-
+SELECT *FROM dbo.TaiKhoan WHERE TenTK = 'ad';
 --PROC Select Tất cả tài khoản
 CREATE PROC USP_SelectATaiKhoan
 AS 

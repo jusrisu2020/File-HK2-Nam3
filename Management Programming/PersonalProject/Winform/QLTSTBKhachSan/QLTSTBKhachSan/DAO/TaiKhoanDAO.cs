@@ -24,27 +24,13 @@ namespace QLTSTBKhachSan.DAO
                 TaiKhoanDAO.instance = value;
             }
         }
-
         private TaiKhoanDAO() { }
-        public List<TaiKhoanDTO> LoadTaiKhoan()
+        public List<TaiKhoanDTO> LoadListAccount()
         {
             List<TaiKhoanDTO> TaiKhoanList = new List<TaiKhoanDTO>();
             string SATaiKhoan = "EXEC USP_SelectATaiKhoan";
             DataTable data = DataProvider.Instance.ExecuteQuery(SATaiKhoan);
 
-            foreach (DataRow item in data.Rows)
-            {
-                TaiKhoanDTO tk = new TaiKhoanDTO(item);
-                TaiKhoanList.Add(tk);
-            }
-            return TaiKhoanList;
-        }
-        public List<TaiKhoanDTO> ShowTenCVByTaiKhoan(string macv)
-        {
-            List<TaiKhoanDTO> TaiKhoanList = new List<TaiKhoanDTO>();
-
-            string Query = string.Format("SELECT TenCV FROM dbo.ChucVu WHERE MaCV = '{0}'", macv);
-            DataTable data = DataProvider.Instance.ExecuteQuery(Query);
             foreach (DataRow item in data.Rows)
             {
                 TaiKhoanDTO tk = new TaiKhoanDTO(item);
@@ -60,26 +46,44 @@ namespace QLTSTBKhachSan.DAO
             return result.Rows.Count > 0;
         }
 
-        public bool ThemTaiKhoan(string manv, string tentk ,string pass ,string macv)
+        public bool InsertAccount(string manv, string tentk ,string pass ,string macv)
         {
             string TaiKhoanQuery = string.Format("EXEC dbo.USP_ThemTaiKhoan '{0}','{1}','{2}','{3}'", manv, tentk, pass, macv);
             int result = DataProvider.Instance.ExecuteNonQuery(TaiKhoanQuery);
             return result > 0;
         }
+        //Thay đổi thông tin tài khoản từ các người dùng
+        public bool UpdateAccountByUser(string tentk, string tenhienthi, string pass, string newPass)
+        {
+            string Query = string.Format("EXEC USP_UpdateTaiKhoan '{0}','{1}',{2},{3}", tentk, tenhienthi, pass, newPass);
+            int result = DataProvider.Instance.ExecuteNonQuery(Query);
+            return result > 0;
+        }
 
-        public bool XoaTaiKhoan(string matk)
+        /*public bool UpdateAccountByAdmin(string tentk, string tenhienthi, string pass, string newPass)
+        {
+            string Query = string.Format("EXEC USP_UpdateTaiKhoan '{0}','{1}',{2},{3}", tentk, tenhienthi, pass, newPass);
+            int result = DataProvider.Instance.ExecuteNonQuery(Query);
+            return result > 0;
+        }*/
+
+        public bool DeleteAccount(string matk)
         {
             string TaiKhoanQuery = string.Format("DELETE dbo.TaiKhoan WHERE MaTK = '{0}'", matk);
             int result = DataProvider.Instance.ExecuteNonQuery(TaiKhoanQuery);
             return result > 0;
         }
-
-        public bool SuaTaiKhoa(string manv, string tentk, string pass, int idtrangthai, string loaind)
+        //Phân quyền và Hiển thị tên người dùng
+        public TaiKhoanDTO GetAccountByUserName(string tentk)
         {
-            string TaiKhoanQuery = string.Format("EXEC dbo.USP_ThemTaiKhoan {0},{1},{2},N'{3}',{4}", manv, tentk, pass, idtrangthai, loaind);
-            int result = DataProvider.Instance.ExecuteNonQuery(TaiKhoanQuery);
-            return result > 0;
-        }
+            string Query = "SELECT * FROM dbo.TaiKhoan WHERE TenTK = '" + tentk + "'";
+            DataTable data = DataProvider.Instance.ExecuteQuery(Query);
 
+            foreach(DataRow item in data.Rows)
+            {
+                return new TaiKhoanDTO(item);
+            }
+            return null;
+        }
     }
 }

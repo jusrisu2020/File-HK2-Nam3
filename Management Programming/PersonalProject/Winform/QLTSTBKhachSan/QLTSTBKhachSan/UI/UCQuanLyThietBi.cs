@@ -48,7 +48,7 @@ namespace QLTSTBKhachSan.UI
 
         void LoadBtnBoPhan()
         {
-            List<BoPhanDTO> BoPhanList = BoPhanDAO.Instance.LoadBoPhan();
+            List<BoPhanDTO> BoPhanList = BoPhanDAO.Instance.LoadListBoPhan();
             foreach (BoPhanDTO item in BoPhanList)
             {
                 Button btn = new Button() { Width = 120, Height = 80 };

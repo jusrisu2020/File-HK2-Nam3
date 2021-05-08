@@ -25,7 +25,7 @@ namespace QLTSTBKhachSan.DAO
             }
         }
 
-        public List<BoPhanDTO> LoadBoPhan()
+        public List<BoPhanDTO> LoadListBoPhan()
         {
             List<BoPhanDTO> BoPhanList = new List<BoPhanDTO>();
             string SBoPhan = "USP_SelectBoPhan";
@@ -38,14 +38,14 @@ namespace QLTSTBKhachSan.DAO
             return BoPhanList;
         }
 
-        public bool ThemBoPhan(string tenbp)
+        public bool InsertBoPhan(string tenbp)
         {
             string Query = string.Format("EXEC dbo.USP_ThemBoPhan N'{0}'",tenbp);
             int result = DataProvider.Instance.ExecuteNonQuery(Query);
             return result > 0;
         }
 
-        public bool SuaBoPhan(string mabp,string tenbp)
+        public bool UpdateBoPhan(string mabp,string tenbp)
         {
             string Query = string.Format("UPDATE dbo.BoPhan SET TenBP = N'{0}' WHERE MaBP = N'{1}'", tenbp, mabp);
             int result = DataProvider.Instance.ExecuteNonQuery(Query);
@@ -54,7 +54,7 @@ namespace QLTSTBKhachSan.DAO
         
         
         
-        public bool XoaBoPhan(string mabp)
+        public bool DeleteBoPhan(string mabp)
         {
             NhanVienDAO.Instance.DeleteNhanVienByBoPhan(mabp);
             string Query = string.Format("DELETE dbo.BoPhan WHERE MaBP = N'{0}'", mabp);
@@ -63,7 +63,7 @@ namespace QLTSTBKhachSan.DAO
         }
         
 
-        public List<BoPhanDTO> SearchTenBoPhan(string name)
+        public List<BoPhanDTO> SearchBoPhan(string name)
         {
             List<BoPhanDTO> BoPhanList = new List<BoPhanDTO>();
             

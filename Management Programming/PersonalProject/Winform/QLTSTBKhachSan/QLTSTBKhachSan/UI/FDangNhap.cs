@@ -21,15 +21,15 @@ namespace QLTSTBKhachSan.UI
             InitializeComponent();
             txtPassword.UseSystemPasswordChar = true;
         }
-
         
         private void btnLogIn_Click(object sender, EventArgs e)
         {
             string UserName = txtUserName.Text;
             string PassWord = txtPassword.Text;
-            if (Login(UserName, PassWord))
+            if (TaiKhoanDAO.Instance.Login(UserName, PassWord))
             {
-                FTrangChu Ftc = new FTrangChu();
+                TaiKhoanDTO LoginTaiKhoan = TaiKhoanDAO.Instance.GetAccountByUserName(UserName);
+                FTrangChu Ftc = new FTrangChu(LoginTaiKhoan);
                 Ftc.Show();
                 this.Hide();
             }
@@ -37,10 +37,6 @@ namespace QLTSTBKhachSan.UI
             {
                 MessageBox.Show("Sai thông tin tài khoản");
             }
-        }
-        bool Login(string TenTKs, string Passs)
-        {
-            return TaiKhoanDAO.Instance.Login(TenTKs, Passs);
         }
 
         private void chkPassword_CheckedChanged(object sender, EventArgs e)

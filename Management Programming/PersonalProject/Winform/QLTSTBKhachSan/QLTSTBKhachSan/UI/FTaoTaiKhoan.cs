@@ -18,18 +18,22 @@ namespace QLTSTBKhachSan
         public FTaoTaiKhoan()
         {
             InitializeComponent();
-            LoadMaNV();
-            LoadChucVu();
+            LoadData();
         }
 
-        void LoadMaNV()
+        void LoadData()
+        {
+            LoadCBMaNV();
+            LoadCBChucVu();
+        }
+        void LoadCBMaNV()
         {
             List<NhanVienDTO> NhanVienList = NhanVienDAO.Instance.LoadNhanVien();
             cbMaNV.DataSource = NhanVienList;
             cbMaNV.DisplayMember = "MaNV";
         }
 
-        void LoadChucVu()
+        void LoadCBChucVu()
         {
             pnShowChucVu.Visible = false;
             List<ChucVuDTO> ChucVuList = ChucVuDAO.Instance.LoadChucVu();
@@ -58,7 +62,7 @@ namespace QLTSTBKhachSan
             string macv = cbMaCV.Text;
             string tentk = txtTenTK.Text;
             string pass = txtPass.Text;
-            if (TaiKhoanDAO.Instance.ThemTaiKhoan(manv,tentk,pass, macv))
+            if (TaiKhoanDAO.Instance.InsertAccount(manv,tentk,pass, macv))
             {
                 MessageBox.Show("Thành công");
             }

@@ -18,117 +18,118 @@ namespace QLTSTBKhachSan.UI
         {
             InitializeComponent();
             LoadData();
-            EditColumn();
         }
 
         #region Method
             void LoadData()
             {
-                LoadBoPhan();
-                LoadBinding();
+                LoadListBoPhan();
+                AddBinding();
             }
-            
-            List<BoPhanDTO> SearchTenBoPhan(string name)
+            void LoadListBoPhan()
             {
-                List<BoPhanDTO> BoPhanList = BoPhanDAO.Instance.SearchTenBoPhan(name);
-                return BoPhanList;
-            }
-            void LoadBoPhan()
-            {
-                List<BoPhanDTO> BoPhanList = BoPhanDAO.Instance.LoadBoPhan();
+                List<BoPhanDTO> BoPhanList = BoPhanDAO.Instance.LoadListBoPhan();
                 dtgvQLBP.DataSource = BoPhanList;
-            }
-            void EditColumn()
-            {
                 dtgvQLBP.Columns[0].Visible = false;
                 dtgvQLBP.Columns[1].HeaderText = "Mã Bộ Phận";
                 dtgvQLBP.Columns[2].HeaderText = "Tên Bộ Phận";
             }
-            void LoadBinding()
+
+            void AddBinding()
             {
                 txtThemBoPhan.DataBindings.Add(new Binding("Text", dtgvQLBP.DataSource, "Tenbp", true, DataSourceUpdateMode.Never));
                 txtMaBP.DataBindings.Add(new Binding("Text", dtgvQLBP.DataSource, "Mabp", true, DataSourceUpdateMode.Never));
                 txtMaBP.Enabled = false;
             }
+
+            List<BoPhanDTO> SearchTenBoPhan(string name)
+            {
+                List<BoPhanDTO> BoPhanList = BoPhanDAO.Instance.SearchBoPhan(name);
+                return BoPhanList;
+            }
+
+
+
         #endregion
 
         #region Event
-            private void btnThemBP_Click(object sender, EventArgs e)
+        private void btnInsertBP_Click(object sender, EventArgs e)
+        {
+            string tenbp = txtThemBoPhan.Text;
+            if (tenbp == "")
             {
-                string tenbp = txtThemBoPhan.Text;
-                if (tenbp == "")
+                MessageBox.Show("Tên phòng không được bỏ trống!");
+            }
+            else
+            {
+                if (BoPhanDAO.Instance.InsertBoPhan(tenbp))
                 {
-                    MessageBox.Show("Tên phòng không được bỏ trống!");
+                    MessageBox.Show("Saved!");
+                    LoadListBoPhan();
+                    txtThemBoPhan.Clear();
+                    txtThemBoPhan.Focus();
                 }
                 else
                 {
-                    if (BoPhanDAO.Instance.ThemBoPhan(tenbp))
-                    {
-                        MessageBox.Show("Saved!");
-                        LoadBoPhan();
-                        txtThemBoPhan.Clear();
-                        txtThemBoPhan.Focus();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Không thành công");
-                    }
+                    MessageBox.Show("Không thành công");
                 }
             }
-            private void btnSuaBoPhan_Click(object sender, EventArgs e)
-            {
-                string tenbp = txtThemBoPhan.Text;
-                string mabp = txtMaBP.Text;
-                if (tenbp == "")
-                {
-                    MessageBox.Show("Tên phòng không được bỏ trống!");
-                }
-                else
-                {
-                    if (BoPhanDAO.Instance.SuaBoPhan(mabp, tenbp))
-                    {
-                        MessageBox.Show("Đã thay đổi!");
-                        LoadBoPhan();
-                        txtThemBoPhan.Clear();
-                        txtThemBoPhan.Focus();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Không thành công");
-                    }
-                }
-            }
-            private void btnDelete_Click(object sender, EventArgs e)
-            {
-                if (MessageBox.Show("Bạn thật sự muốn xoá", "Notification", MessageBoxButtons.OKCancel) == DialogResult.OK)
-                {
-                    string mabp = txtMaBP.Text;
-                    if (BoPhanDAO.Instance.XoaBoPhan(mabp))
-                    {
-                        LoadBoPhan();
-                        txtThemBoPhan.Clear();
-                        txtThemBoPhan.Focus();
-                        MessageBox.Show("Đã xoá!","Notification",MessageBoxButtons.OK);
-                    }
-                    else
-                    {
-                        MessageBox.Show("Không thành công");
-                    }
-                }
-            }
-            private void btnRefesh_Click(object sender, EventArgs e)
-            {
-                txtThemBoPhan.Clear();
-                txtThemBoPhan.Focus();
-                LoadBoPhan();
-            }
+        }
 
-        private void btnTKBoPhan_Click(object sender, EventArgs e)
+        private void btnUpdateBoPhan_Click(object sender, EventArgs e)
+        {
+            string tenbp = txtThemBoPhan.Text;
+            string mabp = txtMaBP.Text;
+            if (tenbp == "")
+            {
+                MessageBox.Show("Tên phòng không được bỏ trống!");
+            }
+            else
+            {
+                if (BoPhanDAO.Instance.UpdateBoPhan(mabp, tenbp))
+                {
+                    MessageBox.Show("Đã thay đổi!");
+                    LoadListBoPhan();
+                    txtThemBoPhan.Clear();
+                    txtThemBoPhan.Focus();
+                }
+                else
+                {
+                    MessageBox.Show("Không thành công");
+                }
+            }
+        }
+
+        private void btnDeleteBoPhan_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn thật sự muốn xoá", "Notification", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                string mabp = txtMaBP.Text;
+                if (BoPhanDAO.Instance.DeleteBoPhan(mabp))
+                {
+                    LoadListBoPhan();
+                    txtThemBoPhan.Clear();
+                    txtThemBoPhan.Focus();
+                    MessageBox.Show("Đã xoá!", "Notification", MessageBoxButtons.OK);
+                }
+                else
+                {
+                    MessageBox.Show("Không thành công");
+                }
+            }
+        }
+
+        private void btnRefeshBoPhan_Click(object sender, EventArgs e)
+        {
+            txtThemBoPhan.Clear();
+            txtThemBoPhan.Focus();
+            LoadListBoPhan();
+        }
+
+        private void btnSearchBoPhan_Click(object sender, EventArgs e)
         {
             dtgvQLBP.DataSource = SearchTenBoPhan(txtTKBoPhan.Text);
         }
-
-        
-    }
         #endregion
+    }
 }

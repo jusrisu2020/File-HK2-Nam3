@@ -17,11 +17,14 @@ namespace QLTSTBKhachSan.UI
         public UCQuanLyNhanVien()
         {
             InitializeComponent();
+            LoadData();
+        }
+        
+       void LoadData()
+        {
             LoadNhanVien();
             LoadChucVu();
         }
-        
-       
         void LoadNhanVien()
         {
             List<NhanVienDTO> Table = NhanVienDAO.Instance.LoadNhanVien();
