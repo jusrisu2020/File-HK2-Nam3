@@ -1,6 +1,0 @@
-D:\BT\Buoi1\Bai8\bin\Debug\Bai8.exe.config
-D:\BT\Buoi1\Bai8\bin\Debug\Bai8.exe
-D:\BT\Buoi1\Bai8\bin\Debug\Bai8.pdb
-D:\BT\Buoi1\Bai8\obj\Debug\Bai8.csproj.CoreCompileInputs.cache
-D:\BT\Buoi1\Bai8\obj\Debug\Bai8.exe
-D:\BT\Buoi1\Bai8\obj\Debug\Bai8.pdb

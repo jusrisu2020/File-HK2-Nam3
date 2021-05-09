@@ -1,7 +1,0 @@
-D:\BT\Buoi1\Bai5\bin\Debug\Bai5.exe.config
-D:\BT\Buoi1\Bai5\bin\Debug\Bai5.exe
-D:\BT\Buoi1\Bai5\bin\Debug\Bai5.pdb
-D:\BT\Buoi1\Bai5\obj\Debug\Bai5.csprojAssemblyReference.cache
-D:\BT\Buoi1\Bai5\obj\Debug\Bai5.csproj.CoreCompileInputs.cache
-D:\BT\Buoi1\Bai5\obj\Debug\Bai5.exe
-D:\BT\Buoi1\Bai5\obj\Debug\Bai5.pdb
