@@ -1,9 +1,0 @@
-Z:\Nhom21_Tuan3\Nhom21_Tuan3\Bai6\bin\Debug\Bai6.exe.config
-Z:\Nhom21_Tuan3\Nhom21_Tuan3\Bai6\bin\Debug\Bai6.exe
-Z:\Nhom21_Tuan3\Nhom21_Tuan3\Bai6\bin\Debug\Bai6.pdb
-Z:\Nhom21_Tuan3\Nhom21_Tuan3\Bai6\obj\Debug\Bai6.csprojResolveAssemblyReference.cache
-Z:\Nhom21_Tuan3\Nhom21_Tuan3\Bai6\obj\Debug\Bai6.Form1.resources
-Z:\Nhom21_Tuan3\Nhom21_Tuan3\Bai6\obj\Debug\Bai6.Properties.Resources.resources
-Z:\Nhom21_Tuan3\Nhom21_Tuan3\Bai6\obj\Debug\Bai6.csproj.GenerateResource.Cache
-Z:\Nhom21_Tuan3\Nhom21_Tuan3\Bai6\obj\Debug\Bai6.exe
-Z:\Nhom21_Tuan3\Nhom21_Tuan3\Bai6\obj\Debug\Bai6.pdb
