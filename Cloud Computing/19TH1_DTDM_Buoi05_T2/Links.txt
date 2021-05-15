@@ -1,7 +1,0 @@
-https://www.freesqldatabase.com
-https://www.phpmyadmin.co
-
-Host: sql6.freesqldatabase.com
-Database name: sql6408817
-Database user: sql6408817
-Database password: r3PY33lV6M

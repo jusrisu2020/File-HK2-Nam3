@@ -1,0 +1,40 @@
+1. DiaDiem
+  `id` int(10) NOT NULL,
+  `id_user` int(10) NOT NULL,
+  `ten_dia_diem` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `kinh_do` double NOT NULL,
+  `vi_do` double NOT NULL,
+  `hinh_anh` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `ap_khom` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `xa_phuong` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `huyen_thi` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `so_duong` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `ten_duong` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `mo_ta` text COLLATE utf8_unicode_ci,
+  `dien_thoai` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `fax` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `email` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `website` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `nguoi_lien_lac` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `trang_thai` tinyint(2) NOT NULL
+
+2. DiaGioi -----------------------------Khi click vào địa giới khu vực thì sẽ hiển thị các thông tin thời tiết và địa điểm du lịch lân cận.
+  `id` int(10) NOT NULL,
+  `ten_hanh_chinh` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+
+3. NguoiDung----------------------------Thêm xoá sửa thông tin địa điểm
+  `id` int(10) UNSIGNED NOT NULL,
+  `ho_ten` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `mat_khau` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `quyen_han` tinyint(1) NOT NULL DEFAULT '2'
+
+4. ThoiTiet
+  id int(10),
+  luongmua float,
+  nhietdo float,
+  id_loai nvarchar,
+
+5. Loai_Thoi_Tiet
+  id int(10),
+  TenLoai nvarchar,
