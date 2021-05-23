@@ -1,0 +1,10 @@
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Object Oriented Software Design Analysis\WinFormTH06\WinFormTH06\bin\Debug\WinFormTH06.exe.config
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Object Oriented Software Design Analysis\WinFormTH06\WinFormTH06\bin\Debug\WinFormTH06.exe
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Object Oriented Software Design Analysis\WinFormTH06\WinFormTH06\bin\Debug\WinFormTH06.pdb
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Object Oriented Software Design Analysis\WinFormTH06\WinFormTH06\obj\Debug\WinFormTH06.csprojAssemblyReference.cache
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Object Oriented Software Design Analysis\WinFormTH06\WinFormTH06\obj\Debug\WinFormTH06.Form1.resources
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Object Oriented Software Design Analysis\WinFormTH06\WinFormTH06\obj\Debug\WinFormTH06.Properties.Resources.resources
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Object Oriented Software Design Analysis\WinFormTH06\WinFormTH06\obj\Debug\WinFormTH06.csproj.GenerateResource.cache
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Object Oriented Software Design Analysis\WinFormTH06\WinFormTH06\obj\Debug\WinFormTH06.csproj.CoreCompileInputs.cache
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Object Oriented Software Design Analysis\WinFormTH06\WinFormTH06\obj\Debug\WinFormTH06.exe
+C:\Users\PC GAMING\Desktop\IT\File-HK2-Nam3\Object Oriented Software Design Analysis\WinFormTH06\WinFormTH06\obj\Debug\WinFormTH06.pdb

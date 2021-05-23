@@ -1,0 +1,14 @@
+1. Click vào khu vực chỉ định đổi Icon thành màu khác
+2. CLick vào hiển thị thông tin
+	Hình ảnh
+	Tên khu vực
+	Thông tin thời tiết
+		MT Mọc
+		MT Lặng
+		Nhiệt độ
+		Độ ẩm, tốc độ gió	
+3. Đưa chuột vào hiển thị thông tin khu vực và thời tiết 
+4. Đưa chuột vào khu vực chỉ định sẽ zoom lại map khu vực đó, khoanh vùng khu vực
+5. Tìm kiếm 1 thanh textbox nhúng vào website
+7. Đổi đơn vị đo đường từ 'Mi' sang 'Km'
+
