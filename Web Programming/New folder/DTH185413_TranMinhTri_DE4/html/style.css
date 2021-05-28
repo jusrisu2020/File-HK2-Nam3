@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.back{
+    border: solid black;
+    width: 820px;
+}
+div.a1{float: left; width: 380px;}		
+div.a2{float: left; width: 420px;}
+
+div .a1 li{
+    list-style: none;
+}
+
+h1{
+    color:blue; text-align:center; 
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.noidung{
+    margin: 60px;
+}
+.HinhAnh{
+    width: 410px;
+    height: 100px;
+    float: left;
+    position: absolute;
+    left: 400px;
+    top: 60px;
+}
+
+.HinhAnh img{
+    width: 410px;
+}   
+
+span{font-size:20pt; color: red; font-weight:bold;}

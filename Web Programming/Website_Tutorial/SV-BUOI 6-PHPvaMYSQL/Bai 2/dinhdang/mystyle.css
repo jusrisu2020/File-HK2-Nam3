@@ -1,0 +1,149 @@
+﻿body{
+	background-color: white;
+	padding: 5px;
+	font-family: Verdana;
+	font-size: 10pt;
+}
+
+a{
+	text-decoration: none;
+	color: darkgray;
+}
+#khungtrang{
+	margin: auto;
+	width: 804px;
+	background-color: white;
+}
+#phantren{
+	height: 100px;
+}
+#phanmenungang{
+	height: 25px;
+	background-color: #009933;
+	text-align: center;
+}	
+#phantrai{
+	float: left;
+	width: 150px;
+	border-right: thin solid #009933;
+}
+#phangiua{
+	float: left;
+	width: 480px;
+	text-align: justify;
+	padding: 10px;
+}
+#phanphai{
+	float: left;
+	width: 150px;
+	text-align: center;
+}
+#phanduoi{
+	clear: both;	
+	text-align: center;	
+	color: gray;
+	border-top: thin dashed #009933;
+}
+/* ------- Định dạng cho menu liên kết ngang ------- */
+a.menungang{
+	font-weight:bold;
+	color:white;
+	text-decoration:none;
+}
+a.menungang:hover{
+	text-decoration:underline;
+}
+
+
+/* ------- Định dạng cho menu liên kết dọc ------- */
+.khungmenu{
+	padding: 5px;
+}
+.tieudemenu{
+	color: #009933;
+	text-align: center;
+	font-weight: bold;
+	border-bottom: thin dashed #009933;
+}
+a.menu{
+	text-decoration: none;
+	display: block;
+	margin-left: 5px;
+	margin-right: 5px;	
+	color: darkblue;
+}
+a.menu:hover{
+	background-color: #009933;
+	text-decoration: underline;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+/* ------- Định dạng cho sp giảm giá ------- */
+.spgiamgia{	
+	width: 140px;
+	border: thin solid #009933;
+	padding: 5px;
+	margin: 2px;
+	text-align: center;
+	border-radius: 5px;
+}
+img{
+	width: 120px;
+}
+.tenhang{
+	color: darkblue;
+	font-weight: bold;
+}
+.giagoc{
+	color: gray;
+	text-decoration: line-through;
+}
+.giagiam{
+	color: red;
+	font-weight: bold;
+}
+/* ==== */
+h1{
+	color:#009933;
+	font-size:14pt;
+}
+
+/* ------- Định dạng cho bảng và form ------- */
+table.bieumau{
+	margin: auto;
+	width: 400px;
+	border: thin solid black;
+	border-collapse: collapse;
+	font-family: Verdana;
+	font-size: 10pt;
+}
+td{
+	padding: 5px;
+	
+}
+td.tieude{
+	color: #FFFFFF;
+	background-color: #009933;
+	border-radius: 10px;
+	font-weight: bold;
+}
+td.canhgiua{
+	text-align: center;
+}
+input[type="text"]{
+	width: 180px;
+}
+select{
+	width: 200px;
+}
+
+table.bieumau1{
+	margin: auto;
+	width: 800px;
+	border: thin solid black;
+	border-collapse: collapse;
+	font-family: Verdana;
+	font-size: 10pt;
+	
+}
+

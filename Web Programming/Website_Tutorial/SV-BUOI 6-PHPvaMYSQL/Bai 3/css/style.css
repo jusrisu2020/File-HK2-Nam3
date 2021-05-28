@@ -1,0 +1,90 @@
+﻿body{
+	font-family: Verdana;		
+	background-color: white;	
+}
+a{
+	color: maroon;
+	text-decoration: none;
+}
+a:hover{
+	font-weight: bold;
+}
+
+#container{
+	margin: auto;
+	max-width: 1000px;
+	background-color: #FFFFFF;
+}
+
+header{
+	height: 100px;
+}
+
+nav{
+	height: 25px;
+	text-align: center;
+}
+
+#form-section{
+	height: 25px;
+	font-size: 9pt;
+	padding: 5px;	
+}
+
+section{
+	clear: both;
+	text-align: justify;
+	padding: 0px;
+}
+
+footer{
+	padding: 10px;
+	clear: both;
+	font-size: 9pt;
+	text-align: center;	
+	color: #FFFFFF;
+	background-color: #FF0000;
+}
+
+nav a{
+	font-size: 9pt;
+	padding: 5px;
+	text-decoration: none;
+	width: 88px;
+	display: block;
+	float: left;
+	color: white;
+	background-color: #FF0000;
+	border: thin solid #FFFFFF;
+}
+nav a:hover{	
+	background-color: maroon;	
+	font-weight: normal;
+}
+#form-section a{
+	color: maroon; 
+	text-shadow:2px 2px 5px silver; 
+	font-size:9pt; 
+	font-weight:bold; 
+}
+#form-section a:hover{
+	color: #FF0000;
+}
+
+table{
+	width: 480px;
+	float: left;
+	color: darkgray;
+	font-size: 8pt;
+	margin: 10px;
+	border-top: thin dotted #FF0000;
+	border-left: thin dotted #FF0000;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px silver;
+}
+section .danhmuc{
+	font-weight: bold;
+	color: red;	
+	padding: 5px;
+	text-align: center;
+}

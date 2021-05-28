@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Form Design */
+.container{
+    height: 500px;
+    width: 400px;
+    border-radius: 20px;
+    background: #34495e;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: 0.5s;
+}
+
+/* Menu Design */
+.box, .menu{
+    margin: 10px;
+    padding-top: 10px;
+}
+
+.container ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    left: -10px;
+    top: 5px;
+    padding-right: 20px;
+}
+
+.container ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.container ul li a:hover{
+    border-bottom: 2px solid #487eb0;
+}
+
+/* box Sign In */
+.box{
+    margin-top: 50px;
+}
+
+.boxName{
+    margin-top: 10px;
+}
+
+.box input[type="checkbox"], input[type="submit"]{
+    margin-top: 15px;
+}
+
+.box input[type="text"], input[type="password"]{
+    background:#353b48;
+    border-radius: 20px;
+    width: 375px;
+    border: none;
+    height: 40px;
+}
+
+.boxLogin input{
+    background: none;
+    border: solid;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/* Create checkbox Animation */
+input[type="checkbox"]{
+    position: relative;
+    width: 40px;
+    height: 20px;
+    top: 10px;
+    -webkit-appearance: none;
+    background: #c6c6c6;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+    transition: 0.5s;
+}
+
+input:checked[type="checkbox"]{
+    background: #00a8ff;
+}
+
+input[type="checkbox"]:before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    transition: 0.5s;
+}
+
+input:checked[type="checkbox"]:before{
+    left: 20px;
+}
+
+.box #contentCheck{
+    position: absolute;
+    top: 322px;
+    left: 70px;
+}
+
+/* Button Design */
+.box input[type="button"]{
+    margin-top: 30px;
+    width: 375px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    background: #00a8ff;
+}
+
+.box input:hover[type="button"]{
+    background: tomato;
+}
+
+/* Forgot pass design */
+.forgotPass a{
+    text-decoration: none;
+    color: white;
+    margin-left: 130px;
+}
+
+.forgotPass a:hover{
+    color: tomato;
+}

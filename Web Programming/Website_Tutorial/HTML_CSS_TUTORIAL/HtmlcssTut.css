@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 1000px;
+    width: 1400px;
+    float: left;
+    background-color: #dcdde1;
+    border: solid black;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+.menu-Left{
+    width: 20%;
+    height: 100%;
+    background-color: #0abde3;
+    float: left;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.logo{
+    font-size: 50px;
+    color: white;
+    margin: 50px;
+}
+
+#logo{
+    color: white;
+    font-size: 50px;
+}
+
+.btnList1, .btnList2{
+    margin-left: 20px;
+    list-style: none;
+}
+
+.btnList1 button, .btnList2 button{
+    width: 230px;
+    height: 60px;
+    margin-top: 10px;
+    border-style: none;
+    background: none;
+    color: white;
+}
+
+.btnLogo{
+   font-size: 30px;
+   padding-right: 20px;
+}
+
+/* Top */
+.sBox-Top{
+    width: 80%;
+    height: 10%;
+    background-color: white;
+    float: left;
+    border-top-right-radius: 20px;
+}
+
+#searchBox{
+    width: 650px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 1px solid #bdc3c7;
+}
+
+#btnNot{
+    width: 80px;
+    height: 50px;
+    position: relative;
+    left: 30px;
+    top: 5px;
+    /* border-style: none;
+    background: none; */
+}
+
+.logoNot{
+    font-size: 30px;
+}
+
+#btnAvatar{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 1100px;
+    top: 15px;
+    border-radius: 40px;
+    background: url(/images/riven.jpg);
+    background-size: 80px;
+    background-repeat: no-repeat;
+}
+
+#lbName{
+    position: absolute;
+    left: 1200px;
+    top: 45px; 
+}
+
+.ddAvatar{
+    font-size: 30px;
+    position: absolute;
+    left: 100px;
+    top: -8px;
+}
+
+#title_Name{
+    position: absolute;
+    left: 320px;
+    top: 140px;
+}
+
+.panel1{
+    width: 1060px;
+    height: 300px;
+    background-color: white;
+    position: relative;
+    top: 200px;
+    left: 300px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+.panel1 h2{
+    position: relative;
+    top: -70px;
+    left: -220px;
+}
+
+.panel1 ul{
+    list-style: none;
+    position: relative;
+    top: -50px;
+    left: -250px;
+}
+
+.panel1 ul li{
+    position: relative;
+    list-style: none;
+    background-color: wheat;
+    display: inline-block;
+    height: 200px;
+    width: 150px;
+    border-radius: 20px;
+}
+
+
+.panel2{
+    width: 340px;
+    height: 450px;
+    background-color: pink;
+    position: relative;
+    top: 220px;
+    left: 20px;
+    border-radius: 20px;
+    float: left;
+}
+.panel3{
+    width: 340px;
+    height: 450px;
+    background-color: pink;
+    position: relative;
+    top: 220px;
+    left: 40px;
+    border-radius: 20px;
+    float: left;
+}
+.panel4{
+    width: 340px;
+    height: 450px;
+    background-color: pink;
+    position: relative;
+    top: 220px;
+    left: 60px;
+    border-radius: 20px;
+    float: left;
+}
