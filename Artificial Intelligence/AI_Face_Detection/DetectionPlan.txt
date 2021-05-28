@@ -1,0 +1,8 @@
+1. Collect Images and lable
+2. Training Models
+3. Detecting objects
+4. Freezing and Conversion
+5. Performance Tuning
+6. Training on colab
+7. Projects
+
