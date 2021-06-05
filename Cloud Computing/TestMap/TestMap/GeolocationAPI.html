@@ -41,13 +41,55 @@
       // locate you.
       let map, infoWindow;
 
-      function initMap() {
+function initMap() {
+
+        const arrLoc = [
+          [10.37922265,105.4193726],
+          [10.41200291,107.149078]
+        ]
+        
+        for(var i=0; i<arrLoc.length ; i++){
+          console.log(arrLoc[i][0],arrLoc[i][1]);
+        }
+
+        // Đổ Map
         map = new google.maps.Map(document.getElementById("map"), {
           center: { lat: 10.37922265, lng: 105.4193726 },
           zoom: 6,
         });
         	
+// Get Marker
 
+        // for(var i=0; i < arrLoc.length ; i++){
+        //   console.log(arrLoc[i]);
+        // }
+
+var marker, i;
+for(i = 0; i < arrLoc.length; i++){
+    marker = new google.maps.Marker({
+          position: { lat: arrLoc[i][0], lng: arrLoc[i][1]},// vị trí mà marker hiện thị
+          map: map, // bản đồ mà marker gắn lên
+          animation:google.maps.Animation.DROP,
+          icon:{
+            url:'a.png',
+          }
+    });
+    
+    marker.addListener("click", () => {
+        map.setZoom(8);
+        map.setCenter(marker.getPosition());
+    });
+    
+
+    map.addListener("center_changed", () => {
+      window.setTimeout(() => {
+        map.panTo(marker.getPosition());
+      }, 3000);
+    });
+}
+
+
+        // Event GPS Location
         infoWindow = new google.maps.InfoWindow();
         const locationButton = document.createElement("button");
         locationButton.textContent = "Pan to Current Location";
@@ -78,8 +120,9 @@
             handleLocationError(false, infoWindow, map.getCenter());
           }
         });
-      }
+}
 
+// Hàm báo lỗi trong sự kiện tìm kiếm Location GPS
       function handleLocationError(browserHasGeolocation, infoWindow, pos) {
         infoWindow.setPosition(pos);
         infoWindow.setContent(
@@ -97,9 +140,8 @@
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
     <script async
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKbUG34YYWxj9VnkrR0LOEiVwhPPt0dHU&callback=initMap">
-
-
     //Free Key(1/6) AIzaSyDKbUG34YYWxj9VnkrR0LOEiVwhPPt0dHU
     </script>
+
   </body>
 </html>
