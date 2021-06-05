@@ -1,0 +1,10 @@
+https://calendarweb-28184.web.app/
+
+cmd:
+	npm -v
+	npm install -g firebase-tools
+	firebase login
+	firebase init
+	Tạo thư mục public -> bỏ website vào public 
+	(configure as a single-app) -> N
+	firebase deploy

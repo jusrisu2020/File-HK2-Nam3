@@ -1,5 +1,0 @@
-https://developers.google.com/maps/documentation/javascript/overview
-AIzaSyB3KjEa7xtALLCMJHqufeQP6AGQSwHDBTs
-
-Styling:
-https://developers.google.com/maps/documentation/javascript/examples/hiding-features
