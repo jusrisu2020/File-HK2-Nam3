@@ -44,13 +44,14 @@
 function initMap() {
 
         const arrLoc = [
-          [10.37922265,105.4193726],
-          [10.41200291,107.149078]
+          [10.37922265,105.4193726,1],
+          [10.41200291,107.149078,2]
         ]
         
-        for(var i=0; i<arrLoc.length ; i++){
-          console.log(arrLoc[i][0],arrLoc[i][1]);
-        }
+
+        
+
+       
 
         // Đổ Map
         map = new google.maps.Map(document.getElementById("map"), {
@@ -63,7 +64,7 @@ function initMap() {
         // for(var i=0; i < arrLoc.length ; i++){
         //   console.log(arrLoc[i]);
         // }
-
+        
 var marker, i;
 for(i = 0; i < arrLoc.length; i++){
     marker = new google.maps.Marker({
@@ -75,18 +76,26 @@ for(i = 0; i < arrLoc.length; i++){
           }
     });
     
-    marker.addListener("click", () => {
-        map.setZoom(8);
-        map.setCenter(marker.getPosition());
-    });
+    // marker.addListener("click", () => {
+    //     map.setZoom(8);
+    //     map.setCenter(marker.getPosition());
+    // });
     
+}
+    marker.addListener("click", () => {
+        while(arrLoc[i]<=arrLoc.length){
+          console.log(arrLoc[i][0])
+          i++
+        }
+          map.setZoom(8);
+          map.setCenter(marker.getPosition());
+        });
 
     map.addListener("center_changed", () => {
       window.setTimeout(() => {
         map.panTo(marker.getPosition());
       }, 3000);
     });
-}
 
 
         // Event GPS Location
@@ -135,7 +144,9 @@ for(i = 0; i < arrLoc.length; i++){
     </script>
   </head>
   <body>
+    <button id="btnTest">Btn Test</button>
     <div id="map"></div>
+
 
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
     <script async
