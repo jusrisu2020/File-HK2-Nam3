@@ -3,7 +3,10 @@
   <head>
     <title>Geolocation</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="OpenwheatherAPI/js/all.min.js"></script>
+	  <script src="OpenwheatherAPI/js/moment.js"></script>
     <style type="text/css">
+    
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map {
@@ -17,22 +20,7 @@
         margin: 0;
         padding: 0;
       }
-
-      .custom-map-control-button {
-        background-color: #fff;
-        border: 0;
-        border-radius: 2px;
-        box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
-        margin: 10px;
-        padding: 0 0.5em;
-        font: 400 18px Roboto, Arial, sans-serif;
-        overflow: hidden;
-        height: 40px;
-        cursor: pointer;
-      }
-      .custom-map-control-button:hover {
-        background: #ebebeb;
-      }
+    
     </style>
     <script>
       // Note: This example requires that you consent to location sharing when
@@ -41,64 +29,13 @@
       // locate you.
       let map, infoWindow;
 
-function initMap() {
-
-        const arrLoc = [
-          [10.37922265,105.4193726,1],
-          [10.41200291,107.149078,2]
-        ]
-        
-
-        
-
-       
-
-        // Đổ Map
+      function initMap() {
         map = new google.maps.Map(document.getElementById("map"), {
           center: { lat: 10.37922265, lng: 105.4193726 },
           zoom: 6,
+          scrollwheel: true,
         });
         	
-// Get Marker
-
-        // for(var i=0; i < arrLoc.length ; i++){
-        //   console.log(arrLoc[i]);
-        // }
-        
-var marker, i;
-for(i = 0; i < arrLoc.length; i++){
-    marker = new google.maps.Marker({
-          position: { lat: arrLoc[i][0], lng: arrLoc[i][1]},// vị trí mà marker hiện thị
-          map: map, // bản đồ mà marker gắn lên
-          animation:google.maps.Animation.DROP,
-          icon:{
-            url:'a.png',
-          }
-    });
-    
-    // marker.addListener("click", () => {
-    //     map.setZoom(8);
-    //     map.setCenter(marker.getPosition());
-    // });
-    
-}
-    marker.addListener("click", () => {
-        while(arrLoc[i]<=arrLoc.length){
-          console.log(arrLoc[i][0])
-          i++
-        }
-          map.setZoom(8);
-          map.setCenter(marker.getPosition());
-        });
-
-    map.addListener("center_changed", () => {
-      window.setTimeout(() => {
-        map.panTo(marker.getPosition());
-      }, 3000);
-    });
-
-
-        // Event GPS Location
         infoWindow = new google.maps.InfoWindow();
         const locationButton = document.createElement("button");
         locationButton.textContent = "Pan to Current Location";
@@ -129,9 +66,21 @@ for(i = 0; i < arrLoc.length; i++){
             handleLocationError(false, infoWindow, map.getCenter());
           }
         });
-}
 
-// Hàm báo lỗi trong sự kiện tìm kiếm Location GPS
+          const loc = document.getElementById('search-input').value;
+          let url = `https://maps.googleapis.com/maps/api/geocode/json?address=${loc}&key=AIzaSyDKbUG34YYWxj9VnkrR0LOEiVwhPPt0dHU`;
+          fetch(url)
+          .then(response => response.json() )
+          .then(data => {
+              console.log(data);
+              loadData =  data.results[0].formatted_address + '\n' ;
+              loadLatLng = 'Vĩ độ: ' + data.results[0].geometry.location.lat + '\n Kinh độ: ' + data.results[0].geometry.location.lng;
+              document.querySelector('#opInfoLocation').innerHTML = loadData + loadLatLng;
+          })
+          .catch(err => console.log(err));
+
+      }
+
       function handleLocationError(browserHasGeolocation, infoWindow, pos) {
         infoWindow.setPosition(pos);
         infoWindow.setContent(
@@ -141,18 +90,57 @@ for(i = 0; i < arrLoc.length; i++){
         );
         infoWindow.open(map);
       }
+        
     </script>
   </head>
   <body>
-    <button id="btnTest">Btn Test</button>
+    <input type="text" id="search-input">
+    <button onclick="initMap()">Info Location</button>
+    <p id="opInfoLocation"></p>
+    
     <div id="map"></div>
 
+    <!-- Test Thời tiết -->
+    <div class="additional-section">
+      <div class="row">
+        <div class="item">
+          <div class="label">MT Mọc</div>
+          <div class="value sunrise">---</div>
+        </div>
+        <div class="item">
+          <div class="label">MT Lặn</div>
+          <div class="value sunset">---</div>
+        </div>
+        <div class="item">
+          <div class="label">Pressure</div>
+          <div class="value"><span class="pressure">-</span>Pa</div>
+        </div>
+        <div class="item">
+          <div class="label">Nhiệt độ trung bình</div>
+          <div class="value"><span class="temptb">-</span>°C</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="item">
+          <div class="label">Độ ẩm</div>
+          <div class="value"><span class="humidity">- </span>%</div>
+        </div>
+        <div class="item">
+          <div class="label">Tốc độ gió</div>
+          <div class="value"><span class="wind-speed">- </span>km/h</div>
+        </div>
+        <div class="item">
+          <div class="label">Mực nước biển</div>
+          <div class="value"><span class="sea-level"></span>m</div>
+        </div>
+      </div>
+    </div>
 
+    <script src="OpenwheatherAPI/js/index.js"></script>
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
     <script async
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKbUG34YYWxj9VnkrR0LOEiVwhPPt0dHU&callback=initMap">
     //Free Key(1/6) AIzaSyDKbUG34YYWxj9VnkrR0LOEiVwhPPt0dHU
     </script>
-
   </body>
 </html>

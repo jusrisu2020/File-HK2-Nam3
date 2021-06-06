@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Weather App</title>
+	<script src="js/all.min.js"></script>
+	<script src="js/moment.js"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+		<div class="container">
+			<div class="main-section">
+				<div class="search-bar">
+					<i class="fas fa-search search-icon"></i>
+					<input type="text" name="search-city" id="search-input" placeholder="Tìm kiếm thành phố ...">
+				</div>
+					<div class="info-wrapper">
+						<p class="city-name">---</p>
+						<p class="weather-state">---</p>
+						<img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="weather-icon">
+						<p class="temperature">---</p> 
+					</div>
+			</div>
+			<div class="additional-section">
+				<div class="row">
+					<div class="item">
+						<div class="label">MT Mọc</div>
+						<div class="value sunrise">---</div>
+					</div>
+					<div class="item">
+						<div class="label">MT Lặn</div>
+						<div class="value sunset">---</div>
+					</div>
+					<div class="item">
+						<div class="label">Pressure</div>
+						<div class="value"><span class="pressure">-</span>Pa</div>
+					</div>
+					<div class="item">
+						<div class="label">Nhiệt độ trung bình</div>
+						<div class="value"><span class="temptb">-</span>°C</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="item">
+						<div class="label">Độ ẩm</div>
+						<div class="value"><span class="humidity">- </span>%</div>
+					</div>
+					<div class="item">
+						<div class="label">Tốc độ gió</div>
+						<div class="value"><span class="wind-speed">- </span>km/h</div>
+					</div>
+					<div class="item">
+						<div class="label">Mực nước biển</div>
+						<div class="value"><span class="sea-level"></span>m</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/index.js"></script>
+</body>
+</html>

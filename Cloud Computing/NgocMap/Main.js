@@ -65,15 +65,15 @@ for(i = 0; i < locations.length; i++){
             //anchor: {x:50,y:50} mình xác định vị trí cho Marker
           }
     });
+
     google.maps.event.addListener(marker, 'click', (function(marker, i) {
-        return function() {
-          infowindow.setContent(locations[i][0]);
-          infowindow.open(map, marker);
-          map.setZoom(8);
-          map.setCenter(locations[i][1],locations[i][2]);
-          //streetViewControlOptions: google.maps.ControlPosition.RIGHT_CENTER
-      }
-    })(marker, i));
+      return function() {
+        infowindow.setContent(locations[i][0]);
+        infowindow.open(map, marker);
+        map.setZoom(8);
+        map.panTo(this.getPosition(locations[i][1],locations[i][2]))
+    }
+  })(marker, i));
 }
 //create a DirectionsService object to use the route method and get a result for our request
 var directionsService = new google.maps.DirectionsService();
@@ -117,8 +117,6 @@ function calcRoute() {
     });
 
 }
-
-
 
 //create autocomplete objects for all inputs
 	var options = {
