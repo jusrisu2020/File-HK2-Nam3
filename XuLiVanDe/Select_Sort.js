@@ -17,24 +17,19 @@
 
 // Select Sort Algorithm
 // Input = array ,Output = ascending array
-var SecArr = [2,1,9,3,5];
-var step = SecArr[0];
-var resultArr = [];
-
+var SecArr = [9,2,3,3,5];
+var step = 0;
 for(var i=0;i<=SecArr.length-1;i++){
-    for(var j=0;j<=SecArr.length-1;j++){
-        console.log(SecArr[i],SecArr[j]);
-        if(SecArr[i]<SecArr[j]){
-            step = SecArr[i];
+    var min = i;
+    for(var j=i+1;j<=SecArr.length-1;j++){
+        if(SecArr[j] < SecArr[min]){
+            min = j;
         }
-        else if(SecArr[i]>SecArr[j]){
-            step = SecArr[j];
-        }
-        else{
-            resultArr[i] = step;
-        }
-        console.log(resultArr);
     }
+    step = SecArr[min];
+    SecArr[min] = SecArr[i];
+    SecArr[i] = step;  
 }
+console.log(SecArr);
 
 
