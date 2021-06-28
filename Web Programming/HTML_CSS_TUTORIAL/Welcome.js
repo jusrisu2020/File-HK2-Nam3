@@ -1,0 +1,4 @@
+
+function Show(){
+    alert(ms);
+}
