@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    width: 100%;
+    height: 60px;
+    background-color: aqua;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.menu .btnControl{
+    position: absolute;
+    top: 5px;
+    left: 40%;
+}
+
+.menu .btnControl button{
+    height: 30px;
+    width: 100px;
+    font-size: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.menu .btnControl #btnData{
+    background-color: #e74c3c;
+    box-shadow: inset 0px 0px 0px 0px #f1c40f;
+    transition: ease-out 0.5s;
+    color: white;
+}
+
+.menu .btnControl #btnData:hover{
+    box-shadow: inset 100px 0px 0px 0px #f1c40f;
+    color: black;
+}
+
+.menu .btnControl #btnInsert{
+    background-color: #e74c3c;
+    /* box-shadow: type(outset nằm ngoài; inset nằm trong) x(trục từ trái sang phải) y(trục trên xuống dưới) blur(độ mờ) scale(hiển thị đối tượng nằm sau) color */
+    box-shadow: inset 0 0 0 0 #f1c40f;
+    transition: ease-out 0.3s;
+    color: white;
+}
+
+.menu .btnControl #btnInsert:hover{
+    box-shadow: inset -100px 0 0 0 #f1c40f;
+    color: black;
+}
