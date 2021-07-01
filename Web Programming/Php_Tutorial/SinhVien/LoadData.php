@@ -40,8 +40,9 @@
             <tbody id="DataStudent">
                 <?php
                     include 'database.php';
+
                     if($conn->connect_error){
-                        echo 'Connection Error!';
+                        echo "Lỗi: ". mysqli_connect_error();
                     }
                     else{
                         echo 'Connection successful!';

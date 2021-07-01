@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Oct 13, 2017 at 06:28 PM
+-- Generation Time: Oct 16, 2017 at 12:12 AM
 -- Server version: 5.5.20
 -- PHP Version: 5.3.10
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `hdthuoc`
+-- Database: `thuoc_online`
 --
 
 -- --------------------------------------------------------
@@ -29,9 +29,9 @@ SET time_zone = "+00:00";
 CREATE TABLE IF NOT EXISTS `thuoc` (
   `mathuoc` int(11) NOT NULL AUTO_INCREMENT,
   `tenthuoc` varchar(50) NOT NULL,
-  `hoatchat` varchar(50) NOT NULL,
-  `dongia` float DEFAULT NULL,
+  `giaban` float DEFAULT NULL,
   `soluong` int(11) DEFAULT NULL,
+  `hinhanh` tinytext CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`mathuoc`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
 
@@ -39,13 +39,11 @@ CREATE TABLE IF NOT EXISTS `thuoc` (
 -- Dumping data for table `thuoc`
 --
 
-INSERT INTO `thuoc` (`mathuoc`, `tenthuoc`, `hoatchat`, `dongia`, `soluong`) VALUES
-(1, 'Atasic 200', 'Cefixim 200mg', 200, 200),
-(2, 'Azicine ', 'Azithromycin dihydrate 250mg', 300, 20),
-(3, 'Diamicron MR 30', 'Gliclazide 30mg.', 400, 270),
-(4, 'Lomac-20', 'Omeprazole 20mg', 500, 40),
-(5, 'Maxdotyl 50', 'Sulpirid 50mg', 600, 120),
-(6, 'Medrol 16', 'Methylprednisolone 16mg', 700, 60);
+INSERT INTO `thuoc` (`mathuoc`, `tenthuoc`, `giaban`, `soluong`, `hinhanh`) VALUES
+(1, 'Thuá»‘c trá»‹ Ä‘áº§y hÆ¡i air - X', 98000, 11, 'images/h1.jpg'),
+(2, 'Nexium 40mg', 176000, 0, 'images/h2.jpg'),
+(3, 'Hidrasec 10mg', 85000, 6, 'images/h3.jpg'),
+(4, 'Meclopstad', 25000, 8, 'images/h4.jpg');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

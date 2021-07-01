@@ -1,4 +1,0 @@
-
-function Show(){
-    alert(ms);
-}
