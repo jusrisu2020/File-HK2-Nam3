@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1 Default</title>
+</head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container caption{
+            font-weight: bold;
+            font-size: 20px;
+            color: red;
+        }
+
+        img{
+            height: 90px;
+            width: 150px;
+        }
+
+        .container{
+            height: 1000px;
+            width: 100%;
+            margin: 200px;
+        }
+
+        table{
+            border: 1px solid black;
+        }
+    </style>
+<body>
+    <div class="container">
+        <table>
+            <caption>Cập nhật thông tin cá nhân</caption>
+            <td>
+                <img src="Images/Facebook.jpg" alt="Image">
+            </td>
+            <td>
+                <form>
+                    <label for="">Họ và tên</label>
+                    <input type="text"><br/>
+    
+                    <label for="">Hình đại diện</label>
+                    <input type="file"><br/>
+    
+                    <button>Đồng ý</button>
+                    <button type="reset" >Nhập lại</button>
+                </form>
+            </td>
+        </table>
+    </div>
+</body>
+</html>

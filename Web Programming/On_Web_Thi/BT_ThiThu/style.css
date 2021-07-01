@@ -1,0 +1,25 @@
+.container ul{
+    width: 400px;
+    border: solid red;
+    padding: 0;
+    list-style: none inside;
+}
+
+.IconLeftArrow{
+    height: 20px;
+    width: 20px;
+}
+
+.container ul li{
+    border: solid #ffffff;
+    padding: 10px;
+    background-color: #fffacd;
+    font-size: 25px;
+}
+
+.container ul li:hover{
+    color: white;
+    font-weight: bold;
+    background-color: #008b8b;
+    cursor: pointer;
+}

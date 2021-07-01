@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+		<label>Số a:</label>
+		<input type="text" id="txtSoa">
+		<br/>
+
+		<label>Số b:</label>
+		<input type="text" id="txtSob">
+		<br/>
+
+		<button id="btnGiai">Giải</button>
+		<input type="text" id="txtResult">
+
+		<script>
+			var btnGiai = document.getElementById("btnGiai");
+			btnGiai.addEventListener("click", ()=>{
+				var a = Number(document.getElementById("txtSoa").value);
+				var b = Number(document.getElementById("txtSob").value);
+				console.log(a);
+				if(a == "" || b == ""){
+					alert("bạn chưa nhập a hoặc b:");
+				}else if(isNaN(a) || isNaN(b)){
+					alert("mức lương phải là số!");
+				}else{
+					var a = eval(document.getElementById("txtSoa").value);
+					var b  = eval(document.getElementById("txtSob").value);
+					var c;
+					if(a == 0){
+						if(b==0){
+							c = "phương trình vô số nghiệm!";
+							
+						}else{
+							c= "phương trình vô nghiệm";
+							
+						}
+					}else{
+						c = "phương trình có nghiệm x ="
+						c+= -b/a;
+	
+					}
+					document.getElementById("txtResult").value = c;
+				}
+			});
+	
+		</script>
+</body>
+</html>
